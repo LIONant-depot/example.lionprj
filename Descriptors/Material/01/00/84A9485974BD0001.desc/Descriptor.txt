@@ -1,0 +1,76 @@
+
+[ Info ]
+{ nNodes:d  nConnections:d }
+//--------  --------------
+     2            1       
+
+[ Node ]
+{ Guid:G             PrefabGuid:G      }
+//-----------------  -----------------
+  #64E6882CBF87C02D  #CF18C47A6F31C2FC
+
+// New Types
+< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c enum:s >
+
+[ xProperties : 13 ]
+{ Name:s                                       Value:?                   }
+//-------------------------------------------  -------------------------
+  "node/Name"                                  ;string "Final FragOut"  
+  "node/Position/X"                            ;f32    735              
+  "node/Position/Y"                            ;f32    330              
+  "node/Input Pins[]"                          ;s64    2                
+  "node/Input Pins[G:0]/pin/PinGUID/Value"     ;u64    #4CE6882CBF87C02E
+  "node/Input Pins[G:0]/ConnectionGUID/Value"  ;u64    #8CE6882CBF88C038
+  "node/Input Pins[G:1]/pin/PinGUID/Value"     ;u64    #14E6882CBF87C02F
+  "node/Input Pins[G:1]/ConnectionGUID/Value"  ;u64    #0               
+  "node/Output Pins[]"                         ;s64    0                
+  "node/Value/Props[]"                         ;s64    1                
+  "node/Value/Props[G:0]/Name"                 ;string "a"              
+  "node/Value/Props[G:0]/Value/Type"           ;enum   "FLOAT"          
+  "node/Value/Props[G:0]/Value/Float"          ;f32    1                
+
+[ Node ]
+{ Guid:G             PrefabGuid:G      }
+//-----------------  -----------------
+  #54E6882CBF886030  #952A9BAD60812EAA
+
+[ xProperties : 26 ]
+{ Name:s                                                  Value:?                   }
+//------------------------------------------------------  -------------------------
+  "node/Name"                                             ;string "Vec3 Const"     
+  "node/Position/X"                                       ;f32    376              
+  "node/Position/Y"                                       ;f32    271              
+  "node/Input Pins[]"                                     ;s64    3                
+  "node/Input Pins[G:0]/pin/PinGUID/Value"                ;u64    #CCE6882CBF886031
+  "node/Input Pins[G:0]/ConnectionGUID/Value"             ;u64    #0               
+  "node/Input Pins[G:1]/pin/PinGUID/Value"                ;u64    #2CE6882CBF886032
+  "node/Input Pins[G:1]/ConnectionGUID/Value"             ;u64    #0               
+  "node/Input Pins[G:2]/pin/PinGUID/Value"                ;u64    #ACE6882CBF886033
+  "node/Input Pins[G:2]/ConnectionGUID/Value"             ;u64    #0               
+  "node/Output Pins[]"                                    ;s64    1                
+  "node/Output Pins[G:0]/pin/PinGUID/Value"               ;u64    #34E6882CBF886034
+  "node/Output Pins[G:0]/subelements[]"                   ;s64    3                
+  "node/Output Pins[G:0]/subelements[G:0]/PinGUID/Value"  ;u64    #A4E6882CBF886035
+  "node/Output Pins[G:0]/subelements[G:1]/PinGUID/Value"  ;u64    #D4E6882CBF886036
+  "node/Output Pins[G:0]/subelements[G:2]/PinGUID/Value"  ;u64    #A4E6882CBF886037
+  "node/Value/Props[]"                                    ;s64    3                
+  "node/Value/Props[G:0]/Name"                            ;string "x"              
+  "node/Value/Props[G:0]/Value/Type"                      ;enum   "FLOAT"          
+  "node/Value/Props[G:0]/Value/Float"                     ;f32    1                
+  "node/Value/Props[G:1]/Name"                            ;string "y"              
+  "node/Value/Props[G:1]/Value/Type"                      ;enum   "FLOAT"          
+  "node/Value/Props[G:1]/Value/Float"                     ;f32    1                
+  "node/Value/Props[G:2]/Name"                            ;string "z"              
+  "node/Value/Props[G:2]/Value/Type"                      ;enum   "FLOAT"          
+  "node/Value/Props[G:2]/Value/Float"                     ;f32    0                
+
+[ Connection ]
+{ Guid:G            }
+//-----------------
+  #8CE6882CBF88C038
+
+[ xProperties : 2 ]
+{ Name:s                            Value:?                }
+//--------------------------------  ----------------------
+  "connection/InputPinGuid/Value"   ;u64 #4CE6882CBF87C02E
+  "connection/OutputPinGuid/Value"  ;u64 #34E6882CBF886034
