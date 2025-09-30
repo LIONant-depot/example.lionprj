@@ -94,7 +94,8 @@ for %%P in (%LINK_PLUGINS%) do (
     )
 )
 
-rem ---------- COPY THE DIFF ---------------
+rem ------ COPY THE CHECK SCRIPT ----------
+cd /d "%ORIGINAL_DIR%" 2>nul
 copy Cache\dependencies\check_changes.bat Cache\Plugins
 
 rem ---------- DONE ---------------
