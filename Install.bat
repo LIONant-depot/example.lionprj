@@ -94,11 +94,16 @@ for %%P in (%LINK_PLUGINS%) do (
     )
 )
 
+rem ---------- COPY THE DIFF ---------------
+copy Cache\dependencies\check_changes.bat Cache\Plugins
+
+rem ---------- DONE ---------------
 echo Completed successfully!
 cd /d "%ORIGINAL_DIR%" 2>nul
 if "%1"=="" pause
 exit /b 0
 
+rem ---------- ERROR ---------------
 :ERROR
 echo An error occurred.
 cd /d "%ORIGINAL_DIR%" 2>nul

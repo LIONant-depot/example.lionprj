@@ -7,32 +7,10 @@
 [ Node ]
 { Guid:G             PrefabGuid:G      }
 //-----------------  -----------------
-  #F577682CB9C1C008  #CF18C47A6F31C2FC
+  #C4E6882CBF4A6017  #4F69E72CCEF792BA
 
 // New Types
 < s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c enum:s >
-
-[ xProperties : 13 ]
-{ Name:s                                       Value:?                   }
-//-------------------------------------------  -------------------------
-  "node/Name"                                  ;string "Final FragOut"  
-  "node/Position/X"                            ;f32    891              
-  "node/Position/Y"                            ;f32    392              
-  "node/Input Pins[]"                          ;s64    2                
-  "node/Input Pins[G:0]/pin/PinGUID/Value"     ;u64    #4577682CB9C1C009
-  "node/Input Pins[G:0]/ConnectionGUID/Value"  ;u64    #6CE6882CBF542022
-  "node/Input Pins[G:1]/pin/PinGUID/Value"     ;u64    #5D77682CB9C1C00A
-  "node/Input Pins[G:1]/ConnectionGUID/Value"  ;u64    #0               
-  "node/Output Pins[]"                         ;s64    0                
-  "node/Value/Props[]"                         ;s64    1                
-  "node/Value/Props[G:0]/Name"                 ;string "a"              
-  "node/Value/Props[G:0]/Value/Type"           ;enum   "FLOAT"          
-  "node/Value/Props[G:0]/Value/Float"          ;f32    1                
-
-[ Node ]
-{ Guid:G             PrefabGuid:G      }
-//-----------------  -----------------
-  #C4E6882CBF4A6017  #4F69E72CCEF792BA
 
 [ xProperties : 13 ]
 { Name:s                                       Value:?                   }
@@ -50,6 +28,28 @@
   "node/Value/Props[G:0]/Name"                 ;string "texture"        
   "node/Value/Props[G:0]/Value/Type"           ;enum   "STRING"         
   "node/Value/Props[G:0]/Value/String"         ;string "SheKnewMe"      
+
+[ Node ]
+{ Guid:G             PrefabGuid:G      }
+//-----------------  -----------------
+  #F577682CB9C1C008  #CF18C47A6F31C2FC
+
+[ xProperties : 13 ]
+{ Name:s                                       Value:?                   }
+//-------------------------------------------  -------------------------
+  "node/Name"                                  ;string "Final FragOut"  
+  "node/Position/X"                            ;f32    891              
+  "node/Position/Y"                            ;f32    392              
+  "node/Input Pins[]"                          ;s64    2                
+  "node/Input Pins[G:0]/pin/PinGUID/Value"     ;u64    #4577682CB9C1C009
+  "node/Input Pins[G:0]/ConnectionGUID/Value"  ;u64    #6CE6882CBF542022
+  "node/Input Pins[G:1]/pin/PinGUID/Value"     ;u64    #5D77682CB9C1C00A
+  "node/Input Pins[G:1]/ConnectionGUID/Value"  ;u64    #0               
+  "node/Output Pins[]"                         ;s64    0                
+  "node/Value/Props[]"                         ;s64    1                
+  "node/Value/Props[G:0]/Name"                 ;string "a"              
+  "node/Value/Props[G:0]/Value/Type"           ;enum   "FLOAT"          
+  "node/Value/Props[G:0]/Value/Float"          ;f32    1                
 
 [ Node ]
 { Guid:G             PrefabGuid:G      }
@@ -137,17 +137,6 @@
 [ Connection ]
 { Guid:G            }
 //-----------------
-  #7CE6882CBF50E01A
-
-[ xProperties : 2 ]
-{ Name:s                            Value:?                }
-//--------------------------------  ----------------------
-  "connection/InputPinGuid/Value"   ;u64 #74E6882CBF496010
-  "connection/OutputPinGuid/Value"  ;u64 #2CE6882CBF4A6019
-
-[ Connection ]
-{ Guid:G            }
-//-----------------
   #D4E6882CBF53E021
 
 [ xProperties : 2 ]
@@ -155,6 +144,17 @@
 //--------------------------------  ----------------------
   "connection/InputPinGuid/Value"   ;u64 #24E6882CBF53601C
   "connection/OutputPinGuid/Value"  ;u64 #54E6882CBF496012
+
+[ Connection ]
+{ Guid:G            }
+//-----------------
+  #7CE6882CBF50E01A
+
+[ xProperties : 2 ]
+{ Name:s                            Value:?                }
+//--------------------------------  ----------------------
+  "connection/InputPinGuid/Value"   ;u64 #74E6882CBF496010
+  "connection/OutputPinGuid/Value"  ;u64 #2CE6882CBF4A6019
 
 [ Connection ]
 { Guid:G            }
