@@ -95,6 +95,7 @@ for %%P in (%LINK_PLUGINS%) do (
 )
 
 echo Completed successfully!
+cd /d "%ORIGINAL_DIR%" 2>nul
 if "%1"=="" pause
 exit /b 0
 
