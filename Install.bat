@@ -1,8 +1,10 @@
 @echo off
+setlocal EnableDelayedExpansion
+
 set "ORIGINAL_DIR=%CD%"
 
+rem Clean and recreate Cache folder
 rmdir /s /q Cache
-
 mkdir Cache
 if errorlevel 1 (
     echo Failed to create Cache folder.
@@ -32,92 +34,64 @@ if errorlevel 1 (
 )
 
 rem ---------- DEPOTS ---------------
-git clone --depth 1 https://github.com/LIONant-depot/xvirtual_folders.plugin
+set "PLUGINS=xvirtual_folders.plugin xmaterial.plugin xtexture.plugin xgeom.plugin"
+for %%P in (%PLUGINS%) do (
+    echo Cloning %%P...
+    git clone --depth 1 https://github.com/LIONant-depot/%%P
+    if errorlevel 1 (
+        echo Failed to clone %%P.
+        goto :ERROR
+    )
+)
+
+rem ---------- CREATE WORM HOLE FOR DEPENDENCIES ---------------
+mkdir ..\dependencies
 if errorlevel 1 (
-    echo Failed to clone xvirtual_folders.plugin.
+    echo Failed to create dependencies folder.
     goto :ERROR
 )
 
-git clone --depth 1 https://github.com/LIONant-depot/xmaterial.plugin
-if errorlevel 1 (
-    echo Failed to clone xmaterial.plugin.
-    goto :ERROR
-)
+rem Resolve absolute path for dependencies
+for %%F in ("..\dependencies") do set "dependencies_full=%%~fF"
 
-git clone --depth 1 https://github.com/LIONant-depot/xtexture.plugin
-if errorlevel 1 (
-    echo Failed to clone xtexture.plugin.
-    goto :ERROR
-)
-
-git clone --depth 1 https://github.com/LIONant-depot/xgeom.plugin
-if errorlevel 1 (
-    echo Failed to clone xgeom.plugin.
-    goto :ERROR
+rem Create symbolic links for plugins requiring dependencies
+set "LINK_PLUGINS=xmaterial.plugin xgeom.plugin xtexture.plugin"
+for %%P in (%LINK_PLUGINS%) do (
+    echo Creating symbolic link for %%P\dependencies
+    if exist "%%P\dependencies" (
+        echo Error: %%P\dependencies already exists.
+        goto :ERROR
+    )
+    mklink /D "%CD%\%%P\dependencies" "!dependencies_full!"
+    if errorlevel 1 (
+        echo Failed to create symbolic link for %%P\dependencies.
+        goto :ERROR
+    )
 )
 
 rem ---------- INSTALLATIONS ---------------
-if not exist xmaterial.plugin\build\CreateAndBuildProject.bat (
-    echo CreateAndBuildProject.bat not found in xmaterial.plugin.
-    goto :ERROR
-)
-cd xmaterial.plugin\build
-if errorlevel 1 (
-    echo Failed to change to xmaterial.plugin\build directory.
-    goto :ERROR
-)
-call CreateAndBuildProject.bat "return"
-if errorlevel 1 (
-    echo Failed to execute CreateAndBuildProject.bat for xmaterial.plugin.
+for %%P in (%LINK_PLUGINS%) do (
+    if not exist %%P\build\CreateAndBuildProject.bat (
+        echo CreateAndBuildProject.bat not found in %%P.
+        goto :ERROR
+    )
+    echo Running CreateAndBuildProject.bat for %%P...
+    cd %%P\build
+    if errorlevel 1 (
+        echo Failed to change to %%P\build directory.
+        goto :ERROR
+    )
+    call CreateAndBuildProject.bat "return"
+    if errorlevel 1 (
+        echo Failed to execute CreateAndBuildProject.bat for %%P.
+        cd /d "%ORIGINAL_DIR%\Cache\Plugins"
+        goto :ERROR
+    )
     cd /d "%ORIGINAL_DIR%\Cache\Plugins"
-    goto :ERROR
-)
-cd /d "%ORIGINAL_DIR%\Cache\Plugins"
-if errorlevel 1 (
-    echo Failed to return to Plugins directory.
-    goto :ERROR
-)
-
-if not exist xtexture.plugin\build\CreateAndBuildProject.bat (
-    echo CreateAndBuildProject.bat not found in xtexture.plugin.
-    goto :ERROR
-)
-cd xtexture.plugin\build
-if errorlevel 1 (
-    echo Failed to change to xtexture.plugin\build directory.
-    goto :ERROR
-)
-call CreateAndBuildProject.bat "return"
-if errorlevel 1 (
-    echo Failed to execute CreateAndBuildProject.bat for xtexture.plugin.
-    cd /d "%ORIGINAL_DIR%\Cache\Plugins"
-    goto :ERROR
-)
-cd /d "%ORIGINAL_DIR%\Cache\Plugins"
-if errorlevel 1 (
-    echo Failed to return to Plugins directory.
-    goto :ERROR
-)
-
-if not exist xgeom.plugin\build\CreateAndBuildProject.bat (
-    echo CreateAndBuildProject.bat not found in xgeom.plugin.
-    goto :ERROR
-)
-cd xgeom.plugin\build
-if errorlevel 1 (
-    echo Failed to change to xgeom.plugin\build directory.
-    goto :ERROR
-)
-call CreateAndBuildProject.bat "return"
-if errorlevel 1 (
-    echo Failed to execute CreateAndBuildProject.bat for xgeom.plugin.
-    cd /d "%ORIGINAL_DIR%\Cache\Plugins"
-    goto :ERROR
-)
-cd /d "%ORIGINAL_DIR%\Cache\Plugins"
-if errorlevel 1 (
-    echo Failed to return to Plugins directory.
-    goto :ERROR
+    if errorlevel 1 (
+        echo Failed to return to Plugins directory.
+        goto :ERROR
+    )
 )
 
 echo Completed successfully!
