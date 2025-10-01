@@ -3,8 +3,10 @@ setlocal EnableDelayedExpansion
 
 set "ORIGINAL_DIR=%CD%"
 
-rem Clean and recreate Cache folder
-rmdir /s /q Cache
+rem Clean
+rem rmdir /s /q Cache
+
+rem Recreate Cache folder
 mkdir Cache
 if errorlevel 1 (
     echo Failed to create Cache folder.
