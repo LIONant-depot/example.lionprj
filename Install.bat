@@ -8,20 +8,13 @@ rem rmdir /s /q Cache
 
 rem Recreate Cache folder
 mkdir Cache
-if errorlevel 1 (
-    echo Failed to create Cache folder.
-    exit /b 1
-)
 cd Cache
 if errorlevel 1 (
     echo Failed to change to Cache directory.
     exit /b 1
 )
+
 mkdir Plugins
-if errorlevel 1 (
-    echo Failed to create Plugins folder.
-    exit /b 1
-)
 cd Plugins
 if errorlevel 1 (
     echo Failed to change to Plugins directory.
@@ -38,20 +31,22 @@ if errorlevel 1 (
 rem ---------- DEPOTS ---------------
 set "PLUGINS=xvirtual_folders.plugin xmaterial.plugin xtexture.plugin xgeom.plugin"
 for %%P in (%PLUGINS%) do (
-    echo Cloning %%P...
-    git clone --depth 1 https://github.com/LIONant-depot/%%P
-    if errorlevel 1 (
-        echo Failed to clone %%P.
-        goto :ERROR
+
+    if exist "%%P" (
+        echo Already exist skipping the clone %%P.
+    ) else (
+
+        echo Cloning %%P...
+        git clone --depth 1 https://github.com/LIONant-depot/%%P
+        if errorlevel 1 (
+            echo Failed to clone %%P.
+            goto :ERROR
+        )
     )
 )
 
 rem ---------- CREATE WORM HOLE FOR DEPENDENCIES ---------------
 mkdir ..\dependencies
-if errorlevel 1 (
-    echo Failed to create dependencies folder.
-    goto :ERROR
-)
 
 rem Resolve absolute path for dependencies
 for %%F in ("..\dependencies") do set "dependencies_full=%%~fF"
@@ -62,12 +57,12 @@ for %%P in (%LINK_PLUGINS%) do (
     echo Creating symbolic link for %%P\dependencies
     if exist "%%P\dependencies" (
         echo Error: %%P\dependencies already exists.
-        goto :ERROR
-    )
-    mklink /D "%CD%\%%P\dependencies" "!dependencies_full!"
-    if errorlevel 1 (
-        echo Failed to create symbolic link for %%P\dependencies.
-        goto :ERROR
+    ) else (
+        mklink /D "%CD%\%%P\dependencies" "!dependencies_full!"
+        if errorlevel 1 (
+            echo Failed to create symbolic link for %%P\dependencies.
+            goto :ERROR
+        )
     )
 )
 
