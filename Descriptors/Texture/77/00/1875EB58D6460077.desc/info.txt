@@ -5,15 +5,13 @@
      1        0   
 
 // New Types
-< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s u64:G s64:D bool:c enum:s >
+< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s u64:G s64:D bool:c full_guid:GG enum:s >
 
-[ xProperties : 7 ]
+[ xProperties : 5 ]
 { Name:s                                 Value:?                                                                                      }
 //-------------------------------------  --------------------------------------------------------------------------------------------
   "Info/Name"                            ;string "meadow_2_4k"                                                                       
   "Info/Comment"                         ;string "This is an example on how you can use a .hdr 2d image and covert it into a cubemap"
-  "Info/Details/GUID/Instance"           ;u64    #1875EB58D6460077                                                                   
-  "Info/Details/GUID/Type"               ;u64    #6701D481518BD833                                                                   
-  "Info/Details/RscLinks[]"              ;s64    1                                                                                   
-  "Info/Details/RscLinks[G:0]/Instance"  ;u64    #182B65C51406000D                                                                   
-  "Info/Details/RscLinks[G:0]/Type"      ;u64    #C4D90C5F0CC43021                                                                   
+  "Info/Details/GUID"                   ;full_guid #1875EB58D6460077 #6701D481518BD833
+  "Info/Details/RscLinks[]"             ;s64       1                                  
+  "Info/Details/RscLinks[G:0]"          ;full_guid #182B65C51406000D #C4D90C5F0CC43021

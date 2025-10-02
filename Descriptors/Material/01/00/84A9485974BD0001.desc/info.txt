@@ -5,15 +5,13 @@
      1        0   
 
 // New Types
-< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c enum:s >
+< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
 
-[ xProperties : 7 ]
+[ xProperties : 5 ]
 { Name:s                                 Value:?                   }
 //-------------------------------------  -------------------------
   "Info/Name"                            ;string "Basic"          
-  "Info/Comment"                         ;string ""               
-  "Info/Details/GUID/Instance"           ;u64    #84A9485974BD0001
-  "Info/Details/GUID/Type"               ;u64    #C59E01444175409E
-  "Info/Details/RscLinks[]"              ;s64    1                
-  "Info/Details/RscLinks[G:0]/Instance"  ;u64    #31C2185970FB0001
-  "Info/Details/RscLinks[G:0]/Type"      ;u64    #C4D90C5F0CC43021
+  "Info/Comment"                         ;string ""  
+  "Info/Details/GUID"                   ;full_guid #84A9485974BD0001 #C59E01444175409E
+  "Info/Details/RscLinks[]"             ;s64       1                                  
+  "Info/Details/RscLinks[G:0]"          ;full_guid #31C2185970FB0001 #C4D90C5F0CC43021
