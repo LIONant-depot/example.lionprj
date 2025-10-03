@@ -5,7 +5,7 @@
      1        0   
 
 // New Types
-< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c enum:s >
+< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
 
 [ xProperties : 22 ]
 { Name:s                                             Value:?                          }

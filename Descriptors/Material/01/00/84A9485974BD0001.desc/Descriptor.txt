@@ -7,32 +7,10 @@
 [ Node ]
 { Guid:G             PrefabGuid:G      }
 //-----------------  -----------------
-  #64E6882CBF87C02D  #CF18C47A6F31C2FC
+  #54E6882CBF886030  #952A9BAD60812EAA
 
 // New Types
-< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c enum:s >
-
-[ xProperties : 13 ]
-{ Name:s                                       Value:?                   }
-//-------------------------------------------  -------------------------
-  "node/Name"                                  ;string "Final FragOut"  
-  "node/Position/X"                            ;f32    735              
-  "node/Position/Y"                            ;f32    330              
-  "node/Input Pins[]"                          ;s64    2                
-  "node/Input Pins[G:0]/pin/PinGUID/Value"     ;u64    #4CE6882CBF87C02E
-  "node/Input Pins[G:0]/ConnectionGUID/Value"  ;u64    #8CE6882CBF88C038
-  "node/Input Pins[G:1]/pin/PinGUID/Value"     ;u64    #14E6882CBF87C02F
-  "node/Input Pins[G:1]/ConnectionGUID/Value"  ;u64    #0               
-  "node/Output Pins[]"                         ;s64    0                
-  "node/Value/Props[]"                         ;s64    1                
-  "node/Value/Props[G:0]/Name"                 ;string "a"              
-  "node/Value/Props[G:0]/Value/Type"           ;enum   "FLOAT"          
-  "node/Value/Props[G:0]/Value/Float"          ;f32    1                
-
-[ Node ]
-{ Guid:G             PrefabGuid:G      }
-//-----------------  -----------------
-  #54E6882CBF886030  #952A9BAD60812EAA
+< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
 
 [ xProperties : 26 ]
 { Name:s                                                  Value:?                   }
@@ -63,6 +41,28 @@
   "node/Value/Props[G:2]/Name"                            ;string "z"              
   "node/Value/Props[G:2]/Value/Type"                      ;enum   "FLOAT"          
   "node/Value/Props[G:2]/Value/Float"                     ;f32    0                
+
+[ Node ]
+{ Guid:G             PrefabGuid:G      }
+//-----------------  -----------------
+  #64E6882CBF87C02D  #CF18C47A6F31C2FC
+
+[ xProperties : 13 ]
+{ Name:s                                       Value:?                   }
+//-------------------------------------------  -------------------------
+  "node/Name"                                  ;string "Final FragOut"  
+  "node/Position/X"                            ;f32    735              
+  "node/Position/Y"                            ;f32    330              
+  "node/Input Pins[]"                          ;s64    2                
+  "node/Input Pins[G:0]/pin/PinGUID/Value"     ;u64    #4CE6882CBF87C02E
+  "node/Input Pins[G:0]/ConnectionGUID/Value"  ;u64    #8CE6882CBF88C038
+  "node/Input Pins[G:1]/pin/PinGUID/Value"     ;u64    #14E6882CBF87C02F
+  "node/Input Pins[G:1]/ConnectionGUID/Value"  ;u64    #0               
+  "node/Output Pins[]"                         ;s64    0                
+  "node/Value/Props[]"                         ;s64    1                
+  "node/Value/Props[G:0]/Name"                 ;string "a"              
+  "node/Value/Props[G:0]/Value/Type"           ;enum   "FLOAT"          
+  "node/Value/Props[G:0]/Value/Float"          ;f32    1                
 
 [ Connection ]
 { Guid:G            }
