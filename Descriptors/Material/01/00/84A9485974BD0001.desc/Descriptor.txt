@@ -31,16 +31,16 @@
   "node/Output Pins[G:0]/subelements[G:0]/PinGUID/Value"  ;u64    #A4E6882CBF886035
   "node/Output Pins[G:0]/subelements[G:1]/PinGUID/Value"  ;u64    #D4E6882CBF886036
   "node/Output Pins[G:0]/subelements[G:2]/PinGUID/Value"  ;u64    #A4E6882CBF886037
-  "node/Value/Props[]"                                    ;s64    3                
-  "node/Value/Props[G:0]/Name"                            ;string "x"              
-  "node/Value/Props[G:0]/Value/Type"                      ;enum   "FLOAT"          
-  "node/Value/Props[G:0]/Value/Float"                     ;f32    1                
-  "node/Value/Props[G:1]/Name"                            ;string "y"              
-  "node/Value/Props[G:1]/Value/Type"                      ;enum   "FLOAT"          
-  "node/Value/Props[G:1]/Value/Float"                     ;f32    1                
-  "node/Value/Props[G:2]/Name"                            ;string "z"              
-  "node/Value/Props[G:2]/Value/Type"                      ;enum   "FLOAT"          
-  "node/Value/Props[G:2]/Value/Float"                     ;f32    0                
+  "node/Params[]"                                         ;s64    3                
+  "node/Params[G:0]/Name"                                 ;string "x"              
+  "node/Params[G:0]/Type"                                 ;enum   "FLOAT"          
+  "node/Params[G:0]/Float"                                ;f32    1                
+  "node/Params[G:1]/Name"                                 ;string "y"              
+  "node/Params[G:1]/Type"                                 ;enum   "FLOAT"          
+  "node/Params[G:1]/Float"                                ;f32    1                
+  "node/Params[G:2]/Name"                                 ;string "z"              
+  "node/Params[G:2]/Type"                                 ;enum   "FLOAT"          
+  "node/Params[G:2]/Float"                                ;f32    0                
 
 [ Node ]
 { Guid:G             PrefabGuid:G      }
@@ -59,10 +59,10 @@
   "node/Input Pins[G:1]/pin/PinGUID/Value"     ;u64    #14E6882CBF87C02F
   "node/Input Pins[G:1]/ConnectionGUID/Value"  ;u64    #0               
   "node/Output Pins[]"                         ;s64    0                
-  "node/Value/Props[]"                         ;s64    1                
-  "node/Value/Props[G:0]/Name"                 ;string "a"              
-  "node/Value/Props[G:0]/Value/Type"           ;enum   "FLOAT"          
-  "node/Value/Props[G:0]/Value/Float"          ;f32    1                
+  "node/Params[]"                              ;s64    1                
+  "node/Params[G:0]/Name"                      ;string "a"              
+  "node/Params[G:0]/Type"                      ;enum   "FLOAT"          
+  "node/Params[G:0]/Float"                     ;f32    1                
 
 [ Connection ]
 { Guid:G            }

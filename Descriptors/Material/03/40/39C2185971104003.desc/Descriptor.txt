@@ -30,7 +30,7 @@
   "node/Output Pins[G:0]/subelements[G:1]/PinGUID/Value"  ;u64    #16E1102D75DAC029
   "node/Output Pins[G:0]/subelements[G:2]/PinGUID/Value"  ;u64    #5EE1102D75DAC02A
   "node/Output Pins[G:0]/subelements[G:3]/PinGUID/Value"  ;u64    #A6E1102D75DAC02B
-  "node/Value/Props[]"                                    ;s64    0                
+  "node/Params[]"                                         ;s64    0                
 
 [ Node ]
 { Guid:G             PrefabGuid:G      }
@@ -55,7 +55,7 @@
   "node/Output Pins[G:1]/subelements[]"                   ;s64    2                
   "node/Output Pins[G:1]/subelements[G:0]/PinGUID/Value"  ;u64    #E4E6882CBF57802A
   "node/Output Pins[G:1]/subelements[G:1]/PinGUID/Value"  ;u64    #ECE6882CBF57802B
-  "node/Value/Props[]"                                    ;s64    0                
+  "node/Params[]"                                         ;s64    0                
 
 [ Node ]
 { Guid:G             PrefabGuid:G      }
@@ -63,21 +63,21 @@
   #AEE1102D75D60018  #4F69E72CCEF792BA
 
 [ xProperties : 13 ]
-{ Name:s                                         Value:?                                        }
-//---------------------------------------------  ----------------------------------------------
-  "node/Name"                                    ;string    "Sampler2D"                        
-  "node/Position/X"                              ;f32       28                                 
-  "node/Position/Y"                              ;f32       617                                
-  "node/Input Pins[]"                            ;s64       1                                  
-  "node/Input Pins[G:0]/pin/PinGUID/Value"       ;u64       #16E1102D75D60019                  
-  "node/Input Pins[G:0]/ConnectionGUID/Value"    ;u64       #0                                 
-  "node/Output Pins[]"                           ;s64       1                                  
-  "node/Output Pins[G:0]/pin/PinGUID/Value"      ;u64       #36E1102D75D6001A                  
-  "node/Output Pins[G:0]/subelements[]"          ;s64       0                                  
-  "node/Value/Props[]"                           ;s64       1                                  
-  "node/Value/Props[G:0]/Name"                   ;string    "texture"                          
-  "node/Value/Props[G:0]/Value/Type"             ;enum      "TEXTURE_RESOURCE"                 
-  "node/Value/Props[G:0]/Value/TextureResource"  ;full_guid #189EDF8BF1940033 #6701D481518BD833
+{ Name:s                                       Value:?                                        }
+//-------------------------------------------  ----------------------------------------------
+  "node/Name"                                  ;string    "Sampler2D"                        
+  "node/Position/X"                            ;f32       28                                 
+  "node/Position/Y"                            ;f32       617                                
+  "node/Input Pins[]"                          ;s64       1                                  
+  "node/Input Pins[G:0]/pin/PinGUID/Value"     ;u64       #16E1102D75D60019                  
+  "node/Input Pins[G:0]/ConnectionGUID/Value"  ;u64       #0                                 
+  "node/Output Pins[]"                         ;s64       1                                  
+  "node/Output Pins[G:0]/pin/PinGUID/Value"    ;u64       #36E1102D75D6001A                  
+  "node/Output Pins[G:0]/subelements[]"        ;s64       0                                  
+  "node/Params[]"                              ;s64       1                                  
+  "node/Params[G:0]/Name"                      ;string    "texture"                          
+  "node/Params[G:0]/Type"                      ;enum      "RESOURCE"                         
+  "node/Params[G:0]/Resource"                  ;full_guid #189EDF8BF1940033 #6701D481518BD833
 
 [ Node ]
 { Guid:G             PrefabGuid:G      }
@@ -85,21 +85,21 @@
   #C4E6882CBF4A6017  #4F69E72CCEF792BA
 
 [ xProperties : 13 ]
-{ Name:s                                         Value:?                                        }
-//---------------------------------------------  ----------------------------------------------
-  "node/Name"                                    ;string    "Sampler2D"                        
-  "node/Position/X"                              ;f32       220                                
-  "node/Position/Y"                              ;f32       185                                
-  "node/Input Pins[]"                            ;s64       1                                  
-  "node/Input Pins[G:0]/pin/PinGUID/Value"       ;u64       #E4E6882CBF4A6018                  
-  "node/Input Pins[G:0]/ConnectionGUID/Value"    ;u64       #0                                 
-  "node/Output Pins[]"                           ;s64       1                                  
-  "node/Output Pins[G:0]/pin/PinGUID/Value"      ;u64       #2CE6882CBF4A6019                  
-  "node/Output Pins[G:0]/subelements[]"          ;s64       0                                  
-  "node/Value/Props[]"                           ;s64       1                                  
-  "node/Value/Props[G:0]/Name"                   ;string    "texture"                          
-  "node/Value/Props[G:0]/Value/Type"             ;enum      "TEXTURE_RESOURCE"                 
-  "node/Value/Props[G:0]/Value/TextureResource"  ;full_guid #A8AC000D81D711F3 #6701D481518BD833
+{ Name:s                                       Value:?                                        }
+//-------------------------------------------  ----------------------------------------------
+  "node/Name"                                  ;string    "Sampler2D"                        
+  "node/Position/X"                            ;f32       220                                
+  "node/Position/Y"                            ;f32       185                                
+  "node/Input Pins[]"                          ;s64       1                                  
+  "node/Input Pins[G:0]/pin/PinGUID/Value"     ;u64       #E4E6882CBF4A6018                  
+  "node/Input Pins[G:0]/ConnectionGUID/Value"  ;u64       #0                                 
+  "node/Output Pins[]"                         ;s64       1                                  
+  "node/Output Pins[G:0]/pin/PinGUID/Value"    ;u64       #2CE6882CBF4A6019                  
+  "node/Output Pins[G:0]/subelements[]"        ;s64       0                                  
+  "node/Params[]"                              ;s64       1                                  
+  "node/Params[G:0]/Name"                      ;string    "texture"                          
+  "node/Params[G:0]/Type"                      ;enum      "RESOURCE"                         
+  "node/Params[G:0]/Resource"                  ;full_guid #A8AC000D81D711F3 #6701D481518BD833
 
 [ Node ]
 { Guid:G             PrefabGuid:G      }
@@ -124,7 +124,7 @@
   "node/Output Pins[G:0]/subelements[G:1]/PinGUID/Value"  ;u64    #5CE6882CBF496014
   "node/Output Pins[G:0]/subelements[G:2]/PinGUID/Value"  ;u64    #D4E6882CBF496015
   "node/Output Pins[G:0]/subelements[G:3]/PinGUID/Value"  ;u64    #1CE6882CBF496016
-  "node/Value/Props[]"                                    ;s64    0                
+  "node/Params[]"                                         ;s64    0                
 
 [ Node ]
 { Guid:G             PrefabGuid:G      }
@@ -146,7 +146,7 @@
   "node/Output Pins[G:0]/subelements[G:0]/PinGUID/Value"  ;u64    #1CE6882CBF53601E
   "node/Output Pins[G:0]/subelements[G:1]/PinGUID/Value"  ;u64    #8CE6882CBF53601F
   "node/Output Pins[G:0]/subelements[G:2]/PinGUID/Value"  ;u64    #14E6882CBF536020
-  "node/Value/Props[]"                                    ;s64    0                
+  "node/Params[]"                                         ;s64    0                
 
 [ Node ]
 { Guid:G             PrefabGuid:G      }
@@ -171,7 +171,7 @@
   "node/Output Pins[G:0]/subelements[G:1]/PinGUID/Value"  ;u64    #7EE1102D75D8A020
   "node/Output Pins[G:0]/subelements[G:2]/PinGUID/Value"  ;u64    #5EE1102D75D8A021
   "node/Output Pins[G:0]/subelements[G:3]/PinGUID/Value"  ;u64    #F6E1102D75D8A022
-  "node/Value/Props[]"                                    ;s64    0                
+  "node/Params[]"                                         ;s64    0                
 
 [ Node ]
 { Guid:G             PrefabGuid:G      }
@@ -190,10 +190,10 @@
   "node/Input Pins[G:1]/pin/PinGUID/Value"     ;u64    #5D77682CB9C1C00A
   "node/Input Pins[G:1]/ConnectionGUID/Value"  ;u64    #0               
   "node/Output Pins[]"                         ;s64    0                
-  "node/Value/Props[]"                         ;s64    1                
-  "node/Value/Props[G:0]/Name"                 ;string "a"              
-  "node/Value/Props[G:0]/Value/Type"           ;enum   "FLOAT"          
-  "node/Value/Props[G:0]/Value/Float"          ;f32    1                
+  "node/Params[]"                              ;s64    1                
+  "node/Params[G:0]/Name"                      ;string "a"              
+  "node/Params[G:0]/Type"                      ;enum   "FLOAT"          
+  "node/Params[G:0]/Float"                     ;f32    1                
 
 [ Connection ]
 { Guid:G           }
