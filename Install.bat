@@ -29,7 +29,7 @@ if errorlevel 1 (
 )
 
 rem ---------- DEPOTS ---------------
-set "PLUGINS=xvirtual_folders.plugin xmaterial.plugin xtexture.plugin xgeom.plugin"
+set "PLUGINS=xvirtual_folders.plugin xmaterial.plugin xtexture.plugin xgeom.plugin xmaterial_instance.plugin"
 for %%P in (%PLUGINS%) do (
 
     if exist "%%P" (
@@ -52,7 +52,7 @@ rem Resolve absolute path for dependencies
 for %%F in ("..\dependencies") do set "dependencies_full=%%~fF"
 
 rem Create symbolic links for plugins requiring dependencies
-set "LINK_PLUGINS=xmaterial.plugin xgeom.plugin xtexture.plugin"
+set "LINK_PLUGINS=xmaterial.plugin xgeom.plugin xtexture.plugin xmaterial_instance.plugin"
 for %%P in (%LINK_PLUGINS%) do (
     echo Creating symbolic link for %%P\dependencies
     if exist "%%P\dependencies" (
