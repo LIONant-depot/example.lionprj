@@ -12,6 +12,6 @@
 //-------------------------------------  -------------------------
   "Info/Name"                            ;string "One Texture"    
   "Info/Comment"                         ;string "" 
-  "Info/Details/GUID"                   ;full_guid #39C2185971104003 #C59E01444175409E
+  "Info/Details/GUID"                   ;full_guid #39C2185971104003 #8B3C028882EA813D
   "Info/Details/RscLinks[]"             ;s64       1                                  
   "Info/Details/RscLinks[G:0]"          ;full_guid #31C2185970FB0001 #C4D90C5F0CC43021

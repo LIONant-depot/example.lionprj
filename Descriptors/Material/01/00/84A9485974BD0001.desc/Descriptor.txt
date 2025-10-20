@@ -12,7 +12,7 @@
 // New Types
 < s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
 
-[ xProperties : 26 ]
+[ xProperties : 27 ]
 { Name:s                                                  Value:?                   }
 //------------------------------------------------------  -------------------------
   "node/Name"                                             ;string "Vec3 Const"     
@@ -41,13 +41,14 @@
   "node/Params[G:2]/Name"                                 ;string "z"              
   "node/Params[G:2]/Type"                                 ;enum   "FLOAT"          
   "node/Params[G:2]/Float"                                ;f32    0                
+  "node/bCanExpose"                                       ;bool   0                
 
 [ Node ]
 { Guid:G             PrefabGuid:G      }
 //-----------------  -----------------
   #64E6882CBF87C02D  #CF18C47A6F31C2FC
 
-[ xProperties : 13 ]
+[ xProperties : 14 ]
 { Name:s                                       Value:?                   }
 //-------------------------------------------  -------------------------
   "node/Name"                                  ;string "Final FragOut"  
@@ -63,6 +64,7 @@
   "node/Params[G:0]/Name"                      ;string "a"              
   "node/Params[G:0]/Type"                      ;enum   "FLOAT"          
   "node/Params[G:0]/Float"                     ;f32    1                
+  "node/bCanExpose"                            ;bool   0                
 
 [ Connection ]
 { Guid:G            }
