@@ -7,18 +7,20 @@
 // New Types
 < s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
 
-[ xProperties : 12 ]
+[ xProperties : 14 ]
 { Name:s                                                        Value:?                                        }
 //------------------------------------------------------------  ----------------------------------------------
   "material_instance_descriptor/MaterialRef"                    ;full_guid #39C2185971104003 #8B3C028882EA813D
   "material_instance_descriptor/Textures[]"                     ;s64       2                                  
-  "material_instance_descriptor/Textures[G:0]"                  ;full_guid #A8AC000D81D711F3 #6701D481518BD833
+  "material_instance_descriptor/Textures[G:0]"                  ;full_guid #6542000CC1D6FB6F #6701D481518BD833
   "material_instance_descriptor/Textures[G:1]"                  ;full_guid #189EDF8BF1940033 #6701D481518BD833
   "material_instance_descriptor/TextureDefaults[]"              ;s64       2                                  
   "material_instance_descriptor/TextureDefaults[G:0]/Name"      ;string    "Texture 1"                        
   "material_instance_descriptor/TextureDefaults[G:0]/Index"     ;s32       0                                  
+  "material_instance_descriptor/TextureDefaults[G:0]/GUID"      ;u64       #C4E6882CBF4A6017                  
   "material_instance_descriptor/TextureDefaults[G:1]/Name"      ;string    "Texture 2"                        
   "material_instance_descriptor/TextureDefaults[G:1]/Index"     ;s32       1                                  
+  "material_instance_descriptor/TextureDefaults[G:1]/GUID"      ;u64       #AEE1102D75D60018                  
   "material_instance_descriptor/FinalTextures[]"                ;s64       2                                  
   "material_instance_descriptor/FinalTextures[G:0]/TextureRef"  ;full_guid #A8AC000D81D711F3 #6701D481518BD833
   "material_instance_descriptor/FinalTextures[G:1]/TextureRef"  ;full_guid #189EDF8BF1940033 #6701D481518BD833
