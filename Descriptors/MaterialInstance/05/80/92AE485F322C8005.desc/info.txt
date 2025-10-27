@@ -10,7 +10,7 @@
 [ xProperties : 5 ]
 { Name:s                        Value:?                                        }
 //----------------------------  ----------------------------------------------
-  "Info/Name"                   ;string    ""                                 
+  "Info/Name"                   ;string    "Material Instance 01"             
   "Info/Comment"                ;string    ""                                 
   "Info/Details/GUID"           ;full_guid #92AE485F322C8005 #B673C5DA4A4A70AD
   "Info/Details/RscLinks[]"     ;s64       1                                  
