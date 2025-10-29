@@ -1,11 +1,9 @@
 @echo off
 setlocal EnableDelayedExpansion
-
 set "ORIGINAL_DIR=%CD%"
 
 rem Clean
 rem rmdir /s /q Cache
-
 rem Recreate Cache folder
 mkdir Cache
 cd Cache
@@ -13,7 +11,6 @@ if errorlevel 1 (
     echo Failed to change to Cache directory.
     exit /b 1
 )
-
 mkdir Plugins
 cd Plugins
 if errorlevel 1 (
@@ -28,14 +25,14 @@ if errorlevel 1 (
     goto :ERROR
 )
 
-rem ---------- DEPOTS ---------------
-set "PLUGINS=xvirtual_folders.plugin xmaterial.plugin xtexture.plugin xgeom.plugin xmaterial_instance.plugin"
-for %%P in (%PLUGINS%) do (
+rem ---------- LIST OF PLUGINS ---------------
+set "PLUGINS=xvirtual_folders.plugin xmaterial.plugin xtexture.plugin xgeom.plugin xmaterial_instance.plugin xgeom_static.plugin"
 
+rem ---------- DEPOTS ---------------
+for %%P in (%PLUGINS%) do (
     if exist "%%P" (
         echo Already exist skipping the clone %%P.
     ) else (
-
         echo Cloning %%P...
         git clone --depth 1 https://github.com/LIONant-depot/%%P
         if errorlevel 1 (
@@ -51,9 +48,9 @@ mkdir ..\dependencies
 rem Resolve absolute path for dependencies
 for %%F in ("..\dependencies") do set "dependencies_full=%%~fF"
 
-rem Create symbolic links for plugins requiring dependencies
-set "LINK_PLUGINS=xmaterial.plugin xgeom.plugin xtexture.plugin xmaterial_instance.plugin"
-for %%P in (%LINK_PLUGINS%) do (
+rem Create symbolic links for plugins requiring dependencies (skip xvirtual_folders.plugin)
+for %%P in (%PLUGINS%) do (
+    if "%%P"=="xvirtual_folders.plugin" continue
     echo Creating symbolic link for %%P\dependencies
     if exist "%%P\dependencies" (
         echo Error: %%P\dependencies already exists.
@@ -67,7 +64,8 @@ for %%P in (%LINK_PLUGINS%) do (
 )
 
 rem ---------- INSTALLATIONS ---------------
-for %%P in (%LINK_PLUGINS%) do (
+for %%P in (%PLUGINS%) do (
+    if "%%P"=="xvirtual_folders.plugin" continue
     if not exist %%P\build\CreateAndBuildProject.bat (
         echo CreateAndBuildProject.bat not found in %%P.
         goto :ERROR
