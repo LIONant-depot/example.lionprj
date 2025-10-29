@@ -50,42 +50,48 @@ for %%F in ("..\dependencies") do set "dependencies_full=%%~fF"
 
 rem Create symbolic links for plugins requiring dependencies (skip xvirtual_folders.plugin)
 for %%P in (%PLUGINS%) do (
-    if "%%P"=="xvirtual_folders.plugin" continue
-    echo Creating symbolic link for %%P\dependencies
-    if exist "%%P\dependencies" (
-        echo Error: %%P\dependencies already exists.
+    if "%%P"=="xvirtual_folders.plugin" (
+        rem Skip
     ) else (
-        mklink /D "%CD%\%%P\dependencies" "!dependencies_full!"
-        if errorlevel 1 (
-            echo Failed to create symbolic link for %%P\dependencies.
-            goto :ERROR
+        echo Creating symbolic link for %%P\dependencies
+        if exist "%%P\dependencies" (
+            echo Error: %%P\dependencies already exists.
+        ) else (
+            mklink /D "%CD%\%%P\dependencies" "!dependencies_full!"
+            if errorlevel 1 (
+                echo Failed to create symbolic link for %%P\dependencies.
+                goto :ERROR
+            )
         )
     )
 )
 
 rem ---------- INSTALLATIONS ---------------
 for %%P in (%PLUGINS%) do (
-    if "%%P"=="xvirtual_folders.plugin" continue
-    if not exist %%P\build\CreateAndBuildProject.bat (
-        echo CreateAndBuildProject.bat not found in %%P.
-        goto :ERROR
-    )
-    echo Running CreateAndBuildProject.bat for %%P...
-    cd %%P\build
-    if errorlevel 1 (
-        echo Failed to change to %%P\build directory.
-        goto :ERROR
-    )
-    call CreateAndBuildProject.bat "return"
-    if errorlevel 1 (
-        echo Failed to execute CreateAndBuildProject.bat for %%P.
+    if "%%P"=="xvirtual_folders.plugin" (
+        rem Skip
+    ) else (
+        if not exist %%P\build\CreateAndBuildProject.bat (
+            echo CreateAndBuildProject.bat not found in %%P.
+            goto :ERROR
+        )
+        echo Running CreateAndBuildProject.bat for %%P...
+        cd %%P\build
+        if errorlevel 1 (
+            echo Failed to change to %%P\build directory.
+            goto :ERROR
+        )
+        call CreateAndBuildProject.bat "return"
+        if errorlevel 1 (
+            echo Failed to execute CreateAndBuildProject.bat for %%P.
+            cd /d "%ORIGINAL_DIR%\Cache\Plugins"
+            goto :ERROR
+        )
         cd /d "%ORIGINAL_DIR%\Cache\Plugins"
-        goto :ERROR
-    )
-    cd /d "%ORIGINAL_DIR%\Cache\Plugins"
-    if errorlevel 1 (
-        echo Failed to return to Plugins directory.
-        goto :ERROR
+        if errorlevel 1 (
+            echo Failed to return to Plugins directory.
+            goto :ERROR
+        )
     )
 )
 
