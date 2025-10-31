@@ -26,7 +26,7 @@ if errorlevel 1 (
 )
 
 rem ---------- LIST OF PLUGINS ---------------
-set "PLUGINS=xvirtual_folders.plugin xmaterial.plugin xtexture.plugin xmaterial_instance.plugin xgeom_static.plugin"
+set "PLUGINS=xvirtual_folders.plugin xmaterial.plugin xtexture.plugin xmaterial_instance.plugin xgeom.plugin xgeom_static.plugin"
 
 rem ---------- DEPOTS ---------------
 for %%P in (%PLUGINS%) do (
