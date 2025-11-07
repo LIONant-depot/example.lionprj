@@ -264,7 +264,7 @@
   "node/Output Pins[G:0]/pin/ParamIndex"       ;s32       -1                                 
   "node/Output Pins[G:0]/SubElements[]"        ;s64       0                                  
   "node/Params[]"                              ;s64       1                                  
-  "node/Params[G:0]/Name"                      ;string    "texture"                          
+  "node/Params[G:0]/Name"                      ;string    "Default Texture"                  
   "node/Params[G:0]/Type"                      ;enum      "TEXTURE RESOURCE"                 
   "node/Params[G:0]/TextureRef"                ;full_guid #189EDF8BF1940033 #6701D481518BD833
   "node/Params[G:0]/bCanExpose"                ;bool      1                                  
@@ -439,7 +439,7 @@
   "node/Output Pins[G:0]/pin/ParamIndex"       ;s32       -1                                 
   "node/Output Pins[G:0]/SubElements[]"        ;s64       0                                  
   "node/Params[]"                              ;s64       1                                  
-  "node/Params[G:0]/Name"                      ;string    "texture"                          
+  "node/Params[G:0]/Name"                      ;string    "Default Texture"                  
   "node/Params[G:0]/Type"                      ;enum      "TEXTURE RESOURCE"                 
   "node/Params[G:0]/TextureRef"                ;full_guid #A8AC000D81D711F3 #6701D481518BD833
   "node/Params[G:0]/bCanExpose"                ;bool      1                                  
