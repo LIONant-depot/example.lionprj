@@ -7,34 +7,92 @@
 // New Types
 < s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
 
-[ xProperties : 28 ]
-{ Name:s                                     Value:?                                                 }
-//-----------------------------------------  -------------------------------------------------------
-  "GeomStatic/ImportAsset"                   ;wstring   "Assets\\PuppyDog\\source\\Puppy Robot2.fbx"
-  "GeomStatic/PreTranslation/Scale/X"        ;f32       #3C03126F                                   
-  "GeomStatic/PreTranslation/Scale/Y"        ;f32       #3C03126F                                   
-  "GeomStatic/PreTranslation/Scale/Z"        ;f32       #3C03126F                                   
-  "GeomStatic/PreTranslation/Rotation/X"     ;f32       #0                                          
-  "GeomStatic/PreTranslation/Rotation/Y"     ;f32       #0                                          
-  "GeomStatic/PreTranslation/Rotation/Z"     ;f32       #0                                          
-  "GeomStatic/PreTranslation/Translation/X"  ;f32       #0                                          
-  "GeomStatic/PreTranslation/Translation/Y"  ;f32       #0                                          
-  "GeomStatic/PreTranslation/Translation/Z"  ;f32       #0                                          
-  "GeomStatic/bMergeMeshes"                  ;bool      1                                           
-  "GeomStatic/bHideCopasedMeshes"            ;bool      0                                           
-  "GeomStatic/MeshList[]"                    ;s64       2                                           
-  "GeomStatic/MeshList[G:0]/OriginalName"    ;string    "Cylinder.001"                              
-  "GeomStatic/MeshList[G:0]/Materials[]"     ;s64       1                                           
-  "GeomStatic/MeshList[G:0]/Materials[G:0]"  ;string    "DefaultMaterial"                           
-  "GeomStatic/MeshList[G:0]/Merge"           ;bool      1                                           
-  "GeomStatic/MeshList[G:0]/MeshGUID"        ;u32       #0                                          
-  "GeomStatic/MeshList[G:0]/LODs[]"          ;s64       0                                           
-  "GeomStatic/MeshList[G:1]/OriginalName"    ;string    "MERGED_MESH!!"                             
-  "GeomStatic/MeshList[G:1]/Materials[]"     ;s64       0                                           
-  "GeomStatic/MeshList[G:1]/Merge"           ;bool      0                                           
-  "GeomStatic/MeshList[G:1]/MeshGUID"        ;u32       #0                                          
-  "GeomStatic/MeshList[G:1]/LODs[]"          ;s64       0                                           
-  "GeomStatic/MaterialInstNames[]"           ;s64       1                                           
-  "GeomStatic/MaterialInstNames[G:0]"        ;string    "DefaultMaterial"                           
-  "GeomStatic/MaterialInstance[]"            ;s64       1                                           
-  "GeomStatic/MaterialInstance[G:0]"         ;full_guid #92AE485F322C8005 #B673C5DA4A4A70AD         
+[ xProperties : 86 ]
+{ Name:s                                     Value:?                                               }
+//-----------------------------------------  -----------------------------------------------------
+  "GeomStatic/ImportAsset"                   ;wstring "Assets\\PuppyDog\\source\\Puppy Robot2.fbx"
+  "GeomStatic/PreTranslation/Scale/X"        ;f32     #3C03126F                                   
+  "GeomStatic/PreTranslation/Scale/Y"        ;f32     #3C03126F                                   
+  "GeomStatic/PreTranslation/Scale/Z"        ;f32     #3C03126F                                   
+  "GeomStatic/PreTranslation/Rotation/X"     ;f32     #0                                          
+  "GeomStatic/PreTranslation/Rotation/Y"     ;f32     #43340000                                   
+  "GeomStatic/PreTranslation/Rotation/Z"     ;f32     #0                                          
+  "GeomStatic/PreTranslation/Translation/X"  ;f32     #3F400000                                   
+  "GeomStatic/PreTranslation/Translation/Y"  ;f32     #0                                          
+  "GeomStatic/PreTranslation/Translation/Z"  ;f32     #3F8CCCCD                                   
+  "GeomStatic/bMergeMeshes"                  ;bool    1                                           
+  "GeomStatic/bHideCopasedMeshes"            ;bool    0                                           
+  "GeomStatic/MeshList[]"                    ;s64     11                                          
+  "GeomStatic/MeshList[G:0]/OriginalName"    ;string  "Ear"                                       
+  "GeomStatic/MeshList[G:0]/Materials[]"     ;s64     1                                           
+  "GeomStatic/MeshList[G:0]/Materials[G:0]"  ;string  "Puppy_Robot_MAT"                           
+  "GeomStatic/MeshList[G:0]/Merge"           ;bool    1                                           
+  "GeomStatic/MeshList[G:0]/MeshGUID"        ;u32     #0                                          
+  "GeomStatic/MeshList[G:0]/LODs[]"          ;s64     0                                           
+  "GeomStatic/MeshList[G:1]/OriginalName"    ;string  "Plane"                                     
+  "GeomStatic/MeshList[G:1]/Materials[]"     ;s64     1                                           
+  "GeomStatic/MeshList[G:1]/Materials[G:0]"  ;string  "Puppy_Robot_MAT"                           
+  "GeomStatic/MeshList[G:1]/Merge"           ;bool    1                                           
+  "GeomStatic/MeshList[G:1]/MeshGUID"        ;u32     #0                                          
+  "GeomStatic/MeshList[G:1]/LODs[]"          ;s64     0                                           
+  "GeomStatic/MeshList[G:2]/OriginalName"    ;string  "Body"                                      
+  "GeomStatic/MeshList[G:2]/Materials[]"     ;s64     1                                           
+  "GeomStatic/MeshList[G:2]/Materials[G:0]"  ;string  "Puppy_Robot_MAT"                           
+  "GeomStatic/MeshList[G:2]/Merge"           ;bool    1                                           
+  "GeomStatic/MeshList[G:2]/MeshGUID"        ;u32     #0                                          
+  "GeomStatic/MeshList[G:2]/LODs[]"          ;s64     0                                           
+  "GeomStatic/MeshList[G:3]/OriginalName"    ;string  "Cylinder"                                  
+  "GeomStatic/MeshList[G:3]/Materials[]"     ;s64     1                                           
+  "GeomStatic/MeshList[G:3]/Materials[G:0]"  ;string  "Plant_Base_MAT"                            
+  "GeomStatic/MeshList[G:3]/Merge"           ;bool    1                                           
+  "GeomStatic/MeshList[G:3]/MeshGUID"        ;u32     #0                                          
+  "GeomStatic/MeshList[G:3]/LODs[]"          ;s64     0                                           
+  "GeomStatic/MeshList[G:4]/OriginalName"    ;string  "Ear_Cover"                                 
+  "GeomStatic/MeshList[G:4]/Materials[]"     ;s64     1                                           
+  "GeomStatic/MeshList[G:4]/Materials[G:0]"  ;string  "Puppy_Robot_MAT"                           
+  "GeomStatic/MeshList[G:4]/Merge"           ;bool    1                                           
+  "GeomStatic/MeshList[G:4]/MeshGUID"        ;u32     #0                                          
+  "GeomStatic/MeshList[G:4]/LODs[]"          ;s64     0                                           
+  "GeomStatic/MeshList[G:5]/OriginalName"    ;string  "Plant"                                     
+  "GeomStatic/MeshList[G:5]/Materials[]"     ;s64     1                                           
+  "GeomStatic/MeshList[G:5]/Materials[G:0]"  ;string  "Plant_MAT"                                 
+  "GeomStatic/MeshList[G:5]/Merge"           ;bool    1                                           
+  "GeomStatic/MeshList[G:5]/MeshGUID"        ;u32     #0                                          
+  "GeomStatic/MeshList[G:5]/LODs[]"          ;s64     0                                           
+  "GeomStatic/MeshList[G:6]/OriginalName"    ;string  "Plant.001"                                 
+  "GeomStatic/MeshList[G:6]/Materials[]"     ;s64     1                                           
+  "GeomStatic/MeshList[G:6]/Materials[G:0]"  ;string  "Plant_MAT"                                 
+  "GeomStatic/MeshList[G:6]/Merge"           ;bool    1                                           
+  "GeomStatic/MeshList[G:6]/MeshGUID"        ;u32     #0                                          
+  "GeomStatic/MeshList[G:6]/LODs[]"          ;s64     0                                           
+  "GeomStatic/MeshList[G:7]/OriginalName"    ;string  "Plant.002"                                 
+  "GeomStatic/MeshList[G:7]/Materials[]"     ;s64     1                                           
+  "GeomStatic/MeshList[G:7]/Materials[G:0]"  ;string  "Plant_MAT"                                 
+  "GeomStatic/MeshList[G:7]/Merge"           ;bool    1                                           
+  "GeomStatic/MeshList[G:7]/MeshGUID"        ;u32     #0                                          
+  "GeomStatic/MeshList[G:7]/LODs[]"          ;s64     0                                           
+  "GeomStatic/MeshList[G:8]/OriginalName"    ;string  "Sphere"                                    
+  "GeomStatic/MeshList[G:8]/Materials[]"     ;s64     1                                           
+  "GeomStatic/MeshList[G:8]/Materials[G:0]"  ;string  "Puppy_Robot_MAT"                           
+  "GeomStatic/MeshList[G:8]/Merge"           ;bool      1                                           
+  "GeomStatic/MeshList[G:8]/MeshGUID"        ;u32       #0                                          
+  "GeomStatic/MeshList[G:8]/LODs[]"          ;s64       0                                           
+  "GeomStatic/MeshList[G:9]/OriginalName"    ;string    "Sphere.001"                                
+  "GeomStatic/MeshList[G:9]/Materials[]"     ;s64       1                                           
+  "GeomStatic/MeshList[G:9]/Materials[G:0]"  ;string    "Puppy_Robot_MAT"                           
+  "GeomStatic/MeshList[G:9]/Merge"           ;bool      1                                           
+  "GeomStatic/MeshList[G:9]/MeshGUID"        ;u32       #0                                          
+  "GeomStatic/MeshList[G:9]/LODs[]"          ;s64       0                                           
+  "GeomStatic/MeshList[G:10]/OriginalName"   ;string    "MERGED_MESH!!"                             
+  "GeomStatic/MeshList[G:10]/Materials[]"    ;s64       0                                           
+  "GeomStatic/MeshList[G:10]/Merge"          ;bool      0                                           
+  "GeomStatic/MeshList[G:10]/MeshGUID"       ;u32       #0                                          
+  "GeomStatic/MeshList[G:10]/LODs[]"         ;s64       0                                           
+  "GeomStatic/MaterialInstNames[]"           ;s64       3                                           
+  "GeomStatic/MaterialInstNames[G:0]"        ;string    "Puppy_Robot_MAT"                           
+  "GeomStatic/MaterialInstNames[G:1]"        ;string    "Plant_Base_MAT"                            
+  "GeomStatic/MaterialInstNames[G:2]"        ;string    "Plant_MAT"                                 
+  "GeomStatic/MaterialInstance[]"            ;s64       3                                           
+  "GeomStatic/MaterialInstance[G:0]"         ;full_guid #0 #B673C5DA4A4A70AD                        
+  "GeomStatic/MaterialInstance[G:1]"         ;full_guid #0 #B673C5DA4A4A70AD                        
+  "GeomStatic/MaterialInstance[G:2]"         ;full_guid #0 #B673C5DA4A4A70AD                        
