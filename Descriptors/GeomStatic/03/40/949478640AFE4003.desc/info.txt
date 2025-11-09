@@ -10,8 +10,8 @@
 [ xProperties : 5 ]
 { Name:s                        Value:?                                        }
 //----------------------------  ----------------------------------------------
-  "Info/Name"                   ;string    ""                                 
+  "Info/Name"                   ;string    "Puppy Static Geom"                
   "Info/Comment"                ;string    ""                                 
   "Info/Details/GUID"           ;full_guid #949478640AFE4003 #E5359948C52D26D1
   "Info/Details/RscLinks[]"     ;s64       1                                  
-  "Info/Details/RscLinks[G:0]"  ;full_guid #BA2958612463C003 #C4D90C5F0CC43021
+  "Info/Details/RscLinks[G:0]"  ;full_guid #50C34866FECE0003 #C4D90C5F0CC43021
