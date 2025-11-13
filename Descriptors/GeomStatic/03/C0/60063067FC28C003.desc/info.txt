@@ -10,8 +10,8 @@
 [ xProperties : 5 ]
 { Name:s                        Value:?                                        }
 //----------------------------  ----------------------------------------------
-  "Info/Name"                   ;string    "Puppy MI"                         
+  "Info/Name"                   ;string    "Material Preview"                 
   "Info/Comment"                ;string    ""                                 
-  "Info/Details/GUID"           ;full_guid #4B2E7066FF0C4007 #B673C5DA4A4A70AD
+  "Info/Details/GUID"           ;full_guid #60063067FC28C003 #E5359948C52D26D1
   "Info/Details/RscLinks[]"     ;s64       1                                  
-  "Info/Details/RscLinks[G:0]"  ;full_guid #50C34866FECE0003 #C4D90C5F0CC43021
+  "Info/Details/RscLinks[G:0]"  ;full_guid #561C2067FC134003 #C4D90C5F0CC43021

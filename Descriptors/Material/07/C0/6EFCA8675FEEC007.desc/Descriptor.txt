@@ -1,0 +1,43 @@
+
+[ Info ]
+{ nNodes:d  nConnections:d }
+//--------  --------------
+     1            0       
+
+[ Node ]
+{ Guid:G             PrefabGuid:G      }
+//-----------------  -----------------
+  #40BBF033B01E8000  #1E601ED7983F207C
+
+// New Types
+< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
+
+[ xProperties : 26 ]
+{ Name:s                                       Value:?                                                       }
+//-------------------------------------------  -------------------------------------------------------------
+  "node/Name"                                  ;string    "Output: Shader File"                             
+  "node/Position/X"                            ;f32       715                                               
+  "node/Position/Y"                            ;f32       378                                               
+  "node/Input Pins[]"                          ;s64       2                                                 
+  "node/Input Pins[G:0]/pin/var/Name"          ;string    "Shader File"                                     
+  "node/Input Pins[G:0]/pin/var/TypeGUID"      ;u64       #6D3F16FEEBDA4452                                 
+  "node/Input Pins[G:0]/pin/PinGUID/Value"     ;u64       #18BBF033B01E8001                                 
+  "node/Input Pins[G:0]/pin/ParamIndex"        ;s32       0                                                 
+  "node/Input Pins[G:0]/ConnectionGUID/Value"  ;u64       #0                                                
+  "node/Input Pins[G:1]/pin/var/Name"          ;string    "uSamplerColor"                                   
+  "node/Input Pins[G:1]/pin/var/TypeGUID"      ;u64       #3380EA40A8C5EC19                                 
+  "node/Input Pins[G:1]/pin/PinGUID/Value"     ;u64       #40BBF033B01E8463                                 
+  "node/Input Pins[G:1]/pin/ParamIndex"        ;s32       1                                                 
+  "node/Input Pins[G:1]/ConnectionGUID/Value"  ;u64       #0                                                
+  "node/Output Pins[]"                         ;s64       0                                                 
+  "node/Params[]"                              ;s64       2                                                 
+  "node/Params[G:0]/Name"                      ;string    "Shader File"                                     
+  "node/Params[G:0]/Type"                      ;enum      "FILE"                                            
+  "node/Params[G:0]/File"                      ;wstring   "Assets\\DefaultAssets\\Materials\\draw_frag.glsl"
+  "node/Params[G:0]/bCanExpose"                ;bool      0                                                 
+  "node/Params[G:1]/Name"                      ;string    "uSamplerColor"                                   
+  "node/Params[G:1]/Type"                      ;enum      "TEXTURE RESOURCE"                                
+  "node/Params[G:1]/TextureRef"                ;full_guid #36FCA8675E948005 #6701D481518BD833               
+  "node/Params[G:1]/bCanExpose"                ;bool      1                                                 
+  "node/Params[G:1]/bExpose"                   ;bool      1                                                 
+  "node/Params[G:1]/ExposeName"                ;string    "uSamplerColor"                                   

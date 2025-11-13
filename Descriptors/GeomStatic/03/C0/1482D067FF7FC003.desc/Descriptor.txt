@@ -1,0 +1,27 @@
+
+[ DescriptorVersion ]
+{ Major:d  Minor:d }
+//-------  -------
+     1        0   
+
+// New Types
+< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
+
+[ xProperties : 15 ]
+{ Name:s                                     Value:?                                       }
+//-----------------------------------------  ---------------------------------------------
+  "GeomStatic/ImportAsset"                   ;wstring "Assets\\materialpreview-frozen.fbx"
+  "GeomStatic/PreTranslation/Scale/X"        ;f32     #3F800000                           
+  "GeomStatic/PreTranslation/Scale/Y"        ;f32     #3F800000                           
+  "GeomStatic/PreTranslation/Scale/Z"        ;f32     #3F800000                           
+  "GeomStatic/PreTranslation/Rotation/X"     ;f32     #0                                  
+  "GeomStatic/PreTranslation/Rotation/Y"     ;f32     #0                                  
+  "GeomStatic/PreTranslation/Rotation/Z"     ;f32     #0                                  
+  "GeomStatic/PreTranslation/Translation/X"  ;f32     #0                                  
+  "GeomStatic/PreTranslation/Translation/Y"  ;f32     #0                                  
+  "GeomStatic/PreTranslation/Translation/Z"  ;f32     #0                                  
+  "GeomStatic/bMergeMeshes"                  ;bool    1                                   
+  "GeomStatic/bHideCopasedMeshes"            ;bool    1                                   
+  "GeomStatic/MeshList[]"                    ;s64     0                                   
+  "GeomStatic/MaterialInstNames[]"           ;s64     0                                   
+  "GeomStatic/MaterialInstance[]"            ;s64     0                                   

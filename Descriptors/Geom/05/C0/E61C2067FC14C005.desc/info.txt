@@ -7,11 +7,12 @@
 // New Types
 < s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
 
-[ xProperties : 5 ]
+[ xProperties : 6 ]
 { Name:s                        Value:?                                        }
 //----------------------------  ----------------------------------------------
-  "Info/Name"                   ;string    "Puppy MI"                         
+  "Info/Name"                   ;string    ""                                 
   "Info/Comment"                ;string    ""                                 
-  "Info/Details/GUID"           ;full_guid #4B2E7066FF0C4007 #B673C5DA4A4A70AD
-  "Info/Details/RscLinks[]"     ;s64       1                                  
-  "Info/Details/RscLinks[G:0]"  ;full_guid #50C34866FECE0003 #C4D90C5F0CC43021
+  "Info/Details/GUID"           ;full_guid #E61C2067FC14C005 #ACF12D9846BBD97F
+  "Info/Details/RscLinks[]"     ;s64       2                                  
+  "Info/Details/RscLinks[G:0]"  ;full_guid #1 #C4D90C5F0CC43021               
+  "Info/Details/RscLinks[G:1]"  ;full_guid #561C2067FC134003 #C4D90C5F0CC43021

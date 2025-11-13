@@ -94,5 +94,5 @@
   "GeomStatic/MaterialInstNames[G:2]"        ;string    "Plant_MAT"                                 
   "GeomStatic/MaterialInstance[]"            ;s64       3                                           
   "GeomStatic/MaterialInstance[G:0]"         ;full_guid #4B2E7066FF0C4007 #B673C5DA4A4A70AD         
-  "GeomStatic/MaterialInstance[G:1]"         ;full_guid #0 #B673C5DA4A4A70AD                        
-  "GeomStatic/MaterialInstance[G:2]"         ;full_guid #0 #B673C5DA4A4A70AD                        
+  "GeomStatic/MaterialInstance[G:1]"         ;full_guid #1EFCA8675FF20009 #B673C5DA4A4A70AD         
+  "GeomStatic/MaterialInstance[G:2]"         ;full_guid #1EFCA8675FF20009 #B673C5DA4A4A70AD         
