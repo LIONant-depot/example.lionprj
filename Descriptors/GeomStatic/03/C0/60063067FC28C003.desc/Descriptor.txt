@@ -7,7 +7,7 @@
 // New Types
 < s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
 
-[ xProperties : 27 ]
+[ xProperties : 25 ]
 { Name:s                                                   Value:?                                         }
 //-------------------------------------------------------  -----------------------------------------------
   "GeomStatic/ImportAsset"                                 ;wstring   "Assets\\materialpreview-frozen.fbx"
@@ -25,9 +25,7 @@
   "GeomStatic/AllMeshesDetails/LODs[]"                     ;s64       0                                   
   "GeomStatic/Merge Group List[]"                          ;s64       0                                   
   "GeomStatic/Ungroup Mesh List[]"                         ;s64       1                                   
-  "GeomStatic/Ungroup Mesh List[G:0]/Node Path[]"          ;s64       2                                   
-  "GeomStatic/Ungroup Mesh List[G:0]/Node Path[G:0]"       ;string    "RootNode"                          
-  "GeomStatic/Ungroup Mesh List[G:0]/Node Path[G:1]"       ;string    "Cylinder.001"                      
+  "GeomStatic/Ungroup Mesh List[G:0]/Node Path"            ;string    "RootNode/Cylinder.001"             
   "GeomStatic/Ungroup Mesh List[G:0]/Mesh Name"            ;string    "Cylinder.001"                      
   "GeomStatic/Ungroup Mesh List[G:0]/Mesh Details/GUID"    ;u32       #0                                  
   "GeomStatic/Ungroup Mesh List[G:0]/Mesh Details/LODs[]"  ;s64       0                                   

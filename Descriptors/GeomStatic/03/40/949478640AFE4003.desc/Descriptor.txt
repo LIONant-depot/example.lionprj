@@ -7,86 +7,62 @@
 // New Types
 < s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
 
-[ xProperties : 80 ]
-{ Name:s                                                       Value:?                                               }
-//-----------------------------------------------------------  -----------------------------------------------------
-  "GeomStatic/ImportAsset"                                     ;wstring "Assets\\PuppyDog\\source\\Puppy Robot2.fbx"
-  "GeomStatic/PreTranslation/Scale/X"                          ;f32     #3C03126F                                   
-  "GeomStatic/PreTranslation/Scale/Y"                          ;f32     #3C03126F                                   
-  "GeomStatic/PreTranslation/Scale/Z"                          ;f32     #3C03126F                                   
-  "GeomStatic/PreTranslation/Rotation/X"                       ;f32     #0                                          
-  "GeomStatic/PreTranslation/Rotation/Y"                       ;f32     #43340000                                   
-  "GeomStatic/PreTranslation/Rotation/Z"                       ;f32     #0                                          
-  "GeomStatic/PreTranslation/Translation/X"                    ;f32     #3F400000                                   
-  "GeomStatic/PreTranslation/Translation/Y"                    ;f32     #0                                          
-  "GeomStatic/PreTranslation/Translation/Z"                    ;f32     #3F8CCCCD                                   
-  "GeomStatic/bMergeAllMeshes"                                 ;bool    0                                           
-  "GeomStatic/AllMeshesDetails/GUID"                           ;u32     #0                                          
-  "GeomStatic/AllMeshesDetails/LODs[]"                         ;s64     0                                           
-  "GeomStatic/Merge Group List[]"                              ;s64     3                                           
-  "GeomStatic/Merge Group List[G:0]/Name"                      ;string  "Group #0"                                  
-  "GeomStatic/Merge Group List[G:0]/Node Path List[]"          ;s64     4                                           
-  "GeomStatic/Merge Group List[G:0]/Node Path List[G:0][]"     ;s64     2                                           
-  "GeomStatic/Merge Group List[G:0]/Node Path List[G:0][G:0]"  ;string  "RootNode"                                  
-  "GeomStatic/Merge Group List[G:0]/Node Path List[G:0][G:1]"  ;string  "Body"                                      
-  "GeomStatic/Merge Group List[G:0]/Node Path List[G:1][]"     ;s64     2                                           
-  "GeomStatic/Merge Group List[G:0]/Node Path List[G:1][G:0]"  ;string  "RootNode"                                  
-  "GeomStatic/Merge Group List[G:0]/Node Path List[G:1][G:1]"  ;string  "Ear_Cover"                                 
-  "GeomStatic/Merge Group List[G:0]/Node Path List[G:2][]"     ;s64     2                                           
-  "GeomStatic/Merge Group List[G:0]/Node Path List[G:2][G:0]"  ;string  "RootNode"                                  
-  "GeomStatic/Merge Group List[G:0]/Node Path List[G:2][G:1]"  ;string  "Sphere"                                    
-  "GeomStatic/Merge Group List[G:0]/Node Path List[G:3][]"     ;s64     2                                           
-  "GeomStatic/Merge Group List[G:0]/Node Path List[G:3][G:0]"  ;string  "RootNode"                                  
-  "GeomStatic/Merge Group List[G:0]/Node Path List[G:3][G:1]"  ;string  "Sphere.001"                                
-  "GeomStatic/Merge Group List[G:0]/Mesh Details/GUID"         ;u32     #0                                          
-  "GeomStatic/Merge Group List[G:0]/Mesh Details/LODs[]"       ;s64     0                                           
-  "GeomStatic/Merge Group List[G:1]/Name"                      ;string  "Group #1"                                  
-  "GeomStatic/Merge Group List[G:1]/Node Path List[]"          ;s64     0                                           
-  "GeomStatic/Merge Group List[G:1]/Mesh Details/GUID"         ;u32     #1                                          
-  "GeomStatic/Merge Group List[G:1]/Mesh Details/LODs[]"       ;s64     0                                           
-  "GeomStatic/Merge Group List[G:2]/Name"                      ;string  "Group #2"                                  
-  "GeomStatic/Merge Group List[G:2]/Node Path List[]"          ;s64     1                                           
-  "GeomStatic/Merge Group List[G:2]/Node Path List[G:0][]"     ;s64     2                                           
-  "GeomStatic/Merge Group List[G:2]/Node Path List[G:0][G:0]"  ;string  "RootNode"                                  
-  "GeomStatic/Merge Group List[G:2]/Node Path List[G:0][G:1]"  ;string  "Armature"                                  
-  "GeomStatic/Merge Group List[G:2]/Mesh Details/GUID"         ;u32     #2                                          
-  "GeomStatic/Merge Group List[G:2]/Mesh Details/LODs[]"       ;s64     0                                           
-  "GeomStatic/Ungroup Mesh List[]"                             ;s64     4                                           
-  "GeomStatic/Ungroup Mesh List[G:0]/Node Path[]"              ;s64     2                                           
-  "GeomStatic/Ungroup Mesh List[G:0]/Node Path[G:0]"           ;string  "RootNode"                                  
-  "GeomStatic/Ungroup Mesh List[G:0]/Node Path[G:1]"           ;string  "Plant"                                     
-  "GeomStatic/Ungroup Mesh List[G:0]/Mesh Name"                ;string  "Cube.007"                                  
-  "GeomStatic/Ungroup Mesh List[G:0]/Mesh Details/GUID"        ;u32     #0                                          
-  "GeomStatic/Ungroup Mesh List[G:0]/Mesh Details/LODs[]"      ;s64     0                                           
-  "GeomStatic/Ungroup Mesh List[G:1]/Node Path[]"              ;s64     3                                           
-  "GeomStatic/Ungroup Mesh List[G:1]/Node Path[G:0]"           ;string  "RootNode"                                  
-  "GeomStatic/Ungroup Mesh List[G:1]/Node Path[G:1]"           ;string  "Plant"                                     
-  "GeomStatic/Ungroup Mesh List[G:1]/Node Path[G:2]"           ;string  "Plant.001"                                 
-  "GeomStatic/Ungroup Mesh List[G:1]/Mesh Name"                ;string  "Cube.008"                                  
-  "GeomStatic/Ungroup Mesh List[G:1]/Mesh Details/GUID"        ;u32     #0                                          
-  "GeomStatic/Ungroup Mesh List[G:1]/Mesh Details/LODs[]"      ;s64     0                                           
-  "GeomStatic/Ungroup Mesh List[G:2]/Node Path[]"              ;s64     3                                           
-  "GeomStatic/Ungroup Mesh List[G:2]/Node Path[G:0]"           ;string  "RootNode"                                  
-  "GeomStatic/Ungroup Mesh List[G:2]/Node Path[G:1]"           ;string  "Plant"                                     
-  "GeomStatic/Ungroup Mesh List[G:2]/Node Path[G:2]"           ;string  "Plant.002"                                 
-  "GeomStatic/Ungroup Mesh List[G:2]/Mesh Name"                ;string  "Cube.009"                                  
-  "GeomStatic/Ungroup Mesh List[G:2]/Mesh Details/GUID"        ;u32     #0                                          
-  "GeomStatic/Ungroup Mesh List[G:2]/Mesh Details/LODs[]"      ;s64     0                                           
-  "GeomStatic/Ungroup Mesh List[G:3]/Node Path[]"              ;s64     2                                           
-  "GeomStatic/Ungroup Mesh List[G:3]/Node Path[G:0]"           ;string  "RootNode"                                  
-  "GeomStatic/Ungroup Mesh List[G:3]/Node Path[G:1]"           ;string    "Cylinder"                                  
-  "GeomStatic/Ungroup Mesh List[G:3]/Mesh Name"                ;string    "Cylinder.002"                              
-  "GeomStatic/Ungroup Mesh List[G:3]/Mesh Details/GUID"        ;u32       #0                                          
-  "GeomStatic/Ungroup Mesh List[G:3]/Mesh Details/LODs[]"      ;s64       0                                           
-  "GeomStatic/Deleted List[]"                                  ;s64       0                                           
-  "GeomStatic/MaterialDetailsList[]"                           ;s64       3                                           
-  "GeomStatic/MaterialDetailsList[G:0]/Name"                   ;string    "Puppy_Robot_MAT"                           
-  "GeomStatic/MaterialDetailsList[G:0]/RefCount"               ;s32       6                                           
-  "GeomStatic/MaterialDetailsList[G:1]/Name"                   ;string    "Plant_Base_MAT"                            
-  "GeomStatic/MaterialDetailsList[G:1]/RefCount"               ;s32       1                                           
-  "GeomStatic/MaterialDetailsList[G:2]/Name"                   ;string    "Plant_MAT"                                 
-  "GeomStatic/MaterialDetailsList[G:2]/RefCount"               ;s32       3                                           
-  "GeomStatic/MaterialInstance[]"                              ;s64       3                                           
-  "GeomStatic/MaterialInstance[G:0]"                           ;full_guid #4B2E7066FF0C4007 #B673C5DA4A4A70AD         
-  "GeomStatic/MaterialInstance[G:1]"                           ;full_guid #1EFCA8675FF20009 #B673C5DA4A4A70AD         
-  "GeomStatic/MaterialInstance[G:2]"                           ;full_guid #1EFCA8675FF20009 #B673C5DA4A4A70AD         
+[ xProperties : 56 ]
+{ Name:s                                                   Value:?                                                 }
+//-------------------------------------------------------  -------------------------------------------------------
+  "GeomStatic/ImportAsset"                                 ;wstring   "Assets\\PuppyDog\\source\\Puppy Robot2.fbx"
+  "GeomStatic/PreTranslation/Scale/X"                      ;f32       #3C03126F                                   
+  "GeomStatic/PreTranslation/Scale/Y"                      ;f32       #3C03126F                                   
+  "GeomStatic/PreTranslation/Scale/Z"                      ;f32       #3C03126F                                   
+  "GeomStatic/PreTranslation/Rotation/X"                   ;f32       #0                                          
+  "GeomStatic/PreTranslation/Rotation/Y"                   ;f32       #43340000                                   
+  "GeomStatic/PreTranslation/Rotation/Z"                   ;f32       #0                                          
+  "GeomStatic/PreTranslation/Translation/X"                ;f32       #3F400000                                   
+  "GeomStatic/PreTranslation/Translation/Y"                ;f32       #0                                          
+  "GeomStatic/PreTranslation/Translation/Z"                ;f32       #3F8CCCCD                                   
+  "GeomStatic/bMergeAllMeshes"                             ;bool      1                                           
+  "GeomStatic/AllMeshesDetails/GUID"                       ;u32       #0                                          
+  "GeomStatic/AllMeshesDetails/LODs[]"                     ;s64       0                                           
+  "GeomStatic/Merge Group List[]"                          ;s64       2                                           
+  "GeomStatic/Merge Group List[G:0]/Name"                  ;string    "Group #0"                                  
+  "GeomStatic/Merge Group List[G:0]/Node Path List[]"      ;s64       5                                           
+  "GeomStatic/Merge Group List[G:0]/Node Path List[G:0]"   ;string    "RootNode/Armature"                         
+  "GeomStatic/Merge Group List[G:0]/Node Path List[G:1]"   ;string    "RootNode/Body"                             
+  "GeomStatic/Merge Group List[G:0]/Node Path List[G:2]"   ;string    "RootNode/Ear_Cover"                        
+  "GeomStatic/Merge Group List[G:0]/Node Path List[G:3]"   ;string    "RootNode/Sphere"                           
+  "GeomStatic/Merge Group List[G:0]/Node Path List[G:4]"   ;string    "RootNode/Sphere.001"                       
+  "GeomStatic/Merge Group List[G:0]/Mesh Details/GUID"     ;u32       #0                                          
+  "GeomStatic/Merge Group List[G:0]/Mesh Details/LODs[]"   ;s64       0                                           
+  "GeomStatic/Merge Group List[G:1]/Name"                  ;string    "Group #1"                                  
+  "GeomStatic/Merge Group List[G:1]/Node Path List[]"      ;s64       0                                           
+  "GeomStatic/Merge Group List[G:1]/Mesh Details/GUID"     ;u32       #0                                          
+  "GeomStatic/Merge Group List[G:1]/Mesh Details/LODs[]"   ;s64       0                                           
+  "GeomStatic/Ungroup Mesh List[]"                         ;s64       4                                           
+  "GeomStatic/Ungroup Mesh List[G:0]/Node Path"            ;string    "RootNode/Cylinder"                         
+  "GeomStatic/Ungroup Mesh List[G:0]/Mesh Name"            ;string    "Cylinder.002"                              
+  "GeomStatic/Ungroup Mesh List[G:0]/Mesh Details/GUID"    ;u32       #0                                          
+  "GeomStatic/Ungroup Mesh List[G:0]/Mesh Details/LODs[]"  ;s64       0                                           
+  "GeomStatic/Ungroup Mesh List[G:1]/Node Path"            ;string    "RootNode/Plant"                            
+  "GeomStatic/Ungroup Mesh List[G:1]/Mesh Name"            ;string    "Cube.007"                                  
+  "GeomStatic/Ungroup Mesh List[G:1]/Mesh Details/GUID"    ;u32       #0                                          
+  "GeomStatic/Ungroup Mesh List[G:1]/Mesh Details/LODs[]"  ;s64       0                                           
+  "GeomStatic/Ungroup Mesh List[G:2]/Node Path"            ;string    "RootNode/Plant/Plant.001"                  
+  "GeomStatic/Ungroup Mesh List[G:2]/Mesh Name"            ;string    "Cube.008"                                  
+  "GeomStatic/Ungroup Mesh List[G:2]/Mesh Details/GUID"    ;u32       #0                                          
+  "GeomStatic/Ungroup Mesh List[G:2]/Mesh Details/LODs[]"  ;s64       0                                           
+  "GeomStatic/Ungroup Mesh List[G:3]/Node Path"            ;string    "RootNode/Plant/Plant.002"                  
+  "GeomStatic/Ungroup Mesh List[G:3]/Mesh Name"            ;string    "Cube.009"                                  
+  "GeomStatic/Ungroup Mesh List[G:3]/Mesh Details/GUID"    ;u32       #0                                          
+  "GeomStatic/Ungroup Mesh List[G:3]/Mesh Details/LODs[]"  ;s64       0                                           
+  "GeomStatic/Deleted List[]"                              ;s64       0                                           
+  "GeomStatic/MaterialDetailsList[]"                       ;s64       3                                           
+  "GeomStatic/MaterialDetailsList[G:0]/Name"               ;string    "Puppy_Robot_MAT"                           
+  "GeomStatic/MaterialDetailsList[G:0]/RefCount"           ;s32       6                                           
+  "GeomStatic/MaterialDetailsList[G:1]/Name"               ;string    "Plant_Base_MAT"                            
+  "GeomStatic/MaterialDetailsList[G:1]/RefCount"           ;s32       1                                           
+  "GeomStatic/MaterialDetailsList[G:2]/Name"               ;string    "Plant_MAT"                                 
+  "GeomStatic/MaterialDetailsList[G:2]/RefCount"           ;s32       3                                           
+  "GeomStatic/MaterialInstance[]"                          ;s64       3                                           
+  "GeomStatic/MaterialInstance[G:0]"                       ;full_guid #4B2E7066FF0C4007 #B673C5DA4A4A70AD         
+  "GeomStatic/MaterialInstance[G:1]"                       ;full_guid #1EFCA8675FF20009 #B673C5DA4A4A70AD         
+  "GeomStatic/MaterialInstance[G:2]"                       ;full_guid #1EFCA8675FF20009 #B673C5DA4A4A70AD         
