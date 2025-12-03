@@ -18,7 +18,7 @@
   "GeomStatic/PreTranslation/Rotation/Y"                   ;f32       #42B40000                           
   "GeomStatic/PreTranslation/Rotation/Z"                   ;f32       #0                                  
   "GeomStatic/PreTranslation/Translation/X"                ;f32       #0                                  
-  "GeomStatic/PreTranslation/Translation/Y"                ;f32       #0                                  
+  "GeomStatic/PreTranslation/Translation/Y"                ;f32       #3F147AE1                           
   "GeomStatic/PreTranslation/Translation/Z"                ;f32       #0                                  
   "GeomStatic/bMergeAllMeshes"                             ;bool      1                                   
   "GeomStatic/AllMeshesDetails/GUID"                       ;u32       #0                                  
@@ -26,7 +26,7 @@
   "GeomStatic/Merge Group List[]"                          ;s64       0                                   
   "GeomStatic/Ungroup Mesh List[]"                         ;s64       1                                   
   "GeomStatic/Ungroup Mesh List[G:0]/Node Path"            ;string    "RootNode/Cylinder.001"             
-  "GeomStatic/Ungroup Mesh List[G:0]/Mesh Name"            ;string    "Cylinder.001"                      
+  "GeomStatic/Ungroup Mesh List[G:0]/Mesh Name"            ;string    "Cylinder.003"                      
   "GeomStatic/Ungroup Mesh List[G:0]/Mesh Details/GUID"    ;u32       #0                                  
   "GeomStatic/Ungroup Mesh List[G:0]/Mesh Details/LODs[]"  ;s64       0                                   
   "GeomStatic/Deleted List[]"                              ;s64       0                                   
