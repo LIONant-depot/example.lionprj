@@ -21,7 +21,7 @@
   "GeomStatic/PreTranslation/Translation/Y"               ;f32       #3F4CCCCD                                   
   "GeomStatic/PreTranslation/Translation/Z"               ;f32       #3F8CCCCD                                   
   "GeomStatic/bMergeAllMeshes"                            ;bool      1                                           
-  "GeomStatic/AllMeshesDetails/GUID"                      ;u32       #0                                          
+  "GeomStatic/AllMeshesDetails/Name"                      ;string    "puppy"                                     
   "GeomStatic/AllMeshesDetails/LODs[]"                    ;s64       0                                           
   "GeomStatic/Merge Group List[]"                         ;s64       2                                           
   "GeomStatic/Merge Group List[G:0]/Name"                 ;string    "Group #0"                                  
@@ -31,13 +31,13 @@
   "GeomStatic/Merge Group List[G:0]/Node Path List[G:2]"  ;string    "RootNode/Ear_Cover"                        
   "GeomStatic/Merge Group List[G:0]/Node Path List[G:3]"  ;string    "RootNode/Sphere"                           
   "GeomStatic/Merge Group List[G:0]/Node Path List[G:4]"  ;string    "RootNode/Sphere.001"                       
-  "GeomStatic/Merge Group List[G:0]/Mesh Details/GUID"    ;u32       #0                                          
+  "GeomStatic/Merge Group List[G:0]/Mesh Details/Name"    ;string    ""                                          
   "GeomStatic/Merge Group List[G:0]/Mesh Details/LODs[]"  ;s64       0                                           
   "GeomStatic/Merge Group List[G:1]/Name"                 ;string    "Group #1"                                  
   "GeomStatic/Merge Group List[G:1]/Node Path List[]"     ;s64       2                                           
   "GeomStatic/Merge Group List[G:1]/Node Path List[G:0]"  ;string    "RootNode/Plant"                            
   "GeomStatic/Merge Group List[G:1]/Node Path List[G:1]"  ;string    "RootNode/Cylinder"                         
-  "GeomStatic/Merge Group List[G:1]/Mesh Details/GUID"    ;u32       #0                                          
+  "GeomStatic/Merge Group List[G:1]/Mesh Details/Name"    ;string    ""                                          
   "GeomStatic/Merge Group List[G:1]/Mesh Details/LODs[]"  ;s64       0                                           
   "GeomStatic/Ungroup Mesh List[]"                        ;s64       0                                           
   "GeomStatic/Deleted List[]"                             ;s64       0                                           
