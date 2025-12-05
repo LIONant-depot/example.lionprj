@@ -11,9 +11,9 @@
 { Name:s                                                    Value:?                                                       }
 //--------------------------------------------------------  -------------------------------------------------------------
   "GeomStatic/ImportAsset"                                  ;wstring "Assets\\miller-falls-hand-drill\\source\\Drill.fbx"
-  "GeomStatic/PreTranslation/Scale/X"                       ;f32     #3F800000                                           
-  "GeomStatic/PreTranslation/Scale/Y"                       ;f32     #3F800000                                           
-  "GeomStatic/PreTranslation/Scale/Z"                       ;f32     #3F800000                                           
+  "GeomStatic/PreTranslation/Scale/X"                       ;f32     #3DCCCCCD                                           
+  "GeomStatic/PreTranslation/Scale/Y"                       ;f32     #3DCCCCCD                                           
+  "GeomStatic/PreTranslation/Scale/Z"                       ;f32     #3DCCCCCD                                           
   "GeomStatic/PreTranslation/Rotation/X"                    ;f32     #42340000                                           
   "GeomStatic/PreTranslation/Rotation/Y"                    ;f32     #0                                                  
   "GeomStatic/PreTranslation/Rotation/Z"                    ;f32     #0                                                  
