@@ -7,19 +7,19 @@
 // New Types
 < s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
 
-[ xProperties : 42 ]
+[ xProperties : 44 ]
 { Name:s                                                  Value:?                                                 }
 //------------------------------------------------------  -------------------------------------------------------
   "GeomStatic/ImportAsset"                                ;wstring   "Assets\\PuppyDog\\source\\Puppy Robot2.fbx"
-  "GeomStatic/PreTranslation/Scale/X"                     ;f32       #3C03126F                                   
-  "GeomStatic/PreTranslation/Scale/Y"                     ;f32       #3C03126F                                   
-  "GeomStatic/PreTranslation/Scale/Z"                     ;f32       #3C03126F                                   
+  "GeomStatic/PreTranslation/Scale/X"                     ;f32       #3A51B717                                   
+  "GeomStatic/PreTranslation/Scale/Y"                     ;f32       #3A51B717                                   
+  "GeomStatic/PreTranslation/Scale/Z"                     ;f32       #3A51B717                                   
   "GeomStatic/PreTranslation/Rotation/X"                  ;f32       #0                                          
   "GeomStatic/PreTranslation/Rotation/Y"                  ;f32       #43340000                                   
   "GeomStatic/PreTranslation/Rotation/Z"                  ;f32       #0                                          
-  "GeomStatic/PreTranslation/Translation/X"               ;f32       #3F400000                                   
-  "GeomStatic/PreTranslation/Translation/Y"               ;f32       #3F4CCCCD                                   
-  "GeomStatic/PreTranslation/Translation/Z"               ;f32       #3F8CCCCD                                   
+  "GeomStatic/PreTranslation/Translation/X"               ;f32       #3D99999A                                   
+  "GeomStatic/PreTranslation/Translation/Y"               ;f32       #3DA3D70A                                   
+  "GeomStatic/PreTranslation/Translation/Z"               ;f32       #3DE147AE                                   
   "GeomStatic/bMergeAllMeshes"                            ;bool      1                                           
   "GeomStatic/AllMeshesDetails/Name"                      ;string    "puppy"                                     
   "GeomStatic/AllMeshesDetails/LODs[]"                    ;s64       0                                           
@@ -34,20 +34,22 @@
   "GeomStatic/Merge Group List[G:0]/Mesh Details/Name"    ;string    ""                                          
   "GeomStatic/Merge Group List[G:0]/Mesh Details/LODs[]"  ;s64       0                                           
   "GeomStatic/Merge Group List[G:1]/Name"                 ;string    "Group #1"                                  
-  "GeomStatic/Merge Group List[G:1]/Node Path List[]"     ;s64       2                                           
-  "GeomStatic/Merge Group List[G:1]/Node Path List[G:0]"  ;string    "RootNode/Plant"                            
-  "GeomStatic/Merge Group List[G:1]/Node Path List[G:1]"  ;string    "RootNode/Cylinder"                         
+  "GeomStatic/Merge Group List[G:1]/Node Path List[]"     ;s64       0                                           
   "GeomStatic/Merge Group List[G:1]/Mesh Details/Name"    ;string    ""                                          
   "GeomStatic/Merge Group List[G:1]/Mesh Details/LODs[]"  ;s64       0                                           
   "GeomStatic/Ungroup Mesh List[]"                        ;s64       0                                           
-  "GeomStatic/Deleted List[]"                             ;s64       0                                           
+  "GeomStatic/Deleted List[]"                             ;s64       2                                           
+  "GeomStatic/Deleted List[G:0]/Node Path"                ;string    "RootNode/Plant"                            
+  "GeomStatic/Deleted List[G:0]/Mesh Name"                ;string    ""                                          
+  "GeomStatic/Deleted List[G:1]/Node Path"                ;string    "RootNode/Cylinder"                         
+  "GeomStatic/Deleted List[G:1]/Mesh Name"                ;string    ""                                          
   "GeomStatic/MaterialDetailsList[]"                      ;s64       3                                           
   "GeomStatic/MaterialDetailsList[G:0]/Name"              ;string    "Puppy_Robot_MAT"                           
   "GeomStatic/MaterialDetailsList[G:0]/RefCount"          ;s32       6                                           
   "GeomStatic/MaterialDetailsList[G:1]/Name"              ;string    "Plant_Base_MAT"                            
-  "GeomStatic/MaterialDetailsList[G:1]/RefCount"          ;s32       1                                           
+  "GeomStatic/MaterialDetailsList[G:1]/RefCount"          ;s32       0                                           
   "GeomStatic/MaterialDetailsList[G:2]/Name"              ;string    "Plant_MAT"                                 
-  "GeomStatic/MaterialDetailsList[G:2]/RefCount"          ;s32       3                                           
+  "GeomStatic/MaterialDetailsList[G:2]/RefCount"          ;s32       0                                           
   "GeomStatic/MaterialInstance[]"                         ;s64       3                                           
   "GeomStatic/MaterialInstance[G:0]"                      ;full_guid #88AFF86EA67EC003 #B673C5DA4A4A70AD         
   "GeomStatic/MaterialInstance[G:1]"                      ;full_guid #88AFF86EA67EC003 #B673C5DA4A4A70AD         

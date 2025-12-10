@@ -20,7 +20,7 @@
   "Texture/Quality"                                  ;f32     #3F800000                
   "Texture/SRGB"                                     ;bool    1                        
   "Texture/Mipmaps/GenerateMips"                     ;bool    1                        
-  "Texture/Mipmaps/Mipmap Filter"                    ;enum    "KAISER"                 
+  "Texture/Mipmaps/Mipmap Filter"                    ;enum    "CUBE_MAP_GGX_ROUGHNESS" 
   "Texture/Mipmaps/MinSize"                          ;s32     1                        
   "Texture/FillAveColorByAlpha/FillAveColorByAlpha"  ;bool    0                        
   "Texture/FillAveColorByAlpha/AlphaThreshold"       ;u8      #80                      
