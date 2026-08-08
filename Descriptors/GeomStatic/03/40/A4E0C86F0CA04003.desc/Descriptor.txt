@@ -1,0 +1,149 @@
+
+[ DescriptorVersion ]
+{ Major:d  Minor:d }
+//-------  -------
+     1        0   
+
+// New Types
+< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
+
+[ xProperties : 137 ]
+{ Name:s                                                    Value:?                                                       }
+//--------------------------------------------------------  -------------------------------------------------------------
+  "GeomStatic/ImportAsset"                                  ;wstring "Assets\\miller-falls-hand-drill\\source\\Drill.fbx"
+  "GeomStatic/PreTranslation/Scale/X"                       ;f32     #3C23D70A                                           
+  "GeomStatic/PreTranslation/Scale/Y"                       ;f32     #3C23D70A                                           
+  "GeomStatic/PreTranslation/Scale/Z"                       ;f32     #3C23D70A                                           
+  "GeomStatic/PreTranslation/Rotation/X"                    ;f32     #42340000                                           
+  "GeomStatic/PreTranslation/Rotation/Y"                    ;f32     #0                                                  
+  "GeomStatic/PreTranslation/Rotation/Z"                    ;f32     #0                                                  
+  "GeomStatic/PreTranslation/Translation/X"                 ;f32     #0                                                  
+  "GeomStatic/PreTranslation/Translation/Y"                 ;f32     #0                                                  
+  "GeomStatic/PreTranslation/Translation/Z"                 ;f32     #0                                                  
+  "GeomStatic/bMergeAllMeshes"                              ;bool    1                                                   
+  "GeomStatic/AllMeshesDetails/Name"                        ;string  "pepe"                                              
+  "GeomStatic/AllMeshesDetails/LODs[]"                      ;s64     0                                                   
+  "GeomStatic/Merge Group List[]"                           ;s64     0                                                   
+  "GeomStatic/Ungroup Mesh List[]"                          ;s64     29                                                  
+  "GeomStatic/Ungroup Mesh List[G:0]/Node Path"             ;string  "RootNode/Drill_Rotating_Barrel_Holder_low"         
+  "GeomStatic/Ungroup Mesh List[G:0]/Mesh Name"             ;string  "Drill_Rotating_Barrel_Holder_low.003"              
+  "GeomStatic/Ungroup Mesh List[G:0]/Mesh Details/Name"     ;string  ""                                                  
+  "GeomStatic/Ungroup Mesh List[G:0]/Mesh Details/LODs[]"   ;s64     0                                                   
+  "GeomStatic/Ungroup Mesh List[G:1]/Node Path"             ;string  "RootNode/Drill_Rotating_Barrel_Link_low"           
+  "GeomStatic/Ungroup Mesh List[G:1]/Mesh Name"             ;string  "Drill_Rotating_Barrel_Link_low.001"                
+  "GeomStatic/Ungroup Mesh List[G:1]/Mesh Details/Name"     ;string  ""                                                  
+  "GeomStatic/Ungroup Mesh List[G:1]/Mesh Details/LODs[]"   ;s64     0                                                   
+  "GeomStatic/Ungroup Mesh List[G:2]/Node Path"             ;string  "RootNode/Drill_Rotating_Barrel_Screw_low"          
+  "GeomStatic/Ungroup Mesh List[G:2]/Mesh Name"             ;string  "Drill_Rotating_Barrel_Screw_low.001"               
+  "GeomStatic/Ungroup Mesh List[G:2]/Mesh Details/Name"     ;string  ""                                                  
+  "GeomStatic/Ungroup Mesh List[G:2]/Mesh Details/LODs[]"   ;s64     0                                                   
+  "GeomStatic/Ungroup Mesh List[G:3]/Node Path"             ;string  "RootNode/Drill_Rotating_Barrel_low"                
+  "GeomStatic/Ungroup Mesh List[G:3]/Mesh Name"             ;string  "Drill_Rotating_Barrel_low.001"                     
+  "GeomStatic/Ungroup Mesh List[G:3]/Mesh Details/Name"     ;string  ""                                                  
+  "GeomStatic/Ungroup Mesh List[G:3]/Mesh Details/LODs[]"   ;s64     0                                                   
+  "GeomStatic/Ungroup Mesh List[G:4]/Node Path"             ;string  "RootNode/Drill_Tip_Lock1_low"                      
+  "GeomStatic/Ungroup Mesh List[G:4]/Mesh Name"             ;string  "Drill_Tip_Lock1_low.001"                           
+  "GeomStatic/Ungroup Mesh List[G:4]/Mesh Details/Name"     ;string  ""                                                  
+  "GeomStatic/Ungroup Mesh List[G:4]/Mesh Details/LODs[]"   ;s64     0                                                   
+  "GeomStatic/Ungroup Mesh List[G:5]/Node Path"             ;string  "RootNode/Drill_Tip_Lock2_low"                      
+  "GeomStatic/Ungroup Mesh List[G:5]/Mesh Name"             ;string  "Drill_Tip_Lock2_low.001"                           
+  "GeomStatic/Ungroup Mesh List[G:5]/Mesh Details/Name"     ;string  ""                                                  
+  "GeomStatic/Ungroup Mesh List[G:5]/Mesh Details/LODs[]"   ;s64     0                                                   
+  "GeomStatic/Ungroup Mesh List[G:6]/Node Path"             ;string  "RootNode/Drill_Tip_Lock3_low"                      
+  "GeomStatic/Ungroup Mesh List[G:6]/Mesh Name"             ;string  "Drill_Tip_Lock3_low.001"                           
+  "GeomStatic/Ungroup Mesh List[G:6]/Mesh Details/Name"     ;string  ""                                                  
+  "GeomStatic/Ungroup Mesh List[G:6]/Mesh Details/LODs[]"   ;s64     0                                                   
+  "GeomStatic/Ungroup Mesh List[G:7]/Node Path"             ;string  "RootNode/Drill_Tip_low"                            
+  "GeomStatic/Ungroup Mesh List[G:7]/Mesh Name"             ;string  "Drill_Tip_low.002"                                 
+  "GeomStatic/Ungroup Mesh List[G:7]/Mesh Details/Name"     ;string  ""                                                  
+  "GeomStatic/Ungroup Mesh List[G:7]/Mesh Details/LODs[]"   ;s64     0                                                   
+  "GeomStatic/Ungroup Mesh List[G:8]/Node Path"             ;string  "RootNode/Handle_Main_Link_low"                     
+  "GeomStatic/Ungroup Mesh List[G:8]/Mesh Name"             ;string  "Handle_Main_Link_low.001"                          
+  "GeomStatic/Ungroup Mesh List[G:8]/Mesh Details/Name"     ;string  ""                                                  
+  "GeomStatic/Ungroup Mesh List[G:8]/Mesh Details/LODs[]"   ;s64     0                                                   
+  "GeomStatic/Ungroup Mesh List[G:9]/Node Path"             ;string  "RootNode/Handle_Main_low"                          
+  "GeomStatic/Ungroup Mesh List[G:9]/Mesh Name"             ;string  "Handle_Main_low.001"                               
+  "GeomStatic/Ungroup Mesh List[G:9]/Mesh Details/Name"     ;string  ""                                                  
+  "GeomStatic/Ungroup Mesh List[G:9]/Mesh Details/LODs[]"   ;s64     0                                                   
+  "GeomStatic/Ungroup Mesh List[G:10]/Node Path"            ;string  "RootNode/Handle_Rotating_Lever_Pivot_low"          
+  "GeomStatic/Ungroup Mesh List[G:10]/Mesh Name"            ;string  "Handle_Rotating_Lever_Pivot_low.001"               
+  "GeomStatic/Ungroup Mesh List[G:10]/Mesh Details/Name"    ;string  ""                                                  
+  "GeomStatic/Ungroup Mesh List[G:10]/Mesh Details/LODs[]"  ;s64     0                                                   
+  "GeomStatic/Ungroup Mesh List[G:11]/Node Path"            ;string  "RootNode/Handle_Rotating_Lever_Screw_low"          
+  "GeomStatic/Ungroup Mesh List[G:11]/Mesh Name"            ;string  "Handle_Rotating_Lever_Screw_low.001"               
+  "GeomStatic/Ungroup Mesh List[G:11]/Mesh Details/Name"    ;string  ""                                                  
+  "GeomStatic/Ungroup Mesh List[G:11]/Mesh Details/LODs[]"  ;s64     0                                                   
+  "GeomStatic/Ungroup Mesh List[G:12]/Node Path"            ;string  "RootNode/Handle_Rotating_Lever_low"                
+  "GeomStatic/Ungroup Mesh List[G:12]/Mesh Name"            ;string  "Handle_Rotating_Lever_low.001"                     
+  "GeomStatic/Ungroup Mesh List[G:12]/Mesh Details/Name"    ;string  ""                                                  
+  "GeomStatic/Ungroup Mesh List[G:12]/Mesh Details/LODs[]"  ;s64     0                                                   
+  "GeomStatic/Ungroup Mesh List[G:13]/Node Path"            ;string  "RootNode/Handle_Rotating_Pin1_low"                 
+  "GeomStatic/Ungroup Mesh List[G:13]/Mesh Name"            ;string  "Handle_Rotating_Pin1_low.001"                      
+  "GeomStatic/Ungroup Mesh List[G:13]/Mesh Details/Name"    ;string  ""                                                  
+  "GeomStatic/Ungroup Mesh List[G:13]/Mesh Details/LODs[]"  ;s64     0                                                   
+  "GeomStatic/Ungroup Mesh List[G:14]/Node Path"            ;string  "RootNode/Handle_Rotating_Pin2_low"                 
+  "GeomStatic/Ungroup Mesh List[G:14]/Mesh Name"            ;string  "Handle_Rotating_Pin2_low.001"                      
+  "GeomStatic/Ungroup Mesh List[G:14]/Mesh Details/Name"    ;string  ""                                                  
+  "GeomStatic/Ungroup Mesh List[G:14]/Mesh Details/LODs[]"  ;s64     0                                                   
+  "GeomStatic/Ungroup Mesh List[G:15]/Node Path"            ;string  "RootNode/Handle_Rotating_low"                      
+  "GeomStatic/Ungroup Mesh List[G:15]/Mesh Name"            ;string  "Handle_Rotating_low.001"                           
+  "GeomStatic/Ungroup Mesh List[G:15]/Mesh Details/Name"    ;string  ""                                                  
+  "GeomStatic/Ungroup Mesh List[G:15]/Mesh Details/LODs[]"  ;s64     0                                                   
+  "GeomStatic/Ungroup Mesh List[G:16]/Node Path"            ;string  "RootNode/Handle_Shouder_Link_Pins_low"             
+  "GeomStatic/Ungroup Mesh List[G:16]/Mesh Name"            ;string  "Handle_Shouder_Link_Pins_low.001"                  
+  "GeomStatic/Ungroup Mesh List[G:16]/Mesh Details/Name"    ;string  ""                                                  
+  "GeomStatic/Ungroup Mesh List[G:16]/Mesh Details/LODs[]"  ;s64     0                                                   
+  "GeomStatic/Ungroup Mesh List[G:17]/Node Path"            ;string  "RootNode/Handle_Shouder_Link_low"                  
+  "GeomStatic/Ungroup Mesh List[G:17]/Mesh Name"            ;string  "Handle_Shouder_Link_low.001"                       
+  "GeomStatic/Ungroup Mesh List[G:17]/Mesh Details/Name"    ;string  ""                                                  
+  "GeomStatic/Ungroup Mesh List[G:17]/Mesh Details/LODs[]"  ;s64     0                                                   
+  "GeomStatic/Ungroup Mesh List[G:18]/Node Path"            ;string  "RootNode/Handle_Shoulder_low"                      
+  "GeomStatic/Ungroup Mesh List[G:18]/Mesh Name"            ;string  "Handle_Shoulder_low.001"                           
+  "GeomStatic/Ungroup Mesh List[G:18]/Mesh Details/Name"    ;string  ""                                                  
+  "GeomStatic/Ungroup Mesh List[G:18]/Mesh Details/LODs[]"  ;s64     0                                                   
+  "GeomStatic/Ungroup Mesh List[G:19]/Node Path"            ;string  "RootNode/Mainbody_Cog_1_low"                       
+  "GeomStatic/Ungroup Mesh List[G:19]/Mesh Name"            ;string  "Mainbody_Cog_1_low.001"                            
+  "GeomStatic/Ungroup Mesh List[G:19]/Mesh Details/Name"    ;string  ""                                                  
+  "GeomStatic/Ungroup Mesh List[G:19]/Mesh Details/LODs[]"  ;s64     0                                                   
+  "GeomStatic/Ungroup Mesh List[G:20]/Node Path"            ;string  "RootNode/Mainbody_Cog_2_low"                       
+  "GeomStatic/Ungroup Mesh List[G:20]/Mesh Name"            ;string  "Mainbody_Cog_2_low.001"                            
+  "GeomStatic/Ungroup Mesh List[G:20]/Mesh Details/Name"    ;string  ""                                                  
+  "GeomStatic/Ungroup Mesh List[G:20]/Mesh Details/LODs[]"  ;s64     0                                                   
+  "GeomStatic/Ungroup Mesh List[G:21]/Node Path"            ;string  "RootNode/Mainbody_Cog_3_low"                       
+  "GeomStatic/Ungroup Mesh List[G:21]/Mesh Name"            ;string  "Mainbody_Cog_3_low.001"                            
+  "GeomStatic/Ungroup Mesh List[G:21]/Mesh Details/Name"    ;string  ""                                                  
+  "GeomStatic/Ungroup Mesh List[G:21]/Mesh Details/LODs[]"  ;s64     0                                                   
+  "GeomStatic/Ungroup Mesh List[G:22]/Node Path"            ;string  "RootNode/Mainbody_Rotating_Barrel_low"             
+  "GeomStatic/Ungroup Mesh List[G:22]/Mesh Name"            ;string  "Mainbody_Rotating_Barrel_low.001"                  
+  "GeomStatic/Ungroup Mesh List[G:22]/Mesh Details/Name"    ;string  ""                                                  
+  "GeomStatic/Ungroup Mesh List[G:22]/Mesh Details/LODs[]"  ;s64     0                                                   
+  "GeomStatic/Ungroup Mesh List[G:23]/Node Path"            ;string  "RootNode/Mainbody_low"                             
+  "GeomStatic/Ungroup Mesh List[G:23]/Mesh Name"            ;string  "Mainbody_low.001"                                  
+  "GeomStatic/Ungroup Mesh List[G:23]/Mesh Details/Name"    ;string  ""                                                  
+  "GeomStatic/Ungroup Mesh List[G:23]/Mesh Details/LODs[]"  ;s64     0                                                   
+  "GeomStatic/Ungroup Mesh List[G:24]/Node Path"            ;string  "RootNode/Signature_low"                            
+  "GeomStatic/Ungroup Mesh List[G:24]/Mesh Name"            ;string  "Signature_low.001"                                 
+  "GeomStatic/Ungroup Mesh List[G:24]/Mesh Details/Name"    ;string  ""                                                  
+  "GeomStatic/Ungroup Mesh List[G:24]/Mesh Details/LODs[]"  ;s64     0                                                   
+  "GeomStatic/Ungroup Mesh List[G:25]/Node Path"            ;string  "RootNode/Wheel_Pivot_low"                          
+  "GeomStatic/Ungroup Mesh List[G:25]/Mesh Name"            ;string  "Wheel_Pivot_low.001"                               
+  "GeomStatic/Ungroup Mesh List[G:25]/Mesh Details/Name"    ;string  ""                                                  
+  "GeomStatic/Ungroup Mesh List[G:25]/Mesh Details/LODs[]"  ;s64     0                                                   
+  "GeomStatic/Ungroup Mesh List[G:26]/Node Path"            ;string  "RootNode/Wheel_Screw_Holder_low"                   
+  "GeomStatic/Ungroup Mesh List[G:26]/Mesh Name"            ;string  "Wheel_Screw_Holder_low.001"                        
+  "GeomStatic/Ungroup Mesh List[G:26]/Mesh Details/Name"    ;string  ""                                                  
+  "GeomStatic/Ungroup Mesh List[G:26]/Mesh Details/LODs[]"  ;s64     0                                                   
+  "GeomStatic/Ungroup Mesh List[G:27]/Node Path"            ;string  "RootNode/Wheel_Screw_low"                          
+  "GeomStatic/Ungroup Mesh List[G:27]/Mesh Name"            ;string  "Wheel_Screw_low.001"                               
+  "GeomStatic/Ungroup Mesh List[G:27]/Mesh Details/Name"    ;string  ""                                                  
+  "GeomStatic/Ungroup Mesh List[G:27]/Mesh Details/LODs[]"  ;s64     0                                                   
+  "GeomStatic/Ungroup Mesh List[G:28]/Node Path"            ;string  "RootNode/Wheel_low"                                
+  "GeomStatic/Ungroup Mesh List[G:28]/Mesh Name"            ;string    "Wheel_low.001"                                     
+  "GeomStatic/Ungroup Mesh List[G:28]/Mesh Details/Name"    ;string    ""                                                  
+  "GeomStatic/Ungroup Mesh List[G:28]/Mesh Details/LODs[]"  ;s64       0                                                   
+  "GeomStatic/Deleted List[]"                               ;s64       0                                                   
+  "GeomStatic/MaterialDetailsList[]"                        ;s64       1                                                   
+  "GeomStatic/MaterialDetailsList[G:0]/Name"                ;string    "LP"                                                
+  "GeomStatic/MaterialDetailsList[G:0]/RefCount"            ;s32       29                                                  
+  "GeomStatic/MaterialInstance[]"                           ;s64       1                                                   
+  "GeomStatic/MaterialInstance[G:0]"                        ;full_guid #AFFF086F0C900003 #B673C5DA4A4A70AD                 

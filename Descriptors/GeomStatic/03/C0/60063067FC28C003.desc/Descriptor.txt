@@ -7,34 +7,31 @@
 // New Types
 < s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
 
-[ xProperties : 28 ]
-{ Name:s                                     Value:?                                         }
-//-----------------------------------------  -----------------------------------------------
-  "GeomStatic/ImportAsset"                   ;wstring   "Assets\\materialpreview-frozen.fbx"
-  "GeomStatic/PreTranslation/Scale/X"        ;f32       #3C23D70A                           
-  "GeomStatic/PreTranslation/Scale/Y"        ;f32       #3C23D70A                           
-  "GeomStatic/PreTranslation/Scale/Z"        ;f32       #3C23D70A                           
-  "GeomStatic/PreTranslation/Rotation/X"     ;f32       #0                                  
-  "GeomStatic/PreTranslation/Rotation/Y"     ;f32       #42B40000                           
-  "GeomStatic/PreTranslation/Rotation/Z"     ;f32       #0                                  
-  "GeomStatic/PreTranslation/Translation/X"  ;f32       #0                                  
-  "GeomStatic/PreTranslation/Translation/Y"  ;f32       #0                                  
-  "GeomStatic/PreTranslation/Translation/Z"  ;f32       #0                                  
-  "GeomStatic/bMergeMeshes"                  ;bool      1                                   
-  "GeomStatic/bHideCopasedMeshes"            ;bool      1                                   
-  "GeomStatic/MeshList[]"                    ;s64       2                                   
-  "GeomStatic/MeshList[G:0]/OriginalName"    ;string    "Cylinder.001"                      
-  "GeomStatic/MeshList[G:0]/Materials[]"     ;s64       1                                   
-  "GeomStatic/MeshList[G:0]/Materials[G:0]"  ;string    "DefaultMaterial"                   
-  "GeomStatic/MeshList[G:0]/Merge"           ;bool      1                                   
-  "GeomStatic/MeshList[G:0]/MeshGUID"        ;u32       #0                                  
-  "GeomStatic/MeshList[G:0]/LODs[]"          ;s64       0                                   
-  "GeomStatic/MeshList[G:1]/OriginalName"    ;string    "MERGED_MESH!!"                     
-  "GeomStatic/MeshList[G:1]/Materials[]"     ;s64       0                                   
-  "GeomStatic/MeshList[G:1]/Merge"           ;bool      0                                   
-  "GeomStatic/MeshList[G:1]/MeshGUID"        ;u32       #0                                  
-  "GeomStatic/MeshList[G:1]/LODs[]"          ;s64       0                                   
-  "GeomStatic/MaterialInstNames[]"           ;s64       1                                   
-  "GeomStatic/MaterialInstNames[G:0]"        ;string    "DefaultMaterial"                   
-  "GeomStatic/MaterialInstance[]"            ;s64       1                                   
-  "GeomStatic/MaterialInstance[G:0]"         ;full_guid #1EFCA8675FF20009 #B673C5DA4A4A70AD 
+[ xProperties : 25 ]
+{ Name:s                                                   Value:?                                         }
+//-------------------------------------------------------  -----------------------------------------------
+  "GeomStatic/ImportAsset"                                 ;wstring   "Assets\\materialpreview-frozen.fbx"
+  "GeomStatic/PreTranslation/Scale/X"                      ;f32       #3C23D70A                           
+  "GeomStatic/PreTranslation/Scale/Y"                      ;f32       #3C23D70A                           
+  "GeomStatic/PreTranslation/Scale/Z"                      ;f32       #3C23D70A                           
+  "GeomStatic/PreTranslation/Rotation/X"                   ;f32       #0                                  
+  "GeomStatic/PreTranslation/Rotation/Y"                   ;f32       #42B40000                           
+  "GeomStatic/PreTranslation/Rotation/Z"                   ;f32       #0                                  
+  "GeomStatic/PreTranslation/Translation/X"                ;f32       #0                                  
+  "GeomStatic/PreTranslation/Translation/Y"                ;f32       #3F147AE1                           
+  "GeomStatic/PreTranslation/Translation/Z"                ;f32       #0                                  
+  "GeomStatic/bMergeAllMeshes"                             ;bool      1                                   
+  "GeomStatic/AllMeshesDetails/GUID"                       ;u32       #0                                  
+  "GeomStatic/AllMeshesDetails/LODs[]"                     ;s64       0                                   
+  "GeomStatic/Merge Group List[]"                          ;s64       0                                   
+  "GeomStatic/Ungroup Mesh List[]"                         ;s64       1                                   
+  "GeomStatic/Ungroup Mesh List[G:0]/Node Path"            ;string    "RootNode/Cylinder.001"             
+  "GeomStatic/Ungroup Mesh List[G:0]/Mesh Name"            ;string    "Cylinder.003"                      
+  "GeomStatic/Ungroup Mesh List[G:0]/Mesh Details/GUID"    ;u32       #0                                  
+  "GeomStatic/Ungroup Mesh List[G:0]/Mesh Details/LODs[]"  ;s64       0                                   
+  "GeomStatic/Deleted List[]"                              ;s64       0                                   
+  "GeomStatic/MaterialDetailsList[]"                       ;s64       1                                   
+  "GeomStatic/MaterialDetailsList[G:0]/Name"               ;string    "DefaultMaterial"                   
+  "GeomStatic/MaterialDetailsList[G:0]/RefCount"           ;s32       1                                   
+  "GeomStatic/MaterialInstance[]"                          ;s64       1                                   
+  "GeomStatic/MaterialInstance[G:0]"                       ;full_guid #1EFCA8675FF20009 #B673C5DA4A4A70AD 

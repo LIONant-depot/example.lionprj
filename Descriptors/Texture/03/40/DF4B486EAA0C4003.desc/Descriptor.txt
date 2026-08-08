@@ -10,15 +10,15 @@
 [ xProperties : 22 ]
 { Name:s                                             Value:?                                                           }
 //-------------------------------------------------  -----------------------------------------------------------------
-  "Texture/Usage"                                    ;enum    "COLOR"                                                 
+  "Texture/Usage"                                    ;enum    "TANGENT_NORMAL"                                        
   "Texture/Wrap Mode U"                              ;enum    "CLAMP_TO_EDGE"                                         
   "Texture/Wrap Mode V"                              ;enum    "CLAMP_TO_EDGE"                                         
   "Texture/InputType"                                ;enum    "SINGLE_INPUT"                                          
-  "Texture/Input/Filename"                           ;wstring "Assets\\PuppyDog\\textures\\Puppy_Robot_MAT_albedo.png"
-  "Texture/Compression"                              ;enum    "RGB_BC1"                                               
+  "Texture/Input/Filename"                           ;wstring "Assets\\PuppyDog\\textures\\Puppy_Robot_MAT_normal.png"
+  "Texture/Compression"                              ;enum    "RG_BC5"                                                
   "Texture/AlphaThreshold"                           ;u8      #80                                                     
   "Texture/Quality"                                  ;f32     #3F000000                                               
-  "Texture/SRGB"                                     ;bool    1                                                       
+  "Texture/SRGB"                                     ;bool    0                                                       
   "Texture/Mipmaps/GenerateMips"                     ;bool    1                                                       
   "Texture/Mipmaps/Mipmap Filter"                    ;enum    "KAISER"                                                
   "Texture/Mipmaps/MinSize"                          ;s32     1                                                       

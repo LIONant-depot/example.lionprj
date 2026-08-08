@@ -10,8 +10,8 @@
 [ xProperties : 5 ]
 { Name:s                        Value:?                                        }
 //----------------------------  ----------------------------------------------
-  "Info/Name"                   ;string    "ORME  Puppy"                      
+  "Info/Name"                   ;string    "Normal Map Puppy"                 
   "Info/Comment"                ;string    ""                                 
-  "Info/Details/GUID"           ;full_guid #132E7066FEF88005 #6701D481518BD833
+  "Info/Details/GUID"           ;full_guid #DF4B486EAA0C4003 #6701D481518BD833
   "Info/Details/RscLinks[]"     ;s64       1                                  
   "Info/Details/RscLinks[G:0]"  ;full_guid #50C34866FECE0003 #C4D90C5F0CC43021
