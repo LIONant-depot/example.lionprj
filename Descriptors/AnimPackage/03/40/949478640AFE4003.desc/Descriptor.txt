@@ -1,0 +1,16 @@
+
+[ DescriptorVersion ]
+{ Major:d  Minor:d }
+//-------  -------
+     1        0   
+
+// New Types
+< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
+
+[ xProperties : 4 ]
+{ Name:s                                 Value:?                                                                                          }
+//-------------------------------------  ------------------------------------------------------------------------------------------------
+  "AnimPackage/ImportSources[]"          ;s64       1                                                                                    
+  "AnimPackage/ImportSources[G:0]/Path"  ;wstring   "Cache\\dependencies\\Assets\\Animated\\walking-while-listening\\source\\Walking.fbx"
+  "AnimPackage/SkeletonRef"              ;full_guid #D4721069138B4003 #F5D3BE1ED860ABF7                                                  
+  "AnimPackage/Clips[]"                  ;s64       0                                                                                    
