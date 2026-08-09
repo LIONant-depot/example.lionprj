@@ -20,5 +20,5 @@
   "AnimPackage/ImportSources[G:0]/Clips[G:0]/DownsampleFPS"   ;s32       0                                                                                    
   "AnimPackage/ImportSources[G:0]/Clips[G:0]/TrimStartFrame"  ;s32       -1                                                                                   
   "AnimPackage/ImportSources[G:0]/Clips[G:0]/TrimEndFrame"    ;s32       -1                                                                                   
-  "AnimPackage/ImportSources[G:0]/Clips[G:0]/RootMotion"      ;enum      "None"                                                                               
+  "AnimPackage/ImportSources[G:0]/Clips[G:0]/RootMotion"      ;enum      "XYZ"                                                                                
   "AnimPackage/SkeletonRef"                                   ;full_guid #D4721069138B4003 #F5D3BE1ED860ABF7                                                  
