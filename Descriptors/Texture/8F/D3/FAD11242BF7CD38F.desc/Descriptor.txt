@@ -1,33 +1,51 @@
+
 [ DescriptorVersion ]
 { Major:d  Minor:d }
 //-------  -------
-     1        0
+     1        0   
 
 // New Types
 < s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
 
-[ xProperties : 22 ]
-{ Name:s                                             Value:?                                                           }
-//-------------------------------------------------  -----------------------------------------------------------------
-  "Texture/Usage"                                    ;enum    "INTENSITY"
-  "Texture/Wrap Mode U"                              ;enum    "CLAMP_TO_EDGE"
-  "Texture/Wrap Mode V"                              ;enum    "CLAMP_TO_EDGE"
-  "Texture/InputType"                                ;enum    "SINGLE_INPUT"
-  "Texture/Input/Filename"                           ;wstring "Assets\\WalkingSkin\\Ch03_1001_ORM_flat.png"
-  "Texture/Compression"                              ;enum    "RGBA_BC1_A1"
-  "Texture/AlphaThreshold"                           ;u8      #80
-  "Texture/Quality"                                  ;f32     #3F000000
-  "Texture/SRGB"                                     ;bool    0
-  "Texture/Mipmaps/GenerateMips"                     ;bool    1
-  "Texture/Mipmaps/Mipmap Filter"                    ;enum    "KAISER"
-  "Texture/Mipmaps/MinSize"                          ;s32     1
-  "Texture/FillAveColorByAlpha/FillAveColorByAlpha"  ;bool    0
-  "Texture/FillAveColorByAlpha/AlphaThreshold"       ;u8      #80
-  "Texture/Tillable Filter/Tillable Filter"          ;bool    0
-  "Texture/Tillable Filter/Width Blend Percentage"   ;f32     #3DCCCCCD
-  "Texture/Tillable Filter/Height Blend Percentage"  ;f32     #3DCCCCCD
-  "Texture/Normalize Normals"                        ;bool    1
-  "Texture/Normal Flip Y"                            ;bool    0
-  "Texture/CubeMap/Convert To CubeMap"               ;bool    0
-  "Texture/CubeMap/Face Size"                        ;u32     #400
-  "Texture/CubeMap/Use Bilinear"                     ;bool    1
+[ xProperties : 39 ]
+{ Name:s                                               Value:?                                                  }
+//---------------------------------------------------  --------------------------------------------------------
+  "Texture/Usage"                                      ;enum    "INTENSITY"                                    
+  "Texture/Wrap Mode U"                                ;enum    "CLAMP_TO_EDGE"                                
+  "Texture/Wrap Mode V"                                ;enum    "CLAMP_TO_EDGE"                                
+  "Texture/InputType"                                  ;enum    "MIX_SOURCE_ARRAY"                             
+  "Texture/Input/MixSource[]"                          ;s64     1                                              
+  "Texture/Input/MixSource[G:0]/Mixes[]"               ;s64     4                                              
+  "Texture/Input/MixSource[G:0]/Mixes[G:0]/Copy From"  ;enum    "CUSTOM_CONSTANT"                              
+  "Texture/Input/MixSource[G:0]/Mixes[G:0]/Copy To"    ;enum    "R"                                            
+  "Texture/Input/MixSource[G:0]/Mixes[G:0]/FileName"   ;wstring ""                                             
+  "Texture/Input/MixSource[G:0]/Mixes[G:0]/Constant"   ;f32     #3F800000                                      
+  "Texture/Input/MixSource[G:0]/Mixes[G:1]/Copy From"  ;enum    "R"                                            
+  "Texture/Input/MixSource[G:0]/Mixes[G:1]/Copy To"    ;enum    "G"                                            
+  "Texture/Input/MixSource[G:0]/Mixes[G:1]/FileName"   ;wstring "Assets\\WalkingSkin\\Ch03_1001_Glossiness.png"
+  "Texture/Input/MixSource[G:0]/Mixes[G:1]/Constant"   ;f32     #3F800000                                      
+  "Texture/Input/MixSource[G:0]/Mixes[G:2]/Copy From"  ;enum    "CUSTOM_CONSTANT"                              
+  "Texture/Input/MixSource[G:0]/Mixes[G:2]/Copy To"    ;enum    "B"                                            
+  "Texture/Input/MixSource[G:0]/Mixes[G:2]/FileName"   ;wstring ""                                             
+  "Texture/Input/MixSource[G:0]/Mixes[G:2]/Constant"   ;f32     #0                                             
+  "Texture/Input/MixSource[G:0]/Mixes[G:3]/Copy From"  ;enum    "CUSTOM_CONSTANT"                              
+  "Texture/Input/MixSource[G:0]/Mixes[G:3]/Copy To"    ;enum    "A"                                            
+  "Texture/Input/MixSource[G:0]/Mixes[G:3]/FileName"   ;wstring ""                                             
+  "Texture/Input/MixSource[G:0]/Mixes[G:3]/Constant"   ;f32     #0                                             
+  "Texture/Compression"                                ;enum    "RGB_BC1"                                      
+  "Texture/AlphaThreshold"                             ;u8      #80                                            
+  "Texture/Quality"                                    ;f32     #3F000000                                      
+  "Texture/SRGB"                                       ;bool    0                                              
+  "Texture/Mipmaps/GenerateMips"                       ;bool    1                                              
+  "Texture/Mipmaps/Mipmap Filter"                      ;enum    "KAISER"                                       
+  "Texture/Mipmaps/MinSize"                            ;s32     1                                              
+  "Texture/FillAveColorByAlpha/FillAveColorByAlpha"    ;bool    0                                              
+  "Texture/FillAveColorByAlpha/AlphaThreshold"         ;u8      #80                                            
+  "Texture/Tillable Filter/Tillable Filter"            ;bool    0                                              
+  "Texture/Tillable Filter/Width Blend Percentage"     ;f32     #3DCCCCCD                                      
+  "Texture/Tillable Filter/Height Blend Percentage"    ;f32     #3DCCCCCD                                      
+  "Texture/Normalize Normals"                          ;bool    1                                              
+  "Texture/Normal Flip Y"                              ;bool    0                                              
+  "Texture/CubeMap/Convert To CubeMap"                 ;bool    0                                              
+  "Texture/CubeMap/Face Size"                          ;u32     #400                                           
+  "Texture/CubeMap/Use Bilinear"                       ;bool    1                                              
