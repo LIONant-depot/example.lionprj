@@ -10,8 +10,8 @@
 [ xProperties : 5 ]
 { Name:s                        Value:?                                        }
 //----------------------------  ----------------------------------------------
-  "Info/Name"                   ;string    "WalkingSkin Material Instance"
+  "Info/Name"                   ;string    "WalkingSkin"
   "Info/Comment"                ;string    ""
-  "Info/Details/GUID"           ;full_guid #48861CDCAA683C51 #B673C5DA4A4A70AD
+  "Info/Details/GUID"           ;full_guid #45B11E01187A93D7 #C4D90C5F0CC43021
   "Info/Details/RscLinks[]"     ;s64       1
-  "Info/Details/RscLinks[G:0]"  ;full_guid #45B11E01187A93D7 #C4D90C5F0CC43021
+  "Info/Details/RscLinks[G:0]"  ;full_guid #ADEB2E3BF97B6E03 #C4D90C5F0CC43021
