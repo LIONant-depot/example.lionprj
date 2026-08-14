@@ -1,0 +1,34 @@
+
+[ DescriptorVersion ]
+{ Major:d  Minor:d }
+//-------  -------
+     1        0
+
+// New Types
+< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
+
+[ xProperties : 22 ]
+{ Name:s                                     Value:?                                                                                            }
+//-------------------------------------------  ------------------------------------------------------------------------------------------------
+  "GeomSkin/ImportAsset"                      ;wstring   "Cache\\dependencies\\Assets\\Animated\\walking-while-listening\\source\\Walking.fbx"
+  "GeomSkin/SkeletonRef"                      ;full_guid #D4721069138B4003 #F5D3BE1ED860ABF7
+  "GeomSkin/PreTranslation/Scale/X"           ;f32       #3F800000
+  "GeomSkin/PreTranslation/Scale/Y"           ;f32       #3F800000
+  "GeomSkin/PreTranslation/Scale/Z"           ;f32       #3F800000
+  "GeomSkin/PreTranslation/Rotation/X"        ;f32       #0
+  "GeomSkin/PreTranslation/Rotation/Y"        ;f32       #0
+  "GeomSkin/PreTranslation/Rotation/Z"        ;f32       #0
+  "GeomSkin/PreTranslation/Translation/X"     ;f32       #0
+  "GeomSkin/PreTranslation/Translation/Y"     ;f32       #0
+  "GeomSkin/PreTranslation/Translation/Z"     ;f32       #0
+  "GeomSkin/bMergeAllMeshes"                  ;bool      1
+  "GeomSkin/AllMeshesDetails/Name"            ;string    "WalkingSkin"
+  "GeomSkin/AllMeshesDetails/LODs[]"          ;s64       0
+  "GeomSkin/Merge Group List[]"               ;s64       0
+  "GeomSkin/Ungroup Mesh List[]"               ;s64       0
+  "GeomSkin/Deleted List[]"                    ;s64       0
+  "GeomSkin/MaterialDetailsList[]"            ;s64       1
+  "GeomSkin/MaterialDetailsList[G:0]/Name"    ;string    "Ch03_Body"
+  "GeomSkin/MaterialDetailsList[G:0]/RefCount";s32       1
+  "GeomSkin/MaterialInstance[]"                ;s64       1
+  "GeomSkin/MaterialInstance[G:0]"             ;full_guid #48861CDCAA683C51 #B673C5DA4A4A70AD
