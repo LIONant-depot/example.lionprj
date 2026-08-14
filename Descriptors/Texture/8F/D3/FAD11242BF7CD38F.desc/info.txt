@@ -11,7 +11,7 @@
 { Name:s                        Value:?                                        }
 //----------------------------  ----------------------------------------------
   "Info/Name"                   ;string    "Ch03 Body ORM (flat placeholder)"
-  "Info/Comment"                ;string    "No baked AO/Roughness/Metalness maps ship with this character (only Diffuse/Normal/Specular/Glossiness) - flat AO=1, Roughness=0.7, Metalness=0 chosen to match the character's dark/near-flat Specular map (matte, non-metal)."
+  "Info/Comment"                ;string    "No baked AO/Roughness/Metalness maps ship with this character (only Diffuse/Normal/Specular/Glossiness) - flat AO=1, Roughness=0.7, Metalness=0 chosen to match the character's dark/near-flat Specular map (matte, non-metal). Uses RGBA_BC1_A1 (not RGB_BC1) with A=0 - mb_material_pbr.glsl reads ORME.a as an emissive mask, and a non-alpha BC1 format forces alpha to 1.0 in hardware regardless of source pixels, which was adding full unlit albedo as phantom emissive on every pixel."
   "Info/Details/GUID"           ;full_guid #FAD11242BF7CD38F #6701D481518BD833
   "Info/Details/RscLinks[]"     ;s64       1
   "Info/Details/RscLinks[G:0]"  ;full_guid #45B11E01187A93D7 #C4D90C5F0CC43021

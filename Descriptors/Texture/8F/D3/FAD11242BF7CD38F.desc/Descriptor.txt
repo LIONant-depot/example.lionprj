@@ -13,8 +13,8 @@
   "Texture/Wrap Mode U"                              ;enum    "CLAMP_TO_EDGE"
   "Texture/Wrap Mode V"                              ;enum    "CLAMP_TO_EDGE"
   "Texture/InputType"                                ;enum    "SINGLE_INPUT"
-  "Texture/Input/Filename"                           ;wstring "Cache\\dependencies\\Assets\\Animated\\walking-while-listening\\textures\\Ch03_1001_ORM_flat.png"
-  "Texture/Compression"                              ;enum    "RGB_BC1"
+  "Texture/Input/Filename"                           ;wstring "Assets\\WalkingSkin\\Ch03_1001_ORM_flat.png"
+  "Texture/Compression"                              ;enum    "RGBA_BC1_A1"
   "Texture/AlphaThreshold"                           ;u8      #80
   "Texture/Quality"                                  ;f32     #3F000000
   "Texture/SRGB"                                     ;bool    0
