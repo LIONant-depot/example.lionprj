@@ -4,7 +4,7 @@
 
 layout (binding = 0)    uniform     sampler2D   uSamplerColor; // [INPUT_TEXTURE_123 ]
 
-layout(location = 0) in struct { vec4 Color; vec2 UV; } In;
+layout(location = 0) in struct { vec4 wSpacePosition; vec4 ShadowPosition; vec4 Color; vec4 Tangent; vec3 Normal; vec2 UV; } In;
 
 layout (location = 0)   out         vec4        outFragColor;
 

@@ -17,7 +17,7 @@
   "Texture/Input/Filename"                           ;wstring "Assets\\SheKnewMe.tga"
   "Texture/Compression"                              ;enum    "RGB_BC1"              
   "Texture/AlphaThreshold"                           ;u8      #80                    
-  "Texture/Quality"                                  ;f32     #3EDE9BE1              
+  "Texture/Quality"                                  ;f32     #3F800000              
   "Texture/SRGB"                                     ;bool    1                      
   "Texture/Mipmaps/GenerateMips"                     ;bool    1                      
   "Texture/Mipmaps/Mipmap Filter"                    ;enum    "KAISER"               
