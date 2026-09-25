@@ -26,23 +26,20 @@
 { Name:s                         Value:?          }
 //-----------------------------  ----------------
   "Transform/Position/X"         ;f32 -2.4000001 
-  "Transform/Position/Y"         ;f32 4          
+  "Transform/Position/Y"         ;f32 20         
   "Transform/Position/Z"         ;f32 -1.60000002
-  "Transform/Rotation/X"         ;f32 0.258819044
+  "Transform/Rotation/X"         ;f32 0.353553385
   "Transform/Rotation/Y"         ;f32 0          
-  "Transform/Rotation/Z"         ;f32 0          
-  "Transform/Rotation/W"         ;f32 0.965925813
+  "Transform/Rotation/Z"         ;f32 0.612372398
+  "Transform/Rotation/W"         ;f32 0.707106709
   "Transform/RotationDegrees/X"  ;f32 30         
-  "Transform/RotationDegrees/Y"  ;f32 0          
-  "Transform/RotationDegrees/Z"  ;f32 0          
+  "Transform/RotationDegrees/Y"  ;f32 30         
+  "Transform/RotationDegrees/Z"  ;f32 90         
   "Transform/Scale/X"            ;f32 30         
   "Transform/Scale/Y"            ;f32 1          
   "Transform/Scale/Z"            ;f32 1          
 
-[ xProperties : 4 ]
+[ xProperties : 1 ]
 { Name:s                     Value:?   }
 //-------------------------  ---------
-  "RigidBody/HalfExtents/X"  ;f32  0.5
-  "RigidBody/HalfExtents/Y"  ;f32  0.5
-  "RigidBody/HalfExtents/Z"  ;f32  0.5
   "RigidBody/Dynamic"        ;bool 1  

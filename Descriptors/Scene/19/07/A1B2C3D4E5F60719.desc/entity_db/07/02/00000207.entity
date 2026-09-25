@@ -36,10 +36,7 @@
   "Primitive/Color/Y"  ;f32  0.300000012
   "Primitive/Color/Z"  ;f32  0.300000012
 
-[ xProperties : 4 ]
+[ xProperties : 1 ]
 { Name:s                     Value:?   }
 //-------------------------  ---------
-  "RigidBody/HalfExtents/X"  ;f32  0.5
-  "RigidBody/HalfExtents/Y"  ;f32  0.5
-  "RigidBody/HalfExtents/Z"  ;f32  0.5
   "RigidBody/Dynamic"        ;bool  1 
