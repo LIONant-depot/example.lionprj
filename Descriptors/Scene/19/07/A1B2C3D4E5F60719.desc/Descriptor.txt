@@ -1,0 +1,29 @@
+
+[ DescriptorVersion ]
+{ Major:d  Minor:d }
+//-------  -------
+     1        0   
+
+// New Types
+< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
+
+[ xProperties : 17 ]
+{ Name:s                        Value:?   }
+//----------------------------  ---------
+  "Scene/ParentScenes[]"        ;s64 0   
+  "Scene/ExternalRefs[]"        ;s64 0   
+  "Scene/ActiveEntities[]"      ;s64 13  
+  "Scene/ActiveEntities[G:0]"   ;u32 #101
+  "Scene/ActiveEntities[G:1]"   ;u32 #201
+  "Scene/ActiveEntities[G:2]"   ;u32 #202
+  "Scene/ActiveEntities[G:3]"   ;u32 #203
+  "Scene/ActiveEntities[G:4]"   ;u32 #204
+  "Scene/ActiveEntities[G:5]"   ;u32 #205
+  "Scene/ActiveEntities[G:6]"   ;u32 #206
+  "Scene/ActiveEntities[G:7]"   ;u32 #207
+  "Scene/ActiveEntities[G:8]"   ;u32 #208
+  "Scene/ActiveEntities[G:9]"   ;u32 #209
+  "Scene/ActiveEntities[G:10]"  ;u32 #20A
+  "Scene/ActiveEntities[G:11]"  ;u32 #20B
+  "Scene/ActiveEntities[G:12]"  ;u32 #20C
+  "Scene/Folders[]"             ;s64 0   

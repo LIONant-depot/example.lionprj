@@ -1,0 +1,8 @@
+
+[ ComponentDeps : 4 ]
+{ Guid:G             Name:s      }
+//-----------------  -----------
+                 #0  "Entity"   
+   #296EEAAEE0EF730  "Primitive"
+  #663773C47FA1D0BA  "Transform"
+  #91CFF491B98672FF  "RigidBody"
