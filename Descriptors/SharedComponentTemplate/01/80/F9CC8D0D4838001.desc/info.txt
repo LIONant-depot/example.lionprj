@@ -1,0 +1,16 @@
+
+[ DescriptorVersion ]
+{ Major:d  Minor:d }
+//-------  -------
+     1        0   
+
+// New Types
+< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
+
+[ xProperties : 4 ]
+{ Name:s                     Value:?                                       }
+//-------------------------  ---------------------------------------------
+  "Info/Name"                ;string    "DemoShare"                       
+  "Info/Comment"             ;string    ""                                
+  "Info/Details/GUID"        ;full_guid #F9CC8D0D4838001 #F5D56ECDFE2AD7E5
+  "Info/Details/RscLinks[]"  ;s64       0                                 

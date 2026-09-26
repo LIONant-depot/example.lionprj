@@ -1,0 +1,29 @@
+
+[ DescriptorVersion ]
+{ Major:d  Minor:d }
+//-------  -------
+     1        0   
+
+// New Types
+< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
+
+[ xProperties : 17 ]
+{ Name:s                                              Value:?                     }
+//--------------------------------------------------  ---------------------------
+  "SharedComponentTemplate/ComponentTypeGuid"         ;u64    #59DB9C758B1D8D39  
+  "SharedComponentTemplate/Properties[]"              ;s64    5                  
+  "SharedComponentTemplate/Properties[G:0]/Path"      ;string "DemoShare/TintR"  
+  "SharedComponentTemplate/Properties[G:0]/TypeGuid"  ;u32    #8CC78B69          
+  "SharedComponentTemplate/Properties[G:0]/Value"     ;string "1.000000"         
+  "SharedComponentTemplate/Properties[G:1]/Path"      ;string "DemoShare/TintG"  
+  "SharedComponentTemplate/Properties[G:1]/TypeGuid"  ;u32    #8CC78B69          
+  "SharedComponentTemplate/Properties[G:1]/Value"     ;string "1.000000"         
+  "SharedComponentTemplate/Properties[G:2]/Path"      ;string "DemoShare/TintB"  
+  "SharedComponentTemplate/Properties[G:2]/TypeGuid"  ;u32    #8CC78B69          
+  "SharedComponentTemplate/Properties[G:2]/Value"     ;string "1.000000"         
+  "SharedComponentTemplate/Properties[G:3]/Path"      ;string "DemoShare/Layer"  
+  "SharedComponentTemplate/Properties[G:3]/TypeGuid"  ;u32    #343BCEB1          
+  "SharedComponentTemplate/Properties[G:3]/Value"     ;string "0"                
+  "SharedComponentTemplate/Properties[G:4]/Path"      ;string "DemoShare/Enabled"
+  "SharedComponentTemplate/Properties[G:4]/TypeGuid"  ;u32    #D739B4EF          
+  "SharedComponentTemplate/Properties[G:4]/Value"     ;string "true"             

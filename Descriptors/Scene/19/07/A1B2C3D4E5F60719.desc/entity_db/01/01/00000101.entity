@@ -2,14 +2,15 @@
 [ EntityInfo ]
 { PermanentId:g  nComponents:d }
 //-------------  -------------
-      #101             3      
+      #101             4      
 
-[ ComponentTypes : 3 ]
+[ ComponentTypes : 4 ]
 { Guid:G            }
 //-----------------
    #296EEAAEE0EF730
   #663773C47FA1D0BA
   #91CFF491B98672FF
+  #59DB9C758B1D8D39
 
 // New Types
 < s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG entity:G enum:s >
@@ -40,6 +41,15 @@
   "Transform/Scale/Z"            ;f32 100
 
 [ xProperties : 1 ]
-{ Name:s                     Value:? }
-//-------------------------  -------
-  "RigidBody/Dynamic"        ;bool 0
+{ Name:s               Value:? }
+//-------------------  -------
+  "RigidBody/Dynamic"  ;bool 0
+
+[ xProperties : 5 ]
+{ Name:s               Value:? }
+//-------------------  -------
+  "DemoShare/TintR"    ;f32  1
+  "DemoShare/TintG"    ;f32  1
+  "DemoShare/TintB"    ;f32  1
+  "DemoShare/Layer"    ;s32  0
+  "DemoShare/Enabled"  ;bool 1
