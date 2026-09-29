@@ -2,15 +2,16 @@
 [ EntityInfo ]
 { PermanentId:g  nComponents:d }
 //-------------  -------------
-           #20A              3
-
-[ ComponentTypes : 3 ]
+      #20A             6
+[ ComponentTypes : 6 ]
 { Guid:G            }
 //-----------------
   #663773C47FA1D0BA
    #296EEAAEE0EF730
-  #91CFF491B98672FF
-
+#77DF28B87C62ABFF
+#D392CE60B3E70F01
+#4F7643DF807F0C51
+#3EF27824643D67EA
 // New Types
 < s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG entity:G enum:s >
 
@@ -36,7 +37,37 @@
   "Primitive/Color/Y"  ;f32  1          
   "Primitive/Color/Z"  ;f32  0.300000012
 
-[ xProperties : 1 ]
-{ Name:s                     Value:?   }
-//-------------------------  ---------
-  "RigidBody/Dynamic"        ;bool  1 
+[ xProperties : 5 ]
+{ Name:s                                               Value:? }
+//---------------------------------------------------  -------
+  "PhysicsBodyProperties/IsKinematic"                 ;bool 0
+  "PhysicsBodyProperties/LinearDamping"               ;f32  0
+  "PhysicsBodyProperties/AngularDamping"              ;f32  0
+  "PhysicsBodyProperties/EnableSleep"                 ;bool 1
+  "PhysicsBodyProperties/EnableContinuousCollision"   ;bool 0
+
+[ xProperties : 9 ]
+{ Name:s                                    Value:? }
+//----------------------------------------  -------
+  "PhysicsShapeProperties/Friction"         ;f32  0.600000024
+  "PhysicsShapeProperties/Restitution"      ;f32  0.100000001
+  "PhysicsShapeProperties/CategoryBits"     ;u64  #FFFFFFFFFFFFFFFF
+  "PhysicsShapeProperties/MaskBits"         ;u64  #FFFFFFFFFFFFFFFF
+  "PhysicsShapeProperties/GroupIndex"       ;s32  0
+  "PhysicsShapeProperties/IsSensor"         ;bool 0
+  "PhysicsShapeProperties/LocalPosition/X"  ;f32  0
+  "PhysicsShapeProperties/LocalPosition/Y"  ;f32  0
+  "PhysicsShapeProperties/LocalPosition/Z"  ;f32  0
+
+[ xProperties : 0 ]
+
+[ xProperties : 7 ]
+{ Name:s                         Value:? }
+//-----------------------------  --------
+  "PhysicsDynamics/LinearVelocity/X"    ;f32  0
+  "PhysicsDynamics/LinearVelocity/Y"    ;f32  0
+  "PhysicsDynamics/LinearVelocity/Z"    ;f32  0
+  "PhysicsDynamics/AngularVelocity/X"   ;f32  0
+  "PhysicsDynamics/AngularVelocity/Y"   ;f32  0
+  "PhysicsDynamics/AngularVelocity/Z"   ;f32  0
+  "PhysicsDynamics/Mass"                ;f32  1.0

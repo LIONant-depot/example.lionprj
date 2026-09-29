@@ -2,14 +2,17 @@
 [ EntityInfo ]
 { PermanentId:g  nComponents:d }
 //-------------  -------------
-      #201             3      
+      #201             6      
 
-[ ComponentTypes : 3 ]
+[ ComponentTypes : 6 ]
 { Guid:G            }
 //-----------------
    #296EEAAEE0EF730
+  #3EF27824643D67EA
+  #4F7643DF807F0C51
   #663773C47FA1D0BA
-  #91CFF491B98672FF
+  #77DF28B87C62ABFF
+  #D392CE60B3E70F01
 
 // New Types
 < s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG entity:G enum:s >
@@ -21,6 +24,36 @@
   "Primitive/Color/X"  ;f32  1          
   "Primitive/Color/Y"  ;f32  0.300000012
   "Primitive/Color/Z"  ;f32  0.300000012
+
+[ xProperties : 13 ]
+{ Name:s                        Value:? }
+//----------------------------  -------
+  "PhysicsDynamics/LinearVelocity/X"   ;f32 0 
+  "PhysicsDynamics/LinearVelocity/Y"   ;f32 0 
+  "PhysicsDynamics/LinearVelocity/Z"   ;f32 0 
+  "PhysicsDynamics/AngularVelocity/X"  ;f32 0 
+  "PhysicsDynamics/AngularVelocity/Y"  ;f32 0 
+  "PhysicsDynamics/AngularVelocity/Z"  ;f32 0 
+  "PhysicsDynamics/Mass"               ;f32 1 
+  "PhysicsDynamics/Force/X"            ;f32 0 
+  "PhysicsDynamics/Force/Y"            ;f32 0 
+  "PhysicsDynamics/Force/Z"            ;f32 0 
+  "PhysicsDynamics/Torque/X"           ;f32 0 
+  "PhysicsDynamics/Torque/Y"           ;f32 0 
+  "PhysicsDynamics/Torque/Z"           ;f32 0 
+
+[ xProperties : 9 ]
+{ Name:s                         Value:? }
+//-----------------------------  -------
+  "Physics/BodyIndex"          ;f32 0 
+  "Physics/BodyGeneration"     ;f32 0 
+  "Physics/CachedBodyType"     ;f32 2 
+  "Physics/BodyHalfExtents/X"  ;f32 0 
+  "Physics/BodyHalfExtents/Y"  ;f32 0 
+  "Physics/BodyHalfExtents/Z"  ;f32 0 
+  "Physics/CachedMass"         ;f32 0 
+  "Physics/CachedFriction"     ;f32 0 
+  "Physics/CachedRestitution"  ;f32 0 
 
 [ xProperties : 13 ]
 { Name:s                         Value:?          }
@@ -39,7 +72,28 @@
   "Transform/Scale/Y"            ;f32 1          
   "Transform/Scale/Z"            ;f32 1          
 
-[ xProperties : 1 ]
-{ Name:s                     Value:?   }
-//-------------------------  ---------
-  "RigidBody/Dynamic"        ;bool 1  
+[ xProperties : 4 ]
+{ Name:s                                             Value:? }
+//-------------------------------------------------  -------
+  "PhysicsBodyProperties/LinearDamping"              ;f32  0
+  "PhysicsBodyProperties/AngularDamping"             ;f32  0
+  "PhysicsBodyProperties/EnableSleep"                ;bool 1
+  "PhysicsBodyProperties/EnableContinuousCollision"  ;bool 0
+
+[ xProperties : 14 ]
+{ Name:s                                    Value:?                 }
+//----------------------------------------  -----------------------
+  "PhysicsShapeProperties/Density"          ;f32  1000             
+  "PhysicsShapeProperties/Friction"         ;f32  0.600000024      
+  "PhysicsShapeProperties/Restitution"      ;f32  0.100000001      
+  "PhysicsShapeProperties/CategoryBits"     ;u64  #FFFFFFFFFFFFFFFF
+  "PhysicsShapeProperties/MaskBits"         ;u64  #FFFFFFFFFFFFFFFF
+  "PhysicsShapeProperties/GroupIndex"       ;s32  0                
+  "PhysicsShapeProperties/IsSensor"         ;bool 0                
+  "PhysicsShapeProperties/LocalPosition/X"  ;f32  0                
+  "PhysicsShapeProperties/LocalPosition/Y"  ;f32  0                
+  "PhysicsShapeProperties/LocalPosition/Z"  ;f32  0                
+  "PhysicsShapeProperties/LocalRotX"        ;f32  0                
+  "PhysicsShapeProperties/LocalRotY"        ;f32  0                
+  "PhysicsShapeProperties/LocalRotZ"        ;f32  0                
+  "PhysicsShapeProperties/LocalRotW"        ;f32  1                

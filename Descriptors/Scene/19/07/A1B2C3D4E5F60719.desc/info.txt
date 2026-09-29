@@ -8,10 +8,10 @@
 < s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
 
 [ xProperties : 5 ]
-{ Name:s                        Value:?                                        }
-//----------------------------  ----------------------------------------------
-  "Info/Name"                   ;string    "Physics"                          
-  "Info/Comment"                ;string    ""                                 
-  "Info/Details/GUID"           ;full_guid #A1B2C3D4E5F60719 #82D2BE43028DD6CF
-  "Info/Details/RscLinks[]"     ;s64       1                                  
-  "Info/Details/RscLinks[G:0]"  ;full_guid #45B11E01187A93D7 #C4D90C5F0CC43021
+{ Name:s                        Value:?                                                                                              }
+//----------------------------  ----------------------------------------------------------------------------------------------------
+  "Info/Name"                   ;string    "Physics"                                                                                
+  "Info/Comment"                ;string    "Physics V1: 1 Static ground + 12 Dynamic crates with PhysicsDynamics Mass (box half=0.5*Scale)"
+  "Info/Details/GUID"           ;full_guid #A1B2C3D4E5F60719 #82D2BE43028DD6CF                                                      
+  "Info/Details/RscLinks[]"     ;s64       1                                                                                        
+  "Info/Details/RscLinks[G:0]"  ;full_guid #1D0DE8D0EB730001 #C4D90C5F0CC43021                                                      
