@@ -1,0 +1,35 @@
+
+[ DescriptorVersion ]
+{ Major:d  Minor:d }
+//-------  -------
+     1        0   
+
+// New Types
+< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
+
+[ xProperties : 23 ]
+{ Name:s                         Value:?           }
+//-----------------------------  -----------------
+  "Scene/ParentScenes[]"         ;s64    0        
+  "Scene/ExternalRefs[]"         ;s64    0        
+  "Scene/ActiveEntities[]"       ;s64    6        
+  "Scene/ActiveEntities[G:0]"    ;u32    #1       
+  "Scene/ActiveEntities[G:1]"    ;u32    #10      
+  "Scene/ActiveEntities[G:2]"    ;u32    #11      
+  "Scene/ActiveEntities[G:3]"    ;u32    #12      
+  "Scene/ActiveEntities[G:4]"    ;u32    #20      
+  "Scene/ActiveEntities[G:5]"    ;u32    #21      
+  "Scene/Folders[]"              ;s64    0        
+  "Scene/EntityNames[]"          ;s64    6        
+  "Scene/EntityNames[G:0]/Id"    ;u32    #1       
+  "Scene/EntityNames[G:0]/Name"  ;string "Ground" 
+  "Scene/EntityNames[G:1]/Id"    ;u32    #10      
+  "Scene/EntityNames[G:1]/Name"  ;string "Ball 1" 
+  "Scene/EntityNames[G:2]/Id"    ;u32    #11      
+  "Scene/EntityNames[G:2]/Name"  ;string "Ball 2" 
+  "Scene/EntityNames[G:3]/Id"    ;u32    #12      
+  "Scene/EntityNames[G:3]/Name"  ;string "Ball 3" 
+  "Scene/EntityNames[G:4]/Id"    ;u32    #20      
+  "Scene/EntityNames[G:4]/Name"  ;string "Crate 1"
+  "Scene/EntityNames[G:5]/Id"    ;u32    #21      
+  "Scene/EntityNames[G:5]/Name"  ;string "Crate 2"
