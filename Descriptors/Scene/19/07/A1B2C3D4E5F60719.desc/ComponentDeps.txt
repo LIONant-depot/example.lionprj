@@ -1,5 +1,5 @@
 
-[ ComponentDeps : 12 ]
+[ ComponentDeps : 13 ]
 { Guid:G             Name:s                  }
 //-----------------  -----------------------
                  #0  "Entity"               
@@ -13,4 +13,5 @@
   #663773C47FA1D0BA  "Transform"            
   #6EC40BDECA075977  "static"               
   #77DF28B87C62ABFF  "PhysicsBodyProperties"
+  #A5EEE30695E37CAB  "PhysicsColliderSphere"
   #A8027BF64F88F583  "EditorPrafabInstance" 
