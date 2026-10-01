@@ -1,0 +1,76 @@
+
+[ EntityInfo ]
+{ PermanentId:g  nComponents:d }
+//-------------  -------------
+    #FFC050D1          5      
+
+[ ComponentTypes : 5 ]
+{ Guid:G            }
+//-----------------
+   #296EEAAEE0EF730
+  #52B341C6318A8906
+  #588DCE1BC09DCB49
+  #663773C47FA1D0BA
+  #B17052371C9F7064
+
+// New Types
+< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG entity:G enum:s >
+
+[ xProperties : 4 ]
+{ Name:s               Value:?           }
+//-------------------  -----------------
+  "Primitive/Shape"    ;enum "Capsule"  
+  "Primitive/Color/X"  ;f32  0.219999999
+  "Primitive/Color/Y"  ;f32  0.219999999
+  "Primitive/Color/Z"  ;f32  0.239999995
+
+[ xProperties : 1 ]
+{ Name:s               Value:? }
+//-------------------  -------
+  "SoccerIdentity/Id"  ;s32 20
+
+[ xProperties : 5 ]
+{ Name:s                      Value:?  }
+//--------------------------  --------
+  "SoccerReferee/Distance"    ;f32 3.5
+  "SoccerReferee/Speed"       ;f32 4.5
+  "SoccerReferee/Velocity/X"  ;f32 0  
+  "SoccerReferee/Velocity/Y"  ;f32 0  
+  "SoccerReferee/Velocity/Z"  ;f32 0  
+
+[ xProperties : 14 ]
+{ Name:s                         Value:?           }
+//-----------------------------  -----------------
+  "Transform/Position/X"         ;f32  0          
+  "Transform/Position/Y"         ;f32  0.850000024
+  "Transform/Position/Z"         ;f32  3          
+  "Transform/Rotation/X"         ;f32  0          
+  "Transform/Rotation/Y"         ;f32  0          
+  "Transform/Rotation/Z"         ;f32  0          
+  "Transform/Rotation/W"         ;f32  1          
+  "Transform/RotationDegrees/X"  ;f32  0          
+  "Transform/RotationDegrees/Y"  ;f32  0          
+  "Transform/RotationDegrees/Z"  ;f32  0          
+  "Transform/Scale/X"            ;f32  0.699999988
+  "Transform/Scale/Y"            ;f32  1.70000005 
+  "Transform/Scale/Z"            ;f32  0.699999988
+  "Transform/EditorLockScale"    ;bool 0          
+
+[ xProperties : 15 ]
+{ Name:s                                                Value:?                        }
+//----------------------------------------------------  ------------------------------
+  "PhysicsColliderCapsule/Capsules[]"                   ;s64       1                  
+  "PhysicsColliderCapsule/Capsules[G:0]/Center/X"       ;f32       0                  
+  "PhysicsColliderCapsule/Capsules[G:0]/Center/Y"       ;f32       0                  
+  "PhysicsColliderCapsule/Capsules[G:0]/Center/Z"       ;f32       0                  
+  "PhysicsColliderCapsule/Capsules[G:0]/Orientation/X"  ;f32       0                  
+  "PhysicsColliderCapsule/Capsules[G:0]/Orientation/Y"  ;f32       0                  
+  "PhysicsColliderCapsule/Capsules[G:0]/Orientation/Z"  ;f32       0                  
+  "PhysicsColliderCapsule/Capsules[G:0]/Orientation/W"  ;f32       1                  
+  "PhysicsColliderCapsule/Capsules[G:0]/Rotation/X"     ;f32       0                  
+  "PhysicsColliderCapsule/Capsules[G:0]/Rotation/Y"     ;f32       0                  
+  "PhysicsColliderCapsule/Capsules[G:0]/Rotation/Z"     ;f32       0                  
+  "PhysicsColliderCapsule/Capsules[G:0]/Radius"         ;f32       0.25               
+  "PhysicsColliderCapsule/Capsules[G:0]/Height"         ;f32       1                  
+  "PhysicsColliderCapsule/Capsules[G:0]/Material"       ;full_guid #0 #6073A709ACB80A3
+  "PhysicsColliderCapsule/Capsules[G:0]/IsSensor"       ;bool      0                  

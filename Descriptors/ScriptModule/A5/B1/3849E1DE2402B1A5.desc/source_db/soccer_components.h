@@ -1,0 +1,187 @@
+#pragma once
+
+// The components of the soccer game. They hold data only; the systems (soccer_*_system.h) do the work. Each one appears in the editor's
+// "Add Component" list under the category "Soccer", and every property below is editable in the Inspector.
+//
+//      match       the rules and the score: pitch size, goal width, who scored. One entity, the pitch (it also carries the green floor's Primitive).
+//      ball        who kicked the ball last (the ball itself is the engine's: a PhysicsDynamics body with a sphere collider).
+//      player      a member of a team: which team, which role, where he stands when he has nothing better to do.
+//      referee     the referee: he follows the play at a distance (he is not a player, he never kicks).
+//      identity    a number that is unique among the things that cast a shadow.
+//      shadow      a flat dark disc under the thing with the same identity number.
+//      score_bar   a bar on the scoreboard that grows with a team's score.
+#include "soccer_common.h"
+
+namespace soccer
+{
+    //------------------------------------------------------------------------------------------------------------
+    // The state of a match: what the systems agree on.
+    //------------------------------------------------------------------------------------------------------------
+    enum class phase : std::uint8_t { KICKOFF, PLAYING, GOAL };
+
+    inline constexpr auto phase_list_v = std::array
+    { xproperty::settings::enum_item{ "Kickoff", phase::KICKOFF }
+    , xproperty::settings::enum_item{ "Playing", phase::PLAYING }
+    , xproperty::settings::enum_item{ "Goal",    phase::GOAL    }
+    };
+
+    struct match
+    {
+        constexpr static auto typedef_v = xecs::component::type::data{ .m_pName = "SoccerMatch" };
+
+        // The rules (edit these).
+        float   m_HalfLength    = 12.0f;        // the goals are at x = -HalfLength (Blue defends) and +HalfLength (Red defends)
+        float   m_HalfWidth     = 7.0f;         // the touchlines are at z = -HalfWidth and +HalfWidth
+        float   m_GoalHalfWidth = 2.0f;         // the mouth of each goal is this far to each side of its center
+        float   m_KickoffDelay  = 2.0f;         // seconds everybody waits before the ball is in play
+        float   m_GoalPause     = 2.5f;         // seconds the celebration lasts after a goal
+
+        // What is going on (the systems write these; the Inspector shows them while it plays).
+        phase   m_Phase         = phase::KICKOFF;
+        float   m_Timer         = 2.0f;         // seconds left in the current phase
+        int     m_ScoreBlue     = 0;
+        int     m_ScoreRed      = 0;
+        team    m_LastScorer    = team::BLUE;
+        int     m_Round         = 0;            // goes up at every kickoff: the others see it change and walk back to their places
+
+        XPROPERTY_DEF
+        ( "SoccerMatch", match
+        , obj_member<"HalfLength",    &match::m_HalfLength>
+        , obj_member<"HalfWidth",     &match::m_HalfWidth>
+        , obj_member<"GoalHalfWidth", &match::m_GoalHalfWidth>
+        , obj_member<"KickoffDelay",  &match::m_KickoffDelay>
+        , obj_member<"GoalPause",     &match::m_GoalPause>
+        , obj_member<"Phase",         &match::m_Phase, member_enum_span<phase_list_v>, member_flags<flags::SHOW_READONLY>>
+        , obj_member<"Timer",         &match::m_Timer,                                  member_flags<flags::SHOW_READONLY>>
+        , obj_member<"ScoreBlue",     &match::m_ScoreBlue,                              member_flags<flags::SHOW_READONLY>>
+        , obj_member<"ScoreRed",      &match::m_ScoreRed,                               member_flags<flags::SHOW_READONLY>>
+        , obj_member<"LastScorer",    &match::m_LastScorer, member_enum_span<team_list_v>, member_flags<flags::SHOW_READONLY>>
+        , obj_member<"Round",         &match::m_Round,                                  member_flags<flags::SHOW_READONLY>>
+        )
+    };
+    XSCRIPT_REGISTER_COMPONENT(match, "Soccer", 100)
+
+    //------------------------------------------------------------------------------------------------------------
+    // The ball: it rolls on the ground, slows down, and bounces off the touchlines and the end lines.
+    //------------------------------------------------------------------------------------------------------------
+    struct ball
+    {
+        constexpr static auto typedef_v = xecs::component::type::data{ .m_pName = "SoccerBall" };
+
+        xmath::fvec3    m_Velocity      = xmath::fvec3::fromZero();     // meters per second (read back from the physics body, to be shown)
+        team            m_LastTouch     = team::BLUE;                   // the team that kicked it last
+        int             m_LastKicker    = -1;                           // the identity of the player that kicked it last
+
+        XPROPERTY_DEF
+        ( "SoccerBall", ball
+        , obj_member<"Velocity",   &ball::m_Velocity,                              member_flags<flags::SHOW_READONLY>>
+        , obj_member<"LastTouch",  &ball::m_LastTouch, member_enum_span<team_list_v>, member_flags<flags::SHOW_READONLY>>
+        , obj_member<"LastKicker", &ball::m_LastKicker,                            member_flags<flags::SHOW_READONLY>>
+        )
+    };
+    XSCRIPT_REGISTER_COMPONENT(ball, "Soccer", 110)
+
+    //------------------------------------------------------------------------------------------------------------
+    // A player. The same component makes a field player and a goalkeeper; the role says which.
+    //------------------------------------------------------------------------------------------------------------
+    struct player
+    {
+        constexpr static auto typedef_v = xecs::component::type::data{ .m_pName = "SoccerPlayer" };
+
+        team            m_Team          = team::BLUE;
+        role            m_Role          = role::FIELD;
+        xmath::fvec3    m_Home          = xmath::fvec3::fromZero();     // where he stands when the ball is far (a goalkeeper: the middle of his goal line)
+        float           m_Speed         = 5.5f;                         // top running speed, meters per second
+        float           m_KickSpeed     = 11.0f;                        // how hard he kicks, meters per second of ball speed
+        float           m_Skill         = 0.85f;                        // 0 .. 1: how well he aims (1 never misses his target)
+
+        xmath::fvec3    m_Velocity      = xmath::fvec3::fromZero();     // his own run, meters per second (the systems move it)
+        float           m_Cooldown      = 0.0f;                         // seconds before he may kick again
+        int             m_Round         = -1;                           // the kickoff he last walked to his place for
+
+        XPROPERTY_DEF
+        ( "SoccerPlayer", player
+        , obj_member<"Team",      &player::m_Team, member_enum_span<team_list_v>>
+        , obj_member<"Role",      &player::m_Role, member_enum_span<role_list_v>>
+        , obj_member<"Home",      &player::m_Home>
+        , obj_member<"Speed",     &player::m_Speed>
+        , obj_member<"KickSpeed", &player::m_KickSpeed>
+        , obj_member<"Skill",     &player::m_Skill>
+        , obj_member<"Velocity",  &player::m_Velocity, member_flags<flags::SHOW_READONLY>>
+        )
+    };
+    XSCRIPT_REGISTER_COMPONENT(player, "Soccer", 120)
+
+    //------------------------------------------------------------------------------------------------------------
+    // The referee: a man in dark grey who stays near the ball without getting in the way.
+    //------------------------------------------------------------------------------------------------------------
+    struct referee
+    {
+        constexpr static auto typedef_v = xecs::component::type::data{ .m_pName = "SoccerReferee" };
+
+        float           m_Distance      = 3.5f;                         // how far from the ball he stands
+        float           m_Speed         = 4.5f;
+        xmath::fvec3    m_Velocity      = xmath::fvec3::fromZero();
+
+        XPROPERTY_DEF
+        ( "SoccerReferee", referee
+        , obj_member<"Distance", &referee::m_Distance>
+        , obj_member<"Speed",    &referee::m_Speed>
+        , obj_member<"Velocity", &referee::m_Velocity, member_flags<flags::SHOW_READONLY>>
+        )
+    };
+    XSCRIPT_REGISTER_COMPONENT(referee, "Soccer", 130)
+
+    //------------------------------------------------------------------------------------------------------------
+    // Shadows. A shadow is its own entity (a flattened dark sphere); the identity number ties it to what it follows.
+    //------------------------------------------------------------------------------------------------------------
+    struct identity
+    {
+        constexpr static auto typedef_v = xecs::component::type::data{ .m_pName = "SoccerIdentity" };
+
+        int             m_Id            = 0;                            // unique among the players, the referee and the ball
+
+        XPROPERTY_DEF
+        ( "SoccerIdentity", identity
+        , obj_member<"Id", &identity::m_Id>
+        )
+    };
+    XSCRIPT_REGISTER_COMPONENT(identity, "Soccer", 140)
+
+    struct shadow
+    {
+        constexpr static auto typedef_v = xecs::component::type::data{ .m_pName = "SoccerShadow" };
+
+        int             m_OwnerId       = 0;                            // the identity of what it follows
+        float           m_Size          = 1.0f;                         // its width, meters
+        float           m_Height        = 0.012f;                       // how far over the ground it floats (to hide it from the floor's depth)
+
+        XPROPERTY_DEF
+        ( "SoccerShadow", shadow
+        , obj_member<"OwnerId", &shadow::m_OwnerId>
+        , obj_member<"Size",    &shadow::m_Size>
+        , obj_member<"Height",  &shadow::m_Height>
+        )
+    };
+    XSCRIPT_REGISTER_COMPONENT(shadow, "Soccer", 150)
+
+    //------------------------------------------------------------------------------------------------------------
+    // The scoreboard: a bar per team that gets longer with every goal.
+    //------------------------------------------------------------------------------------------------------------
+    struct score_bar
+    {
+        constexpr static auto typedef_v = xecs::component::type::data{ .m_pName = "SoccerScoreBar" };
+
+        team            m_Team          = team::BLUE;
+        float           m_Start         = 0.0f;                         // where the bar starts along x
+        float           m_PerGoal       = 0.8f;                         // how much longer it gets with each goal, meters
+
+        XPROPERTY_DEF
+        ( "SoccerScoreBar", score_bar
+        , obj_member<"Team",    &score_bar::m_Team, member_enum_span<team_list_v>>
+        , obj_member<"Start",   &score_bar::m_Start>
+        , obj_member<"PerGoal", &score_bar::m_PerGoal>
+        )
+    };
+    XSCRIPT_REGISTER_COMPONENT(score_bar, "Soccer", 160)
+}

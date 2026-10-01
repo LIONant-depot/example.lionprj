@@ -1,0 +1,22 @@
+
+[ ComponentDeps : 18 ]
+{ Guid:G             Name:s                   }
+//-----------------  ------------------------
+                 #0  "Entity"                
+   #296EEAAEE0EF730  "Primitive"             
+   #54E923B47CD82E8  "SoccerScoreBar"        
+   #85F88DCAA370B06  "PhysicsColliderBox"    
+   #DC3BCDAB39C3CCF  "SoccerBall"            
+  #3EF27824643D67EA  "PhysicsDynamics"       
+  #4F7643DF807F0C51  "Physics"               
+  #52B341C6318A8906  "SoccerIdentity"        
+  #588DCE1BC09DCB49  "SoccerReferee"         
+  #663773C47FA1D0BA  "Transform"             
+  #6EC40BDECA075977  "static"                
+  #77DF28B87C62ABFF  "PhysicsBodyProperties" 
+  #832D2369F0D07F6C  "SoccerMatch"           
+  #A5EEE30695E37CAB  "PhysicsColliderSphere" 
+  #A8027BF64F88F583  "EditorPrafabInstance"  
+  #B17052371C9F7064  "PhysicsColliderCapsule"
+  #EC0212D079E9A6A9  "SoccerShadow"          
+  #F1204247F9F99025  "SoccerPlayer"          
