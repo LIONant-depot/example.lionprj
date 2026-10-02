@@ -6,7 +6,7 @@
 // net). What is left for this system is the clock of the match - Kickoff (everybody takes their places) -> Playing -> Goal (a short
 // celebration) -> a new Kickoff - spotting the goal, and putting the ball back on the center spot.
 //
-// The clock of the match runs with the real Dt: two seconds are two seconds, however fast the frames come.
+// The clock of the match runs with the game's Dt (scaled by the speed slider): two seconds of game time are two seconds, however fast the frames come.
 #include "soccer_components.h"
 
 namespace soccer
@@ -19,11 +19,12 @@ namespace soccer
         ball_system(xecs::game_mgr::instance& GameMgr) noexcept : xecs::system::instance(GameMgr), m_Mgr(GameMgr) {}
 
         xecs::game_mgr::instance& m_Mgr;                                   // the physics call below needs the world
-        frame_clock               m_Clock;
 
         void OnUpdate(void) noexcept
         {
-            const float Dt = m_Clock.Tick();
+            const auto* pGame = xlioncore::game::From(m_Mgr);
+            if (!pGame) return;
+            const float Dt = pGame->m_Time.m_DeltaTime;                 // game time: the speed slider slows or speeds up the match
 
             //
             // The rules (copied out: nothing is held while the others are visited)

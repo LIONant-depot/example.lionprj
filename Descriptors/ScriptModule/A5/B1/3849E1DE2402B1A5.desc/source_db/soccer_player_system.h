@@ -62,17 +62,16 @@ namespace soccer
 
         xecs::game_mgr::instance& m_Mgr;                                   // the physics call that puts a person back on his place needs the world
 
-        frame_clock m_Clock;
-        fixed_clock m_Fixed;
         random      m_Random;
 
         // A kick decided this frame, applied to the ball once everybody has been visited.
         struct kick { bool m_bValid = false; vec2 m_Velocity; team m_Team = team::BLUE; int m_Id = -1; };
 
-        // The people move with the physics: as many fixed steps as the real time that has passed asks for.
+        // The people move with the physics: the fixed steps the game's time says are due this frame.
         void OnUpdate(void) noexcept
         {
-            for (int n = m_Fixed.Steps(m_Clock.Tick()); n > 0; --n) FixedStep();
+            if (const auto* pGame = xlioncore::game::From(m_Mgr))
+                for (int n = pGame->m_Time.m_FixedSteps; n > 0; --n) FixedStep();
         }
 
         void FixedStep(void) noexcept

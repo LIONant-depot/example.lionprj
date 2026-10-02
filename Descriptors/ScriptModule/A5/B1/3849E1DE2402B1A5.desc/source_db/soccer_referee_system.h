@@ -11,14 +11,15 @@ namespace soccer
         constexpr static auto typedef_v = xecs::system::type::update{ .m_pName = "Soccer Referee" };
         using query = std::tuple<xecs::query::must<xlioncore::transform, referee>>;
 
-        referee_system(xecs::game_mgr::instance& GameMgr) noexcept : xecs::system::instance(GameMgr) {}
+        referee_system(xecs::game_mgr::instance& GameMgr) noexcept : xecs::system::instance(GameMgr), m_Mgr(GameMgr) {}
 
-        frame_clock m_Clock;
-        fixed_clock m_Fixed;
+        xecs::game_mgr::instance& m_Mgr;
+
 
         void OnUpdate(void) noexcept
         {
-            for (int n = m_Fixed.Steps(m_Clock.Tick()); n > 0; --n) FixedStep();
+            if (const auto* pGame = xlioncore::game::From(m_Mgr))
+                for (int n = pGame->m_Time.m_FixedSteps; n > 0; --n) FixedStep();
         }
 
         void FixedStep(void) noexcept

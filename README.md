@@ -21,7 +21,7 @@ How it uses the engine:
 * **Physics**: the ball is a `PhysicsDynamics` body (0.45 kg) with a sphere collider; the players are dynamic capsules (75 kg, `Constraints/Rotation` locked so they stay
   upright); the floor, the posts and the walls are static colliders. Nothing is moved by hand: a player runs by being pushed (`F = m * a`, at most 9 m/s2 and 700 N,
   never above his top speed) and a kick is one capped force on the ball. The systems that push run in fixed steps of 1/60 s, the same step the physics takes.
-* **Real time**: the clock of the match (kickoff, goal pause, celebration) uses the wall clock.
+* **Game time**: the systems read the time from the game they belong to (`xlioncore::game::From(GameMgr)->m_Time`): the fixed steps that are due (the physics and the people move in them) and the scaled `Dt` that the clock of the match (kickoff, goal pause, celebration) uses. The speed slider next to Play (0.25x to 3x) scales both.
 * **Shadows**: flat dark discs under every person and the ball (`SoccerShadow`); the primitive has no transparency yet, so they are the grass colour, darkened.
 
 The module lives in `Descriptors/ScriptModule`; `Project.config/Script.config.txt` lists it. Notes for whoever changes the game are at the top of each `soccer_*.h`.

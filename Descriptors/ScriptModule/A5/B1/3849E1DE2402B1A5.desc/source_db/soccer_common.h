@@ -11,6 +11,7 @@
 #include "dependencies/xLIONCore/src/physics/xlioncore_physics.h"
 #undef  XSCRIPT_IMPORT_ONLY
 #include "dependencies/xLIONCore/src/physics/xlioncore_physics_api.h"
+#include "dependencies/xLIONCore/src/game/xlioncore_game.h"
 
 #include <algorithm>
 #include <array>
@@ -66,39 +67,11 @@ namespace soccer
 
     inline float Clamp(float V, float Lo, float Hi) noexcept { return V < Lo ? Lo : (V > Hi ? Hi : V); }
 
-    // Seconds since the last call, kept inside [0, 0.05] so a stall (a breakpoint, a long frame, a single Step) cannot throw anything across the pitch.
-    struct frame_clock
-    {
-        std::chrono::steady_clock::time_point m_Last = std::chrono::steady_clock::now();
-
-        float Tick() noexcept
-        {
-            const auto Now = std::chrono::steady_clock::now();
-            const float Dt = std::chrono::duration<float>(Now - m_Last).count();
-            m_Last = Now;
-            return Clamp(Dt, 0.0f, 0.05f);
-        }
-    };
-
-    // What moves with the physics runs in fixed steps, what belongs to the clock on the wall (the phases of the match, the hops of a
-    // celebration) runs with the real Dt:
-    //     Accumulator += Dt;  while( Accumulator >= kFixedDt ) { RunFixedSystems(); Accumulator -= kFixedDt; }
-    // Steps(Dt) says how many fixed steps are due this update (a hitch cannot ask for more than a few).
-    inline constexpr float kFixedDt = 1.0f / 60.0f;
-
-    struct fixed_clock
-    {
-        float m_Accumulator = 0.0f;
-
-        int Steps(float Dt) noexcept
-        {
-            m_Accumulator += Dt;
-            int n = 0;
-            while (m_Accumulator >= kFixedDt && n < 4) { m_Accumulator -= kFixedDt; ++n; }
-            if (n == 4) m_Accumulator = 0.0f;
-            return n;
-        }
-    };
+    // What follows the physics runs in the fixed steps of the game's time (xlioncore::game_time: m_FixedSteps are due each frame, each
+    // kFixedDt long), what belongs to the clock of the game (the phases of the match, the hops of a celebration) uses its m_DeltaTime, which the
+    // speed slider of the editor scales. Both come from the game the systems belong to:
+    //     const auto& Time = xlioncore::game::From(GameMgr)->m_Time;
+    inline constexpr float kFixedDt = xlioncore::game_time::kDefaultFixedDeltaTime;
 
     // A push on a body for the coming step: the force is ADDED to what the body is already going to get, and the sum is never allowed to pass
     // MaxNewtons (a person is not a superhero, a foot is not a cannon).
