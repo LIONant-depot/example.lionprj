@@ -67,9 +67,11 @@ namespace soccer
         // A kick decided this frame, applied to the ball once everybody has been visited.
         struct kick { bool m_bValid = false; vec2 m_Velocity; team m_Team = team::BLUE; int m_Id = -1; };
 
-        // The people move with the physics: the fixed steps the game's time says are due this frame.
+        // The people move with the physics. Connected to the "Before Step" connector of the Physics system (how the Soccer example is set up) this
+        // runs once for each step, right before it; not connected, it takes the fixed steps the game's time says are due this frame itself.
         void OnUpdate(void) noexcept
         {
+            if (isConnected()) { FixedStep(); return; }
             if (const auto* pGame = xlioncore::game::From(m_Mgr))
                 for (int n = pGame->m_Time.m_FixedSteps; n > 0; --n) FixedStep();
         }

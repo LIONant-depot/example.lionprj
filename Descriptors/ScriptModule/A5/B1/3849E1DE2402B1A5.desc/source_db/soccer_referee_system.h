@@ -16,8 +16,11 @@ namespace soccer
         xecs::game_mgr::instance& m_Mgr;
 
 
+        // Connected to the "Before Step" connector of the Physics system this runs once for each step; not connected, it takes the fixed steps
+        // the game's time says are due this frame itself.
         void OnUpdate(void) noexcept
         {
+            if (isConnected()) { FixedStep(); return; }
             if (const auto* pGame = xlioncore::game::From(m_Mgr))
                 for (int n = pGame->m_Time.m_FixedSteps; n > 0; --n) FixedStep();
         }

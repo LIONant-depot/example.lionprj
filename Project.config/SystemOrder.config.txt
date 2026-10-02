@@ -1,0 +1,53 @@
+
+// New Types
+< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
+
+[ xProperties : 46 ]
+{ Name:s                                           Value:?                     }
+//-----------------------------------------------  ---------------------------
+  "SystemOrderConfig/UpdateOrder[]"                ;s64    9                  
+  "SystemOrderConfig/UpdateOrder[G:0]/Guid"        ;u64    #FE5EC75487196B0E  
+  "SystemOrderConfig/UpdateOrder[G:0]/Name"        ;string "Tick Logger A"    
+  "SystemOrderConfig/UpdateOrder[G:0]/Enabled"     ;bool   1                  
+  "SystemOrderConfig/UpdateOrder[G:0]/ParentGuid"  ;u64    #0                 
+  "SystemOrderConfig/UpdateOrder[G:0]/Connector"   ;string ""                 
+  "SystemOrderConfig/UpdateOrder[G:1]/Guid"        ;u64    #CD201CFEDF3D5639  
+  "SystemOrderConfig/UpdateOrder[G:1]/Name"        ;string "Tick Logger B"    
+  "SystemOrderConfig/UpdateOrder[G:1]/Enabled"     ;bool   1                  
+  "SystemOrderConfig/UpdateOrder[G:1]/ParentGuid"  ;u64    #0                 
+  "SystemOrderConfig/UpdateOrder[G:1]/Connector"   ;string ""                 
+  "SystemOrderConfig/UpdateOrder[G:2]/Guid"        ;u64    #11ED5FB0C5668F79  
+  "SystemOrderConfig/UpdateOrder[G:2]/Name"        ;string "Physics"          
+  "SystemOrderConfig/UpdateOrder[G:2]/Enabled"     ;bool   1                  
+  "SystemOrderConfig/UpdateOrder[G:2]/ParentGuid"  ;u64    #0                 
+  "SystemOrderConfig/UpdateOrder[G:2]/Connector"   ;string ""                 
+  "SystemOrderConfig/UpdateOrder[G:3]/Guid"        ;u64    #A820399FCB93F8A5  
+  "SystemOrderConfig/UpdateOrder[G:3]/Name"        ;string "Render"           
+  "SystemOrderConfig/UpdateOrder[G:3]/Enabled"     ;bool   1                  
+  "SystemOrderConfig/UpdateOrder[G:3]/ParentGuid"  ;u64    #0                 
+  "SystemOrderConfig/UpdateOrder[G:3]/Connector"   ;string ""                 
+  "SystemOrderConfig/UpdateOrder[G:4]/Guid"        ;u64    #1478AC256429DE97  
+  "SystemOrderConfig/UpdateOrder[G:4]/Name"        ;string "Soccer Shadows"   
+  "SystemOrderConfig/UpdateOrder[G:4]/Enabled"     ;bool   1                  
+  "SystemOrderConfig/UpdateOrder[G:4]/ParentGuid"  ;u64    #0                 
+  "SystemOrderConfig/UpdateOrder[G:4]/Connector"   ;string ""                 
+  "SystemOrderConfig/UpdateOrder[G:5]/Guid"        ;u64    #B10A9A569ADE4BFF  
+  "SystemOrderConfig/UpdateOrder[G:5]/Name"        ;string "Soccer Scoreboard"
+  "SystemOrderConfig/UpdateOrder[G:5]/Enabled"     ;bool   1                  
+  "SystemOrderConfig/UpdateOrder[G:5]/ParentGuid"  ;u64    #0                 
+  "SystemOrderConfig/UpdateOrder[G:5]/Connector"   ;string ""                 
+  "SystemOrderConfig/UpdateOrder[G:6]/Guid"        ;u64    #5254FF4D7D9A03A   
+  "SystemOrderConfig/UpdateOrder[G:6]/Name"        ;string "Soccer Ball"      
+  "SystemOrderConfig/UpdateOrder[G:6]/Enabled"     ;bool   1                  
+  "SystemOrderConfig/UpdateOrder[G:6]/ParentGuid"  ;u64    #0                 
+  "SystemOrderConfig/UpdateOrder[G:6]/Connector"   ;string ""                 
+  "SystemOrderConfig/UpdateOrder[G:7]/Guid"        ;u64    #54A3092D1A46C2C8  
+  "SystemOrderConfig/UpdateOrder[G:7]/Name"        ;string "Soccer Players"   
+  "SystemOrderConfig/UpdateOrder[G:7]/Enabled"     ;bool   1                  
+  "SystemOrderConfig/UpdateOrder[G:7]/ParentGuid"  ;u64    #11ED5FB0C5668F79  
+  "SystemOrderConfig/UpdateOrder[G:7]/Connector"   ;string "Before Step"      
+  "SystemOrderConfig/UpdateOrder[G:8]/Guid"        ;u64    #EC15D0A177CBE706  
+  "SystemOrderConfig/UpdateOrder[G:8]/Name"        ;string "Soccer Referee"   
+  "SystemOrderConfig/UpdateOrder[G:8]/Enabled"     ;bool   1                  
+  "SystemOrderConfig/UpdateOrder[G:8]/ParentGuid"  ;u64    #11ED5FB0C5668F79  
+  "SystemOrderConfig/UpdateOrder[G:8]/Connector"   ;string "Before Step"      
