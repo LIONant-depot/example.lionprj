@@ -17,13 +17,11 @@ namespace soccer
         constexpr static auto typedef_v = xecs::system::type::update{ .m_pName = "Soccer Ball" };
         using query = std::tuple<xecs::query::must<xlioncore::transform, ball>>;
 
-        ball_system(xecs::game_mgr::instance& GameMgr) noexcept : xecs::system::instance(GameMgr), m_Mgr(GameMgr) {}
-
-        xecs::game_mgr::instance& m_Mgr;                                   // the physics call below needs the world
+        ball_system(xecs::game_mgr::instance& GameMgr) noexcept : xecs::system::instance(GameMgr) {}
 
         void OnUpdate(void) noexcept
         {
-            const auto* pGame = xlioncore::game::From(m_Mgr);
+            const auto* pGame = xlioncore::game::From(getGameMgr());
             if (!pGame) return;
             const float Dt = pGame->m_Time.m_DeltaTime;                 // game time: the speed slider slows or speeds up the match
 
@@ -31,14 +29,7 @@ namespace soccer
             // The rules (copied out: nothing is held while the others are visited)
             //
             match Rules;
-            bool  bHaveRules = false;
-            {
-                xecs::query::instance Query;
-                Query.m_Must.AddFromComponents<match>();
-                auto S = Search(Query);
-                Foreach(S, [&](const xecs::component::entity&, const match& M) noexcept { Rules = M; bHaveRules = true; });
-            }
-            if (!bHaveRules) return;
+            if (!ReadMatch(*this, Rules)) return;
 
             //
             // The clock of the match
@@ -70,7 +61,7 @@ namespace soccer
                     B.m_Velocity = Body.m_LinearVelocity;                  // so the Inspector (and the players) can see it
 
                     if (bNewRound)                                         // back to the center spot, standing still
-                        xlioncore::physics::TeleportDynamicBody(m_Mgr, Entity, xmath::fvec3(0.0f, T.m_Position.m_Y, 0.0f), xmath::fquat::fromIdentity());
+                        xlioncore::physics::TeleportDynamicBody(getGameMgr(), Entity, xmath::fvec3(0.0f, T.m_Position.m_Y, 0.0f), xmath::fquat::fromIdentity());
                 });
             }
 

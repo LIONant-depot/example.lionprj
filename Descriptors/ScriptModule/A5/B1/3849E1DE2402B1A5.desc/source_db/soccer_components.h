@@ -62,6 +62,17 @@ namespace soccer
     };
     XSCRIPT_REGISTER_COMPONENT(match, "Soccer", 100)
 
+    // The rules of the match, copied out of the pitch entity (there is one match) so that nothing is held while the systems visit the others. False when the scene has no match.
+    template< typename T_SYSTEM >
+    inline bool ReadMatch(T_SYSTEM& System, match& Rules) noexcept
+    {
+        xecs::query::instance Query;
+        Query.m_Must.AddFromComponents<match>();
+        bool bFound = false;
+        System.Foreach(System.Search(Query), [&](const xecs::component::entity&, const match& M) noexcept { Rules = M; bFound = true; });
+        return bFound;
+    }
+
     //------------------------------------------------------------------------------------------------------------
     // A goal: the entity is a static box with a sensor collider in the mouth of the goal, from the goal line to the back of the net. The ball entering it is a goal for the team that does not defend it.
     //------------------------------------------------------------------------------------------------------------

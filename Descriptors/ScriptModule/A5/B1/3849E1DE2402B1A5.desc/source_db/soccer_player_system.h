@@ -58,9 +58,7 @@ namespace soccer
         constexpr static auto typedef_v = xecs::system::type::update{ .m_pName = "Soccer Players" };
         using query = std::tuple<xecs::query::must<xlioncore::transform, player, identity>>;
 
-        player_system(xecs::game_mgr::instance& GameMgr) noexcept : xecs::system::instance(GameMgr), m_Mgr(GameMgr) {}
-
-        xecs::game_mgr::instance& m_Mgr;                                   // the physics call that puts a person back on his place needs the world
+        player_system(xecs::game_mgr::instance& GameMgr) noexcept : xecs::system::instance(GameMgr) {}
 
         random      m_Random;
 
@@ -72,7 +70,7 @@ namespace soccer
         void OnUpdate(void) noexcept
         {
             if (isConnected()) { FixedStep(); return; }
-            if (const auto* pGame = xlioncore::game::From(m_Mgr))
+            if (const auto* pGame = xlioncore::game::From(getGameMgr()))
                 for (int n = pGame->m_Time.m_FixedSteps; n > 0; --n) FixedStep();
         }
 
@@ -85,14 +83,7 @@ namespace soccer
             // What everybody knows: the rules, the ball, and where every person is.
             //
             match Rules;
-            bool  bHaveRules = false;
-            {
-                xecs::query::instance Query;
-                Query.m_Must.AddFromComponents<match>();
-                auto S = Search(Query);
-                Foreach(S, [&](const xecs::component::entity&, const match& M) noexcept { Rules = M; bHaveRules = true; });
-            }
-            if (!bHaveRules) return;
+            if (!ReadMatch(*this, Rules)) return;
 
             vec2 BallPos, BallVel;
             {
@@ -171,7 +162,7 @@ namespace soccer
             {
                 P.m_Round    = Rules.m_Round;
                 P.m_Cooldown = 0.0f;
-                xlioncore::physics::TeleportDynamicBody(m_Mgr, Entity, xmath::fvec3(Home.x, T.m_Position.m_Y, Home.z), xmath::fquat::fromIdentity());
+                xlioncore::physics::TeleportDynamicBody(getGameMgr(), Entity, xmath::fvec3(Home.x, T.m_Position.m_Y, Home.z), xmath::fquat::fromIdentity());
                 return;
             }
             P.m_Cooldown = std::max(0.0f, P.m_Cooldown - Dt);

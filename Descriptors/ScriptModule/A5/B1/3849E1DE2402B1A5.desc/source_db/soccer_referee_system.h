@@ -11,17 +11,14 @@ namespace soccer
         constexpr static auto typedef_v = xecs::system::type::update{ .m_pName = "Soccer Referee" };
         using query = std::tuple<xecs::query::must<xlioncore::transform, referee>>;
 
-        referee_system(xecs::game_mgr::instance& GameMgr) noexcept : xecs::system::instance(GameMgr), m_Mgr(GameMgr) {}
-
-        xecs::game_mgr::instance& m_Mgr;
-
+        referee_system(xecs::game_mgr::instance& GameMgr) noexcept : xecs::system::instance(GameMgr) {}
 
         // Connected to the "Before Step" connector of the Physics system this runs once for each step; not connected, it takes the fixed steps
         // the game's time says are due this frame itself.
         void OnUpdate(void) noexcept
         {
             if (isConnected()) { FixedStep(); return; }
-            if (const auto* pGame = xlioncore::game::From(m_Mgr))
+            if (const auto* pGame = xlioncore::game::From(getGameMgr()))
                 for (int n = pGame->m_Time.m_FixedSteps; n > 0; --n) FixedStep();
         }
 
@@ -30,14 +27,7 @@ namespace soccer
             const float Dt = kFixedDt;
 
             match Rules;
-            bool  bHaveRules = false;
-            {
-                xecs::query::instance Query;
-                Query.m_Must.AddFromComponents<match>();
-                auto S = Search(Query);
-                Foreach(S, [&](const xecs::component::entity&, const match& M) noexcept { Rules = M; bHaveRules = true; });
-            }
-            if (!bHaveRules) return;
+            if (!ReadMatch(*this, Rules)) return;
 
             vec2 BallPos;
             {

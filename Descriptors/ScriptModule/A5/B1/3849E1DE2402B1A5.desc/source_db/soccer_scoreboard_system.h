@@ -14,15 +14,9 @@ namespace soccer
 
         void OnUpdate(void) noexcept
         {
-            int Goals[2] = { 0, 0 };
-            bool bHaveRules = false;
-            {
-                xecs::query::instance Query;
-                Query.m_Must.AddFromComponents<match>();
-                auto S = Search(Query);
-                Foreach(S, [&](const xecs::component::entity&, const match& M) noexcept { Goals[0] = M.m_ScoreBlue; Goals[1] = M.m_ScoreRed; bHaveRules = true; });
-            }
-            if (!bHaveRules) return;
+            match Rules;
+            if (!ReadMatch(*this, Rules)) return;
+            const int Goals[2] = { Rules.m_ScoreBlue, Rules.m_ScoreRed };
 
             xecs::query::instance Query;
             Query.m_Must.AddFromComponents<xlioncore::transform, score_bar>();
