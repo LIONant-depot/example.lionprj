@@ -4,6 +4,7 @@
 // "Add Component" list under the category "Soccer", and every property below is editable in the Inspector.
 //
 //      match       the rules and the score: pitch size, goal width, who scored. One entity, the pitch (it also carries the green floor's Primitive).
+//      goal        a trigger box in the mouth of a goal: which team defends it (the physics tells the game when the ball enters it).
 //      ball        who kicked the ball last (the ball itself is the engine's: a PhysicsDynamics body with a sphere collider).
 //      player      a member of a team: which team, which role, where he stands when he has nothing better to do.
 //      referee     the referee: he follows the play at a distance (he is not a player, he never kicks).
@@ -60,6 +61,22 @@ namespace soccer
         )
     };
     XSCRIPT_REGISTER_COMPONENT(match, "Soccer", 100)
+
+    //------------------------------------------------------------------------------------------------------------
+    // A goal: the entity is a static box with a sensor collider in the mouth of the goal, from the goal line to the back of the net. The ball entering it is a goal for the team that does not defend it.
+    //------------------------------------------------------------------------------------------------------------
+    struct goal
+    {
+        constexpr static auto typedef_v = xecs::component::type::data{ .m_pName = "SoccerGoal" };
+
+        team            m_Defender      = team::RED;                    // the team that defends this goal (Blue defends the one at -x, Red the one at +x)
+
+        XPROPERTY_DEF
+        ( "SoccerGoal", goal
+        , obj_member<"Defender", &goal::m_Defender, member_enum_span<team_list_v>>
+        )
+    };
+    XSCRIPT_REGISTER_COMPONENT(goal, "Soccer", 105)
 
     //------------------------------------------------------------------------------------------------------------
     // The ball: it rolls on the ground, slows down, and bounces off the touchlines and the end lines.

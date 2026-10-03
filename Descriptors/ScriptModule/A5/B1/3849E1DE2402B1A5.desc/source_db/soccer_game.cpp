@@ -10,6 +10,7 @@
 #include "soccer_referee_system.h"
 #include "soccer_player_system.h"
 #include "soccer_ball_system.h"
+#include "soccer_goal_system.h"
 
 
 

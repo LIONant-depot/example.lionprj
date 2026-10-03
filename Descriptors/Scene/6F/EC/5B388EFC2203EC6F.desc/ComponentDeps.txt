@@ -1,5 +1,5 @@
 
-[ ComponentDeps : 18 ]
+[ ComponentDeps : 19 ]
 { Guid:G             Name:s                    Module:G          }
 //-----------------  ------------------------  -----------------
                  #0  "Entity"                                 #0
@@ -7,6 +7,7 @@
    #54E923B47CD82E8  "SoccerScoreBar"          #3849E1DE2402B1A5
    #85F88DCAA370B06  "PhysicsColliderBox"                     #0
    #DC3BCDAB39C3CCF  "SoccerBall"              #3849E1DE2402B1A5
+  #3DB0BDB9B50EF0F6  "SoccerGoal"              #3849E1DE2402B1A5
   #3EF27824643D67EA  "PhysicsDynamics"                        #0
   #4F7643DF807F0C51  "Physics"                                #0
   #52B341C6318A8906  "SoccerIdentity"          #3849E1DE2402B1A5

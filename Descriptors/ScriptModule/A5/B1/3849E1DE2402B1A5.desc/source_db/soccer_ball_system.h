@@ -4,7 +4,8 @@
 //
 // The ball itself belongs to the physics (a dynamic body with a sphere collider: it rolls, bounces off the lines' walls, the posts and the
 // net). What is left for this system is the clock of the match - Kickoff (everybody takes their places) -> Playing -> Goal (a short
-// celebration) -> a new Kickoff - spotting the goal, and putting the ball back on the center spot.
+// celebration) -> a new Kickoff - and putting the ball back on the center spot. The goal itself is spotted by the physics: the trigger box in the
+// mouth of each goal tells the game when the ball is in it (soccer_goal_system.h).
 //
 // The clock of the match runs with the game's Dt (scaled by the speed slider): two seconds of game time are two seconds, however fast the frames come.
 #include "soccer_components.h"
@@ -58,10 +59,8 @@ namespace soccer
             }
 
             //
-            // The ball: a goal is the ball past the goal line, between the posts
+            // The ball: back to the center spot at a new round, and its velocity where everybody can see it
             //
-            bool bScored = false;
-            team Scorer  = team::BLUE;
             {
                 xecs::query::instance Query;
                 Query.m_Must.AddFromComponents<xlioncore::transform, ball, xlioncore::physics::physics_dynamics>();
@@ -71,28 +70,8 @@ namespace soccer
                     B.m_Velocity = Body.m_LinearVelocity;                  // so the Inspector (and the players) can see it
 
                     if (bNewRound)                                         // back to the center spot, standing still
-                    {
                         xlioncore::physics::TeleportDynamicBody(m_Mgr, Entity, xmath::fvec3(0.0f, T.m_Position.m_Y, 0.0f), xmath::fquat::fromIdentity());
-                        return;
-                    }
-
-                    if (Rules.m_Phase != phase::PLAYING) return;           // (in the net the ball just stays in the net)
-
-                    const float Mouth = Rules.m_GoalHalfWidth;
-                    if (std::fabs(T.m_Position.m_Z) < Mouth)
-                    {
-                        if (T.m_Position.m_X >  Rules.m_HalfLength) { bScored = true; Scorer = team::BLUE; }
-                        if (T.m_Position.m_X < -Rules.m_HalfLength) { bScored = true; Scorer = team::RED;  }
-                    }
                 });
-            }
-
-            if (bScored)
-            {
-                Rules.m_Phase      = phase::GOAL;
-                Rules.m_Timer      = Rules.m_GoalPause;
-                Rules.m_LastScorer = Scorer;
-                (Scorer == team::BLUE ? Rules.m_ScoreBlue : Rules.m_ScoreRed) += 1;
             }
 
             //
