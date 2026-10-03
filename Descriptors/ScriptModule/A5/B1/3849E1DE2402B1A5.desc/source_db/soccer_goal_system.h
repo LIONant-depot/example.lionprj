@@ -25,8 +25,9 @@ namespace soccer
 
         xecs::game_mgr::instance& m_Mgr;
 
-        void OnEvent(xecs::component::entity Sensor, xecs::component::entity Visitor) noexcept
+        void OnEvent(const xlioncore::physics::sensor_touch& Touch) noexcept
         {
+            const xecs::component::entity Sensor = Touch.m_Sensor, Visitor = Touch.m_Visitor;
             const goal* pGoal = ComponentOf<goal>(m_Mgr, Sensor);
             if (!pGoal || !ComponentOf<ball>(m_Mgr, Visitor)) return;               // a sensor that is not a goal, or something other than the ball in it
 
