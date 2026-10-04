@@ -10,8 +10,15 @@
 #define XSCRIPT_IMPORT_ONLY
 #include "dependencies/xLIONCore/src/physics/xlioncore_physics.h"
 #undef  XSCRIPT_IMPORT_ONLY
+#include "plugins/xscript_module.plugin/source/Runtime/xscript_registration.h"   // chooses XSCRIPT_REGISTER_COMPONENT again: this module's own components register, the imported ones do not
 #include "dependencies/xLIONCore/src/physics/xlioncore_physics_api.h"
 #include "dependencies/xLIONCore/src/game/xlioncore_game.h"
+
+// The render module's Text component: only its type (it is registered once, by the render module). The game writes the words, the renderer draws them.
+#define XSCRIPT_IMPORT_ONLY
+#include "dependencies/xLIONRender/src/xlionrender_text.h"
+#undef  XSCRIPT_IMPORT_ONLY
+#include "plugins/xscript_module.plugin/source/Runtime/xscript_registration.h"   // chooses XSCRIPT_REGISTER_COMPONENT again: this module's own components register, the imported ones do not
 
 #include <algorithm>
 #include <array>
@@ -22,6 +29,7 @@
 // The systems of this module query the engine's Transform, which another binary registered: say so (see xscript_registration.h).
 XSCRIPT_USES_COMPONENT(xlioncore::transform)
 XSCRIPT_USES_COMPONENT(xlioncore::physics::physics_dynamics)
+XSCRIPT_USES_COMPONENT(xlionrender::text)
 
 namespace soccer
 {

@@ -11,6 +11,9 @@
 //      identity    a number that is unique among the things that cast a shadow.
 //      shadow      a flat dark disc under the thing with the same identity number.
 //      score_bar   a bar on the scoreboard that grows with a team's score.
+//      score_label a Text (the engine's) that says a team's name and its goals.
+//      name_tag    a Text that follows a player (by identity number) and says his name.
+//      banner      a Text that says GOAL! while the goal is celebrated.
 #include "soccer_common.h"
 
 namespace soccer
@@ -206,4 +209,44 @@ namespace soccer
         )
     };
     XSCRIPT_REGISTER_COMPONENT(score_bar, "Soccer", 160)
+
+    //------------------------------------------------------------------------------------------------------------
+    // Words on the screen. These three go with an engine Text on the same entity: the game writes what it says, the engine draws it.
+    //------------------------------------------------------------------------------------------------------------
+    struct score_label
+    {
+        constexpr static auto typedef_v = xecs::component::type::data{ .m_pName = "SoccerScoreLabel" };
+
+        team            m_Team          = team::BLUE;                   // whose goals it says: "BLUE 2"
+
+        XPROPERTY_DEF
+        ( "SoccerScoreLabel", score_label
+        , obj_member<"Team", &score_label::m_Team, member_enum_span<team_list_v>>
+        )
+    };
+    XSCRIPT_REGISTER_COMPONENT(score_label, "Soccer", 170)
+
+    struct name_tag
+    {
+        constexpr static auto typedef_v = xecs::component::type::data{ .m_pName = "SoccerNameTag" };
+
+        int             m_OwnerId       = 0;                            // the identity of the player it follows
+        float           m_Height        = 2.0f;                         // how far over the player's origin it floats
+
+        XPROPERTY_DEF
+        ( "SoccerNameTag", name_tag
+        , obj_member<"OwnerId", &name_tag::m_OwnerId>
+        , obj_member<"Height",  &name_tag::m_Height>
+        )
+    };
+    XSCRIPT_REGISTER_COMPONENT(name_tag, "Soccer", 180)
+
+    struct banner
+    {
+        constexpr static auto typedef_v = xecs::component::type::data{ .m_pName = "SoccerBanner" };
+
+        XPROPERTY_DEF
+        ( "SoccerBanner", banner )
+    };
+    XSCRIPT_REGISTER_COMPONENT(banner, "Soccer", 190)
 }
