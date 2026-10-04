@@ -10,8 +10,6 @@ namespace soccer
         constexpr static auto typedef_v = xecs::system::type::update{ .m_pName = "Soccer Scoreboard" };
         using query = std::tuple<xecs::query::must<xlioncore::transform, score_bar>>;
 
-        scoreboard_system(xecs::game_mgr::instance& GameMgr) noexcept : xecs::system::instance(GameMgr) {}
-
         void OnUpdate(void) noexcept
         {
             match Rules;

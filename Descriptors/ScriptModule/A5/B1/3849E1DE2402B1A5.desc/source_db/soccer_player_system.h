@@ -58,8 +58,6 @@ namespace soccer
         constexpr static auto typedef_v = xecs::system::type::update{ .m_pName = "Soccer Players" };
         using query = std::tuple<xecs::query::must<xlioncore::transform, player, identity>>;
 
-        player_system(xecs::game_mgr::instance& GameMgr) noexcept : xecs::system::instance(GameMgr) {}
-
         random      m_Random;
 
         // A kick decided this frame, applied to the ball once everybody has been visited.

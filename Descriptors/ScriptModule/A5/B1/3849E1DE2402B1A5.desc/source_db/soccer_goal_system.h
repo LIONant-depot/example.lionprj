@@ -10,8 +10,6 @@ namespace soccer
     {
         constexpr static auto typedef_v = xecs::system::type::global_event<xlioncore::physics::sensor_begin_event>{ .m_pName = "Soccer Goal" };
 
-        goal_system(xecs::game_mgr::instance& GameMgr) noexcept : xecs::system::instance(GameMgr) {}
-
         void OnEvent(const xlioncore::physics::sensor_touch& Touch) noexcept
         {
             if (!hasComponents<goal>(Touch.m_Sensor) || !hasComponents<ball>(Touch.m_Visitor)) return;      // a sensor that is not a goal, or something other than the ball in it

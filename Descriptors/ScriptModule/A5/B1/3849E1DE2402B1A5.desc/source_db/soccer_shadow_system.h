@@ -14,8 +14,6 @@ namespace soccer
         constexpr static auto typedef_v = xecs::system::type::update{ .m_pName = "Soccer Shadows" };
         using query = std::tuple<xecs::query::must<xlioncore::transform, shadow>>;
 
-        shadow_system(xecs::game_mgr::instance& GameMgr) noexcept : xecs::system::instance(GameMgr) {}
-
         void OnUpdate(void) noexcept
         {
             // where everything that casts a shadow is

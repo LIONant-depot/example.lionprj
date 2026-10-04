@@ -11,8 +11,6 @@ namespace soccer
         constexpr static auto typedef_v = xecs::system::type::update{ .m_pName = "Soccer Referee" };
         using query = std::tuple<xecs::query::must<xlioncore::transform, referee>>;
 
-        referee_system(xecs::game_mgr::instance& GameMgr) noexcept : xecs::system::instance(GameMgr) {}
-
         // Connected to the "Before Step" connector of the Physics system this runs once for each step; not connected, it takes the fixed steps
         // the game's time says are due this frame itself.
         void OnUpdate(void) noexcept

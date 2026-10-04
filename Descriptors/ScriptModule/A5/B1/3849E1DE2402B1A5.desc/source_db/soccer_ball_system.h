@@ -17,8 +17,6 @@ namespace soccer
         constexpr static auto typedef_v = xecs::system::type::update{ .m_pName = "Soccer Ball" };
         using query = std::tuple<xecs::query::must<xlioncore::transform, ball>>;
 
-        ball_system(xecs::game_mgr::instance& GameMgr) noexcept : xecs::system::instance(GameMgr) {}
-
         void OnUpdate(void) noexcept
         {
             const auto* pGame = xlioncore::game::From(getGameMgr());
