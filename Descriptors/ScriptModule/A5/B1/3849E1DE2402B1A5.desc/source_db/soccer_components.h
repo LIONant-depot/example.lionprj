@@ -90,19 +90,17 @@ namespace soccer
     XSCRIPT_REGISTER_COMPONENT(goal, "Soccer", 105)
 
     //------------------------------------------------------------------------------------------------------------
-    // The ball: it rolls on the ground, slows down, and bounces off the touchlines and the end lines.
+    // The ball: it rolls on the ground, slows down, and bounces off the touchlines and the end lines. How fast it goes is its PhysicsDynamics' (LinearVelocity): it is not kept twice.
     //------------------------------------------------------------------------------------------------------------
     struct ball
     {
         constexpr static auto typedef_v = xecs::component::type::data{ .m_pName = "SoccerBall" };
 
-        xmath::fvec3    m_Velocity      = xmath::fvec3::fromZero();     // meters per second (read back from the physics body, to be shown)
         team            m_LastTouch     = team::BLUE;                   // the team that kicked it last
         int             m_LastKicker    = -1;                           // the identity of the player that kicked it last
 
         XPROPERTY_DEF
         ( "SoccerBall", ball
-        , obj_member<"Velocity",   &ball::m_Velocity,                              member_flags<flags::SHOW_READONLY>>
         , obj_member<"LastTouch",  &ball::m_LastTouch, member_enum_span<team_list_v>, member_flags<flags::SHOW_READONLY>>
         , obj_member<"LastKicker", &ball::m_LastKicker,                            member_flags<flags::SHOW_READONLY>>
         )
@@ -123,7 +121,6 @@ namespace soccer
         float           m_KickSpeed     = 11.0f;                        // how hard he kicks, meters per second of ball speed
         float           m_Skill         = 0.85f;                        // 0 .. 1: how well he aims (1 never misses his target)
 
-        xmath::fvec3    m_Velocity      = xmath::fvec3::fromZero();     // his own run, meters per second (the systems move it)
         float           m_Cooldown      = 0.0f;                         // seconds before he may kick again
         int             m_Round         = -1;                           // the kickoff he last walked to his place for
 
@@ -135,7 +132,6 @@ namespace soccer
         , obj_member<"Speed",     &player::m_Speed>
         , obj_member<"KickSpeed", &player::m_KickSpeed>
         , obj_member<"Skill",     &player::m_Skill>
-        , obj_member<"Velocity",  &player::m_Velocity, member_flags<flags::SHOW_READONLY>>
         )
     };
     XSCRIPT_REGISTER_COMPONENT(player, "Soccer", 120)
@@ -149,13 +145,11 @@ namespace soccer
 
         float           m_Distance      = 3.5f;                         // how far from the ball he stands
         float           m_Speed         = 4.5f;
-        xmath::fvec3    m_Velocity      = xmath::fvec3::fromZero();
 
         XPROPERTY_DEF
         ( "SoccerReferee", referee
         , obj_member<"Distance", &referee::m_Distance>
         , obj_member<"Speed",    &referee::m_Speed>
-        , obj_member<"Velocity", &referee::m_Velocity, member_flags<flags::SHOW_READONLY>>
         )
     };
     XSCRIPT_REGISTER_COMPONENT(referee, "Soccer", 130)

@@ -71,7 +71,6 @@ namespace soccer
                 const bool bGrounded = T.m_Position.m_Y < T.m_Scale.m_Y * 0.5f + 0.12f && Body.m_LinearVelocity.m_Y < 3.0f;
                 if (Rules.m_Phase == phase::GOAL && bGrounded && std::sin(Rules.m_Timer * 5.0f) > 0.0f) AddForce(Body, 0.0f, 2200.0f, 0.0f, kMaxJumpForce);
 
-                R.m_Velocity = Body.m_LinearVelocity;                                               // (to be seen in the Inspector)
             });
         }
     };

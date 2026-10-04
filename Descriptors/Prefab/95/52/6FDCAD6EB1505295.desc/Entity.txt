@@ -28,15 +28,12 @@
   "Primitive/Color/Y"  ;f32  1       
   "Primitive/Color/Z"  ;f32  1       
 
-[ xProperties : 8 ]
+[ xProperties : 5 ]
 { Name:s                   Value:?           }
 //-----------------------  -----------------
   "SoccerBall/Friction"    ;f32  0.899999976
   "SoccerBall/Bounce"      ;f32  0.600000024
   "SoccerBall/Radius"      ;f32  0.200000003
-  "SoccerBall/Velocity/X"  ;f32  0          
-  "SoccerBall/Velocity/Y"  ;f32  0          
-  "SoccerBall/Velocity/Z"  ;f32  0          
   "SoccerBall/LastTouch"   ;enum "Blue"     
   "SoccerBall/LastKicker"  ;s32  -1         
 

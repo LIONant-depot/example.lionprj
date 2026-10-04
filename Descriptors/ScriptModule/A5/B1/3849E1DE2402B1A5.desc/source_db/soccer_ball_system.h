@@ -48,19 +48,18 @@ namespace soccer
             }
 
             //
-            // The ball: back to the center spot at a new round, and its velocity where everybody can see it
+            // The ball: back to the center spot at a new round
             //
             {
                 xecs::query::instance Query;
                 Query.m_Must.AddFromComponents<xlioncore::transform, ball, xlioncore::physics::physics_dynamics>();
                 auto S = Search(Query);
-                Foreach(S, [&](const xecs::component::entity& Entity, xlioncore::transform& T, ball& B, const xlioncore::physics::physics_dynamics& Body) noexcept
-                {
-                    B.m_Velocity = Body.m_LinearVelocity;                  // so the Inspector (and the players) can see it
-
-                    if (bNewRound)                                         // back to the center spot, standing still
+                if (bNewRound)
+                    Foreach(S, [&](const xecs::component::entity& Entity, xlioncore::transform& T) noexcept
+                    {
+                        // back to the center spot, standing still
                         xlioncore::physics::TeleportDynamicBody(getGameMgr(), Entity, xmath::fvec3(0.0f, T.m_Position.m_Y, 0.0f), xmath::fquat::fromIdentity());
-                });
+                    });
             }
 
             //

@@ -86,29 +86,29 @@ namespace soccer
             vec2 BallPos, BallVel;
             {
                 xecs::query::instance Query;
-                Query.m_Must.AddFromComponents<xlioncore::transform, ball>();
+                Query.m_Must.AddFromComponents<xlioncore::transform, ball, xlioncore::physics::physics_dynamics>();
                 auto S = Search(Query);
-                Foreach(S, [&](const xecs::component::entity&, const xlioncore::transform& T, const ball& B) noexcept { BallPos = Flat(T.m_Position); BallVel = Flat(B.m_Velocity); });
+                Foreach(S, [&](const xecs::component::entity&, const xlioncore::transform& T, const xlioncore::physics::physics_dynamics& Body) noexcept { BallPos = Flat(T.m_Position); BallVel = Flat(Body.m_LinearVelocity); });
             }
 
             std::vector<person> All;
             All.reserve(24);
             {
                 xecs::query::instance Query;
-                Query.m_Must.AddFromComponents<xlioncore::transform, player, identity>();
+                Query.m_Must.AddFromComponents<xlioncore::transform, player, identity, xlioncore::physics::physics_dynamics>();
                 auto S = Search(Query);
-                Foreach(S, [&](const xecs::component::entity&, const xlioncore::transform& T, const player& P, const identity& Id) noexcept
+                Foreach(S, [&](const xecs::component::entity&, const xlioncore::transform& T, const player& P, const identity& Id, const xlioncore::physics::physics_dynamics& Body) noexcept
                 {
-                    All.push_back({ Id.m_Id, P.m_Team, P.m_Role, false, Flat(T.m_Position), Flat(P.m_Velocity) });
+                    All.push_back({ Id.m_Id, P.m_Team, P.m_Role, false, Flat(T.m_Position), Flat(Body.m_LinearVelocity) });
                 });
             }
             {
                 xecs::query::instance Query;
-                Query.m_Must.AddFromComponents<xlioncore::transform, referee, identity>();
+                Query.m_Must.AddFromComponents<xlioncore::transform, referee, identity, xlioncore::physics::physics_dynamics>();
                 auto S = Search(Query);
-                Foreach(S, [&](const xecs::component::entity&, const xlioncore::transform& T, const referee& R, const identity& Id) noexcept
+                Foreach(S, [&](const xecs::component::entity&, const xlioncore::transform& T, const identity& Id, const xlioncore::physics::physics_dynamics& Body) noexcept
                 {
-                    All.push_back({ Id.m_Id, team::BLUE, role::FIELD, true, Flat(T.m_Position), Flat(R.m_Velocity) });
+                    All.push_back({ Id.m_Id, team::BLUE, role::FIELD, true, Flat(T.m_Position), Flat(Body.m_LinearVelocity) });
                 });
             }
 
@@ -236,7 +236,6 @@ namespace soccer
             if (Rules.m_Phase == phase::GOAL && Rules.m_LastScorer == P.m_Team && bGrounded && std::sin(Rules.m_Timer * 5.0f + static_cast<float>(Id.m_Id)) > 0.0f)
                 AddForce(Body, 0.0f, 2200.0f, 0.0f, kMaxJumpForce);
 
-            P.m_Velocity = Body.m_LinearVelocity;                                                                                      // (to be seen in the Inspector)
         }
 
         static constexpr float kKickRange = 0.75f;          // how near the ball must be to be kicked

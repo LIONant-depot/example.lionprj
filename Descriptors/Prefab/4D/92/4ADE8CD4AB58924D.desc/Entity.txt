@@ -33,14 +33,11 @@
 //-------------------  -------
   "SoccerIdentity/Id"  ;s32 20
 
-[ xProperties : 5 ]
+[ xProperties : 2 ]
 { Name:s                      Value:?  }
 //--------------------------  --------
   "SoccerReferee/Distance"    ;f32 3.5
   "SoccerReferee/Speed"       ;f32 4.5
-  "SoccerReferee/Velocity/X"  ;f32 0  
-  "SoccerReferee/Velocity/Y"  ;f32 0  
-  "SoccerReferee/Velocity/Z"  ;f32 0  
 
 [ xProperties : 14 ]
 { Name:s                         Value:?           }

@@ -51,7 +51,7 @@
   "Transform/Scale/Z"            ;f32  0.699999988
   "Transform/EditorLockScale"    ;bool 0          
 
-[ xProperties : 11 ]
+[ xProperties : 8 ]
 { Name:s                     Value:?           }
 //-------------------------  -----------------
   "SoccerPlayer/Team"        ;enum "Blue"     
@@ -62,6 +62,3 @@
   "SoccerPlayer/Speed"       ;f32  5.5        
   "SoccerPlayer/KickSpeed"   ;f32  11         
   "SoccerPlayer/Skill"       ;f32  0.850000024
-  "SoccerPlayer/Velocity/X"  ;f32  0          
-  "SoccerPlayer/Velocity/Y"  ;f32  0          
-  "SoccerPlayer/Velocity/Z"  ;f32  0          
