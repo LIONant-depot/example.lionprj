@@ -26,20 +26,20 @@
   "EditorPrafabInstance/Components[G:0]/MemberPath[]"                          ;s64       0                                  
   "EditorPrafabInstance/Components[G:0]/PropertyOverrides[]"                   ;s64       3                                  
   "EditorPrafabInstance/Components[G:0]/PropertyOverrides[G:0]/PropertyName"   ;string    "Transform/Position/X"             
-  "EditorPrafabInstance/Components[G:0]/PropertyOverrides[G:0]/PropertyValue"  ;string    "3.500000"                         
+  "EditorPrafabInstance/Components[G:0]/PropertyOverrides[G:0]/PropertyValue"  ;string    "2.000000"                         
   "EditorPrafabInstance/Components[G:0]/PropertyOverrides[G:1]/PropertyName"   ;string    "Transform/Position/Y"             
   "EditorPrafabInstance/Components[G:0]/PropertyOverrides[G:1]/PropertyValue"  ;string    "0.800000"                         
   "EditorPrafabInstance/Components[G:0]/PropertyOverrides[G:2]/PropertyName"   ;string    "Transform/Position/Z"             
-  "EditorPrafabInstance/Components[G:0]/PropertyOverrides[G:2]/PropertyValue"  ;string    "2.500000"                         
+  "EditorPrafabInstance/Components[G:0]/PropertyOverrides[G:2]/PropertyValue"  ;string    "0.000000"                         
   "EditorPrafabInstance/Components[G:1]/ComponentTypeGuid"                     ;u64       #F1204247F9F99025                  
   "EditorPrafabInstance/Components[G:1]/MemberPath[]"                          ;s64       0                                  
   "EditorPrafabInstance/Components[G:1]/PropertyOverrides[]"                   ;s64       3                                  
   "EditorPrafabInstance/Components[G:1]/PropertyOverrides[G:0]/PropertyName"   ;string    "SoccerPlayer/Home/X"              
-  "EditorPrafabInstance/Components[G:1]/PropertyOverrides[G:0]/PropertyValue"  ;string    "3.500000"                         
+  "EditorPrafabInstance/Components[G:1]/PropertyOverrides[G:0]/PropertyValue"  ;string    "2.000000"                         
   "EditorPrafabInstance/Components[G:1]/PropertyOverrides[G:1]/PropertyName"   ;string    "SoccerPlayer/Home/Y"              
   "EditorPrafabInstance/Components[G:1]/PropertyOverrides[G:1]/PropertyValue"  ;string    "0.800000"                         
   "EditorPrafabInstance/Components[G:1]/PropertyOverrides[G:2]/PropertyName"   ;string    "SoccerPlayer/Home/Z"              
-  "EditorPrafabInstance/Components[G:1]/PropertyOverrides[G:2]/PropertyValue"  ;string    "2.500000"                         
+  "EditorPrafabInstance/Components[G:1]/PropertyOverrides[G:2]/PropertyValue"  ;string    "0.000000"                         
   "EditorPrafabInstance/Components[G:2]/ComponentTypeGuid"                     ;u64       #52B341C6318A8906                  
   "EditorPrafabInstance/Components[G:2]/MemberPath[]"                          ;s64       0                                  
   "EditorPrafabInstance/Components[G:2]/PropertyOverrides[]"                   ;s64       1                                  

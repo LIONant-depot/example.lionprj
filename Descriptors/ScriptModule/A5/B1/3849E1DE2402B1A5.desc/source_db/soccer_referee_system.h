@@ -1,6 +1,6 @@
 #pragma once
 
-// The referee: he keeps up with the ball from the side and a little behind it, and keeps out of the players' way. When a goal is scored he
+// The referee: he walks along the touchline (the one he is on) and goes where the ball goes in x, never in z: the ball is always across from him. When a goal is scored he
 // blows the whistle: he hops on the spot until the celebration is over.
 #include "soccer_components.h"
 
@@ -43,26 +43,23 @@ namespace soccer
                 const vec2 Pos = Flat(T.m_Position);
                 const vec2 Vel = Flat(Body.m_LinearVelocity);
 
-                // a spot beside the ball, toward the middle of the pitch, so the players do not run into him
-                vec2 Back = Normalized(vec2{} - BallPos);
-                if (Length(Back) < 0.5f) Back = { 1.0f, 0.0f };
-                const vec2 Side   = { -Back.z, Back.x };
-                const vec2 Target = BallPos + Back * (R.m_Distance * 0.5f) + Side * (R.m_Distance * 0.85f);
+                // a spot on his line, across from the ball: the line is inside the touchline he is on (the walls are on the other side of it), and he only ever moves along it
+                const float Line   = (T.m_Position.m_Z < 0.0f ? -1.0f : 1.0f) * (Rules.m_HalfWidth - 1.0f);
+                const vec2  Target = { Clamp(BallPos.x, -Rules.m_HalfLength + 1.0f, Rules.m_HalfLength - 1.0f), Line };
 
                 // the velocity he wants (none after a goal: he stands to blow the whistle) and the force that gets him there, F = m * a,
                 // with the acceleration of a man who is not sprinting
                 vec2 Desired = {};
                 if (Rules.m_Phase != phase::GOAL)
                 {
-                    const vec2  To   = Target - Pos;
-                    const float Dist = Length(To);
-                    Desired = Normalized(To) * (R.m_Speed * Clamp(Dist / 1.0f, 0.0f, 1.0f));
-                    const vec2  FromBall = Pos - BallPos;                                           // never too near the ball
-                    if (Length(FromBall) < 2.2f) Desired = Desired + Normalized(FromBall) * 3.0f;
+                    Desired.x = R.m_Speed * Clamp(Target.x - Pos.x, -1.0f, 1.0f);                   // along the line toward the ball (slowing down as he arrives)
+                    Desired.z = R.m_Speed * 0.5f * Clamp(Target.z - Pos.z, -1.0f, 1.0f);            // and back onto it if he was pushed off
+                    const vec2  FromBall = Pos - BallPos;                                           // never too near the ball: out of its way along the line
+                    if (Length(FromBall) < R.m_Distance * 0.63f) Desired.x += (FromBall.x < 0.0f ? -3.0f : 3.0f);
                 }
                 if (Length(Desired) > R.m_Speed) Desired = Normalized(Desired) * R.m_Speed;           // nobody runs faster than his top speed
                 vec2 Accel = (Desired - Vel) * (1.0f / kFixedDt);
-                const float MaxAccel = 5.0f;                                                        // m/s2
+                const float MaxAccel = 8.0f;                                                        // m/s2 (80 kg: 640 N, a jog; less than that and the push does not beat the friction of the ground and he stands still)
                 if (Length(Accel) > MaxAccel) Accel = Normalized(Accel) * MaxAccel;
                 const vec2 Push = LimitedPush(Accel * Body.m_Mass, Vel, R.m_Speed);                    // (at his top speed: no more push ahead)
                 AddForce(Body, Push.x, 0.0f, Push.z, kMaxRunForce);
