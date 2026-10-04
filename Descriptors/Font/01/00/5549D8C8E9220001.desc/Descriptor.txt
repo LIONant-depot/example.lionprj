@@ -1,0 +1,25 @@
+
+[ DescriptorVersion ]
+{ Major:d  Minor:d }
+//-------  -------
+     1        0   
+
+// New Types
+< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
+
+[ xProperties : 13 ]
+{ Name:s                                Value:?                           }
+//------------------------------------  ---------------------------------
+  "Font/FontFile"                       ;wstring "Assets\\arial.ttf"     
+  "Font/SampleTextFiles[]"              ;s64     1                       
+  "Font/SampleTextFiles[G:0]"           ;wstring "Assets\\SampleText.txt"
+  "Font/AlwaysIncludeAscii"             ;bool    1                       
+  "Font/ExplicitRanges[]"               ;s64     0                       
+  "Font/OutputType"                     ;enum    "MTSDF"                 
+  "Font/Distance Field/PixelRange"      ;f32     #40400000               
+  "Font/Distance Field/AngleThreshold"  ;f32     #40000000               
+  "Font/Distance Field/GlyphSize"       ;f32     #41B00000               
+  "Font/Distance Field/PixelPadding"    ;s32     1                       
+  "Font/Output/BitmapSizes[]"           ;s64     1                       
+  "Font/Output/BitmapSizes[G:0]"        ;s32     22                      
+  "Font/Output/BitmapCompression"       ;enum    "COMPRESSED"            
