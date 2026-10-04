@@ -7,6 +7,8 @@
    #54E923B47CD82E8  "SoccerScoreBar"          #3849E1DE2402B1A5
    #85F88DCAA370B06  "PhysicsColliderBox"                     #0
    #DC3BCDAB39C3CCF  "SoccerBall"              #3849E1DE2402B1A5
+  #117DD63C849E9F05  "Children"                               #0
+  #26E6D2F586FF9411  "Parent"                                 #0
   #3C561E6CCC1EE63A  "Text"                                   #0
   #3DB0BDB9B50EF0F6  "SoccerGoal"              #3849E1DE2402B1A5
   #3EF27824643D67EA  "PhysicsDynamics"                        #0
@@ -22,6 +24,4 @@
   #A5EEE30695E37CAB  "PhysicsColliderSphere"                  #0
   #A8027BF64F88F583  "EditorPrafabInstance"                   #0
   #B17052371C9F7064  "PhysicsColliderCapsule"                 #0
-  #B1D4C31A18F87563  "SoccerNameTag"           #3849E1DE2402B1A5
-  #EC0212D079E9A6A9  "SoccerShadow"            #3849E1DE2402B1A5
   #F1204247F9F99025  "SoccerPlayer"            #3849E1DE2402B1A5

@@ -55,32 +55,32 @@
   "Scene/ActiveEntities[G:39]"  ;u32 #3004
   "Scene/ActiveEntities[G:40]"  ;u32 #4000
   "Scene/ActiveEntities[G:41]"  ;u32 #5000
-  "Scene/ActiveEntities[G:42]"  ;u32 #6001
-  "Scene/ActiveEntities[G:43]"  ;u32 #6002
-  "Scene/ActiveEntities[G:44]"  ;u32 #6003
-  "Scene/ActiveEntities[G:45]"  ;u32 #6004
-  "Scene/ActiveEntities[G:46]"  ;u32 #6005
-  "Scene/ActiveEntities[G:47]"  ;u32 #6006
-  "Scene/ActiveEntities[G:48]"  ;u32 #6007
-  "Scene/ActiveEntities[G:49]"  ;u32 #6008
-  "Scene/ActiveEntities[G:50]"  ;u32 #6009
-  "Scene/ActiveEntities[G:51]"  ;u32 #600A
-  "Scene/ActiveEntities[G:52]"  ;u32 #6014
-  "Scene/ActiveEntities[G:53]"  ;u32 #601E
-  "Scene/ActiveEntities[G:54]"  ;u32 #7001
-  "Scene/ActiveEntities[G:55]"  ;u32 #7002
-  "Scene/ActiveEntities[G:56]"  ;u32 #7003
-  "Scene/ActiveEntities[G:57]"  ;u32 #7004
-  "Scene/ActiveEntities[G:58]"  ;u32 #7005
-  "Scene/ActiveEntities[G:59]"  ;u32 #7006
-  "Scene/ActiveEntities[G:60]"  ;u32 #7007
-  "Scene/ActiveEntities[G:61]"        ;u32    #7008           
-  "Scene/ActiveEntities[G:62]"        ;u32    #7009           
-  "Scene/ActiveEntities[G:63]"        ;u32    #700A           
-  "Scene/ActiveEntities[G:64]"        ;u32    #700B           
-  "Scene/ActiveEntities[G:65]"        ;u32    #7100           
-  "Scene/ActiveEntities[G:66]"        ;u32    #7101           
-  "Scene/ActiveEntities[G:67]"        ;u32    #7200           
+  "Scene/ActiveEntities[G:42]"  ;u32 #7100
+  "Scene/ActiveEntities[G:43]"  ;u32 #7101
+  "Scene/ActiveEntities[G:44]"  ;u32 #7200
+  "Scene/ActiveEntities[G:45]"  ;u32 #7201
+  "Scene/ActiveEntities[G:46]"  ;u32 #7202
+  "Scene/ActiveEntities[G:47]"  ;u32 #7203
+  "Scene/ActiveEntities[G:48]"  ;u32 #7204
+  "Scene/ActiveEntities[G:49]"  ;u32 #7205
+  "Scene/ActiveEntities[G:50]"  ;u32 #7206
+  "Scene/ActiveEntities[G:51]"  ;u32 #7207
+  "Scene/ActiveEntities[G:52]"  ;u32 #7208
+  "Scene/ActiveEntities[G:53]"  ;u32 #7209
+  "Scene/ActiveEntities[G:54]"  ;u32 #720A
+  "Scene/ActiveEntities[G:55]"  ;u32 #720B
+  "Scene/ActiveEntities[G:56]"  ;u32 #8001
+  "Scene/ActiveEntities[G:57]"  ;u32 #8002
+  "Scene/ActiveEntities[G:58]"  ;u32 #8003
+  "Scene/ActiveEntities[G:59]"  ;u32 #8004
+  "Scene/ActiveEntities[G:60]"  ;u32 #8005
+  "Scene/ActiveEntities[G:61]"        ;u32    #8006           
+  "Scene/ActiveEntities[G:62]"        ;u32    #8007           
+  "Scene/ActiveEntities[G:63]"        ;u32    #8008           
+  "Scene/ActiveEntities[G:64]"        ;u32    #8009           
+  "Scene/ActiveEntities[G:65]"        ;u32    #800A           
+  "Scene/ActiveEntities[G:66]"        ;u32    #800B           
+  "Scene/ActiveEntities[G:67]"        ;u32    #800C           
   "Scene/Folders[]"                   ;s64    5               
   "Scene/Folders[G:0]/Id"             ;u32    #F0000001       
   "Scene/Folders[G:0]/Parent"         ;u32    #0              
@@ -211,55 +211,55 @@
   "Scene/EntityNames[G:38]/Name"      ;string "Referee"            
   "Scene/EntityNames[G:39]/Id"        ;u32    #5000                
   "Scene/EntityNames[G:39]/Name"      ;string "Ball"               
-  "Scene/EntityNames[G:40]/Id"        ;u32    #6001                
-  "Scene/EntityNames[G:40]/Name"      ;string "Shadow 1"           
-  "Scene/EntityNames[G:41]/Id"        ;u32    #6002                
-  "Scene/EntityNames[G:41]/Name"      ;string "Shadow 2"           
-  "Scene/EntityNames[G:42]/Id"        ;u32    #6003                
-  "Scene/EntityNames[G:42]/Name"      ;string "Shadow 3"           
-  "Scene/EntityNames[G:43]/Id"        ;u32    #6004                
-  "Scene/EntityNames[G:43]/Name"      ;string "Shadow 4"           
-  "Scene/EntityNames[G:44]/Id"        ;u32    #6005                
-  "Scene/EntityNames[G:44]/Name"      ;string "Shadow 5"           
-  "Scene/EntityNames[G:45]/Id"        ;u32    #6006                
-  "Scene/EntityNames[G:45]/Name"      ;string "Shadow 6"           
-  "Scene/EntityNames[G:46]/Id"        ;u32    #6007                
-  "Scene/EntityNames[G:46]/Name"      ;string "Shadow 7"           
-  "Scene/EntityNames[G:47]/Id"        ;u32    #6008                
-  "Scene/EntityNames[G:47]/Name"      ;string "Shadow 8"           
-  "Scene/EntityNames[G:48]/Id"        ;u32    #6009                
-  "Scene/EntityNames[G:48]/Name"      ;string "Shadow 9"           
-  "Scene/EntityNames[G:49]/Id"        ;u32    #600A                
-  "Scene/EntityNames[G:49]/Name"      ;string "Shadow 10"          
-  "Scene/EntityNames[G:50]/Id"        ;u32    #6014                
-  "Scene/EntityNames[G:50]/Name"      ;string "Shadow 20"          
-  "Scene/EntityNames[G:51]/Id"        ;u32    #601E                
-  "Scene/EntityNames[G:51]/Name"      ;string "Shadow 30"          
-  "Scene/EntityNames[G:52]/Id"        ;u32    #7001                
-  "Scene/EntityNames[G:52]/Name"      ;string "Name Ana"           
-  "Scene/EntityNames[G:53]/Id"        ;u32    #7002                
-  "Scene/EntityNames[G:53]/Name"      ;string "Name Ben"           
-  "Scene/EntityNames[G:54]/Id"        ;u32    #7003                
-  "Scene/EntityNames[G:54]/Name"      ;string "Name Carl"          
-  "Scene/EntityNames[G:55]/Id"        ;u32    #7004                
-  "Scene/EntityNames[G:55]/Name"      ;string "Name Dina"          
-  "Scene/EntityNames[G:56]/Id"        ;u32    #7005                
-  "Scene/EntityNames[G:56]/Name"      ;string "Name Eli"           
-  "Scene/EntityNames[G:57]/Id"        ;u32    #7006                
-  "Scene/EntityNames[G:57]/Name"      ;string "Name Fay"           
-  "Scene/EntityNames[G:58]/Id"        ;u32    #7007                
-  "Scene/EntityNames[G:58]/Name"      ;string "Name Gus"           
-  "Scene/EntityNames[G:59]/Id"        ;u32    #7008                
-  "Scene/EntityNames[G:59]/Name"      ;string "Name Hana"          
-  "Scene/EntityNames[G:60]/Id"        ;u32    #7009                
-  "Scene/EntityNames[G:60]/Name"      ;string "Name Ivan"          
-  "Scene/EntityNames[G:61]/Id"        ;u32    #700A                
-  "Scene/EntityNames[G:61]/Name"      ;string "Name Jo"            
-  "Scene/EntityNames[G:62]/Id"        ;u32    #700B                
-  "Scene/EntityNames[G:62]/Name"      ;string "Name Referee"       
-  "Scene/EntityNames[G:63]/Id"        ;u32    #7100                
-  "Scene/EntityNames[G:63]/Name"      ;string "Score Blue Label"   
-  "Scene/EntityNames[G:64]/Id"        ;u32    #7101                
-  "Scene/EntityNames[G:64]/Name"      ;string "Score Red Label"    
-  "Scene/EntityNames[G:65]/Id"        ;u32    #7200                
-  "Scene/EntityNames[G:65]/Name"      ;string "Goal Banner"        
+  "Scene/EntityNames[G:40]/Id"        ;u32    #7100                
+  "Scene/EntityNames[G:40]/Name"      ;string "Score Blue Label"   
+  "Scene/EntityNames[G:41]/Id"        ;u32    #7101                
+  "Scene/EntityNames[G:41]/Name"      ;string "Score Red Label"    
+  "Scene/EntityNames[G:42]/Id"        ;u32    #7200                
+  "Scene/EntityNames[G:42]/Name"      ;string "Goal Banner"        
+  "Scene/EntityNames[G:43]/Id"        ;u32    #7201                
+  "Scene/EntityNames[G:43]/Name"      ;string "Name Ana"           
+  "Scene/EntityNames[G:44]/Id"        ;u32    #7202                
+  "Scene/EntityNames[G:44]/Name"      ;string "Name Ben"           
+  "Scene/EntityNames[G:45]/Id"        ;u32    #7203                
+  "Scene/EntityNames[G:45]/Name"      ;string "Name Carl"          
+  "Scene/EntityNames[G:46]/Id"        ;u32    #7204                
+  "Scene/EntityNames[G:46]/Name"      ;string "Name Dina"          
+  "Scene/EntityNames[G:47]/Id"        ;u32    #7205                
+  "Scene/EntityNames[G:47]/Name"      ;string "Name Eli"           
+  "Scene/EntityNames[G:48]/Id"        ;u32    #7206                
+  "Scene/EntityNames[G:48]/Name"      ;string "Name Fay"           
+  "Scene/EntityNames[G:49]/Id"        ;u32    #7207                
+  "Scene/EntityNames[G:49]/Name"      ;string "Name Gus"           
+  "Scene/EntityNames[G:50]/Id"        ;u32    #7208                
+  "Scene/EntityNames[G:50]/Name"      ;string "Name Hana"          
+  "Scene/EntityNames[G:51]/Id"        ;u32    #7209                
+  "Scene/EntityNames[G:51]/Name"      ;string "Name Ivan"          
+  "Scene/EntityNames[G:52]/Id"        ;u32    #720A                
+  "Scene/EntityNames[G:52]/Name"      ;string "Name Jo"            
+  "Scene/EntityNames[G:53]/Id"        ;u32    #720B                
+  "Scene/EntityNames[G:53]/Name"      ;string "Name Referee"       
+  "Scene/EntityNames[G:54]/Id"        ;u32    #8001                
+  "Scene/EntityNames[G:54]/Name"      ;string "Shadow"             
+  "Scene/EntityNames[G:55]/Id"        ;u32    #8002                
+  "Scene/EntityNames[G:55]/Name"      ;string "Shadow"             
+  "Scene/EntityNames[G:56]/Id"        ;u32    #8003                
+  "Scene/EntityNames[G:56]/Name"      ;string "Shadow"             
+  "Scene/EntityNames[G:57]/Id"        ;u32    #8004                
+  "Scene/EntityNames[G:57]/Name"      ;string "Shadow"             
+  "Scene/EntityNames[G:58]/Id"        ;u32    #8005                
+  "Scene/EntityNames[G:58]/Name"      ;string "Shadow"             
+  "Scene/EntityNames[G:59]/Id"        ;u32    #8006                
+  "Scene/EntityNames[G:59]/Name"      ;string "Shadow"             
+  "Scene/EntityNames[G:60]/Id"        ;u32    #8007                
+  "Scene/EntityNames[G:60]/Name"      ;string "Shadow"             
+  "Scene/EntityNames[G:61]/Id"        ;u32    #8008                
+  "Scene/EntityNames[G:61]/Name"      ;string "Shadow"             
+  "Scene/EntityNames[G:62]/Id"        ;u32    #8009                
+  "Scene/EntityNames[G:62]/Name"      ;string "Shadow"             
+  "Scene/EntityNames[G:63]/Id"        ;u32    #800A                
+  "Scene/EntityNames[G:63]/Name"      ;string "Shadow"             
+  "Scene/EntityNames[G:64]/Id"        ;u32    #800B                
+  "Scene/EntityNames[G:64]/Name"      ;string "Shadow"             
+  "Scene/EntityNames[G:65]/Id"        ;u32    #800C                
+  "Scene/EntityNames[G:65]/Name"      ;string "Shadow"             

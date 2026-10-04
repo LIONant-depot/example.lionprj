@@ -8,11 +8,9 @@
 //      ball        who kicked the ball last (the ball itself is the engine's: a PhysicsDynamics body with a sphere collider).
 //      player      a member of a team: which team, which role, where he stands when he has nothing better to do.
 //      referee     the referee: he follows the play at a distance (he is not a player, he never kicks).
-//      identity    a number that is unique among the things that cast a shadow.
-//      shadow      a flat dark disc under the thing with the same identity number.
+//      identity    a number that is unique among the players, the referee and the ball.
 //      score_bar   a bar on the scoreboard that grows with a team's score.
 //      score_label a Text (the engine's) that says a team's name and its goals.
-//      name_tag    a Text that follows a player (by identity number) and says his name.
 //      banner      a Text that says GOAL! while the goal is celebrated.
 #include "soccer_common.h"
 
@@ -158,7 +156,7 @@ namespace soccer
     XSCRIPT_REGISTER_COMPONENT(referee, "Soccer", 130)
 
     //------------------------------------------------------------------------------------------------------------
-    // Shadows. A shadow is its own entity (a flattened dark sphere); the identity number ties it to what it follows.
+    // Identity: who is who. The shadow and the name tag of a player are CHILDREN of the player (their Transform is relative to his: they go where he goes), so they need no number.
     //------------------------------------------------------------------------------------------------------------
     struct identity
     {
@@ -172,23 +170,6 @@ namespace soccer
         )
     };
     XSCRIPT_REGISTER_COMPONENT(identity, "Soccer", 140)
-
-    struct shadow
-    {
-        constexpr static auto typedef_v = xecs::component::type::data{ .m_pName = "SoccerShadow" };
-
-        int             m_OwnerId       = 0;                            // the identity of what it follows
-        float           m_Size          = 1.0f;                         // its width, meters
-        float           m_Height        = 0.012f;                       // how far over the ground it floats (to hide it from the floor's depth)
-
-        XPROPERTY_DEF
-        ( "SoccerShadow", shadow
-        , obj_member<"OwnerId", &shadow::m_OwnerId>
-        , obj_member<"Size",    &shadow::m_Size>
-        , obj_member<"Height",  &shadow::m_Height>
-        )
-    };
-    XSCRIPT_REGISTER_COMPONENT(shadow, "Soccer", 150)
 
     //------------------------------------------------------------------------------------------------------------
     // The scoreboard: a bar per team that gets longer with every goal.
@@ -211,7 +192,7 @@ namespace soccer
     XSCRIPT_REGISTER_COMPONENT(score_bar, "Soccer", 160)
 
     //------------------------------------------------------------------------------------------------------------
-    // Words on the screen. These three go with an engine Text on the same entity: the game writes what it says, the engine draws it.
+    // Words on the screen. These two go with an engine Text on the same entity: the game writes what it says, the engine draws it.
     //------------------------------------------------------------------------------------------------------------
     struct score_label
     {
@@ -225,21 +206,6 @@ namespace soccer
         )
     };
     XSCRIPT_REGISTER_COMPONENT(score_label, "Soccer", 170)
-
-    struct name_tag
-    {
-        constexpr static auto typedef_v = xecs::component::type::data{ .m_pName = "SoccerNameTag" };
-
-        int             m_OwnerId       = 0;                            // the identity of the player it follows
-        float           m_Height        = 2.0f;                         // how far over the player's origin it floats
-
-        XPROPERTY_DEF
-        ( "SoccerNameTag", name_tag
-        , obj_member<"OwnerId", &name_tag::m_OwnerId>
-        , obj_member<"Height",  &name_tag::m_Height>
-        )
-    };
-    XSCRIPT_REGISTER_COMPONENT(name_tag, "Soccer", 180)
 
     struct banner
     {

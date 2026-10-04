@@ -1,0 +1,43 @@
+
+[ EntityInfo ]
+{ PermanentId:g  nComponents:d }
+//-------------  -------------
+    #D2FAB8D8          1      
+
+[ ComponentTypes : 1 ]
+{ Guid:G            }
+//-----------------
+  #A8027BF64F88F583
+
+// New Types
+< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG entity:G enum:s >
+
+[ xProperties : 26 ]
+{ Name:s                                                                       Value:?                                        }
+//---------------------------------------------------------------------------  ----------------------------------------------
+  "EditorPrafabInstance/Prefab"                                                ;full_guid #66879B27D9D067FB #16F179B86A628F9D
+  "EditorPrafabInstance/Components[]"                                          ;s64       2                                  
+  "EditorPrafabInstance/Components[G:0]/ComponentTypeGuid"                     ;u64       #663773C47FA1D0BA                  
+  "EditorPrafabInstance/Components[G:0]/MemberPath[]"                          ;s64       0                                  
+  "EditorPrafabInstance/Components[G:0]/PropertyOverrides[]"                   ;s64       6                                  
+  "EditorPrafabInstance/Components[G:0]/PropertyOverrides[G:0]/PropertyName"   ;string    "Transform/Position/X"             
+  "EditorPrafabInstance/Components[G:0]/PropertyOverrides[G:0]/PropertyValue"  ;string    "3.500000"                         
+  "EditorPrafabInstance/Components[G:0]/PropertyOverrides[G:1]/PropertyName"   ;string    "Transform/Position/Y"             
+  "EditorPrafabInstance/Components[G:0]/PropertyOverrides[G:1]/PropertyValue"  ;string    "0.012000"                         
+  "EditorPrafabInstance/Components[G:0]/PropertyOverrides[G:2]/PropertyName"   ;string    "Transform/Position/Z"             
+  "EditorPrafabInstance/Components[G:0]/PropertyOverrides[G:2]/PropertyValue"  ;string    "2.500000"                         
+  "EditorPrafabInstance/Components[G:0]/PropertyOverrides[G:3]/PropertyName"   ;string    "Transform/Scale/X"                
+  "EditorPrafabInstance/Components[G:0]/PropertyOverrides[G:3]/PropertyValue"  ;string    "0.950000"                         
+  "EditorPrafabInstance/Components[G:0]/PropertyOverrides[G:4]/PropertyName"   ;string    "Transform/Scale/Y"                
+  "EditorPrafabInstance/Components[G:0]/PropertyOverrides[G:4]/PropertyValue"  ;string    "0.020000"                         
+  "EditorPrafabInstance/Components[G:0]/PropertyOverrides[G:5]/PropertyName"   ;string    "Transform/Scale/Z"                
+  "EditorPrafabInstance/Components[G:0]/PropertyOverrides[G:5]/PropertyValue"  ;string    "0.950000"                         
+  "EditorPrafabInstance/Components[G:1]/ComponentTypeGuid"                     ;u64       #EC0212D079E9A6A9                  
+  "EditorPrafabInstance/Components[G:1]/MemberPath[]"                          ;s64       0                                  
+  "EditorPrafabInstance/Components[G:1]/PropertyOverrides[]"                   ;s64       2                                  
+  "EditorPrafabInstance/Components[G:1]/PropertyOverrides[G:0]/PropertyName"   ;string    "SoccerShadow/OwnerId"             
+  "EditorPrafabInstance/Components[G:1]/PropertyOverrides[G:0]/PropertyValue"  ;string    "10"                               
+  "EditorPrafabInstance/Components[G:1]/PropertyOverrides[G:1]/PropertyName"   ;string    "SoccerShadow/Size"                
+  "EditorPrafabInstance/Components[G:1]/PropertyOverrides[G:1]/PropertyValue"  ;string    "0.950000"                         
+  "EditorPrafabInstance/ComponentDiffs[]"                                      ;s64       0                                  
+  "EditorPrafabInstance/HierarchyDiffs[]"                                      ;s64       0                                  
