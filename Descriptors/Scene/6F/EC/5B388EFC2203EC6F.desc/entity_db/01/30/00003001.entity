@@ -2,9 +2,9 @@
 [ EntityInfo ]
 { PermanentId:g  nComponents:d }
 //-------------  -------------
-      #3001            6      
+      #3001            7      
 
-[ ComponentTypes : 6 ]
+[ ComponentTypes : 7 ]
 { Guid:G            }
 //-----------------
   #A8027BF64F88F583
@@ -12,12 +12,13 @@
   #4F7643DF807F0C51
   #117DD63C849E9F05
   #B17052371C9F7064
+  #F42E683502B758A5
   #77DF28B87C62ABFF
 
 // New Types
 < s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG entity:G enum:s >
 
-[ xProperties : 72 ]
+[ xProperties : 74 ]
 { Name:s                                                                       Value:?                                        }
 //---------------------------------------------------------------------------  ----------------------------------------------
   "EditorPrafabInstance/Prefab"                                                ;full_guid #6325BCD600D8F273 #16F179B86A628F9D
@@ -74,7 +75,7 @@
   "EditorPrafabInstance/Components[G:4]/PropertyOverrides[G:0]/PropertyValue"  ;string    "8.000000"                         
   "EditorPrafabInstance/Components[G:4]/PropertyOverrides[G:1]/PropertyName"   ;string    "SoccerPlayer/Home/Z"              
   "EditorPrafabInstance/Components[G:4]/PropertyOverrides[G:1]/PropertyValue"  ;string    "0.000000"                         
-  "EditorPrafabInstance/ComponentDiffs[]"                                      ;s64       5                                  
+  "EditorPrafabInstance/ComponentDiffs[]"                                      ;s64       6                                  
   "EditorPrafabInstance/ComponentDiffs[G:0]/ComponentTypeGuid"                 ;u64       #117DD63C849E9F05                  
   "EditorPrafabInstance/ComponentDiffs[G:0]/Added"                             ;bool      1                                  
   "EditorPrafabInstance/ComponentDiffs[G:1]/ComponentTypeGuid"                 ;u64       #3EF27824643D67EA                  
@@ -83,8 +84,10 @@
   "EditorPrafabInstance/ComponentDiffs[G:2]/Added"                             ;bool      1                                  
   "EditorPrafabInstance/ComponentDiffs[G:3]/ComponentTypeGuid"                 ;u64       #B17052371C9F7064                  
   "EditorPrafabInstance/ComponentDiffs[G:3]/Added"                             ;bool      1                                  
-  "EditorPrafabInstance/ComponentDiffs[G:4]/ComponentTypeGuid"                 ;u64       #77DF28B87C62ABFF                  
+  "EditorPrafabInstance/ComponentDiffs[G:4]/ComponentTypeGuid"                 ;u64       #F42E683502B758A5                  
   "EditorPrafabInstance/ComponentDiffs[G:4]/Added"                             ;bool      1                                  
+  "EditorPrafabInstance/ComponentDiffs[G:5]/ComponentTypeGuid"                 ;u64       #77DF28B87C62ABFF                  
+  "EditorPrafabInstance/ComponentDiffs[G:5]/Added"                             ;bool      1                                  
   "EditorPrafabInstance/HierarchyDiffs[]"                                      ;s64       2                                  
   "EditorPrafabInstance/HierarchyDiffs[G:0]/MemberPath[]"                      ;s64       1                                  
   "EditorPrafabInstance/HierarchyDiffs[G:0]/MemberPath[G:0]"                   ;u32       #0                                 
@@ -154,6 +157,8 @@
   "PhysicsColliderCapsule/Capsules[G:0]/Material"       ;full_guid #D132D643A138AF1 #6073A709ACB80A3
   "PhysicsColliderCapsule/Capsules[G:0]/IsSensor"       ;bool      0                                
   "PhysicsColliderCapsule/Capsules[G:0]/ContactEvents"  ;bool      0                                
+
+[ xProperties : 0 ]
 
 [ xProperties : 7 ]
 { Name:s                                             Value:?                 }
