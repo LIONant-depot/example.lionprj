@@ -1,0 +1,20 @@
+
+[ EntityInfo ]
+{ PermanentId:g  nComponents:d }
+//-------------  -------------
+    #85AC60D6          1      
+
+[ ComponentTypes : 1 ]
+{ Guid:G            }
+//-----------------
+  #117DD63C849E9F05
+
+[ Children : 1 ]
+{ nChildren:d }
+//-----------
+       1     
+
+[ AllChildren : 1 ]
+{ Entity:G  }
+//---------
+  #F0000002

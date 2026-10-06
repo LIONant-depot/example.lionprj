@@ -42,18 +42,13 @@
   "PhysicsDynamics/Torque/Y"           ;f32 0 
   "PhysicsDynamics/Torque/Z"           ;f32 0 
 
-[ xProperties : 9 ]
-{ Name:s                       Value:? }
-//---------------------------  -------
-  "Physics/BodyIndex"          ;f32 0 
-  "Physics/BodyGeneration"     ;f32 0 
-  "Physics/CachedBodyType"     ;f32 2 
-  "Physics/BodyHalfExtents/X"  ;f32 0 
-  "Physics/BodyHalfExtents/Y"  ;f32 0 
-  "Physics/BodyHalfExtents/Z"  ;f32 0 
-  "Physics/CachedMass"         ;f32 0 
-  "Physics/CachedFriction"     ;f32 0 
-  "Physics/CachedRestitution"  ;f32 0 
+[ xProperties : 4 ]
+{ Name:s                    Value:? }
+//------------------------  -------
+  "Physics/BodyIndex"       ;f32 0 
+  "Physics/BodyGeneration"  ;f32 0 
+  "Physics/CachedBodyType"  ;f32 2 
+  "Physics/CachedMass"      ;f32 0 
 
 [ xProperties : 13 ]
 { Name:s                         Value:?          }
@@ -69,7 +64,7 @@
   "Transform/RotationDegrees/Y"  ;f32 0          
   "Transform/RotationDegrees/Z"  ;f32 0          
   "Transform/Scale/X"            ;f32 1          
-  "Transform/Scale/Y"            ;f32 4          
+  "Transform/Scale/Y"            ;f32 1          
   "Transform/Scale/Z"            ;f32 1          
 
 [ xProperties : 7 ]

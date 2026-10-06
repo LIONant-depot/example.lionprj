@@ -7,10 +7,10 @@
 // New Types
 < s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
 
-[ xProperties : 19 ]
+[ xProperties : 21 ]
 { Name:s                             Value:?                              }
 //---------------------------------  ------------------------------------
-  "ScriptModule/Files[]"             ;s64    8                           
+  "ScriptModule/Files[]"             ;s64    9                           
   "ScriptModule/Files[G:0]/Path"     ;string "soccer_ball_system.h"      
   "ScriptModule/Files[G:0]/Exclude"  ;bool   0                           
   "ScriptModule/Files[G:1]/Path"     ;string "soccer_common.h"           
@@ -27,5 +27,7 @@
   "ScriptModule/Files[G:6]/Exclude"  ;bool   0                           
   "ScriptModule/Files[G:7]/Path"     ;string "soccer_goal_system.h"      
   "ScriptModule/Files[G:7]/Exclude"  ;bool   0                           
+  "ScriptModule/Files[G:8]/Path"     ;string "soccer_match_system.h"     
+  "ScriptModule/Files[G:8]/Exclude"  ;bool   0                           
   "ScriptModule/Libraries[]"         ;s64    0                           
   "ScriptModule/Defines[]"           ;s64    0                           

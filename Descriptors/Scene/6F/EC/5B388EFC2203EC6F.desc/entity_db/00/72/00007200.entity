@@ -19,7 +19,7 @@
 //------------------  ----------------------------------------------
   "Text/Font"         ;full_guid #5549D8C8E9220001 #3285CB58BB79E1AD
   "Text/Text"         ;wstring   ""                                 
-  "Text/Size"         ;f32       0.600000024                        
+  "Text/Size"         ;f32       2                                  
   "Text/Color/X"      ;f32       1                                  
   "Text/Color/Y"      ;f32       0.899999976                        
   "Text/Color/Z"      ;f32       0.200000003                        

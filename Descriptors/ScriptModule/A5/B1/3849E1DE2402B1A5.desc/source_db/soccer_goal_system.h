@@ -17,9 +17,7 @@ namespace soccer
             team Defender = team::BLUE;
             (void)findEntity(Touch.m_Sensor, [&](const goal& Goal) noexcept { Defender = Goal.m_Defender; });
 
-            xecs::query::instance Query;
-            Query.m_Must.AddFromComponents<match>();
-            Foreach(Search(Query), [&](const xecs::component::entity&, match& Rules) noexcept
+            QForeach([&](match& Rules) noexcept
             {
                 if (Rules.m_Phase != phase::PLAYING) return;                            // (in the net the ball just stays in the net)
                 Rules.m_Phase      = phase::GOAL;

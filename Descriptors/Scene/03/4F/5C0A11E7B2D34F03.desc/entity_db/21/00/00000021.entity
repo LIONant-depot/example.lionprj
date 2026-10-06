@@ -71,22 +71,22 @@
   "Physics/CachedMass"      ;f32 0 
 
 [ xProperties : 14 ]
-{ Name:s                         Value:?          }
-//-----------------------------  ----------------
-  "Transform/Position/X"         ;f32  1.20000005
-  "Transform/Position/Y"         ;f32  5         
-  "Transform/Position/Z"         ;f32  3.4000001 
-  "Transform/Rotation/X"         ;f32  0         
-  "Transform/Rotation/Y"         ;f32  0         
-  "Transform/Rotation/Z"         ;f32  0         
-  "Transform/Rotation/W"         ;f32  1         
-  "Transform/RotationDegrees/X"  ;f32  0         
-  "Transform/RotationDegrees/Y"  ;f32  0         
-  "Transform/RotationDegrees/Z"  ;f32  0         
-  "Transform/Scale/X"            ;f32  1         
-  "Transform/Scale/Y"            ;f32  1         
-  "Transform/Scale/Z"            ;f32  1         
-  "Transform/EditorLockScale"    ;bool 0         
+{ Name:s                         Value:?            }
+//-----------------------------  ------------------
+  "Transform/Position/X"         ;f32  -4.26063728 
+  "Transform/Position/Y"         ;f32  5.68213654  
+  "Transform/Position/Z"         ;f32  3.0031302   
+  "Transform/Rotation/X"         ;f32  0.250811577 
+  "Transform/Rotation/Y"         ;f32  -0.22550717 
+  "Transform/Rotation/Z"         ;f32  -0.397565305
+  "Transform/Rotation/W"         ;f32  0.853335738 
+  "Transform/RotationDegrees/X"  ;f32  14.4032764  
+  "Transform/RotationDegrees/Y"  ;f32  -37.1034203 
+  "Transform/RotationDegrees/Z"  ;f32  -54.8176384 
+  "Transform/Scale/X"            ;f32  1           
+  "Transform/Scale/Y"            ;f32  1           
+  "Transform/Scale/Z"            ;f32  1           
+  "Transform/EditorLockScale"    ;bool 0           
 
 [ xProperties : 7 ]
 { Name:s                                             Value:?                 }

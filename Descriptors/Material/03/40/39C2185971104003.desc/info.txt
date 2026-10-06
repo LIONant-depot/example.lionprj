@@ -8,10 +8,10 @@
 < s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
 
 [ xProperties : 5 ]
-{ Name:s                                 Value:?                   }
-//-------------------------------------  -------------------------
-  "Info/Name"                            ;string "One Texture"    
-  "Info/Comment"                         ;string "" 
-  "Info/Details/GUID"                   ;full_guid #39C2185971104003 #8B3C028882EA813D
-  "Info/Details/RscLinks[]"             ;s64       1                                  
-  "Info/Details/RscLinks[G:0]"          ;full_guid #31C2185970FB0001 #C4D90C5F0CC43021
+{ Name:s                        Value:?                                        }
+//----------------------------  ----------------------------------------------
+  "Info/Name"                   ;string    "One Texture"                      
+  "Info/Comment"                ;string    ""                                 
+  "Info/Details/GUID"           ;full_guid #39C2185971104003 #8B3C028882EA813D
+  "Info/Details/RscLinks[]"     ;s64       1                                  
+  "Info/Details/RscLinks[G:0]"  ;full_guid #31C2185970FB0001 #C4D90C5F0CC43021

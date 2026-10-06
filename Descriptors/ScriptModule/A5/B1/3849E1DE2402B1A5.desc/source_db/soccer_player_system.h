@@ -8,7 +8,11 @@
 //   - the others keep their places, leaning toward the ball;
 //   - a player that reaches the ball kicks it: a shot when he is close enough to the goal, otherwise a pass to the best placed teammate
 //     (ahead of him, with no opponent near him or near the way), otherwise he pushes the ball forward.
-// A goalkeeper stays on his goal line following the ball sideways; when the ball comes close he goes for it, and then passes it away.
+// A goalkeeper stays on his goal line following the ball sideways. When the ball comes into his area, not too fast to be caught, and it was not a team-mate that played it, he picks it
+// up (the ball goes where his hands go, nobody else can play it), waits a little, and kicks it high toward the middle of the field - when nobody stands in the way close in front of
+// him (when somebody does he tries another line, and if none is clear he moves himself, with the ball in his hands, to a place from which the way is clear). While he holds it
+// everybody takes position in the middle of the field. A ball that comes too fast he can
+// only clear: he kicks it away.
 //
 // The match component says what is going on: at a kickoff everybody walks to his place, and after a goal the team that scored jumps.
 #include "soccer_components.h"
@@ -60,17 +64,23 @@ namespace soccer
 
         random      m_Random;
 
-        // A kick decided this frame, applied to the ball once everybody has been visited.
-        struct kick { bool m_bValid = false; vec2 m_Velocity; team m_Team = team::BLUE; int m_Id = -1; };
-
-        // The people move with the physics. Connected to the "Before Step" connector of the Physics system (how the Soccer example is set up) this
-        // runs once for each step, right before it; not connected, it takes the fixed steps the game's time says are due this frame itself.
-        void OnUpdate(void) noexcept
+        // What was decided for the ball this frame, applied to it once everybody has been visited: a kick (m_Up: a kick that lifts it), or a goalkeeper holding it (it goes to m_HoldAt).
+        struct kick
         {
-            if (isConnected()) { FixedStep(); return; }
-            if (const auto* pGame = xlioncore::game::From(getGameMgr()))
-                for (int n = pGame->m_Time.m_FixedSteps; n > 0; --n) FixedStep();
-        }
+            bool         m_bValid = false;
+            vec2         m_Velocity;
+            float        m_Up     = 0.0f;
+            team         m_Team   = team::BLUE;
+            int          m_Id     = -1;
+            bool         m_bHold  = false;
+            xmath::fvec3 m_HoldAt = xmath::fvec3::fromZero();
+        };
+
+        // The people move with the physics: this system needs a place that runs it once for each fixed step (every run is one fixed delta time long), so it takes ONE step each time it
+        // runs and never counts the steps itself. Placed in the Before Step connector of the Physics system the people push on the bodies and the step takes it (how the example is set up).
+        using constraints = std::tuple<xlioncore::constraint::fixed_delta_time>;
+
+        void OnUpdate(void) noexcept { FixedStep(); }
 
         void FixedStep(void) noexcept
         {
@@ -84,11 +94,15 @@ namespace soccer
             if (!ReadMatch(*this, Rules)) return;
 
             vec2 BallPos, BallVel;
+            float BallY = 0.0f;
+            ball  Ball;
             {
                 xecs::query::instance Query;
                 Query.m_Must.AddFromComponents<xlioncore::transform, ball, xlioncore::physics::physics_dynamics>();
-                auto S = Search(Query);
-                Foreach(S, [&](const xecs::component::entity&, const xlioncore::transform& T, const xlioncore::physics::physics_dynamics& Body) noexcept { BallPos = Flat(T.m_Position); BallVel = Flat(Body.m_LinearVelocity); });
+                Foreach(Search(Query), [&](const xecs::component::entity&, const xlioncore::transform& T, const ball& B, const xlioncore::physics::physics_dynamics& Body) noexcept
+                {
+                    BallPos = Flat(T.m_Position); BallVel = Flat(Body.m_LinearVelocity); BallY = T.m_Position.m_Y; Ball = B;
+                });
             }
 
             std::vector<person> All;
@@ -96,8 +110,7 @@ namespace soccer
             {
                 xecs::query::instance Query;
                 Query.m_Must.AddFromComponents<xlioncore::transform, player, identity, xlioncore::physics::physics_dynamics>();
-                auto S = Search(Query);
-                Foreach(S, [&](const xecs::component::entity&, const xlioncore::transform& T, const player& P, const identity& Id, const xlioncore::physics::physics_dynamics& Body) noexcept
+                Foreach(Search(Query), [&](const xecs::component::entity&, const xlioncore::transform& T, const player& P, const identity& Id, const xlioncore::physics::physics_dynamics& Body) noexcept
                 {
                     All.push_back({ Id.m_Id, P.m_Team, P.m_Role, false, Flat(T.m_Position), Flat(Body.m_LinearVelocity) });
                 });
@@ -105,8 +118,7 @@ namespace soccer
             {
                 xecs::query::instance Query;
                 Query.m_Must.AddFromComponents<xlioncore::transform, referee, identity, xlioncore::physics::physics_dynamics>();
-                auto S = Search(Query);
-                Foreach(S, [&](const xecs::component::entity&, const xlioncore::transform& T, const identity& Id, const xlioncore::physics::physics_dynamics& Body) noexcept
+                Foreach(Search(Query), [&](const xecs::component::entity&, const xlioncore::transform& T, const identity& Id, const xlioncore::physics::physics_dynamics& Body) noexcept
                 {
                     All.push_back({ Id.m_Id, team::BLUE, role::FIELD, true, Flat(T.m_Position), Flat(Body.m_LinearVelocity) });
                 });
@@ -119,33 +131,38 @@ namespace soccer
             {
                 xecs::query::instance Query;
                 Query.m_Must.AddFromComponents<xlioncore::transform, player, identity, xlioncore::physics::physics_dynamics>();
-                auto S = Search(Query);
-                Foreach(S, [&](const xecs::component::entity& Entity, xlioncore::transform& T, player& P, const identity& Id, xlioncore::physics::physics_dynamics& Body) noexcept
+                Foreach(Search(Query), [&](const xecs::component::entity& Entity, xlioncore::transform& T, player& P, const identity& Id, xlioncore::physics::physics_dynamics& Body) noexcept
                 {
-                    Act(Dt, Rules, BallPos, BallVel, All, Kick, Entity, T, P, Id, Body);
+                    Act(Dt, Rules, BallPos, BallVel, BallY, Ball, All, Kick, Entity, T, P, Id, Body);
                 });
             }
 
             //
             // The kick, if there was one
             //
-            if (Kick.m_bValid)
+            if (Kick.m_bValid || Kick.m_bHold)
             {
                 xecs::query::instance Query;
                 Query.m_Must.AddFromComponents<ball, xlioncore::physics::physics_dynamics>();
-                auto S = Search(Query);
-                Foreach(S, [&](const xecs::component::entity&, ball& B, xlioncore::physics::physics_dynamics& Body) noexcept
+                Foreach(Search(Query), [&](const xecs::component::entity& Entity, ball& B, xlioncore::physics::physics_dynamics& Body) noexcept
                 {
-                    const xmath::fvec3 F = ForceFor(Body, Kick.m_Velocity.x, Kick.m_Velocity.z);       // the one push that makes the speed asked for
-                    AddForce(Body, F.m_X, 0.0f, F.m_Z, kMaxKickForce);
                     B.m_LastTouch  = Kick.m_Team;
                     B.m_LastKicker = Kick.m_Id;
+                    if (Kick.m_bHold)                                                                    // in the hands of a goalkeeper: where his hands are, standing still
+                    {
+                        B.m_bHeld = true;
+                        xlioncore::physics::TeleportDynamicBody(getGameMgr(), Entity, Kick.m_HoldAt, xmath::fquat::fromIdentity());
+                        return;
+                    }
+                    B.m_bHeld = false;
+                    const xmath::fvec3 F = ForceFor(Body, Kick.m_Velocity.x, Kick.m_Velocity.z, Kick.m_Up);   // the one push that makes the speed asked for
+                    AddForce(Body, F.m_X, F.m_Y, F.m_Z, kMaxKickForce);
                 });
             }
         }
 
         // One player, one frame.
-        void Act(float Dt, const match& Rules, vec2 BallPos, vec2 BallVel, const std::vector<details::person>& All, kick& Kick
+        void Act(float Dt, const match& Rules, vec2 BallPos, vec2 BallVel, float BallY, const ball& Ball, const std::vector<details::person>& All, kick& Kick
                , const xecs::component::entity& Entity, xlioncore::transform& T, player& P, const identity& Id, xlioncore::physics::physics_dynamics& Body) noexcept
         {
             using namespace details;
@@ -160,6 +177,8 @@ namespace soccer
             {
                 P.m_Round    = Rules.m_Round;
                 P.m_Cooldown = 0.0f;
+                P.m_bHolding = false;
+                P.m_HoldTime = 0.0f;
                 xlioncore::physics::TeleportDynamicBody(getGameMgr(), Entity, xmath::fvec3(Home.x, T.m_Position.m_Y, Home.z), xmath::fquat::fromIdentity());
                 return;
             }
@@ -183,7 +202,8 @@ namespace soccer
                     // the kickoff belongs to the team that conceded: the ones that scored wait until the ball moves
                     const bool bWaiting = P.m_Team == Rules.m_LastScorer && Rules.m_Round > 0 && Length(BallPos) < 0.3f && Length(BallVel) < 0.1f;
 
-                    if (bWaiting)       Target = Home;
+                    if (Ball.m_bHeld)   Target = { Dir * kMiddleAhead, Home.z * 0.7f };                                                              // a goalkeeper has the ball: everybody takes position in the middle of the field
+                    else if (bWaiting)  Target = Home;
                     else if (Rank == 0) Target = StandOff(Pos, BallPos + BallVel * 0.25f);                                                            // chase
                     else if (Rank == 1) Target = BallPos + vec2{ Dir * 3.5f, (Pos.z >= BallPos.z ? 1.0f : -1.0f) * 3.0f };            // support: ahead and to the side
                     else                                                                                                               // keep the place, lean to the ball
@@ -192,16 +212,38 @@ namespace soccer
                         if (BallPos.x * Dir > 0.0f) Target.x += Dir * 1.5f;                                                            // the ball is in their half: move up
                     }
 
-                    if (!bWaiting && BallDist < kKickRange && P.m_Cooldown <= 0.0f) DecideKickField(Rules, Dir, Pos, BallPos, All, Kick, P, Id);
+                    if (!bWaiting && !Ball.m_bHeld && BallDist < kKickRange && BallY < kKickHeight && P.m_Cooldown <= 0.0f) DecideKickField(Rules, Dir, Pos, BallPos, All, Kick, P, Id);
                 }
                 else                                                                                                                   // goalkeeper
                 {
-                    const float Reach = Rules.m_GoalHalfWidth - 0.3f;
-                    Target = { Home.x, Clamp(BallPos.z * 0.55f, -Reach, Reach) };
-                    const bool bComing = BallVel.x * Dir < 0.2f;                                                                       // not moving away from his goal
-                    if (Distance(BallPos, Home) < 4.5f && bComing) Target = StandOff(Pos, BallPos);                                                   // rush out
+                    if (P.m_bHolding)                                                                                                  // he has the ball: he waits, then kicks it high to the middle
+                    {
+                        Target = Pos;
+                        Kick.m_bHold = true;
+                        Kick.m_HoldAt = xmath::fvec3(Pos.x + Dir * kHandsAhead, T.m_Position.m_Y + kHandsHeight, Pos.z);
+                        Kick.m_Team = P.m_Team;
+                        Kick.m_Id   = Id.m_Id;
+                        P.m_HoldTime -= Dt;
+                        if (P.m_HoldTime <= 0.0f) ThrowToTheMiddle(Rules, Pos, BallPos, All, Kick, P, Id, Target);
+                    }
+                    else
+                    {
+                        const float Reach = Rules.m_GoalHalfWidth - 0.3f;
+                        Target = { Home.x, Clamp(BallPos.z * 0.55f, -Reach, Reach) };
+                        const bool bComing = BallVel.x * Dir < 0.2f;                                                                   // not moving away from his goal
+                        if (Distance(BallPos, Home) < 4.5f && bComing) Target = StandOff(Pos, BallPos);                                               // rush out
 
-                    if (BallDist < kKickRange && P.m_Cooldown <= 0.0f) DecideKickKeeper(Rules, Dir, Pos, BallPos, All, Kick, P, Id);
+                        if (CanCatch(Home, Pos, BallPos, BallVel, BallY, Ball, P))                                                    // the right time: pick it up
+                        {
+                            P.m_bHolding = true;
+                            P.m_HoldTime = kHoldSeconds;
+                            Kick.m_bHold = true;
+                            Kick.m_HoldAt = xmath::fvec3(Pos.x + Dir * kHandsAhead, T.m_Position.m_Y + kHandsHeight, Pos.z);
+                            Kick.m_Team = P.m_Team;
+                            Kick.m_Id   = Id.m_Id;
+                        }
+                        else if (BallDist < kKickRange && BallY < kCatchHeight && P.m_Cooldown <= 0.0f) DecideKickKeeper(Rules, Dir, Pos, BallPos, All, Kick, P, Id);   // too fast to catch: clear it
+                    }
                 }
             }
 
@@ -238,7 +280,112 @@ namespace soccer
 
         }
 
-        static constexpr float kKickRange = 0.75f;          // how near the ball must be to be kicked
+        static constexpr float kKickRange = 0.75f;          // how near the ball must be to be kicked (on the ground: BallDist is the distance in x and z)
+        static constexpr float kKickHeight = 0.9f;          // m: how high the ball may be to be kicked with the foot (a ball flying over a player's head is nobody's to kick)
+
+        // The goalkeeper's hands.
+        static constexpr float kCatchRange   = 0.85f;       // how near the ball must be to be caught
+        static constexpr float kCatchArea    = 5.0f;        // how near his goal (the middle of his goal line) the ball must be: the area he plays in
+        static constexpr float kCatchSpeed   = 9.0f;        // m/s: a faster ball he can only push away
+        static constexpr float kCatchHeight  = 1.8f;        // m: a ball over his hands is out of reach
+        static constexpr float kHoldSeconds  = 1.2f;        // how long he keeps it before he kicks it
+        static constexpr float kHandsAhead   = 0.55f;       // m in front of him, at the height below
+        static constexpr float kHandsHeight  = 0.15f;       // m over the middle of his body
+
+        // Is it the right time to pick the ball up? It is in his area and within his reach, moving slowly enough to be caught, not high over his head, and not coming from a team-mate (a pass
+        // back is not picked up) - and he is not just done kicking.
+        bool CanCatch(vec2 Home, vec2 Pos, vec2 BallPos, vec2 BallVel, float BallY, const ball& Ball, const player& P) const noexcept
+        {
+            using namespace details;
+            if (P.m_Cooldown > 0.0f || Ball.m_bHeld) return false;
+            if (Ball.m_LastTouch == P.m_Team && Ball.m_LastKicker >= 0) return false;
+            if (Distance(BallPos, Home) > kCatchArea || Distance(BallPos, Pos) > kCatchRange) return false;
+            return Length(BallVel) < kCatchSpeed && BallY < kCatchHeight;
+        }
+
+        // Where the players of both teams stand while the goalkeeper holds the ball: the middle of the field, a little toward the goal they attack.
+        static constexpr float kMiddleAhead  = 1.0f;
+
+        // The way out of his hands: nobody may stand close in front of him (the ball leaves low: a person there is a wall; farther on it is over everybody's head).
+        static constexpr float kClearDistance = 3.0f;       // m in front of him
+        static constexpr float kClearWidth    = 1.0f;       // m to each side of the line
+        static constexpr float kMaxExtraWait  = 3.0f;       // s he looks for a clear way (he moves himself to find it), then he kicks anyway
+        static constexpr float kSideStep      = 1.5f;       // m he steps aside to find it
+
+        // Can the ball leave the hands of From along the line to Aim: is nobody standing in the way close in front?
+        static bool IsClear(vec2 From, vec2 Aim, const std::vector<details::person>& All, int SelfId) noexcept
+        {
+            using namespace details;
+            const vec2 Direction = Normalized(Aim - From);
+            for (const person& O : All)
+            {
+                if (O.m_Id == SelfId) continue;
+                const vec2  R     = O.m_Pos - From;
+                const float Along = Dot(R, Direction);
+                if (Along < 0.0f || Along > kClearDistance) continue;
+                if (Distance(R, Direction * Along) < kClearWidth) return false;
+            }
+            return true;
+        }
+
+        // The goalkeeper kicks the ball it holds high toward the middle of the field: the speed that lands it there when it leaves at 45 degrees (D = v * v / g), with the error of his skill.
+        // First he checks that nobody is in the way close in front of him. If somebody is, he tries the lines to the left and to the right of the middle; if none is clear he moves himself
+        // (Target: the ball goes where his hands go) to the side from which the way is clear, and kicks from there. If the way never opens he kicks it to the middle after kMaxExtraWait.
+        void ThrowToTheMiddle(const match& Rules, vec2 Pos, vec2 BallPos, const std::vector<details::person>& All, kick& Kick, player& P, const identity& Id, vec2& Target) noexcept
+        {
+            using namespace details;
+
+            const float Side = Rules.m_HalfWidth - 1.0f;
+            const float Lines[] = { 0.0f, 3.0f, -3.0f, 5.5f, -5.5f };
+            vec2 Aim = {};
+            bool bFound = false;
+            for (const float Z : Lines)
+            {
+                const vec2 Candidate = { 0.0f, Clamp(Z, -Side, Side) };
+                if (!IsClear(BallPos, Candidate, All, Id.m_Id)) continue;
+                Aim = Candidate; bFound = true; break;
+            }
+            if (!bFound && P.m_HoldTime > -kMaxExtraWait)
+            {
+                // Somebody is in the way on every line: he steps aside, along his line, to where a line is clear (he stays in front of his goal).
+                const float Reach = Rules.m_GoalHalfWidth + 0.5f;
+                for (const float Step : { kSideStep, -kSideStep })
+                {
+                    const vec2 Spot = { Pos.x, Clamp(Pos.z + Step, -Reach, Reach) };
+                    if (IsClear(BallPos + (Spot - Pos), vec2{}, All, Id.m_Id)) { Target = Spot; return; }
+                }
+
+                // No place is clear yet: away from the person that is the most in the way.
+                float Nearest = 1.0e9f; float Away = 1.0f;
+                const vec2 Direction = Normalized(vec2{} - BallPos);
+                for (const person& O : All)
+                {
+                    if (O.m_Id == Id.m_Id) continue;
+                    const vec2  R     = O.m_Pos - BallPos;
+                    const float Along = Dot(R, Direction);
+                    if (Along < 0.0f || Along > kClearDistance || Along >= Nearest || Distance(R, Direction * Along) >= kClearWidth) continue;
+                    Nearest = Along; Away = Pos.z >= O.m_Pos.z ? 1.0f : -1.0f;
+                }
+                Target = { Pos.x, Clamp(Pos.z + Away * kSideStep, -Reach, Reach) };
+                return;
+            }
+
+            const float D = Distance(BallPos, Aim);
+            if (D < 1.0e-3f) return;
+            const float Along  = std::sqrt(D * kGravity * 0.5f);                                // the speed along the ground, and the speed up: the same at 45 degrees
+            vec2 Direction = Normalized(Aim - BallPos);
+            Direction = Turned(Direction, m_Random.Range(-0.2f, 0.2f) * (1.0f - Clamp(P.m_Skill, 0.0f, 1.0f)));
+
+            Kick.m_bHold    = false;
+            Kick.m_bValid   = true;
+            Kick.m_Velocity = Direction * Along * 1.5f;
+            Kick.m_Up       = Along;
+            Kick.m_Team     = P.m_Team;
+            Kick.m_Id       = Id.m_Id;
+            P.m_bHolding    = false;
+            P.m_HoldTime    = 0.0f;
+            P.m_Cooldown    = 1.0f;                                                              // (he does not pick up what he just kicked)
+        }
 
         // He has the ball at his feet: shoot, pass, or push it forward.
         void DecideKickField(const match& Rules, float Dir, vec2 Pos, vec2 BallPos, const std::vector<details::person>& All, kick& Kick, player& P, const identity& Id) noexcept

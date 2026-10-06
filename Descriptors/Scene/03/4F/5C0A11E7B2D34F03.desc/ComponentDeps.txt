@@ -1,13 +1,13 @@
 
 [ ComponentDeps : 9 ]
-{ Guid:G             Name:s                  }
-//-----------------  -----------------------
-                 #0  "Entity"               
-   #296EEAAEE0EF730  "Primitive"            
-   #85F88DCAA370B06  "PhysicsColliderBox"   
-  #3EF27824643D67EA  "PhysicsDynamics"      
-  #4F7643DF807F0C51  "Physics"              
-  #663773C47FA1D0BA  "Transform"            
-  #6EC40BDECA075977  "static"               
-  #77DF28B87C62ABFF  "PhysicsBodyProperties"
-  #A5EEE30695E37CAB  "PhysicsColliderSphere"
+{ Guid:G             Name:s                   Module:G }
+//-----------------  -----------------------  --------
+                 #0  "Entity"                    #0   
+   #296EEAAEE0EF730  "Primitive"                 #0   
+   #85F88DCAA370B06  "PhysicsColliderBox"        #0   
+  #3EF27824643D67EA  "PhysicsDynamics"           #0   
+  #4F7643DF807F0C51  "Physics"                   #0   
+  #663773C47FA1D0BA  "Transform"                 #0   
+  #6EC40BDECA075977  "static"                    #0   
+  #77DF28B87C62ABFF  "PhysicsBodyProperties"     #0   
+  #A5EEE30695E37CAB  "PhysicsColliderSphere"     #0   

@@ -14,4 +14,4 @@
   "Info/Comment"                ;string    ""                                 
   "Info/Details/GUID"           ;full_guid #166FAE5EB82F3F3 #E465C0E3C3723FFB 
   "Info/Details/RscLinks[]"     ;s64       1                                  
-  "Info/Details/RscLinks[G:0]"  ;full_guid #75C55525F6560FE3 #C4D90C5F0CC43021
+  "Info/Details/RscLinks[G:0]"  ;full_guid #75952CE7FF2A40B9 #C4D90C5F0CC43021

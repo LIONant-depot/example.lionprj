@@ -1,7 +1,7 @@
 #pragma once
 
-// The referee: he walks along the touchline (the one he is on) and goes where the ball goes in x, never in z: the ball is always across from him. When a goal is scored he
-// blows the whistle: he hops on the spot until the celebration is over.
+// The referee: he walks along the touchline (the one he is on) and goes where the ball goes in x, never in z: the ball is always across from him. He is neutral: when a goal is scored
+// he blows the whistle and stands on the spot until the celebration is over (the players are the ones that celebrate).
 #include "soccer_components.h"
 
 namespace soccer
@@ -11,40 +11,22 @@ namespace soccer
         constexpr static auto typedef_v = xecs::system::type::update{ .m_pName = "Soccer Referee" };
         using query = std::tuple<xecs::query::must<xlioncore::transform, referee>>;
 
-        // Connected to the "Before Step" connector of the Physics system this runs once for each step; not connected, it takes the fixed steps
-        // the game's time says are due this frame itself.
-        void OnUpdate(void) noexcept
+        // Needs a place that runs it once for each fixed step (every run is one fixed delta time long): it takes ONE step each time it runs and never counts the steps itself. Placed in
+        // the Before Step connector of the Physics system (how the example is set up) it runs right before the world takes the step.
+        using constraints = std::tuple<xlioncore::constraint::fixed_delta_time>;
+
+        void operator()(xlioncore::transform& T, referee& R, xlioncore::physics::physics_dynamics& Body) noexcept
         {
-            if (isConnected()) { FixedStep(); return; }
-            if (const auto* pGame = xlioncore::game::From(getGameMgr()))
-                for (int n = pGame->m_Time.m_FixedSteps; n > 0; --n) FixedStep();
-        }
-
-        void FixedStep(void) noexcept
-        {
-            const float Dt = kFixedDt;
-
-            match Rules;
-            if (!ReadMatch(*this, Rules)) return;
-
             vec2 BallPos;
-            {
-                xecs::query::instance Query;
-                Query.m_Must.AddFromComponents<xlioncore::transform, ball>();
-                auto S = Search(Query);
-                Foreach(S, [&](const xecs::component::entity&, const xlioncore::transform& T, const ball&) noexcept { BallPos = Flat(T.m_Position); });
-            }
+            QForeach([&](const xlioncore::transform& BallT, const ball&) noexcept { BallPos = Flat(BallT.m_Position); });
 
-            xecs::query::instance Query;
-            Query.m_Must.AddFromComponents<xlioncore::transform, referee, xlioncore::physics::physics_dynamics>();
-            auto S = Search(Query);
-            Foreach(S, [&](const xecs::component::entity&, xlioncore::transform& T, referee& R, xlioncore::physics::physics_dynamics& Body) noexcept
+            QForeach( [&](const match& Rules) noexcept
             {
                 const vec2 Pos = Flat(T.m_Position);
                 const vec2 Vel = Flat(Body.m_LinearVelocity);
 
                 // a spot on his line, across from the ball: the line is inside the touchline he is on (the walls are on the other side of it), and he only ever moves along it
-                const float Line   = (T.m_Position.m_Z < 0.0f ? -1.0f : 1.0f) * (Rules.m_HalfWidth - 1.0f);
+                const float Line = (T.m_Position.m_Z < 0.0f ? -1.0f : 1.0f) * (Rules.m_HalfWidth - 1.0f);
                 const vec2  Target = { Clamp(BallPos.x, -Rules.m_HalfLength + 1.0f, Rules.m_HalfLength - 1.0f), Line };
 
                 // the velocity he wants (none after a goal: he stands to blow the whistle) and the force that gets him there, F = m * a,
@@ -63,11 +45,6 @@ namespace soccer
                 if (Length(Accel) > MaxAccel) Accel = Normalized(Accel) * MaxAccel;
                 const vec2 Push = LimitedPush(Accel * Body.m_Mass, Vel, R.m_Speed);                    // (at his top speed: no more push ahead)
                 AddForce(Body, Push.x, 0.0f, Push.z, kMaxRunForce);
-
-                // he hops when there is a goal, as the players do
-                const bool bGrounded = T.m_Position.m_Y < T.m_Scale.m_Y * 0.5f + 0.12f && Body.m_LinearVelocity.m_Y < 3.0f;
-                if (Rules.m_Phase == phase::GOAL && bGrounded && std::sin(Rules.m_Timer * 5.0f) > 0.0f) AddForce(Body, 0.0f, 2200.0f, 0.0f, kMaxJumpForce);
-
             });
         }
     };

@@ -10,8 +10,8 @@
 [ xProperties : 5 ]
 { Name:s                        Value:?                                        }
 //----------------------------  ----------------------------------------------
-  "Info/Name"                   ;string    "Arial Bitmap"                                 
+  "Info/Name"                   ;string    "Arial Bitmap"                     
   "Info/Comment"                ;string    ""                                 
   "Info/Details/GUID"           ;full_guid #5549D8C8E9220003 #3285CB58BB79E1AD
   "Info/Details/RscLinks[]"     ;s64       1                                  
-  "Info/Details/RscLinks[G:0]"  ;full_guid #ADEB2E3BF97B6E03 #C4D90C5F0CC43021
+  "Info/Details/RscLinks[G:0]"  ;full_guid #31E058D3BFDD4001 #C4D90C5F0CC43021

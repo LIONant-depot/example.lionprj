@@ -107,12 +107,21 @@ namespace soccer
     inline constexpr float kMaxRunForce  =  700.0f;      // N: 75 kg * 9 m/s2, the start of a sprint
     inline constexpr float kMaxJumpForce = 2800.0f;      // N: the push of two legs
     inline constexpr float kMaxKickForce =  600.0f;      // N for one fixed step: 0.45 kg to about 22 m/s, the hardest a foot kicks a football
+    inline constexpr float kGravity      =    9.81f;     // m/s2
 
     // The velocity change a kick asks of the ball, as the one force that makes it in one fixed step:   F = m * dV / dt
     inline xmath::fvec3 ForceFor(const xlioncore::physics::physics_dynamics& Ball, float TargetX, float TargetZ) noexcept
     {
         return xmath::fvec3( Ball.m_Mass * (TargetX - Ball.m_LinearVelocity.m_X) / kFixedDt
                            , 0.0f
+                           , Ball.m_Mass * (TargetZ - Ball.m_LinearVelocity.m_Z) / kFixedDt );
+    }
+
+    // The velocity change of a kick that lifts the ball: the same, with the push up (the ball is going to take Up m/s of vertical speed, gravity is the physics' job afterwards).
+    inline xmath::fvec3 ForceFor(const xlioncore::physics::physics_dynamics& Ball, float TargetX, float TargetZ, float Up) noexcept
+    {
+        return xmath::fvec3( Ball.m_Mass * (TargetX - Ball.m_LinearVelocity.m_X) / kFixedDt
+                           , Ball.m_Mass * (Up      - Ball.m_LinearVelocity.m_Y) / kFixedDt
                            , Ball.m_Mass * (TargetZ - Ball.m_LinearVelocity.m_Z) / kFixedDt );
     }
 

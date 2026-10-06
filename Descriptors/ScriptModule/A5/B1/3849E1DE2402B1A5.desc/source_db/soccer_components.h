@@ -99,11 +99,15 @@ namespace soccer
 
         team            m_LastTouch     = team::BLUE;                   // the team that kicked it last
         int             m_LastKicker    = -1;                           // the identity of the player that kicked it last
+        int             m_Round         = -1;                           // the round of the match it last went back to the center spot for (-1: it has not seen the match yet)
+        bool            m_bHeld         = false;                        // a goalkeeper has it in his hands: it goes where he goes, and nobody else can play it
 
         XPROPERTY_DEF
         ( "SoccerBall", ball
         , obj_member<"LastTouch",  &ball::m_LastTouch, member_enum_span<team_list_v>, member_flags<flags::SHOW_READONLY>>
         , obj_member<"LastKicker", &ball::m_LastKicker,                            member_flags<flags::SHOW_READONLY>>
+        , obj_member<"Round",      &ball::m_Round,                                 member_flags<flags::SHOW_READONLY>>
+        , obj_member<"Held",       &ball::m_bHeld,                                 member_flags<flags::SHOW_READONLY>>
         )
     };
     XSCRIPT_REGISTER_COMPONENT(ball, "Soccer", 110)
@@ -124,6 +128,8 @@ namespace soccer
 
         float           m_Cooldown      = 0.0f;                         // seconds before he may kick again
         int             m_Round         = -1;                           // the kickoff he last walked to his place for
+        bool            m_bHolding      = false;                        // a goalkeeper that has the ball in his hands
+        float           m_HoldTime      = 0.0f;                         // seconds left before he kicks it away
 
         XPROPERTY_DEF
         ( "SoccerPlayer", player
@@ -133,6 +139,8 @@ namespace soccer
         , obj_member<"Speed",     &player::m_Speed>
         , obj_member<"KickSpeed", &player::m_KickSpeed>
         , obj_member<"Skill",     &player::m_Skill>
+        , obj_member<"Holding",   &player::m_bHolding, member_flags<flags::SHOW_READONLY>>
+        , obj_member<"HoldTime",  &player::m_HoldTime, member_flags<flags::SHOW_READONLY>>
         )
     };
     XSCRIPT_REGISTER_COMPONENT(player, "Soccer", 120)
