@@ -1,13 +1,8 @@
 
-[ PrefabGroupInfo ]
-{ nMembers:d  RootLocalId:g }
-//----------  -------------
-      1         #CDE7D0C3  
-
 [ EntityInfo ]
-{ LocalId:g  nComponents:d }
-//---------  -------------
-  #CDE7D0C3        4      
+{ PermanentId:g  nComponents:d }
+//-------------  -------------
+    #4DE650DB          4      
 
 [ ComponentTypes : 4 ]
 { Guid:G            }
@@ -24,19 +19,19 @@
 { Name:s               Value:?           }
 //-------------------  -----------------
   "Primitive/Shape"    ;enum "Capsule"  
-  "Primitive/Color/X"  ;f32  0.980000019
-  "Primitive/Color/Y"  ;f32  0.600000024
-  "Primitive/Color/Z"  ;f32  0.119999997
+  "Primitive/Color/X"  ;f32  0.100000001
+  "Primitive/Color/Y"  ;f32  0.779999971
+  "Primitive/Color/Z"  ;f32  0.850000024
 
 [ xProperties : 1 ]
 { Name:s               Value:? }
 //-------------------  -------
-  "SoccerIdentity/Id"  ;s32 6 
+  "SoccerIdentity/Id"  ;s32 1 
 
 [ xProperties : 14 ]
 { Name:s                         Value:?           }
 //-----------------------------  -----------------
-  "Transform/Position/X"         ;f32  11         
+  "Transform/Position/X"         ;f32  -11        
   "Transform/Position/Y"         ;f32  0.800000012
   "Transform/Position/Z"         ;f32  0          
   "Transform/Rotation/X"         ;f32  0          
@@ -51,14 +46,16 @@
   "Transform/Scale/Z"            ;f32  0.699999988
   "Transform/EditorLockScale"    ;bool 0          
 
-[ xProperties : 8 ]
-{ Name:s                     Value:?           }
-//-------------------------  -----------------
-  "SoccerPlayer/Team"        ;enum "Red"      
-  "SoccerPlayer/Role"        ;enum "Keeper"   
-  "SoccerPlayer/Home/X"      ;f32  11         
-  "SoccerPlayer/Home/Y"      ;f32  0.800000012
-  "SoccerPlayer/Home/Z"      ;f32  0          
-  "SoccerPlayer/Speed"       ;f32  5.5        
-  "SoccerPlayer/KickSpeed"   ;f32  11         
-  "SoccerPlayer/Skill"       ;f32  0.850000024
+[ xProperties : 10 ]
+{ Name:s                    Value:?           }
+//------------------------  -----------------
+  "SoccerPlayer/Team"       ;enum "Blue"     
+  "SoccerPlayer/Role"       ;enum "Keeper"   
+  "SoccerPlayer/Home/X"     ;f32  -11        
+  "SoccerPlayer/Home/Y"     ;f32  0.800000012
+  "SoccerPlayer/Home/Z"     ;f32  0          
+  "SoccerPlayer/Speed"      ;f32  5.5        
+  "SoccerPlayer/KickSpeed"  ;f32  11         
+  "SoccerPlayer/Skill"      ;f32  0.850000024
+  "SoccerPlayer/Holding"    ;bool 0          
+  "SoccerPlayer/HoldTime"   ;f32  0          

@@ -1,13 +1,8 @@
 
-[ PrefabGroupInfo ]
-{ nMembers:d  RootLocalId:g }
-//----------  -------------
-      1         #4DD590D1  
-
 [ EntityInfo ]
-{ LocalId:g  nComponents:d }
-//---------  -------------
-  #4DD590D1        4      
+{ PermanentId:g  nComponents:d }
+//-------------  -------------
+    #4DD590D1          4      
 
 [ ComponentTypes : 4 ]
 { Guid:G            }
@@ -28,14 +23,13 @@
   "Primitive/Color/Y"  ;f32  1       
   "Primitive/Color/Z"  ;f32  1       
 
-[ xProperties : 5 ]
-{ Name:s                   Value:?           }
-//-----------------------  -----------------
-  "SoccerBall/Friction"    ;f32  0.899999976
-  "SoccerBall/Bounce"      ;f32  0.600000024
-  "SoccerBall/Radius"      ;f32  0.200000003
-  "SoccerBall/LastTouch"   ;enum "Blue"     
-  "SoccerBall/LastKicker"  ;s32  -1         
+[ xProperties : 4 ]
+{ Name:s                   Value:?      }
+//-----------------------  ------------
+  "SoccerBall/LastTouch"   ;enum "Blue"
+  "SoccerBall/LastKicker"  ;s32  -1    
+  "SoccerBall/Round"       ;s32  -1    
+  "SoccerBall/Held"        ;bool 0     
 
 [ xProperties : 1 ]
 { Name:s               Value:? }

@@ -1,0 +1,11 @@
+
+[ ComponentDeps : 7 ]
+{ Guid:G             Name:s                 Module:G          }
+//-----------------  ---------------------  -----------------
+                 #0  "Entity"                              #0
+   #296EEAAEE0EF730  "Primitive"                           #0
+  #1558658BEE761A5F  "RootPrefabComponent"                 #0
+  #52B341C6318A8906  "SoccerIdentity"       #3849E1DE2402B1A5
+  #547D782B242B1E38  "PrefabTag"                           #0
+  #663773C47FA1D0BA  "Transform"                           #0
+  #F1204247F9F99025  "SoccerPlayer"         #3849E1DE2402B1A5
