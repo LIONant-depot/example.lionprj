@@ -2,9 +2,9 @@
 #extension GL_ARB_separate_shader_objects : enable
 #extension GL_ARB_shading_language_420pack : enable
 
-#include "Cache/Plugins/xgeom_static.plugin/source/runtime/mb_standard_pbr.frag"
-#include "Cache/Plugins/xgeom_static.plugin/source/runtime/mb_tone_mapper_lion.frag"
-#include "Cache/Plugins/xgeom_static.plugin/source/runtime/mb_lineartogamma.frag"
+#include "Cache/dependencies/xLIONRender/src/shaders/mb_standard_pbr.frag"
+#include "Cache/dependencies/xLIONRender/src/shaders/mb_tone_mapper_lion.frag"
+#include "Cache/dependencies/xLIONRender/src/shaders/mb_lineartogamma.frag"
 
 //layout(binding = 0) uniform sampler2D SamplerShadowMap;        // [INPUT_TEXTURE_100]	// depth system dependent
 layout(binding = 1) uniform sampler2D SamplerNormal;           // [INPUT_TEXTURE_110]	// liniar BC5 Tangent space normal
