@@ -35,8 +35,14 @@ void main()
 	, ORME.a * Albedo.rgb
 	);
 
+#ifdef XLION_LDR_OUTPUT
+	// Tone mapped here for editors that draw materials straight to the screen; xLIONRender compiles the
+	// variant without XLION_LDR_OUTPUT (scene-linear HDR) and tone maps after.
 	FinalColor = ToneMapper_lion(FinalColor);
 
 	outFragColor.a = 1;
 	outFragColor.rgb = linearToSrgb(FinalColor);
+#else
+	outFragColor = vec4(FinalColor, 1.0);
+#endif
 }
