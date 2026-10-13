@@ -1,0 +1,271 @@
+
+[ DescriptorVersion ]
+{ Major:d  Minor:d }
+//-------  -------
+     1        0   
+
+// New Types
+< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
+
+[ xProperties : 259 ]
+{ Name:s                                                    Value:?                                                                                     }
+//--------------------------------------------------------  -------------------------------------------------------------------------------------------
+  "GeomStatic/ImportAsset"                                  ;wstring "Assets\\Police\\PoliceStation.FBX"                                               
+  "GeomStatic/PreTranslation/Scale/X"                       ;f32     #3F800000                                                                         
+  "GeomStatic/PreTranslation/Scale/Y"                       ;f32     #3F800000                                                                         
+  "GeomStatic/PreTranslation/Scale/Z"                       ;f32     #3F800000                                                                         
+  "GeomStatic/PreTranslation/Rotation/X"                    ;f32     #0                                                                                
+  "GeomStatic/PreTranslation/Rotation/Y"                    ;f32     #0                                                                                
+  "GeomStatic/PreTranslation/Rotation/Z"                    ;f32     #0                                                                                
+  "GeomStatic/PreTranslation/Translation/X"                 ;f32     #0                                                                                
+  "GeomStatic/PreTranslation/Translation/Y"                 ;f32     #0                                                                                
+  "GeomStatic/PreTranslation/Translation/Z"                 ;f32     #0                                                                                
+  "GeomStatic/bMergeAllMeshes"                              ;bool    1                                                                                 
+  "GeomStatic/AllMeshesDetails/Name"                        ;string  "PoliceStation"                                                                   
+  "GeomStatic/AllMeshesDetails/LODs[]"                      ;s64     0                                                                                 
+  "GeomStatic/Merge Group List[]"                           ;s64     0                                                                                 
+  "GeomStatic/Ungroup Mesh List[]"                          ;s64     19                                                                                
+  "GeomStatic/Ungroup Mesh List[G:0]/Node Path"             ;string  "RootNode/Main_$AssimpFbx$_PreRotation/Main_$AssimpFbx$_Scaling/Main"             
+  "GeomStatic/Ungroup Mesh List[G:0]/Mesh Name"             ;string  "Main"                                                                            
+  "GeomStatic/Ungroup Mesh List[G:0]/Mesh Details/Name"     ;string  ""                                                                                
+  "GeomStatic/Ungroup Mesh List[G:0]/Mesh Details/LODs[]"   ;s64     0                                                                                 
+  "GeomStatic/Ungroup Mesh List[G:1]/Node Path"             ;string  "RootNode/Main_$AssimpFbx$_PreRotation/Main_$AssimpFbx$_Scaling/Main/Door_03"     
+  "GeomStatic/Ungroup Mesh List[G:1]/Mesh Name"             ;string  "Door_03"                                                                         
+  "GeomStatic/Ungroup Mesh List[G:1]/Mesh Details/Name"     ;string  ""                                                                                
+  "GeomStatic/Ungroup Mesh List[G:1]/Mesh Details/LODs[]"   ;s64     0                                                                                 
+  "GeomStatic/Ungroup Mesh List[G:2]/Node Path"             ;string  "RootNode/Main_$AssimpFbx$_PreRotation/Main_$AssimpFbx$_Scaling/Main/Door_02"     
+  "GeomStatic/Ungroup Mesh List[G:2]/Mesh Name"             ;string  "Door_03"                                                                         
+  "GeomStatic/Ungroup Mesh List[G:2]/Mesh Details/Name"     ;string  ""                                                                                
+  "GeomStatic/Ungroup Mesh List[G:2]/Mesh Details/LODs[]"   ;s64     0                                                                                 
+  "GeomStatic/Ungroup Mesh List[G:3]/Node Path"             ;string  "RootNode/Main_$AssimpFbx$_PreRotation/Main_$AssimpFbx$_Scaling/Main/Door_01"     
+  "GeomStatic/Ungroup Mesh List[G:3]/Mesh Name"             ;string  "Door_03"                                                                         
+  "GeomStatic/Ungroup Mesh List[G:3]/Mesh Details/Name"     ;string  ""                                                                                
+  "GeomStatic/Ungroup Mesh List[G:3]/Mesh Details/LODs[]"   ;s64     0                                                                                 
+  "GeomStatic/Ungroup Mesh List[G:4]/Node Path"             ;string  "RootNode/Main_$AssimpFbx$_PreRotation/Main_$AssimpFbx$_Scaling/Main/Door_00"     
+  "GeomStatic/Ungroup Mesh List[G:4]/Mesh Name"             ;string  "Door_03"                                                                         
+  "GeomStatic/Ungroup Mesh List[G:4]/Mesh Details/Name"     ;string  ""                                                                                
+  "GeomStatic/Ungroup Mesh List[G:4]/Mesh Details/LODs[]"   ;s64     0                                                                                 
+  "GeomStatic/Ungroup Mesh List[G:5]/Node Path"             ;string  "RootNode/Main_$AssimpFbx$_PreRotation/Main_$AssimpFbx$_Scaling/Main/DoubleDoors2"
+  "GeomStatic/Ungroup Mesh List[G:5]/Mesh Name"             ;string  "DoubleDoors2"                                                                    
+  "GeomStatic/Ungroup Mesh List[G:5]/Mesh Details/Name"     ;string  ""                                                                                
+  "GeomStatic/Ungroup Mesh List[G:5]/Mesh Details/LODs[]"   ;s64     0                                                                                 
+  "GeomStatic/Ungroup Mesh List[G:6]/Node Path"             ;string  "RootNode/Main_$AssimpFbx$_PreRotation/Main_$AssimpFbx$_Scaling/Main/Door02"      
+  "GeomStatic/Ungroup Mesh List[G:6]/Mesh Name"             ;string  "Door02"                                                                          
+  "GeomStatic/Ungroup Mesh List[G:6]/Mesh Details/Name"     ;string  ""                                                                                
+  "GeomStatic/Ungroup Mesh List[G:6]/Mesh Details/LODs[]"   ;s64     0                                                                                 
+  "GeomStatic/Ungroup Mesh List[G:7]/Node Path"             ;string  "RootNode/Main_$AssimpFbx$_PreRotation/Main_$AssimpFbx$_Scaling/Main/Door06"      
+  "GeomStatic/Ungroup Mesh List[G:7]/Mesh Name"             ;string  "Door02"                                                                          
+  "GeomStatic/Ungroup Mesh List[G:7]/Mesh Details/Name"     ;string  ""                                                                                
+  "GeomStatic/Ungroup Mesh List[G:7]/Mesh Details/LODs[]"   ;s64     0                                                                                 
+  "GeomStatic/Ungroup Mesh List[G:8]/Node Path"             ;string  "RootNode/Main_$AssimpFbx$_PreRotation/Main_$AssimpFbx$_Scaling/Main/Door05"      
+  "GeomStatic/Ungroup Mesh List[G:8]/Mesh Name"             ;string  "Door02"                                                                          
+  "GeomStatic/Ungroup Mesh List[G:8]/Mesh Details/Name"     ;string  ""                                                                                
+  "GeomStatic/Ungroup Mesh List[G:8]/Mesh Details/LODs[]"   ;s64     0                                                                                 
+  "GeomStatic/Ungroup Mesh List[G:9]/Node Path"             ;string  "RootNode/Main_$AssimpFbx$_PreRotation/Main_$AssimpFbx$_Scaling/Main/Door04"      
+  "GeomStatic/Ungroup Mesh List[G:9]/Mesh Name"             ;string  "Door02"                                                                          
+  "GeomStatic/Ungroup Mesh List[G:9]/Mesh Details/Name"     ;string  ""                                                                                
+  "GeomStatic/Ungroup Mesh List[G:9]/Mesh Details/LODs[]"   ;s64     0                                                                                 
+  "GeomStatic/Ungroup Mesh List[G:10]/Node Path"            ;string  "RootNode/Main_$AssimpFbx$_PreRotation/Main_$AssimpFbx$_Scaling/Main/Door03"      
+  "GeomStatic/Ungroup Mesh List[G:10]/Mesh Name"            ;string  "Door02"                                                                          
+  "GeomStatic/Ungroup Mesh List[G:10]/Mesh Details/Name"    ;string  ""                                                                                
+  "GeomStatic/Ungroup Mesh List[G:10]/Mesh Details/LODs[]"  ;s64     0                                                                                 
+  "GeomStatic/Ungroup Mesh List[G:11]/Node Path"            ;string  "RootNode/Main_$AssimpFbx$_PreRotation/Main_$AssimpFbx$_Scaling/Main/WoodDoor3"   
+  "GeomStatic/Ungroup Mesh List[G:11]/Mesh Name"            ;string  "WoodDoor3"                                                                       
+  "GeomStatic/Ungroup Mesh List[G:11]/Mesh Details/Name"    ;string  ""                                                                                
+  "GeomStatic/Ungroup Mesh List[G:11]/Mesh Details/LODs[]"  ;s64     0                                                                                 
+  "GeomStatic/Ungroup Mesh List[G:12]/Node Path"            ;string  "RootNode/Main_$AssimpFbx$_PreRotation/Main_$AssimpFbx$_Scaling/Main/Door01"      
+  "GeomStatic/Ungroup Mesh List[G:12]/Mesh Name"            ;string  "Door02"                                                                          
+  "GeomStatic/Ungroup Mesh List[G:12]/Mesh Details/Name"    ;string  ""                                                                                
+  "GeomStatic/Ungroup Mesh List[G:12]/Mesh Details/LODs[]"  ;s64     0                                                                                 
+  "GeomStatic/Ungroup Mesh List[G:13]/Node Path"            ;string  "RootNode/Main_$AssimpFbx$_PreRotation/Main_$AssimpFbx$_Scaling/Main/WoodDoor2"   
+  "GeomStatic/Ungroup Mesh List[G:13]/Mesh Name"            ;string  "WoodDoor3"                                                                       
+  "GeomStatic/Ungroup Mesh List[G:13]/Mesh Details/Name"    ;string  ""                                                                                
+  "GeomStatic/Ungroup Mesh List[G:13]/Mesh Details/LODs[]"  ;s64     0                                                                                 
+  "GeomStatic/Ungroup Mesh List[G:14]/Node Path"            ;string  "RootNode/Main_$AssimpFbx$_PreRotation/Main_$AssimpFbx$_Scaling/Main/Door00"      
+  "GeomStatic/Ungroup Mesh List[G:14]/Mesh Name"            ;string  "Door02"                                                                          
+  "GeomStatic/Ungroup Mesh List[G:14]/Mesh Details/Name"    ;string  ""                                                                                
+  "GeomStatic/Ungroup Mesh List[G:14]/Mesh Details/LODs[]"  ;s64     0                                                                                 
+  "GeomStatic/Ungroup Mesh List[G:15]/Node Path"            ;string  "RootNode/Main_$AssimpFbx$_PreRotation/Main_$AssimpFbx$_Scaling/Main/WoodDoor1"   
+  "GeomStatic/Ungroup Mesh List[G:15]/Mesh Name"            ;string  "WoodDoor3"                                                                       
+  "GeomStatic/Ungroup Mesh List[G:15]/Mesh Details/Name"    ;string  ""                                                                                
+  "GeomStatic/Ungroup Mesh List[G:15]/Mesh Details/LODs[]"  ;s64     0                                                                                 
+  "GeomStatic/Ungroup Mesh List[G:16]/Node Path"            ;string  "RootNode/Main_$AssimpFbx$_PreRotation/Main_$AssimpFbx$_Scaling/Main/DoubleDoors1"
+  "GeomStatic/Ungroup Mesh List[G:16]/Mesh Name"            ;string  "DoubleDoors2"                                                                    
+  "GeomStatic/Ungroup Mesh List[G:16]/Mesh Details/Name"    ;string  ""                                                                                
+  "GeomStatic/Ungroup Mesh List[G:16]/Mesh Details/LODs[]"  ;s64     0                                                                                 
+  "GeomStatic/Ungroup Mesh List[G:17]/Node Path"            ;string  "RootNode/Main_$AssimpFbx$_PreRotation/Main_$AssimpFbx$_Scaling/Main/YellowDoor3" 
+  "GeomStatic/Ungroup Mesh List[G:17]/Mesh Name"            ;string  "YellowDoor3"                                                                     
+  "GeomStatic/Ungroup Mesh List[G:17]/Mesh Details/Name"    ;string  ""                                                                                
+  "GeomStatic/Ungroup Mesh List[G:17]/Mesh Details/LODs[]"  ;s64     0                                                                                 
+  "GeomStatic/Ungroup Mesh List[G:18]/Node Path"            ;string  "RootNode/Main_$AssimpFbx$_PreRotation/Main_$AssimpFbx$_Scaling/Main/YellowDoor1" 
+  "GeomStatic/Ungroup Mesh List[G:18]/Mesh Name"            ;string  "YellowDoor3"                                                                     
+  "GeomStatic/Ungroup Mesh List[G:18]/Mesh Details/Name"    ;string  ""                                                                                
+  "GeomStatic/Ungroup Mesh List[G:18]/Mesh Details/LODs[]"  ;s64     0                                                                                 
+  "GeomStatic/Deleted List[]"                               ;s64     0                                                                                 
+  "GeomStatic/MaterialDetailsList[]"                        ;s64     55                                                                                
+  "GeomStatic/MaterialDetailsList[G:0]/Name"                ;string  "11m"                                                                             
+  "GeomStatic/MaterialDetailsList[G:0]/RefCount"            ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:1]/Name"                ;string  "22m"                                                                             
+  "GeomStatic/MaterialDetailsList[G:1]/RefCount"            ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:2]/Name"                ;string  "Emissive_M"                                                                      
+  "GeomStatic/MaterialDetailsList[G:2]/RefCount"            ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:3]/Name"                ;string  "18m"                                                                             
+  "GeomStatic/MaterialDetailsList[G:3]/RefCount"            ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:4]/Name"                ;string  "19m"                                                                             
+  "GeomStatic/MaterialDetailsList[G:4]/RefCount"            ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:5]/Name"                ;string  "28m"                                                                             
+  "GeomStatic/MaterialDetailsList[G:5]/RefCount"            ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:6]/Name"                ;string  "34m"                                                                             
+  "GeomStatic/MaterialDetailsList[G:6]/RefCount"            ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:7]/Name"                ;string  "21m"                                                                             
+  "GeomStatic/MaterialDetailsList[G:7]/RefCount"            ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:8]/Name"                ;string  "33m"                                                                             
+  "GeomStatic/MaterialDetailsList[G:8]/RefCount"            ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:9]/Name"                ;string  "35m"                                                                             
+  "GeomStatic/MaterialDetailsList[G:9]/RefCount"            ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:10]/Name"               ;string  "4m"                                                                              
+  "GeomStatic/MaterialDetailsList[G:10]/RefCount"           ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:11]/Name"               ;string  "7m"                                                                              
+  "GeomStatic/MaterialDetailsList[G:11]/RefCount"           ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:12]/Name"               ;string  "Light_OFF_MAT"                                                                   
+  "GeomStatic/MaterialDetailsList[G:12]/RefCount"           ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:13]/Name"               ;string  "36m"                                                                             
+  "GeomStatic/MaterialDetailsList[G:13]/RefCount"           ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:14]/Name"               ;string  "13m"                                                                             
+  "GeomStatic/MaterialDetailsList[G:14]/RefCount"           ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:15]/Name"               ;string  "GlassClear_m"                                                                    
+  "GeomStatic/MaterialDetailsList[G:15]/RefCount"           ;s32     12                                                                                
+  "GeomStatic/MaterialDetailsList[G:16]/Name"               ;string  "23m"                                                                             
+  "GeomStatic/MaterialDetailsList[G:16]/RefCount"           ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:17]/Name"               ;string  "2m"                                                                              
+  "GeomStatic/MaterialDetailsList[G:17]/RefCount"           ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:18]/Name"               ;string  "27m"                                                                             
+  "GeomStatic/MaterialDetailsList[G:18]/RefCount"           ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:19]/Name"               ;string  "29m"                                                                             
+  "GeomStatic/MaterialDetailsList[G:19]/RefCount"           ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:20]/Name"               ;string  "31m"                                                                             
+  "GeomStatic/MaterialDetailsList[G:20]/RefCount"           ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:21]/Name"               ;string  "52m"                                                                             
+  "GeomStatic/MaterialDetailsList[G:21]/RefCount"           ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:22]/Name"               ;string  "53m"                                                                             
+  "GeomStatic/MaterialDetailsList[G:22]/RefCount"           ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:23]/Name"               ;string  "37m"                                                                             
+  "GeomStatic/MaterialDetailsList[G:23]/RefCount"           ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:24]/Name"               ;string  "38m"                                                                             
+  "GeomStatic/MaterialDetailsList[G:24]/RefCount"           ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:25]/Name"               ;string  "8m"                                                                              
+  "GeomStatic/MaterialDetailsList[G:25]/RefCount"           ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:26]/Name"               ;string  "15m"                                                                             
+  "GeomStatic/MaterialDetailsList[G:26]/RefCount"           ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:27]/Name"               ;string  "32m"                                                                             
+  "GeomStatic/MaterialDetailsList[G:27]/RefCount"           ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:28]/Name"               ;string  "49m"                                                                             
+  "GeomStatic/MaterialDetailsList[G:28]/RefCount"           ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:29]/Name"               ;string  "39m"                                                                             
+  "GeomStatic/MaterialDetailsList[G:29]/RefCount"           ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:30]/Name"               ;string  "40m"                                                                             
+  "GeomStatic/MaterialDetailsList[G:30]/RefCount"           ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:31]/Name"               ;string  "1m"                                                                              
+  "GeomStatic/MaterialDetailsList[G:31]/RefCount"           ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:32]/Name"               ;string  "3m"                                                                              
+  "GeomStatic/MaterialDetailsList[G:32]/RefCount"           ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:33]/Name"               ;string  "5m"                                                                              
+  "GeomStatic/MaterialDetailsList[G:33]/RefCount"           ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:34]/Name"               ;string  "6m"                                                                              
+  "GeomStatic/MaterialDetailsList[G:34]/RefCount"           ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:35]/Name"               ;string  "9m"                                                                              
+  "GeomStatic/MaterialDetailsList[G:35]/RefCount"           ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:36]/Name"               ;string  "14m"                                                                             
+  "GeomStatic/MaterialDetailsList[G:36]/RefCount"           ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:37]/Name"               ;string  "16m"                                                                             
+  "GeomStatic/MaterialDetailsList[G:37]/RefCount"           ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:38]/Name"               ;string  "41m"                                                                             
+  "GeomStatic/MaterialDetailsList[G:38]/RefCount"           ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:39]/Name"               ;string  "43m"                                                                             
+  "GeomStatic/MaterialDetailsList[G:39]/RefCount"           ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:40]/Name"               ;string  "47m"                                                                             
+  "GeomStatic/MaterialDetailsList[G:40]/RefCount"           ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:41]/Name"               ;string  "25m"                                                                             
+  "GeomStatic/MaterialDetailsList[G:41]/RefCount"           ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:42]/Name"               ;string  "12m"                                                                             
+  "GeomStatic/MaterialDetailsList[G:42]/RefCount"           ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:43]/Name"               ;string  "24m"                                                                             
+  "GeomStatic/MaterialDetailsList[G:43]/RefCount"           ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:44]/Name"               ;string  "48m"                                                                             
+  "GeomStatic/MaterialDetailsList[G:44]/RefCount"           ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:45]/Name"               ;string  "44m"                                                                             
+  "GeomStatic/MaterialDetailsList[G:45]/RefCount"           ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:46]/Name"               ;string  "45m"                                                                             
+  "GeomStatic/MaterialDetailsList[G:46]/RefCount"           ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:47]/Name"               ;string  "26m"                                                                             
+  "GeomStatic/MaterialDetailsList[G:47]/RefCount"           ;s32     1                                                                                 
+  "GeomStatic/MaterialDetailsList[G:48]/Name"               ;string  "30m"                                                                             
+  "GeomStatic/MaterialDetailsList[G:48]/RefCount"           ;s32     4                                                                                 
+  "GeomStatic/MaterialDetailsList[G:49]/Name"               ;string  "DoorGlass_m"                                                                     
+  "GeomStatic/MaterialDetailsList[G:49]/RefCount"           ;s32       2                                                                                 
+  "GeomStatic/MaterialDetailsList[G:50]/Name"               ;string    "50m"                                                                             
+  "GeomStatic/MaterialDetailsList[G:50]/RefCount"           ;s32       9                                                                                 
+  "GeomStatic/MaterialDetailsList[G:51]/Name"               ;string    "51m"                                                                             
+  "GeomStatic/MaterialDetailsList[G:51]/RefCount"           ;s32       9                                                                                 
+  "GeomStatic/MaterialDetailsList[G:52]/Name"               ;string    "17m"                                                                             
+  "GeomStatic/MaterialDetailsList[G:52]/RefCount"           ;s32       3                                                                                 
+  "GeomStatic/MaterialDetailsList[G:53]/Name"               ;string    "42m"                                                                             
+  "GeomStatic/MaterialDetailsList[G:53]/RefCount"           ;s32       3                                                                                 
+  "GeomStatic/MaterialDetailsList[G:54]/Name"               ;string    "46m"                                                                             
+  "GeomStatic/MaterialDetailsList[G:54]/RefCount"           ;s32       2                                                                                 
+  "GeomStatic/MaterialInstance[]"                           ;s64       55                                                                                
+  "GeomStatic/MaterialInstance[G:0]"                        ;full_guid #E387D4C70C31F2E1 #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:1]"                        ;full_guid #EE647D6F5F6B63AD #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:2]"                        ;full_guid #E5F6A1DF2BE3520F #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:3]"                        ;full_guid #7F0B2E2908C92F21 #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:4]"                        ;full_guid #7E2688A97A83035D #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:5]"                        ;full_guid #D279B30BB109ADC3 #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:6]"                        ;full_guid #687A45BE84756F0B #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:7]"                        ;full_guid #AA573BEE452A66FD #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:8]"                        ;full_guid #3A09CC2F7ED17EF3 #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:9]"                        ;full_guid #FDDFB8A777E218F #B673C5DA4A4A70AD                                                
+  "GeomStatic/MaterialInstance[G:10]"                       ;full_guid #95FDF14F87D18337 #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:11]"                       ;full_guid #2DBE48AAD197395D #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:12]"                       ;full_guid #E2970DDF18EB08FF #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:13]"                       ;full_guid #8360EA076D195537 #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:14]"                       ;full_guid #86519FD2CB018D35 #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:15]"                       ;full_guid #337849613CF85E4F #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:16]"                       ;full_guid #58F6FE007018CE15 #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:17]"                       ;full_guid #542A3AB447FB26CD #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:18]"                       ;full_guid #C478A8E5FB8184B3 #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:19]"                       ;full_guid #FC3E7C82BC9ED4EF #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:20]"                       ;full_guid #7116088CA50BEEF #B673C5DA4A4A70AD                                                
+  "GeomStatic/MaterialInstance[G:21]"                       ;full_guid #173291998B1DFB25 #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:22]"                       ;full_guid #41D96B82FED149C3 #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:23]"                       ;full_guid #70C2FE373ED303AD #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:24]"                       ;full_guid #67EA7F943247D2A7 #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:25]"                       ;full_guid #7775A6009682CB75 #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:26]"                       ;full_guid #697AF9FF5ED70AA5 #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:27]"                       ;full_guid #8B46A86A9DD222C7 #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:28]"                       ;full_guid #C1F9572BD2B698C5 #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:29]"                       ;full_guid #68BA004922A6BF49 #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:30]"                       ;full_guid #803E4CE2E3F788FF #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:31]"                       ;full_guid #EEEDF9DFC6A95443 #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:32]"                       ;full_guid #8BBE0F8E48162C1B #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:33]"                       ;full_guid #20E74191E0D3F365 #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:34]"                       ;full_guid #4A3B88A72DB3EEF9 #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:35]"                       ;full_guid #90CAAA26494B645 #B673C5DA4A4A70AD                                                
+  "GeomStatic/MaterialInstance[G:36]"                       ;full_guid #B8FB14DEE7558A6B #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:37]"                       ;full_guid #C0B8CDC382795A25 #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:38]"                       ;full_guid #AEEDABB2EF047731 #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:39]"                       ;full_guid #AB16FAE2177DC541 #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:40]"                       ;full_guid #DBE8BCDB928DDC7B #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:41]"                       ;full_guid #6472625FE2F32E37 #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:42]"                       ;full_guid #59C7056B66775345 #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:43]"                       ;full_guid #2F981AF7E23AECD9 #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:44]"                       ;full_guid #E8B6B9320031B841 #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:45]"                       ;full_guid #EBA8932286B71601 #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:46]"                       ;full_guid #78F792CA8827EC73 #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:47]"                       ;full_guid #E6124082A1D5A86B #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:48]"                       ;full_guid #6B5C47019B3DA855 #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:49]"                       ;full_guid #360BDCF35CFD8BE5 #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:50]"                       ;full_guid #2ECB8531635774FD #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:51]"                       ;full_guid #6A5E87570E984833 #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:52]"                       ;full_guid #6304CB8978F9CF95 #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:53]"                       ;full_guid #2A04A62B08CF0CFB #B673C5DA4A4A70AD                                               
+  "GeomStatic/MaterialInstance[G:54]"                       ;full_guid #6C7EA184BAF38935 #B673C5DA4A4A70AD                                               

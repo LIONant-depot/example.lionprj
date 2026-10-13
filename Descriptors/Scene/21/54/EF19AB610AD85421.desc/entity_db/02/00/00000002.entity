@@ -1,0 +1,42 @@
+
+[ EntityInfo ]
+{ PermanentId:g  nComponents:d }
+//-------------  -------------
+       #2              2      
+
+[ ComponentTypes : 2 ]
+{ Guid:G            }
+//-----------------
+  #3D0C567B5D9C79C1
+  #663773C47FA1D0BA
+
+// New Types
+< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG entity:G enum:s >
+
+[ xProperties : 6 ]
+{ Name:s                     Value:? }
+//-------------------------  -------
+  "LightSun/Color/X"         ;f32  1
+  "LightSun/Color/Y"         ;f32  1
+  "LightSun/Color/Z"         ;f32  1
+  "LightSun/Intensity"       ;f32  3
+  "LightSun/CastShadows"     ;bool 1
+  "LightSun/ShadowTileSize"  ;f32  4
+
+[ xProperties : 14 ]
+{ Name:s                         Value:?             }
+//-----------------------------  -------------------
+  "Transform/Position/X"         ;f32  0            
+  "Transform/Position/Y"         ;f32  0            
+  "Transform/Position/Z"         ;f32  0            
+  "Transform/Rotation/X"         ;f32  0.330366105  
+  "Transform/Rotation/Y"         ;f32  0.243210346  
+  "Transform/Rotation/Z"         ;f32  -0.0885213315
+  "Transform/Rotation/W"         ;f32  0.907673359  
+  "Transform/RotationDegrees/X"  ;f32  40           
+  "Transform/RotationDegrees/Y"  ;f32  30           
+  "Transform/RotationDegrees/Z"  ;f32  0            
+  "Transform/Scale/X"            ;f32  1            
+  "Transform/Scale/Y"            ;f32  1            
+  "Transform/Scale/Z"            ;f32  1            
+  "Transform/EditorLockScale"    ;bool 0            
