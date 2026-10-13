@@ -13,7 +13,7 @@
 // New Types
 < s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG entity:G enum:s >
 
-[ xProperties : 15 ]
+[ xProperties : 16 ]
 { Name:s                      Value:?            }
 //--------------------------  ------------------
   "Environment/SkyZenith/X"   ;f32  0.200000003 
@@ -29,8 +29,9 @@
   "Environment/Ambient/X"     ;f32  0.0299999993
   "Environment/Ambient/Y"     ;f32  0.0299999993
   "Environment/Ambient/Z"     ;f32  0.0399999991
-  "Environment/GI"            ;bool 0           
+  "Environment/GI"            ;bool 1           
   "Environment/GIRayBudget"   ;s32  16384       
+  "Environment/GISurfelSize"  ;f32  0.5         
 
 [ xProperties : 14 ]
 { Name:s                         Value:? }
