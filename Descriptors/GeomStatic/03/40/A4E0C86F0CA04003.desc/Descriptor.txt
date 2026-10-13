@@ -7,7 +7,7 @@
 // New Types
 < s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
 
-[ xProperties : 137 ]
+[ xProperties : 140 ]
 { Name:s                                                    Value:?                                                       }
 //--------------------------------------------------------  -------------------------------------------------------------
   "GeomStatic/ImportAsset"                                  ;wstring "Assets\\miller-falls-hand-drill\\source\\Drill.fbx"
@@ -141,6 +141,9 @@
   "GeomStatic/Ungroup Mesh List[G:28]/Mesh Name"            ;string    "Wheel_low.001"                                     
   "GeomStatic/Ungroup Mesh List[G:28]/Mesh Details/Name"    ;string    ""                                                  
   "GeomStatic/Ungroup Mesh List[G:28]/Mesh Details/LODs[]"  ;s64       0                                                   
+  "GeomStatic/GI/Mode"                                      ;enum      "RECEIVE_AND_BOUNCE"                                
+  "GeomStatic/GI/Density"                                   ;enum      "SPLIT_TRIANGLES"                                   
+  "GeomStatic/GI/SurfelSize"                                ;f32       #3F000000                                           
   "GeomStatic/Deleted List[]"                               ;s64       0                                                   
   "GeomStatic/MaterialDetailsList[]"                        ;s64       1                                                   
   "GeomStatic/MaterialDetailsList[G:0]/Name"                ;string    "LP"                                                

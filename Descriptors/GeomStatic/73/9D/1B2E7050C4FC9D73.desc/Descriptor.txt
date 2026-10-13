@@ -7,11 +7,10 @@
 // New Types
 < s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
 
-[ xProperties : 260 ]
+[ xProperties : 262 ]
 { Name:s                                                    Value:?                                                                                     }
 //--------------------------------------------------------  -------------------------------------------------------------------------------------------
   "GeomStatic/ImportAsset"                                  ;wstring "Assets\\Police\\PoliceStation.FBX"                                               
-  "GeomStatic/GI/Density"                                   ;enum    "AS_AUTHORED"                                                
   "GeomStatic/PreTranslation/Scale/X"                       ;f32     #3F800000                                                                         
   "GeomStatic/PreTranslation/Scale/Y"                       ;f32     #3F800000                                                                         
   "GeomStatic/PreTranslation/Scale/Z"                       ;f32     #3F800000                                                                         
@@ -102,6 +101,9 @@
   "GeomStatic/Ungroup Mesh List[G:18]/Mesh Name"            ;string  "YellowDoor3"                                                                     
   "GeomStatic/Ungroup Mesh List[G:18]/Mesh Details/Name"    ;string  ""                                                                                
   "GeomStatic/Ungroup Mesh List[G:18]/Mesh Details/LODs[]"  ;s64     0                                                                                 
+  "GeomStatic/GI/Mode"                                      ;enum    "RECEIVE_AND_BOUNCE"                                                              
+  "GeomStatic/GI/Density"                                   ;enum    "AS_AUTHORED"                                                                     
+  "GeomStatic/GI/SurfelSize"                                ;f32     #3F000000                                                                         
   "GeomStatic/Deleted List[]"                               ;s64     0                                                                                 
   "GeomStatic/MaterialDetailsList[]"                        ;s64     55                                                                                
   "GeomStatic/MaterialDetailsList[G:0]/Name"                ;string  "11m"                                                                             
@@ -200,9 +202,9 @@
   "GeomStatic/MaterialDetailsList[G:46]/RefCount"           ;s32     1                                                                                 
   "GeomStatic/MaterialDetailsList[G:47]/Name"               ;string  "26m"                                                                             
   "GeomStatic/MaterialDetailsList[G:47]/RefCount"           ;s32     1                                                                                 
-  "GeomStatic/MaterialDetailsList[G:48]/Name"               ;string  "30m"                                                                             
-  "GeomStatic/MaterialDetailsList[G:48]/RefCount"           ;s32     4                                                                                 
-  "GeomStatic/MaterialDetailsList[G:49]/Name"               ;string  "DoorGlass_m"                                                                     
+  "GeomStatic/MaterialDetailsList[G:48]/Name"               ;string    "30m"                                                                             
+  "GeomStatic/MaterialDetailsList[G:48]/RefCount"           ;s32       4                                                                                 
+  "GeomStatic/MaterialDetailsList[G:49]/Name"               ;string    "DoorGlass_m"                                                                     
   "GeomStatic/MaterialDetailsList[G:49]/RefCount"           ;s32       2                                                                                 
   "GeomStatic/MaterialDetailsList[G:50]/Name"               ;string    "50m"                                                                             
   "GeomStatic/MaterialDetailsList[G:50]/RefCount"           ;s32       9                                                                                 
