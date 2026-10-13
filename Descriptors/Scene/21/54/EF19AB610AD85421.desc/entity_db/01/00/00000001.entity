@@ -20,19 +20,19 @@
   "Mesh/Materials[]"  ;s64       0                                  
 
 [ xProperties : 14 ]
-{ Name:s                         Value:? }
-//-----------------------------  -------
-  "Transform/Position/X"         ;f32  0
-  "Transform/Position/Y"         ;f32  0
-  "Transform/Position/Z"         ;f32  0
-  "Transform/Rotation/X"         ;f32  0
-  "Transform/Rotation/Y"         ;f32  0
-  "Transform/Rotation/Z"         ;f32  0
-  "Transform/Rotation/W"         ;f32  1
-  "Transform/RotationDegrees/X"  ;f32  0
-  "Transform/RotationDegrees/Y"  ;f32  0
-  "Transform/RotationDegrees/Z"  ;f32  0
-  "Transform/Scale/X"            ;f32  1
-  "Transform/Scale/Y"            ;f32  1
-  "Transform/Scale/Z"            ;f32  1
-  "Transform/EditorLockScale"    ;bool 0
+{ Name:s                         Value:?          }
+//-----------------------------  ----------------
+  "Transform/Position/X"         ;f32  0         
+  "Transform/Position/Y"         ;f32  1.70560074
+  "Transform/Position/Z"         ;f32  0         
+  "Transform/Rotation/X"         ;f32  0         
+  "Transform/Rotation/Y"         ;f32  0         
+  "Transform/Rotation/Z"         ;f32  0         
+  "Transform/Rotation/W"         ;f32  1         
+  "Transform/RotationDegrees/X"  ;f32  0         
+  "Transform/RotationDegrees/Y"  ;f32  0         
+  "Transform/RotationDegrees/Z"  ;f32  0         
+  "Transform/Scale/X"            ;f32  1         
+  "Transform/Scale/Y"            ;f32  1         
+  "Transform/Scale/Z"            ;f32  1         
+  "Transform/EditorLockScale"    ;bool 0         

@@ -7,14 +7,23 @@
 // New Types
 < s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
 
-[ xProperties : 8 ]
-{ Name:s                       Value:? }
-//---------------------------  -------
-  "Scene/ParentScenes[]"       ;s64 0 
-  "Scene/ExternalRefs[]"       ;s64 0 
-  "Scene/ActiveEntities[]"     ;s64 3 
-  "Scene/ActiveEntities[G:0]"  ;u64 #1
-  "Scene/ActiveEntities[G:1]"  ;u64 #2
-  "Scene/ActiveEntities[G:2]"  ;u64 #3
-  "Scene/Folders[]"            ;s64 0 
-  "Scene/EntityNames[]"        ;s64 0 
+[ xProperties : 17 ]
+{ Name:s                         Value:?               }
+//-----------------------------  ---------------------
+  "Scene/ParentScenes[]"         ;s64    0            
+  "Scene/ExternalRefs[]"         ;s64    0            
+  "Scene/ActiveEntities[]"       ;s64    4            
+  "Scene/ActiveEntities[G:0]"    ;u64    #1           
+  "Scene/ActiveEntities[G:1]"    ;u64    #2           
+  "Scene/ActiveEntities[G:2]"    ;u64    #3           
+  "Scene/ActiveEntities[G:3]"    ;u64    #42D560D7    
+  "Scene/Folders[]"              ;s64    0            
+  "Scene/EntityNames[]"          ;s64    4            
+  "Scene/EntityNames[G:0]/Id"    ;u64    #1           
+  "Scene/EntityNames[G:0]/Name"  ;string "Building"   
+  "Scene/EntityNames[G:1]/Id"    ;u64    #2           
+  "Scene/EntityNames[G:1]/Name"  ;string "Sun"        
+  "Scene/EntityNames[G:2]/Id"    ;u64    #3           
+  "Scene/EntityNames[G:2]/Name"  ;string "GI"         
+  "Scene/EntityNames[G:3]/Id"    ;u64    #42D560D7    
+  "Scene/EntityNames[G:3]/Name"  ;string "point light"

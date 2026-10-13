@@ -2,13 +2,14 @@
 [ EntityInfo ]
 { PermanentId:g  nComponents:d }
 //-------------  -------------
-       #2              2      
+       #2              3      
 
-[ ComponentTypes : 2 ]
+[ ComponentTypes : 3 ]
 { Guid:G            }
 //-----------------
   #3D0C567B5D9C79C1
   #663773C47FA1D0BA
+  #C7497C673D1DB9D7
 
 // New Types
 < s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG entity:G enum:s >

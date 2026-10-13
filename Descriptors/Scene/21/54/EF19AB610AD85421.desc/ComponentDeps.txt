@@ -1,9 +1,11 @@
 
-[ ComponentDeps : 5 ]
-{ Guid:G             Name:s         Module:G }
-//-----------------  -------------  --------
-                 #0  "Entity"          #0   
-  #3478FF1169E53A3D  "Mesh"            #0   
-  #3D0C567B5D9C79C1  "LightSun"        #0   
-  #4148BF578D263E71  "Environment"     #0   
-  #663773C47FA1D0BA  "Transform"       #0   
+[ ComponentDeps : 7 ]
+{ Guid:G             Name:s            Module:G }
+//-----------------  ----------------  --------
+                 #0  "Entity"             #0   
+  #3478FF1169E53A3D  "Mesh"               #0   
+  #38CA66FD784FB50D  "LightPoint"         #0   
+  #3D0C567B5D9C79C1  "LightSun"           #0   
+  #4148BF578D263E71  "Environment"        #0   
+  #663773C47FA1D0BA  "Transform"          #0   
+  #C7497C673D1DB9D7  "editor_disable"     #0   
