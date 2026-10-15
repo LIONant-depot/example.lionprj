@@ -1,0 +1,78 @@
+
+[ DescriptorVersion ]
+{ Major:d  Minor:d }
+//-------  -------
+     1        0   
+
+// New Types
+< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
+
+[ xProperties : 66 ]
+{ Name:s                                                   Value:?                                                  }
+//-------------------------------------------------------  --------------------------------------------------------
+  "GeomStatic/ImportAsset"                                 ;wstring   "Assets\\CornellBox\\CornellBox-Original.obj"
+  "GeomStatic/PreTranslation/Scale/X"                      ;f32       #3F800000                                    
+  "GeomStatic/PreTranslation/Scale/Y"                      ;f32       #3F800000                                    
+  "GeomStatic/PreTranslation/Scale/Z"                      ;f32       #3F800000                                    
+  "GeomStatic/PreTranslation/Rotation/X"                   ;f32       #0                                           
+  "GeomStatic/PreTranslation/Rotation/Y"                   ;f32       #0                                           
+  "GeomStatic/PreTranslation/Rotation/Z"                   ;f32       #0                                           
+  "GeomStatic/PreTranslation/Translation/X"                ;f32       #0                                           
+  "GeomStatic/PreTranslation/Translation/Y"                ;f32       #0                                           
+  "GeomStatic/PreTranslation/Translation/Z"                ;f32       #0                                           
+  "GeomStatic/bMergeAllMeshes"                             ;bool      1                                            
+  "GeomStatic/AllMeshesDetails/Name"                       ;string    "CornellBox"                                 
+  "GeomStatic/AllMeshesDetails/LODs[]"                     ;s64       0                                            
+  "GeomStatic/Merge Group List[]"                          ;s64       0                                            
+  "GeomStatic/Ungroup Mesh List[]"                         ;s64       7                                            
+  "GeomStatic/Ungroup Mesh List[G:0]/Node Path"            ;string    "CornellBox-Original.obj/floor"              
+  "GeomStatic/Ungroup Mesh List[G:0]/Mesh Name"            ;string    "floor"                                      
+  "GeomStatic/Ungroup Mesh List[G:0]/Mesh Details/Name"    ;string    ""                                           
+  "GeomStatic/Ungroup Mesh List[G:0]/Mesh Details/LODs[]"  ;s64       0                                            
+  "GeomStatic/Ungroup Mesh List[G:1]/Node Path"            ;string    "CornellBox-Original.obj/ceiling"            
+  "GeomStatic/Ungroup Mesh List[G:1]/Mesh Name"            ;string    "ceiling"                                    
+  "GeomStatic/Ungroup Mesh List[G:1]/Mesh Details/Name"    ;string    ""                                           
+  "GeomStatic/Ungroup Mesh List[G:1]/Mesh Details/LODs[]"  ;s64       0                                            
+  "GeomStatic/Ungroup Mesh List[G:2]/Node Path"            ;string    "CornellBox-Original.obj/backWall"           
+  "GeomStatic/Ungroup Mesh List[G:2]/Mesh Name"            ;string    "backWall"                                   
+  "GeomStatic/Ungroup Mesh List[G:2]/Mesh Details/Name"    ;string    ""                                           
+  "GeomStatic/Ungroup Mesh List[G:2]/Mesh Details/LODs[]"  ;s64       0                                            
+  "GeomStatic/Ungroup Mesh List[G:3]/Node Path"            ;string    "CornellBox-Original.obj/rightWall"          
+  "GeomStatic/Ungroup Mesh List[G:3]/Mesh Name"            ;string    "rightWall"                                  
+  "GeomStatic/Ungroup Mesh List[G:3]/Mesh Details/Name"    ;string    ""                                           
+  "GeomStatic/Ungroup Mesh List[G:3]/Mesh Details/LODs[]"  ;s64       0                                            
+  "GeomStatic/Ungroup Mesh List[G:4]/Node Path"            ;string    "CornellBox-Original.obj/leftWall"           
+  "GeomStatic/Ungroup Mesh List[G:4]/Mesh Name"            ;string    "leftWall"                                   
+  "GeomStatic/Ungroup Mesh List[G:4]/Mesh Details/Name"    ;string    ""                                           
+  "GeomStatic/Ungroup Mesh List[G:4]/Mesh Details/LODs[]"  ;s64       0                                            
+  "GeomStatic/Ungroup Mesh List[G:5]/Node Path"            ;string    "CornellBox-Original.obj/shortBox"           
+  "GeomStatic/Ungroup Mesh List[G:5]/Mesh Name"            ;string    "shortBox"                                   
+  "GeomStatic/Ungroup Mesh List[G:5]/Mesh Details/Name"    ;string    ""                                           
+  "GeomStatic/Ungroup Mesh List[G:5]/Mesh Details/LODs[]"  ;s64       0                                            
+  "GeomStatic/Ungroup Mesh List[G:6]/Node Path"            ;string    "CornellBox-Original.obj/light"              
+  "GeomStatic/Ungroup Mesh List[G:6]/Mesh Name"            ;string    "light"                                      
+  "GeomStatic/Ungroup Mesh List[G:6]/Mesh Details/Name"    ;string    ""                                           
+  "GeomStatic/Ungroup Mesh List[G:6]/Mesh Details/LODs[]"  ;s64       0                                            
+  "GeomStatic/GI/Mode"                                     ;enum      "OFF"                                        
+  "GeomStatic/GI/Density"                                  ;enum      "SPLIT_TRIANGLES"                            
+  "GeomStatic/GI/SurfelSize"                               ;f32       #3F000000                                    
+  "GeomStatic/GI/PatchDefects"                             ;bool      1                                            
+  "GeomStatic/GI/LeakProtection"                           ;bool      1                                            
+  "GeomStatic/Deleted List[]"                              ;s64       0                                            
+  "GeomStatic/MaterialDetailsList[]"                       ;s64       4                                            
+  "GeomStatic/MaterialDetailsList[G:0]/Name"               ;string    "floor"                                      
+  "GeomStatic/MaterialDetailsList[G:0]/RefCount"           ;s32       5                                            
+  "GeomStatic/MaterialDetailsList[G:1]/Name"               ;string    "rightWall"                                  
+  "GeomStatic/MaterialDetailsList[G:1]/RefCount"           ;s32       1                                            
+  "GeomStatic/MaterialDetailsList[G:2]/Name"               ;string    "leftWall"                                   
+  "GeomStatic/MaterialDetailsList[G:2]/RefCount"           ;s32       1                                            
+  "GeomStatic/MaterialDetailsList[G:3]/Name"               ;string    "light"                                      
+  "GeomStatic/MaterialDetailsList[G:3]/RefCount"           ;s32       1                                            
+  "GeomStatic/ImportMaterials/bImport"                     ;bool      1                                            
+  "GeomStatic/ImportMaterials/Material"                    ;full_guid #8D45F86DC5F2C003 #8B3C028882EA813D          
+  "GeomStatic/ImportMaterials/AlphaTest"                   ;full_guid #FF22104E737E58EB #8B3C028882EA813D          
+  "GeomStatic/MaterialInstance[]"                          ;s64       4                                            
+  "GeomStatic/MaterialInstance[G:0]"                       ;full_guid #B377B991B1DB5B67 #B673C5DA4A4A70AD          
+  "GeomStatic/MaterialInstance[G:1]"                       ;full_guid #18DD385633F5541F #B673C5DA4A4A70AD          
+  "GeomStatic/MaterialInstance[G:2]"                       ;full_guid #8B503ABEE4760415 #B673C5DA4A4A70AD          
+  "GeomStatic/MaterialInstance[G:3]"                       ;full_guid #42E05FD54EFE960B #B673C5DA4A4A70AD          
