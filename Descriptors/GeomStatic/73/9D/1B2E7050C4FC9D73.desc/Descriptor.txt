@@ -7,7 +7,7 @@
 // New Types
 < s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
 
-[ xProperties : 262 ]
+[ xProperties : 263 ]
 { Name:s                                                    Value:?                                                                                     }
 //--------------------------------------------------------  -------------------------------------------------------------------------------------------
   "GeomStatic/ImportAsset"                                  ;wstring "Assets\\Police\\PoliceStation.FBX"                                               
@@ -272,3 +272,4 @@
   "GeomStatic/MaterialInstance[G:52]"                       ;full_guid #6304CB8978F9CF95 #B673C5DA4A4A70AD                                               
   "GeomStatic/MaterialInstance[G:53]"                       ;full_guid #2A04A62B08CF0CFB #B673C5DA4A4A70AD                                               
   "GeomStatic/MaterialInstance[G:54]"                       ;full_guid #6C7EA184BAF38935 #B673C5DA4A4A70AD                                               
+  "GeomStatic/ImportMaterials/bImport" ;bool 0
