@@ -69,7 +69,7 @@
   "node/Params[G:3]/ExposeName"                ;string    "SamplerAlbedo"                                         
   "node/Params[G:4]/Name"                      ;string    "SamplerORME"                                           
   "node/Params[G:4]/Type"                      ;enum      "TEXTURE RESOURCE"                                      
-  "node/Params[G:4]/TextureRef"                ;full_guid #189EDF8BF1940033 #6701D481518BD833                     
+  "node/Params[G:4]/TextureRef"                ;full_guid #DEFA017E0E0E0E01 #6701D481518BD833                     
   "node/Params[G:4]/bCanExpose"                ;bool      1                                                       
   "node/Params[G:4]/bExpose"                   ;bool      1                                                       
   "node/Params[G:4]/ExposeName"                ;string    "SamplerORME"                                           
