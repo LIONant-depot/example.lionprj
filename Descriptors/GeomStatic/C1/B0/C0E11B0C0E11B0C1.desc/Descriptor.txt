@@ -53,7 +53,7 @@
   "GeomStatic/Ungroup Mesh List[G:6]/Mesh Name"            ;string    "light"                                      
   "GeomStatic/Ungroup Mesh List[G:6]/Mesh Details/Name"    ;string    ""                                           
   "GeomStatic/Ungroup Mesh List[G:6]/Mesh Details/LODs[]"  ;s64       0                                            
-  "GeomStatic/GI/Mode"                                     ;enum      "OFF"                                        
+  "GeomStatic/GI/Mode"                                     ;enum      "RECEIVE_AND_BOUNCE"                                        
   "GeomStatic/GI/Density"                                  ;enum      "SPLIT_TRIANGLES"                            
   "GeomStatic/GI/SurfelSize"                               ;f32       #3F000000                                    
   "GeomStatic/GI/PatchDefects"                             ;bool      1                                            

@@ -1553,9 +1553,9 @@
   "GeomStatic/Ungroup Mesh List[G:381]/Mesh Name"            ;string  "sponza_382"                
   "GeomStatic/Ungroup Mesh List[G:381]/Mesh Details/Name"    ;string  ""                          
   "GeomStatic/Ungroup Mesh List[G:381]/Mesh Details/LODs[]"  ;s64     0                           
-  "GeomStatic/GI/Mode"                                       ;enum    "OFF"                       
+  "GeomStatic/GI/Mode"                                       ;enum    "RECEIVE_AND_BOUNCE"                       
   "GeomStatic/GI/Density"                                    ;enum    "SPLIT_TRIANGLES"           
-  "GeomStatic/GI/SurfelSize"                                 ;f32     #3F000000                   
+  "GeomStatic/GI/SurfelSize"                                 ;f32     #3F800000                   
   "GeomStatic/GI/PatchDefects"                               ;bool    1                           
   "GeomStatic/GI/LeakProtection"                             ;bool    1                           
   "GeomStatic/Deleted List[]"                                ;s64     0                           
