@@ -7,11 +7,13 @@
 // New Types
 < s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
 
-[ xProperties : 29 ]
+[ xProperties : 31 ]
 { Name:s                                                 Value:?                                        }
 //-----------------------------------------------------  ----------------------------------------------
   "GeomSkin/ImportAsset"                                 ;wstring   "Assets\\WalkingSkin\\Walking.fbx" 
-  "GeomSkin/SkeletonRef"                                 ;full_guid #D4721069138B4003 #F5D3BE1ED860ABF7
+  "GeomSkin/ImportSkeletonAndAnimation"                  ;bool      1                                  
+  "GeomSkin/SkeletonRef"                                 ;full_guid #EB6B3E509816D15 #F5D3BE1ED860ABF7 
+  "GeomSkin/AnimationRef"                                ;full_guid #8684134A47E00C95 #E69E8A8439A9BB1B
   "GeomSkin/PreTranslation/Scale/X"                      ;f32       #3F800000                          
   "GeomSkin/PreTranslation/Scale/Y"                      ;f32       #3F800000                          
   "GeomSkin/PreTranslation/Scale/Z"                      ;f32       #3F800000                          
