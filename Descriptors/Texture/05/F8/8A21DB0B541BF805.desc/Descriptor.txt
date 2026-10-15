@@ -1,0 +1,42 @@
+
+[ DescriptorVersion ]
+{ Major:d  Minor:d }
+//-------  -------
+     1        0   
+
+// New Types
+< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
+
+[ xProperties : 30 ]
+{ Name:s                                             Value:?                                                  }
+//-------------------------------------------------  --------------------------------------------------------
+  "Texture/Usage"                                    ;enum    "COLOR_AND_ALPHA"                              
+  "Texture/Wrap Mode U"                              ;enum    "WRAP"                                         
+  "Texture/Wrap Mode V"                              ;enum    "WRAP"                                         
+  "Texture/InputType"                                ;enum    "MIX_SOURCE"                                   
+  "Texture/Input/Mixes[]"                            ;s64     2                                              
+  "Texture/Input/Mixes[G:0]/Copy From"               ;enum    "RGB"                                          
+  "Texture/Input/Mixes[G:0]/Copy To"                 ;enum    "RGB"                                          
+  "Texture/Input/Mixes[G:0]/FileName"                ;wstring "Assets\\Sponza\\textures\\vase_plant.tga"     
+  "Texture/Input/Mixes[G:0]/Constant"                ;f32     #3F800000                                      
+  "Texture/Input/Mixes[G:1]/Copy From"               ;enum    "R"                                            
+  "Texture/Input/Mixes[G:1]/Copy To"                 ;enum    "A"                                            
+  "Texture/Input/Mixes[G:1]/FileName"                ;wstring "Assets\\Sponza\\textures\\vase_plant_mask.tga"
+  "Texture/Input/Mixes[G:1]/Constant"                ;f32     #3F800000                                      
+  "Texture/Compression"                              ;enum    "RGBA_BC7"                                     
+  "Texture/AlphaThreshold"                           ;u8      #80                                            
+  "Texture/Quality"                                  ;f32     #3F000000                                      
+  "Texture/SRGB"                                     ;bool    1                                              
+  "Texture/Mipmaps/GenerateMips"                     ;bool    1                                              
+  "Texture/Mipmaps/Mipmap Filter"                    ;enum    "BOX"                                          
+  "Texture/Mipmaps/MinSize"                          ;s32     1                                              
+  "Texture/FillAveColorByAlpha/FillAveColorByAlpha"  ;bool    1                                              
+  "Texture/FillAveColorByAlpha/AlphaThreshold"       ;u8      #80                                            
+  "Texture/Tillable Filter/Tillable Filter"          ;bool    0                                              
+  "Texture/Tillable Filter/Width Blend Percentage"   ;f32     #3DCCCCCD                                      
+  "Texture/Tillable Filter/Height Blend Percentage"  ;f32     #3DCCCCCD                                      
+  "Texture/Normalize Normals"                        ;bool    1                                              
+  "Texture/Normal Flip Y"                            ;bool    0                                              
+  "Texture/CubeMap/Convert To CubeMap"               ;bool    0                                              
+  "Texture/CubeMap/Face Size"                        ;u32     #400                                           
+  "Texture/CubeMap/Use Bilinear"                     ;bool    1                                              

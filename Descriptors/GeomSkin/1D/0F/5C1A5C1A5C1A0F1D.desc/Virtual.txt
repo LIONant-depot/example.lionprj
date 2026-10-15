@@ -1,0 +1,14 @@
+
+// New Types
+< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
+
+[ xProperties : 7 ]
+{ Name:s                                    Value:?                                        }
+//----------------------------------------  ----------------------------------------------
+  "owned_virtual_resources/Resources[]"     ;s64       6                                  
+  "owned_virtual_resources/Resources[G:0]"  ;full_guid #EB6B3E509816D15 #F5D3BE1ED860ABF7 
+  "owned_virtual_resources/Resources[G:1]"  ;full_guid #2E11A0274D0E9661 #B673C5DA4A4A70AD
+  "owned_virtual_resources/Resources[G:2]"  ;full_guid #4B4C4F0D0E8BAE53 #6701D481518BD833
+  "owned_virtual_resources/Resources[G:3]"  ;full_guid #4E6DD6AB4698C5AD #6701D481518BD833
+  "owned_virtual_resources/Resources[G:4]"  ;full_guid #8684134A47E00C95 #E69E8A8439A9BB1B
+  "owned_virtual_resources/Resources[G:5]"  ;full_guid #9515FCCDC212BF07 #6701D481518BD833
