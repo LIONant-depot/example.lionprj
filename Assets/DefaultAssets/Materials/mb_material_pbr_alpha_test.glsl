@@ -13,12 +13,16 @@ layout(binding = 3) uniform sampler2D SamplerORME;             // [INPUT_TEXTURE
 
 layout(location = 0) out vec4 outFragColor;
 
+// How much the normal maps are exaggerated (1 = as authored): the bumps read better under the scene's lights
+const float NormalStrength = 1.5;
+
 vec3 getBC5Normal( vec2 UV )
 {
 	vec3 Normal;
 	Normal.xy = (texture(SamplerNormal, UV).gr * 2.0) - 1.0;
-	Normal.z = sqrt(1.0 - dot(Normal.xy, Normal.xy));
-	return Normal;
+	Normal.z = sqrt(max(1.0 - dot(Normal.xy, Normal.xy), 0.0));
+	Normal.xy *= NormalStrength;
+	return normalize(Normal);
 }
 
 void main()
