@@ -1,75 +1,1860 @@
 
 [ Info ]
-{ nNodes:d  nConnections:d }
-//--------  --------------
-     1            0       
+{ nNodes:d  nConnections:d  Version:d  nParameters:d }
+//--------  --------------  ---------  -------------
+     25           34            4            9      
 
 [ Node ]
 { Guid:G             PrefabGuid:G      }
 //-----------------  -----------------
-  #37FB803780172000  #1E601ED7983F207C
+  #8D45F86D00000010  #CBC82A6D82A1C031
 
 // New Types
 < s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
 
+[ xProperties : 54 ]
+{ Name:s                                                  Value:?                          }
+//------------------------------------------------------  --------------------------------
+  "node/Name"                                             ;string "Input: Vertex Variants"
+  "node/StepName"                                         ;string "Vtx"                   
+  "node/Position/X"                                       ;f32    0                       
+  "node/Position/Y"                                       ;f32    0                       
+  "node/Input Pins[]"                                     ;s64    0                       
+  "node/Output Pins[]"                                    ;s64    3                       
+  "node/Output Pins[G:0]/pin/var/Name"                    ;string "Color(4)"              
+  "node/Output Pins[G:0]/pin/var/TypeGUID"                ;u64    #FA00EFBCE10F630B       
+  "node/Output Pins[G:0]/pin/PinGUID/Value"               ;u64    #B3E2B7A15108B792       
+  "node/Output Pins[G:0]/pin/ParamIndex"                  ;s32    -1                      
+  "node/Output Pins[G:0]/SubElements[]"                   ;s64    4                       
+  "node/Output Pins[G:0]/SubElements[G:0]/var/Name"       ;string "x"                     
+  "node/Output Pins[G:0]/SubElements[G:0]/var/TypeGUID"   ;u64    #254786A97C52EF15       
+  "node/Output Pins[G:0]/SubElements[G:0]/PinGUID/Value"  ;u64    #52F03DE8CD49184B       
+  "node/Output Pins[G:0]/SubElements[G:0]/ParamIndex"     ;s32    -1                      
+  "node/Output Pins[G:0]/SubElements[G:1]/var/Name"       ;string "y"                     
+  "node/Output Pins[G:0]/SubElements[G:1]/var/TypeGUID"   ;u64    #254786A97C52EF15       
+  "node/Output Pins[G:0]/SubElements[G:1]/PinGUID/Value"  ;u64    #784F52AE42EBFA9D       
+  "node/Output Pins[G:0]/SubElements[G:1]/ParamIndex"     ;s32    -1                      
+  "node/Output Pins[G:0]/SubElements[G:2]/var/Name"       ;string "z"                     
+  "node/Output Pins[G:0]/SubElements[G:2]/var/TypeGUID"   ;u64    #254786A97C52EF15       
+  "node/Output Pins[G:0]/SubElements[G:2]/PinGUID/Value"  ;u64    #A2683FF3CCBF110A       
+  "node/Output Pins[G:0]/SubElements[G:2]/ParamIndex"     ;s32    -1                      
+  "node/Output Pins[G:0]/SubElements[G:3]/var/Name"       ;string "w"                     
+  "node/Output Pins[G:0]/SubElements[G:3]/var/TypeGUID"   ;u64    #254786A97C52EF15       
+  "node/Output Pins[G:0]/SubElements[G:3]/PinGUID/Value"  ;u64    #24418817D554D512       
+  "node/Output Pins[G:0]/SubElements[G:3]/ParamIndex"     ;s32    -1                      
+  "node/Output Pins[G:1]/pin/var/Name"                    ;string "UV(2)"                 
+  "node/Output Pins[G:1]/pin/var/TypeGUID"                ;u64    #722EA6EABC1ECBBC       
+  "node/Output Pins[G:1]/pin/PinGUID/Value"               ;u64    #FF83A62F2C63C666       
+  "node/Output Pins[G:1]/pin/ParamIndex"                  ;s32    -1                      
+  "node/Output Pins[G:1]/SubElements[]"                   ;s64    2                       
+  "node/Output Pins[G:1]/SubElements[G:0]/var/Name"       ;string "x"                     
+  "node/Output Pins[G:1]/SubElements[G:0]/var/TypeGUID"   ;u64    #254786A97C52EF15       
+  "node/Output Pins[G:1]/SubElements[G:0]/PinGUID/Value"  ;u64    #B7E57DD3E11A6730       
+  "node/Output Pins[G:1]/SubElements[G:0]/ParamIndex"     ;s32    -1                      
+  "node/Output Pins[G:1]/SubElements[G:1]/var/Name"       ;string "y"                     
+  "node/Output Pins[G:1]/SubElements[G:1]/var/TypeGUID"   ;u64    #254786A97C52EF15       
+  "node/Output Pins[G:1]/SubElements[G:1]/PinGUID/Value"  ;u64    #6172FA7A9067EC88       
+  "node/Output Pins[G:1]/SubElements[G:1]/ParamIndex"     ;s32    -1                      
+  "node/Output Pins[G:2]/pin/var/Name"                    ;string "UV1(2)"                
+  "node/Output Pins[G:2]/pin/var/TypeGUID"                ;u64    #722EA6EABC1ECBBC       
+  "node/Output Pins[G:2]/pin/PinGUID/Value"               ;u64    #46F17CCB8DF6AC34       
+  "node/Output Pins[G:2]/pin/ParamIndex"                  ;s32    -1                      
+  "node/Output Pins[G:2]/SubElements[]"                   ;s64    2                       
+  "node/Output Pins[G:2]/SubElements[G:0]/var/Name"       ;string "x"                     
+  "node/Output Pins[G:2]/SubElements[G:0]/var/TypeGUID"   ;u64    #254786A97C52EF15       
+  "node/Output Pins[G:2]/SubElements[G:0]/PinGUID/Value"  ;u64    #FD8715BE82AF3BE0       
+  "node/Output Pins[G:2]/SubElements[G:0]/ParamIndex"     ;s32    -1                      
+  "node/Output Pins[G:2]/SubElements[G:1]/var/Name"       ;string "y"                     
+  "node/Output Pins[G:2]/SubElements[G:1]/var/TypeGUID"   ;u64    #254786A97C52EF15       
+  "node/Output Pins[G:2]/SubElements[G:1]/PinGUID/Value"  ;u64    #72DBBD0D71FE654F       
+  "node/Output Pins[G:2]/SubElements[G:1]/ParamIndex"     ;s32    -1                      
+  "node/Params[]"                                         ;s64    0                       
+
+[ Node ]
+{ Guid:G             PrefabGuid:G      }
+//-----------------  -----------------
+  #8D45F86D00000020  #4F69E72CCEF792BA
+
+[ xProperties : 24 ]
+{ Name:s                                       Value:?                                        }
+//-------------------------------------------  ----------------------------------------------
+  "node/Name"                                  ;string    "Sampler 2D"                       
+  "node/StepName"                              ;string    "NormalSampler"                    
+  "node/Position/X"                            ;f32       0                                  
+  "node/Position/Y"                            ;f32       0                                  
+  "node/Input Pins[]"                          ;s64       1                                  
+  "node/Input Pins[G:0]/pin/var/Name"          ;string    "TextureRsc"                       
+  "node/Input Pins[G:0]/pin/var/TypeGUID"      ;u64       #3380EA40A8C5EC19                  
+  "node/Input Pins[G:0]/pin/PinGUID/Value"     ;u64       #6E                                
+  "node/Input Pins[G:0]/pin/ParamIndex"        ;s32       0                                  
+  "node/Input Pins[G:0]/ConnectionGUID/Value"  ;u64       #0                                 
+  "node/Output Pins[]"                         ;s64       1                                  
+  "node/Output Pins[G:0]/pin/var/Name"         ;string    "Texture(2D)"                      
+  "node/Output Pins[G:0]/pin/var/TypeGUID"     ;u64       #C5429828688F99B1                  
+  "node/Output Pins[G:0]/pin/PinGUID/Value"    ;u64       #62F97D34D23999DD                  
+  "node/Output Pins[G:0]/pin/ParamIndex"       ;s32       -1                                 
+  "node/Output Pins[G:0]/SubElements[]"        ;s64       0                                  
+  "node/Params[]"                              ;s64       1                                  
+  "node/Params[G:0]/Name"                      ;string    "Default Texture"                  
+  "node/Params[G:0]/Type"                      ;enum      "TEXTURE RESOURCE"                 
+  "node/Params[G:0]/TextureRef"                ;full_guid #189E50CFD884005F #6701D481518BD833
+  "node/Params[G:0]/bCanExpose"                ;bool      1                                  
+  "node/Params[G:0]/bExpose"                   ;bool      1                                  
+  "node/Params[G:0]/ExposeName"                ;string    "SamplerNormal"                    
+  "node/Params[G:0]/ParamID"                   ;u64       #6E                                
+
+[ Node ]
+{ Guid:G             PrefabGuid:G      }
+//-----------------  -----------------
+  #8D45F86D00000030  #4F69E72CCEF792BA
+
+[ xProperties : 24 ]
+{ Name:s                                       Value:?                                        }
+//-------------------------------------------  ----------------------------------------------
+  "node/Name"                                  ;string    "Sampler 2D"                       
+  "node/StepName"                              ;string    "AlbedoSampler"                    
+  "node/Position/X"                            ;f32       0                                  
+  "node/Position/Y"                            ;f32       0                                  
+  "node/Input Pins[]"                          ;s64       1                                  
+  "node/Input Pins[G:0]/pin/var/Name"          ;string    "TextureRsc"                       
+  "node/Input Pins[G:0]/pin/var/TypeGUID"      ;u64       #3380EA40A8C5EC19                  
+  "node/Input Pins[G:0]/pin/PinGUID/Value"     ;u64       #78                                
+  "node/Input Pins[G:0]/pin/ParamIndex"        ;s32       0                                  
+  "node/Input Pins[G:0]/ConnectionGUID/Value"  ;u64       #0                                 
+  "node/Output Pins[]"                         ;s64       1                                  
+  "node/Output Pins[G:0]/pin/var/Name"         ;string    "Texture(2D)"                      
+  "node/Output Pins[G:0]/pin/var/TypeGUID"     ;u64       #C5429828688F99B1                  
+  "node/Output Pins[G:0]/pin/PinGUID/Value"    ;u64       #59534A8C1059342E                  
+  "node/Output Pins[G:0]/pin/ParamIndex"       ;s32       -1                                 
+  "node/Output Pins[G:0]/SubElements[]"        ;s64       0                                  
+  "node/Params[]"                              ;s64       1                                  
+  "node/Params[G:0]/Name"                      ;string    "Default Texture"                  
+  "node/Params[G:0]/Type"                      ;enum      "TEXTURE RESOURCE"                 
+  "node/Params[G:0]/TextureRef"                ;full_guid #6542000CC1D6FB6F #6701D481518BD833
+  "node/Params[G:0]/bCanExpose"                ;bool      1                                  
+  "node/Params[G:0]/bExpose"                   ;bool      1                                  
+  "node/Params[G:0]/ExposeName"                ;string    "SamplerAlbedo"                    
+  "node/Params[G:0]/ParamID"                   ;u64       #78                                
+
+[ Node ]
+{ Guid:G             PrefabGuid:G      }
+//-----------------  -----------------
+  #8D45F86D00000040  #4F69E72CCEF792BA
+
+[ xProperties : 24 ]
+{ Name:s                                       Value:?                                        }
+//-------------------------------------------  ----------------------------------------------
+  "node/Name"                                  ;string    "Sampler 2D"                       
+  "node/StepName"                              ;string    "ORMESampler"                      
+  "node/Position/X"                            ;f32       0                                  
+  "node/Position/Y"                            ;f32       0                                  
+  "node/Input Pins[]"                          ;s64       1                                  
+  "node/Input Pins[G:0]/pin/var/Name"          ;string    "TextureRsc"                       
+  "node/Input Pins[G:0]/pin/var/TypeGUID"      ;u64       #3380EA40A8C5EC19                  
+  "node/Input Pins[G:0]/pin/PinGUID/Value"     ;u64       #82                                
+  "node/Input Pins[G:0]/pin/ParamIndex"        ;s32       0                                  
+  "node/Input Pins[G:0]/ConnectionGUID/Value"  ;u64       #0                                 
+  "node/Output Pins[]"                         ;s64       1                                  
+  "node/Output Pins[G:0]/pin/var/Name"         ;string    "Texture(2D)"                      
+  "node/Output Pins[G:0]/pin/var/TypeGUID"     ;u64       #C5429828688F99B1                  
+  "node/Output Pins[G:0]/pin/PinGUID/Value"    ;u64       #410757B6298597BC                  
+  "node/Output Pins[G:0]/pin/ParamIndex"       ;s32       -1                                 
+  "node/Output Pins[G:0]/SubElements[]"        ;s64       0                                  
+  "node/Params[]"                              ;s64       1                                  
+  "node/Params[G:0]/Name"                      ;string    "Default Texture"                  
+  "node/Params[G:0]/Type"                      ;enum      "TEXTURE RESOURCE"                 
+  "node/Params[G:0]/TextureRef"                ;full_guid #DEFA017E0E0E0E01 #6701D481518BD833
+  "node/Params[G:0]/bCanExpose"                ;bool      1                                  
+  "node/Params[G:0]/bExpose"                   ;bool      1                                  
+  "node/Params[G:0]/ExposeName"                ;string    "SamplerORME"                      
+  "node/Params[G:0]/ParamID"                   ;u64       #82                                
+
+[ Node ]
+{ Guid:G             PrefabGuid:G      }
+//-----------------  -----------------
+  #8D45F86D00000050  #C81B1A481148740F
+
+[ xProperties : 38 ]
+{ Name:s                                                  Value:?                   }
+//------------------------------------------------------  -------------------------
+  "node/Name"                                             ;string "Texture"        
+  "node/StepName"                                         ;string "NormalTex"      
+  "node/Position/X"                                       ;f32    0                
+  "node/Position/Y"                                       ;f32    0                
+  "node/Input Pins[]"                                     ;s64    2                
+  "node/Input Pins[G:0]/pin/var/Name"                     ;string "Texture(2D)"    
+  "node/Input Pins[G:0]/pin/var/TypeGUID"                 ;u64    #C5429828688F99B1
+  "node/Input Pins[G:0]/pin/PinGUID/Value"                ;u64    #4486C71289ABDFCB
+  "node/Input Pins[G:0]/pin/ParamIndex"                   ;s32    -1               
+  "node/Input Pins[G:0]/ConnectionGUID/Value"             ;u64    #8D45F86D00001004
+  "node/Input Pins[G:1]/pin/var/Name"                     ;string "UV(2)"          
+  "node/Input Pins[G:1]/pin/var/TypeGUID"                 ;u64    #722EA6EABC1ECBBC
+  "node/Input Pins[G:1]/pin/PinGUID/Value"                ;u64    #A39BA28614AEFF26
+  "node/Input Pins[G:1]/pin/ParamIndex"                   ;s32    -1               
+  "node/Input Pins[G:1]/ConnectionGUID/Value"             ;u64    #8D45F86D00001001
+  "node/Output Pins[]"                                    ;s64    1                
+  "node/Output Pins[G:0]/pin/var/Name"                    ;string "Vec4"           
+  "node/Output Pins[G:0]/pin/var/TypeGUID"                ;u64    #940688F48A9C32B4
+  "node/Output Pins[G:0]/pin/PinGUID/Value"               ;u64    #284451DCDE0E52D7
+  "node/Output Pins[G:0]/pin/ParamIndex"                  ;s32    -1               
+  "node/Output Pins[G:0]/SubElements[]"                   ;s64    4                
+  "node/Output Pins[G:0]/SubElements[G:0]/var/Name"       ;string "x"              
+  "node/Output Pins[G:0]/SubElements[G:0]/var/TypeGUID"   ;u64    #254786A97C52EF15
+  "node/Output Pins[G:0]/SubElements[G:0]/PinGUID/Value"  ;u64    #98EA6CBEE5CE7D77
+  "node/Output Pins[G:0]/SubElements[G:0]/ParamIndex"     ;s32    -1               
+  "node/Output Pins[G:0]/SubElements[G:1]/var/Name"       ;string "y"              
+  "node/Output Pins[G:0]/SubElements[G:1]/var/TypeGUID"   ;u64    #254786A97C52EF15
+  "node/Output Pins[G:0]/SubElements[G:1]/PinGUID/Value"  ;u64    #E92B07D304A5119F
+  "node/Output Pins[G:0]/SubElements[G:1]/ParamIndex"     ;s32    -1               
+  "node/Output Pins[G:0]/SubElements[G:2]/var/Name"       ;string "z"              
+  "node/Output Pins[G:0]/SubElements[G:2]/var/TypeGUID"   ;u64    #254786A97C52EF15
+  "node/Output Pins[G:0]/SubElements[G:2]/PinGUID/Value"  ;u64    #740EEE4A32994827
+  "node/Output Pins[G:0]/SubElements[G:2]/ParamIndex"     ;s32    -1               
+  "node/Output Pins[G:0]/SubElements[G:3]/var/Name"       ;string "w"              
+  "node/Output Pins[G:0]/SubElements[G:3]/var/TypeGUID"   ;u64    #254786A97C52EF15
+  "node/Output Pins[G:0]/SubElements[G:3]/PinGUID/Value"  ;u64    #A61492F84BE75E5E
+  "node/Output Pins[G:0]/SubElements[G:3]/ParamIndex"     ;s32    -1               
+  "node/Params[]"                                         ;s64    0                
+
+[ Node ]
+{ Guid:G             PrefabGuid:G      }
+//-----------------  -----------------
+  #8D45F86D00000060  #C81B1A481148740F
+
+[ xProperties : 38 ]
+{ Name:s                                                  Value:?                   }
+//------------------------------------------------------  -------------------------
+  "node/Name"                                             ;string "Texture"        
+  "node/StepName"                                         ;string "Albedo"         
+  "node/Position/X"                                       ;f32    0                
+  "node/Position/Y"                                       ;f32    0                
+  "node/Input Pins[]"                                     ;s64    2                
+  "node/Input Pins[G:0]/pin/var/Name"                     ;string "Texture(2D)"    
+  "node/Input Pins[G:0]/pin/var/TypeGUID"                 ;u64    #C5429828688F99B1
+  "node/Input Pins[G:0]/pin/PinGUID/Value"                ;u64    #FE5049C2F0E7850F
+  "node/Input Pins[G:0]/pin/ParamIndex"                   ;s32    -1               
+  "node/Input Pins[G:0]/ConnectionGUID/Value"             ;u64    #8D45F86D00001005
+  "node/Input Pins[G:1]/pin/var/Name"                     ;string "UV(2)"          
+  "node/Input Pins[G:1]/pin/var/TypeGUID"                 ;u64    #722EA6EABC1ECBBC
+  "node/Input Pins[G:1]/pin/PinGUID/Value"                ;u64    #B1310D436E1EDF6A
+  "node/Input Pins[G:1]/pin/ParamIndex"                   ;s32    -1               
+  "node/Input Pins[G:1]/ConnectionGUID/Value"             ;u64    #8D45F86D00001002
+  "node/Output Pins[]"                                    ;s64    1                
+  "node/Output Pins[G:0]/pin/var/Name"                    ;string "Vec4"           
+  "node/Output Pins[G:0]/pin/var/TypeGUID"                ;u64    #940688F48A9C32B4
+  "node/Output Pins[G:0]/pin/PinGUID/Value"               ;u64    #FF0F2FAC28949FBB
+  "node/Output Pins[G:0]/pin/ParamIndex"                  ;s32    -1               
+  "node/Output Pins[G:0]/SubElements[]"                   ;s64    4                
+  "node/Output Pins[G:0]/SubElements[G:0]/var/Name"       ;string "x"              
+  "node/Output Pins[G:0]/SubElements[G:0]/var/TypeGUID"   ;u64    #254786A97C52EF15
+  "node/Output Pins[G:0]/SubElements[G:0]/PinGUID/Value"  ;u64    #B05834A87B8364E8
+  "node/Output Pins[G:0]/SubElements[G:0]/ParamIndex"     ;s32    -1               
+  "node/Output Pins[G:0]/SubElements[G:1]/var/Name"       ;string "y"              
+  "node/Output Pins[G:0]/SubElements[G:1]/var/TypeGUID"   ;u64    #254786A97C52EF15
+  "node/Output Pins[G:0]/SubElements[G:1]/PinGUID/Value"  ;u64    #946F32764DF8B6EF
+  "node/Output Pins[G:0]/SubElements[G:1]/ParamIndex"     ;s32    -1               
+  "node/Output Pins[G:0]/SubElements[G:2]/var/Name"       ;string "z"              
+  "node/Output Pins[G:0]/SubElements[G:2]/var/TypeGUID"   ;u64    #254786A97C52EF15
+  "node/Output Pins[G:0]/SubElements[G:2]/PinGUID/Value"  ;u64    #F8FE612BD2159DD1
+  "node/Output Pins[G:0]/SubElements[G:2]/ParamIndex"     ;s32    -1               
+  "node/Output Pins[G:0]/SubElements[G:3]/var/Name"       ;string "w"              
+  "node/Output Pins[G:0]/SubElements[G:3]/var/TypeGUID"   ;u64    #254786A97C52EF15
+  "node/Output Pins[G:0]/SubElements[G:3]/PinGUID/Value"  ;u64    #1E40DB707047791A
+  "node/Output Pins[G:0]/SubElements[G:3]/ParamIndex"     ;s32    -1               
+  "node/Params[]"                                         ;s64    0                
+
+[ Node ]
+{ Guid:G             PrefabGuid:G      }
+//-----------------  -----------------
+  #8D45F86D00000070  #C81B1A481148740F
+
+[ xProperties : 38 ]
+{ Name:s                                                  Value:?                   }
+//------------------------------------------------------  -------------------------
+  "node/Name"                                             ;string "Texture"        
+  "node/StepName"                                         ;string "ORME"           
+  "node/Position/X"                                       ;f32    0                
+  "node/Position/Y"                                       ;f32    0                
+  "node/Input Pins[]"                                     ;s64    2                
+  "node/Input Pins[G:0]/pin/var/Name"                     ;string "Texture(2D)"    
+  "node/Input Pins[G:0]/pin/var/TypeGUID"                 ;u64    #C5429828688F99B1
+  "node/Input Pins[G:0]/pin/PinGUID/Value"                ;u64    #EBC5959828AE92AF
+  "node/Input Pins[G:0]/pin/ParamIndex"                   ;s32    -1               
+  "node/Input Pins[G:0]/ConnectionGUID/Value"             ;u64    #8D45F86D00001006
+  "node/Input Pins[G:1]/pin/var/Name"                     ;string "UV(2)"          
+  "node/Input Pins[G:1]/pin/var/TypeGUID"                 ;u64    #722EA6EABC1ECBBC
+  "node/Input Pins[G:1]/pin/PinGUID/Value"                ;u64    #EAA8FE211E0086D0
+  "node/Input Pins[G:1]/pin/ParamIndex"                   ;s32    -1               
+  "node/Input Pins[G:1]/ConnectionGUID/Value"             ;u64    #8D45F86D00001003
+  "node/Output Pins[]"                                    ;s64    1                
+  "node/Output Pins[G:0]/pin/var/Name"                    ;string "Vec4"           
+  "node/Output Pins[G:0]/pin/var/TypeGUID"                ;u64    #940688F48A9C32B4
+  "node/Output Pins[G:0]/pin/PinGUID/Value"               ;u64    #EADC02457A9044EB
+  "node/Output Pins[G:0]/pin/ParamIndex"                  ;s32    -1               
+  "node/Output Pins[G:0]/SubElements[]"                   ;s64    4                
+  "node/Output Pins[G:0]/SubElements[G:0]/var/Name"       ;string "x"              
+  "node/Output Pins[G:0]/SubElements[G:0]/var/TypeGUID"   ;u64    #254786A97C52EF15
+  "node/Output Pins[G:0]/SubElements[G:0]/PinGUID/Value"  ;u64    #D7506DB1EF368EB6
+  "node/Output Pins[G:0]/SubElements[G:0]/ParamIndex"     ;s32    -1               
+  "node/Output Pins[G:0]/SubElements[G:1]/var/Name"       ;string "y"              
+  "node/Output Pins[G:0]/SubElements[G:1]/var/TypeGUID"   ;u64    #254786A97C52EF15
+  "node/Output Pins[G:0]/SubElements[G:1]/PinGUID/Value"  ;u64    #2E9CACC5F09FDEE8
+  "node/Output Pins[G:0]/SubElements[G:1]/ParamIndex"     ;s32    -1               
+  "node/Output Pins[G:0]/SubElements[G:2]/var/Name"       ;string "z"              
+  "node/Output Pins[G:0]/SubElements[G:2]/var/TypeGUID"   ;u64    #254786A97C52EF15
+  "node/Output Pins[G:0]/SubElements[G:2]/PinGUID/Value"  ;u64    #EFD23DCABB4FF278
+  "node/Output Pins[G:0]/SubElements[G:2]/ParamIndex"     ;s32    -1               
+  "node/Output Pins[G:0]/SubElements[G:3]/var/Name"       ;string "w"              
+  "node/Output Pins[G:0]/SubElements[G:3]/var/TypeGUID"   ;u64    #254786A97C52EF15
+  "node/Output Pins[G:0]/SubElements[G:3]/PinGUID/Value"  ;u64    #5DFDF542668AB16D
+  "node/Output Pins[G:0]/SubElements[G:3]/ParamIndex"     ;s32    -1               
+  "node/Params[]"                                         ;s64    0                
+
+[ Node ]
+{ Guid:G             PrefabGuid:G     }
+//-----------------  ----------------
+  #8D45F86D00000080  #D04090108BC64E9
+
+[ xProperties : 38 ]
+{ Name:s                                                  Value:?                              }
+//------------------------------------------------------  ------------------------------------
+  "node/Name"                                             ;string "Normal Map (BC5: xy in GR)"
+  "node/StepName"                                         ;string "Normal"                    
+  "node/Position/X"                                       ;f32    0                           
+  "node/Position/Y"                                       ;f32    0                           
+  "node/Input Pins[]"                                     ;s64    2                           
+  "node/Input Pins[G:0]/pin/var/Name"                     ;string "A(4)"                      
+  "node/Input Pins[G:0]/pin/var/TypeGUID"                 ;u64    #940688F48A9C32B4           
+  "node/Input Pins[G:0]/pin/PinGUID/Value"                ;u64    #84701F2C143F128C           
+  "node/Input Pins[G:0]/pin/ParamIndex"                   ;s32    -1                          
+  "node/Input Pins[G:0]/ConnectionGUID/Value"             ;u64    #8D45F86D00001007           
+  "node/Input Pins[G:1]/pin/var/Name"                     ;string "Strength(1)"               
+  "node/Input Pins[G:1]/pin/var/TypeGUID"                 ;u64    #254786A97C52EF15           
+  "node/Input Pins[G:1]/pin/PinGUID/Value"                ;u64    #2E523E30BE7B0032           
+  "node/Input Pins[G:1]/pin/ParamIndex"                   ;s32    0                           
+  "node/Input Pins[G:1]/ConnectionGUID/Value"             ;u64    #8D45F86D00001008           
+  "node/Output Pins[]"                                    ;s64    1                           
+  "node/Output Pins[G:0]/pin/var/Name"                    ;string "Normal"                    
+  "node/Output Pins[G:0]/pin/var/TypeGUID"                ;u64    #6D3F16FEEBDA4452           
+  "node/Output Pins[G:0]/pin/PinGUID/Value"               ;u64    #94B0EC2E5B02D1EA           
+  "node/Output Pins[G:0]/pin/ParamIndex"                  ;s32    -1                          
+  "node/Output Pins[G:0]/SubElements[]"                   ;s64    3                           
+  "node/Output Pins[G:0]/SubElements[G:0]/var/Name"       ;string "x"                         
+  "node/Output Pins[G:0]/SubElements[G:0]/var/TypeGUID"   ;u64    #254786A97C52EF15           
+  "node/Output Pins[G:0]/SubElements[G:0]/PinGUID/Value"  ;u64    #DB2EF3DB9FA25BD7           
+  "node/Output Pins[G:0]/SubElements[G:0]/ParamIndex"     ;s32    -1                          
+  "node/Output Pins[G:0]/SubElements[G:1]/var/Name"       ;string "y"                         
+  "node/Output Pins[G:0]/SubElements[G:1]/var/TypeGUID"   ;u64    #254786A97C52EF15           
+  "node/Output Pins[G:0]/SubElements[G:1]/PinGUID/Value"  ;u64    #6F5E5306AC07D3F9           
+  "node/Output Pins[G:0]/SubElements[G:1]/ParamIndex"     ;s32    -1                          
+  "node/Output Pins[G:0]/SubElements[G:2]/var/Name"       ;string "z"                         
+  "node/Output Pins[G:0]/SubElements[G:2]/var/TypeGUID"   ;u64    #254786A97C52EF15           
+  "node/Output Pins[G:0]/SubElements[G:2]/PinGUID/Value"  ;u64    #2ABC4002104C54A4           
+  "node/Output Pins[G:0]/SubElements[G:2]/ParamIndex"     ;s32    -1                          
+  "node/Params[]"                                         ;s64    1                           
+  "node/Params[G:0]/Name"                                 ;string "strength"                  
+  "node/Params[G:0]/Type"                                 ;enum   "FLOAT"                     
+  "node/Params[G:0]/Float"                                ;f32    1                           
+  "node/Params[G:0]/bCanExpose"                           ;bool   0                           
+
+[ Node ]
+{ Guid:G             PrefabGuid:G      }
+//-----------------  -----------------
+  #8D45F86D00000090  #7B18F369F0C2CA36
+
+[ xProperties : 22 ]
+{ Name:s                                       Value:?                   }
+//-------------------------------------------  -------------------------
+  "node/Name"                                  ;string "Float"          
+  "node/StepName"                              ;string "NormalStrength" 
+  "node/Position/X"                            ;f32    0                
+  "node/Position/Y"                            ;f32    0                
+  "node/Input Pins[]"                          ;s64    1                
+  "node/Input Pins[G:0]/pin/var/Name"          ;string "A(1)"           
+  "node/Input Pins[G:0]/pin/var/TypeGUID"      ;u64    #254786A97C52EF15
+  "node/Input Pins[G:0]/pin/PinGUID/Value"     ;u64    #65FCB2331C54F40A
+  "node/Input Pins[G:0]/pin/ParamIndex"        ;s32    0                
+  "node/Input Pins[G:0]/ConnectionGUID/Value"  ;u64    #0               
+  "node/Output Pins[]"                         ;s64    1                
+  "node/Output Pins[G:0]/pin/var/Name"         ;string "A(1)"           
+  "node/Output Pins[G:0]/pin/var/TypeGUID"     ;u64    #254786A97C52EF15
+  "node/Output Pins[G:0]/pin/PinGUID/Value"    ;u64    #35060BB716D34EC3
+  "node/Output Pins[G:0]/pin/ParamIndex"       ;s32    -1               
+  "node/Output Pins[G:0]/SubElements[]"        ;s64    0                
+  "node/Params[]"                              ;s64    1                
+  "node/Params[G:0]/Name"                      ;string "x"              
+  "node/Params[G:0]/Type"                      ;enum   "FLOAT"          
+  "node/Params[G:0]/Float"                     ;f32    1.5              
+  "node/Params[G:0]/bCanExpose"                ;bool   0                
+  "node/Params[G:0]/ParamID"                   ;u64    #65FCB2331C54F40A
+
+[ Node ]
+{ Guid:G             PrefabGuid:G      }
+//-----------------  -----------------
+  #8D45F86D000000A0  #7B18F369F0C2CA36
+
+[ xProperties : 22 ]
+{ Name:s                                       Value:?                   }
+//-------------------------------------------  -------------------------
+  "node/Name"                                  ;string "Float"          
+  "node/StepName"                              ;string "RoughnessFactor"
+  "node/Position/X"                            ;f32    0                
+  "node/Position/Y"                            ;f32    0                
+  "node/Input Pins[]"                          ;s64    1                
+  "node/Input Pins[G:0]/pin/var/Name"          ;string "A(1)"           
+  "node/Input Pins[G:0]/pin/var/TypeGUID"      ;u64    #254786A97C52EF15
+  "node/Input Pins[G:0]/pin/PinGUID/Value"     ;u64    #CAEB29DE86D04031
+  "node/Input Pins[G:0]/pin/ParamIndex"        ;s32    0                
+  "node/Input Pins[G:0]/ConnectionGUID/Value"  ;u64    #0               
+  "node/Output Pins[]"                         ;s64    1                
+  "node/Output Pins[G:0]/pin/var/Name"         ;string "A(1)"           
+  "node/Output Pins[G:0]/pin/var/TypeGUID"     ;u64    #254786A97C52EF15
+  "node/Output Pins[G:0]/pin/PinGUID/Value"    ;u64    #521AF2834A8A54C8
+  "node/Output Pins[G:0]/pin/ParamIndex"       ;s32    -1               
+  "node/Output Pins[G:0]/SubElements[]"        ;s64    0                
+  "node/Params[]"                              ;s64    1                
+  "node/Params[G:0]/Name"                      ;string "x"              
+  "node/Params[G:0]/Type"                      ;enum   "FLOAT"          
+  "node/Params[G:0]/Float"                     ;f32    1                
+  "node/Params[G:0]/bCanExpose"                ;bool   0                
+  "node/Params[G:0]/ParamID"                   ;u64    #CAEB29DE86D04031
+
+[ Node ]
+{ Guid:G             PrefabGuid:G      }
+//-----------------  -----------------
+  #8D45F86D000000B0  #7B18F369F0C2CA36
+
+[ xProperties : 22 ]
+{ Name:s                                       Value:?                   }
+//-------------------------------------------  -------------------------
+  "node/Name"                                  ;string "Float"          
+  "node/StepName"                              ;string "MetallicFactor" 
+  "node/Position/X"                            ;f32    0                
+  "node/Position/Y"                            ;f32    0                
+  "node/Input Pins[]"                          ;s64    1                
+  "node/Input Pins[G:0]/pin/var/Name"          ;string "A(1)"           
+  "node/Input Pins[G:0]/pin/var/TypeGUID"      ;u64    #254786A97C52EF15
+  "node/Input Pins[G:0]/pin/PinGUID/Value"     ;u64    #9E745295A7EF7678
+  "node/Input Pins[G:0]/pin/ParamIndex"        ;s32    0                
+  "node/Input Pins[G:0]/ConnectionGUID/Value"  ;u64    #0               
+  "node/Output Pins[]"                         ;s64    1                
+  "node/Output Pins[G:0]/pin/var/Name"         ;string "A(1)"           
+  "node/Output Pins[G:0]/pin/var/TypeGUID"     ;u64    #254786A97C52EF15
+  "node/Output Pins[G:0]/pin/PinGUID/Value"    ;u64    #C9541EF61F3F3326
+  "node/Output Pins[G:0]/pin/ParamIndex"       ;s32    -1               
+  "node/Output Pins[G:0]/SubElements[]"        ;s64    0                
+  "node/Params[]"                              ;s64    1                
+  "node/Params[G:0]/Name"                      ;string "x"              
+  "node/Params[G:0]/Type"                      ;enum   "FLOAT"          
+  "node/Params[G:0]/Float"                     ;f32    1                
+  "node/Params[G:0]/bCanExpose"                ;bool   0                
+  "node/Params[G:0]/ParamID"                   ;u64    #9E745295A7EF7678
+
+[ Node ]
+{ Guid:G             PrefabGuid:G      }
+//-----------------  -----------------
+  #8D45F86D000000C0  #7B18F369F0C2CA36
+
+[ xProperties : 21 ]
+{ Name:s                                       Value:?                   }
+//-------------------------------------------  -------------------------
+  "node/Name"                                  ;string "Float"          
+  "node/StepName"                              ;string "One"            
+  "node/Position/X"                            ;f32    0                
+  "node/Position/Y"                            ;f32    0                
+  "node/Input Pins[]"                          ;s64    1                
+  "node/Input Pins[G:0]/pin/var/Name"          ;string "A(1)"           
+  "node/Input Pins[G:0]/pin/var/TypeGUID"      ;u64    #254786A97C52EF15
+  "node/Input Pins[G:0]/pin/PinGUID/Value"     ;u64    #F9744E0A8C5C9A05
+  "node/Input Pins[G:0]/pin/ParamIndex"        ;s32    0                
+  "node/Input Pins[G:0]/ConnectionGUID/Value"  ;u64    #0               
+  "node/Output Pins[]"                         ;s64    1                
+  "node/Output Pins[G:0]/pin/var/Name"         ;string "A(1)"           
+  "node/Output Pins[G:0]/pin/var/TypeGUID"     ;u64    #254786A97C52EF15
+  "node/Output Pins[G:0]/pin/PinGUID/Value"    ;u64    #F9D8826EC68CBE1E
+  "node/Output Pins[G:0]/pin/ParamIndex"       ;s32    -1               
+  "node/Output Pins[G:0]/SubElements[]"        ;s64    0                
+  "node/Params[]"                              ;s64    1                
+  "node/Params[G:0]/Name"                      ;string "x"              
+  "node/Params[G:0]/Type"                      ;enum   "FLOAT"          
+  "node/Params[G:0]/Float"                     ;f32    1                
+  "node/Params[G:0]/bCanExpose"                ;bool   0                
+
+[ Node ]
+{ Guid:G             PrefabGuid:G      }
+//-----------------  -----------------
+  #8D45F86D000000D0  #7B18F369F0C2CA36
+
+[ xProperties : 22 ]
+{ Name:s                                       Value:?                   }
+//-------------------------------------------  -------------------------
+  "node/Name"                                  ;string "Float"          
+  "node/StepName"                              ;string "AOStrength"     
+  "node/Position/X"                            ;f32    0                
+  "node/Position/Y"                            ;f32    0                
+  "node/Input Pins[]"                          ;s64    1                
+  "node/Input Pins[G:0]/pin/var/Name"          ;string "A(1)"           
+  "node/Input Pins[G:0]/pin/var/TypeGUID"      ;u64    #254786A97C52EF15
+  "node/Input Pins[G:0]/pin/PinGUID/Value"     ;u64    #A0C9C126883ABD85
+  "node/Input Pins[G:0]/pin/ParamIndex"        ;s32    0                
+  "node/Input Pins[G:0]/ConnectionGUID/Value"  ;u64    #0               
+  "node/Output Pins[]"                         ;s64    1                
+  "node/Output Pins[G:0]/pin/var/Name"         ;string "A(1)"           
+  "node/Output Pins[G:0]/pin/var/TypeGUID"     ;u64    #254786A97C52EF15
+  "node/Output Pins[G:0]/pin/PinGUID/Value"    ;u64    #910C4F831B8847BE
+  "node/Output Pins[G:0]/pin/ParamIndex"       ;s32    -1               
+  "node/Output Pins[G:0]/SubElements[]"        ;s64    0                
+  "node/Params[]"                              ;s64    1                
+  "node/Params[G:0]/Name"                      ;string "x"              
+  "node/Params[G:0]/Type"                      ;enum   "FLOAT"          
+  "node/Params[G:0]/Float"                     ;f32    1                
+  "node/Params[G:0]/bCanExpose"                ;bool   0                
+  "node/Params[G:0]/ParamID"                   ;u64    #A0C9C126883ABD85
+
+[ Node ]
+{ Guid:G             PrefabGuid:G      }
+//-----------------  -----------------
+  #8D45F86D000000E0  #F76D1CA2230CC056
+
+[ xProperties : 68 ]
+{ Name:s                                                  Value:?                   }
+//------------------------------------------------------  -------------------------
+  "node/Name"                                             ;string "Vec4"           
+  "node/StepName"                                         ;string "BaseColorFactor"
+  "node/Position/X"                                       ;f32    0                
+  "node/Position/Y"                                       ;f32    0                
+  "node/Input Pins[]"                                     ;s64    4                
+  "node/Input Pins[G:0]/pin/var/Name"                     ;string "X(1)"           
+  "node/Input Pins[G:0]/pin/var/TypeGUID"                 ;u64    #254786A97C52EF15
+  "node/Input Pins[G:0]/pin/PinGUID/Value"                ;u64    #64B8FEC46B58F31E
+  "node/Input Pins[G:0]/pin/ParamIndex"                   ;s32    0                
+  "node/Input Pins[G:0]/ConnectionGUID/Value"             ;u64    #0               
+  "node/Input Pins[G:1]/pin/var/Name"                     ;string "Y(1)"           
+  "node/Input Pins[G:1]/pin/var/TypeGUID"                 ;u64    #254786A97C52EF15
+  "node/Input Pins[G:1]/pin/PinGUID/Value"                ;u64    #8AAB21D9E314A2C1
+  "node/Input Pins[G:1]/pin/ParamIndex"                   ;s32    1                
+  "node/Input Pins[G:1]/ConnectionGUID/Value"             ;u64    #0               
+  "node/Input Pins[G:2]/pin/var/Name"                     ;string "Z(1)"           
+  "node/Input Pins[G:2]/pin/var/TypeGUID"                 ;u64    #254786A97C52EF15
+  "node/Input Pins[G:2]/pin/PinGUID/Value"                ;u64    #EF7E12D13B324787
+  "node/Input Pins[G:2]/pin/ParamIndex"                   ;s32    2                
+  "node/Input Pins[G:2]/ConnectionGUID/Value"             ;u64    #0               
+  "node/Input Pins[G:3]/pin/var/Name"                     ;string "W(1)"           
+  "node/Input Pins[G:3]/pin/var/TypeGUID"                 ;u64    #254786A97C52EF15
+  "node/Input Pins[G:3]/pin/PinGUID/Value"                ;u64    #A08F3EA9CADC2082
+  "node/Input Pins[G:3]/pin/ParamIndex"                   ;s32    3                
+  "node/Input Pins[G:3]/ConnectionGUID/Value"             ;u64    #0               
+  "node/Output Pins[]"                                    ;s64    1                
+  "node/Output Pins[G:0]/pin/var/Name"                    ;string "Vec4"           
+  "node/Output Pins[G:0]/pin/var/TypeGUID"                ;u64    #940688F48A9C32B4
+  "node/Output Pins[G:0]/pin/PinGUID/Value"               ;u64    #E051148020BAC3B8
+  "node/Output Pins[G:0]/pin/ParamIndex"                  ;s32    -1               
+  "node/Output Pins[G:0]/SubElements[]"                   ;s64    4                
+  "node/Output Pins[G:0]/SubElements[G:0]/var/Name"       ;string "x"              
+  "node/Output Pins[G:0]/SubElements[G:0]/var/TypeGUID"   ;u64    #254786A97C52EF15
+  "node/Output Pins[G:0]/SubElements[G:0]/PinGUID/Value"  ;u64    #E53A928F1573E6EB
+  "node/Output Pins[G:0]/SubElements[G:0]/ParamIndex"     ;s32    -1               
+  "node/Output Pins[G:0]/SubElements[G:1]/var/Name"       ;string "y"              
+  "node/Output Pins[G:0]/SubElements[G:1]/var/TypeGUID"   ;u64    #254786A97C52EF15
+  "node/Output Pins[G:0]/SubElements[G:1]/PinGUID/Value"  ;u64    #5AD5D41342D33333
+  "node/Output Pins[G:0]/SubElements[G:1]/ParamIndex"     ;s32    -1               
+  "node/Output Pins[G:0]/SubElements[G:2]/var/Name"       ;string "z"              
+  "node/Output Pins[G:0]/SubElements[G:2]/var/TypeGUID"   ;u64    #254786A97C52EF15
+  "node/Output Pins[G:0]/SubElements[G:2]/PinGUID/Value"  ;u64    #A0E30D29B627069B
+  "node/Output Pins[G:0]/SubElements[G:2]/ParamIndex"     ;s32    -1               
+  "node/Output Pins[G:0]/SubElements[G:3]/var/Name"       ;string "w"              
+  "node/Output Pins[G:0]/SubElements[G:3]/var/TypeGUID"   ;u64    #254786A97C52EF15
+  "node/Output Pins[G:0]/SubElements[G:3]/PinGUID/Value"  ;u64    #C8A2A4C5ED678FE 
+  "node/Output Pins[G:0]/SubElements[G:3]/ParamIndex"     ;s32    -1               
+  "node/Params[]"                                         ;s64    4                
+  "node/Params[G:0]/Name"                                 ;string "x"              
+  "node/Params[G:0]/Type"                                 ;enum   "FLOAT"          
+  "node/Params[G:0]/Float"                                ;f32    1                
+  "node/Params[G:0]/bCanExpose"                           ;bool   0                
+  "node/Params[G:0]/ParamID"                              ;u64    #64B8FEC46B58F31E
+  "node/Params[G:1]/Name"                                 ;string "y"              
+  "node/Params[G:1]/Type"                                 ;enum   "FLOAT"          
+  "node/Params[G:1]/Float"                                ;f32    1                
+  "node/Params[G:1]/bCanExpose"                           ;bool   0                
+  "node/Params[G:1]/ParamID"                              ;u64    #64B8FEC46B58F31E
+  "node/Params[G:2]/Name"                                 ;string "z"              
+  "node/Params[G:2]/Type"                                 ;enum   "FLOAT"          
+  "node/Params[G:2]/Float"                                ;f32    1                
+  "node/Params[G:2]/bCanExpose"                           ;bool   0                
+  "node/Params[G:2]/ParamID"                              ;u64    #64B8FEC46B58F31E
+  "node/Params[G:3]/Name"                                 ;string "w"              
+  "node/Params[G:3]/Type"                                 ;enum   "FLOAT"          
+  "node/Params[G:3]/Float"                                ;f32    1                
+  "node/Params[G:3]/bCanExpose"                           ;bool   0                
+  "node/Params[G:3]/ParamID"                              ;u64    #64B8FEC46B58F31E
+
+[ Node ]
+{ Guid:G             PrefabGuid:G      }
+//-----------------  -----------------
+  #8D45F86D000000F0  #F76D1CA2230CC056
+
+[ xProperties : 68 ]
+{ Name:s                                                  Value:?                   }
+//------------------------------------------------------  -------------------------
+  "node/Name"                                             ;string "Vec4"           
+  "node/StepName"                                         ;string "EmissiveColor"  
+  "node/Position/X"                                       ;f32    0                
+  "node/Position/Y"                                       ;f32    0                
+  "node/Input Pins[]"                                     ;s64    4                
+  "node/Input Pins[G:0]/pin/var/Name"                     ;string "X(1)"           
+  "node/Input Pins[G:0]/pin/var/TypeGUID"                 ;u64    #254786A97C52EF15
+  "node/Input Pins[G:0]/pin/PinGUID/Value"                ;u64    #CA5A41590BB69AD4
+  "node/Input Pins[G:0]/pin/ParamIndex"                   ;s32    0                
+  "node/Input Pins[G:0]/ConnectionGUID/Value"             ;u64    #0               
+  "node/Input Pins[G:1]/pin/var/Name"                     ;string "Y(1)"           
+  "node/Input Pins[G:1]/pin/var/TypeGUID"                 ;u64    #254786A97C52EF15
+  "node/Input Pins[G:1]/pin/PinGUID/Value"                ;u64    #932057DD4FD719F2
+  "node/Input Pins[G:1]/pin/ParamIndex"                   ;s32    1                
+  "node/Input Pins[G:1]/ConnectionGUID/Value"             ;u64    #0               
+  "node/Input Pins[G:2]/pin/var/Name"                     ;string "Z(1)"           
+  "node/Input Pins[G:2]/pin/var/TypeGUID"                 ;u64    #254786A97C52EF15
+  "node/Input Pins[G:2]/pin/PinGUID/Value"                ;u64    #C9DB274EEAD0E6C5
+  "node/Input Pins[G:2]/pin/ParamIndex"                   ;s32    2                
+  "node/Input Pins[G:2]/ConnectionGUID/Value"             ;u64    #0               
+  "node/Input Pins[G:3]/pin/var/Name"                     ;string "W(1)"           
+  "node/Input Pins[G:3]/pin/var/TypeGUID"                 ;u64    #254786A97C52EF15
+  "node/Input Pins[G:3]/pin/PinGUID/Value"                ;u64    #7222F96BF63F8029
+  "node/Input Pins[G:3]/pin/ParamIndex"                   ;s32    3                
+  "node/Input Pins[G:3]/ConnectionGUID/Value"             ;u64    #0               
+  "node/Output Pins[]"                                    ;s64    1                
+  "node/Output Pins[G:0]/pin/var/Name"                    ;string "Vec4"           
+  "node/Output Pins[G:0]/pin/var/TypeGUID"                ;u64    #940688F48A9C32B4
+  "node/Output Pins[G:0]/pin/PinGUID/Value"               ;u64    #86D323671C2D3F81
+  "node/Output Pins[G:0]/pin/ParamIndex"                  ;s32    -1               
+  "node/Output Pins[G:0]/SubElements[]"                   ;s64    4                
+  "node/Output Pins[G:0]/SubElements[G:0]/var/Name"       ;string "x"              
+  "node/Output Pins[G:0]/SubElements[G:0]/var/TypeGUID"   ;u64    #254786A97C52EF15
+  "node/Output Pins[G:0]/SubElements[G:0]/PinGUID/Value"  ;u64    #7D25E80341E8D34C
+  "node/Output Pins[G:0]/SubElements[G:0]/ParamIndex"     ;s32    -1               
+  "node/Output Pins[G:0]/SubElements[G:1]/var/Name"       ;string "y"              
+  "node/Output Pins[G:0]/SubElements[G:1]/var/TypeGUID"   ;u64    #254786A97C52EF15
+  "node/Output Pins[G:0]/SubElements[G:1]/PinGUID/Value"  ;u64    #1CAFEC1DC32E5499
+  "node/Output Pins[G:0]/SubElements[G:1]/ParamIndex"     ;s32    -1               
+  "node/Output Pins[G:0]/SubElements[G:2]/var/Name"       ;string "z"              
+  "node/Output Pins[G:0]/SubElements[G:2]/var/TypeGUID"   ;u64    #254786A97C52EF15
+  "node/Output Pins[G:0]/SubElements[G:2]/PinGUID/Value"  ;u64    #ACD2A7F58A2DD8E5
+  "node/Output Pins[G:0]/SubElements[G:2]/ParamIndex"     ;s32    -1               
+  "node/Output Pins[G:0]/SubElements[G:3]/var/Name"       ;string "w"              
+  "node/Output Pins[G:0]/SubElements[G:3]/var/TypeGUID"   ;u64    #254786A97C52EF15
+  "node/Output Pins[G:0]/SubElements[G:3]/PinGUID/Value"  ;u64    #F10F7162B7EDFE6A
+  "node/Output Pins[G:0]/SubElements[G:3]/ParamIndex"     ;s32    -1               
+  "node/Params[]"                                         ;s64    4                
+  "node/Params[G:0]/Name"                                 ;string "x"              
+  "node/Params[G:0]/Type"                                 ;enum   "FLOAT"          
+  "node/Params[G:0]/Float"                                ;f32    1                
+  "node/Params[G:0]/bCanExpose"                           ;bool   0                
+  "node/Params[G:0]/ParamID"                              ;u64    #CA5A41590BB69AD4
+  "node/Params[G:1]/Name"                                 ;string "y"              
+  "node/Params[G:1]/Type"                                 ;enum   "FLOAT"          
+  "node/Params[G:1]/Float"                                ;f32    1                
+  "node/Params[G:1]/bCanExpose"                           ;bool   0                
+  "node/Params[G:1]/ParamID"                              ;u64    #CA5A41590BB69AD4
+  "node/Params[G:2]/Name"                                 ;string "z"              
+  "node/Params[G:2]/Type"                                 ;enum   "FLOAT"          
+  "node/Params[G:2]/Float"                                ;f32    1                
+  "node/Params[G:2]/bCanExpose"                           ;bool   0                
+  "node/Params[G:2]/ParamID"                              ;u64    #CA5A41590BB69AD4
+  "node/Params[G:3]/Name"                                 ;string "w"              
+  "node/Params[G:3]/Type"                                 ;enum   "FLOAT"          
+  "node/Params[G:3]/Float"                                ;f32    1                
+  "node/Params[G:3]/bCanExpose"                           ;bool   0                
+  "node/Params[G:3]/ParamID"                              ;u64    #CA5A41590BB69AD4
+
+[ Node ]
+{ Guid:G             PrefabGuid:G      }
+//-----------------  -----------------
+  #8D45F86D00000100  #85FFBB7724DCDD00
+
+[ xProperties : 34 ]
+{ Name:s                                                  Value:?                   }
+//------------------------------------------------------  -------------------------
+  "node/Name"                                             ;string "Vec3 Multiply"  
+  "node/StepName"                                         ;string "BaseColor"      
+  "node/Position/X"                                       ;f32    0                
+  "node/Position/Y"                                       ;f32    0                
+  "node/Input Pins[]"                                     ;s64    2                
+  "node/Input Pins[G:0]/pin/var/Name"                     ;string "A(3)"           
+  "node/Input Pins[G:0]/pin/var/TypeGUID"                 ;u64    #6D3F16FEEBDA4452
+  "node/Input Pins[G:0]/pin/PinGUID/Value"                ;u64    #A9A918D740D6E30B
+  "node/Input Pins[G:0]/pin/ParamIndex"                   ;s32    -1               
+  "node/Input Pins[G:0]/ConnectionGUID/Value"             ;u64    #8D45F86D0000101D
+  "node/Input Pins[G:1]/pin/var/Name"                     ;string "B(3)"           
+  "node/Input Pins[G:1]/pin/var/TypeGUID"                 ;u64    #6D3F16FEEBDA4452
+  "node/Input Pins[G:1]/pin/PinGUID/Value"                ;u64    #4F9EA88CE91A91B4
+  "node/Input Pins[G:1]/pin/ParamIndex"                   ;s32    -1               
+  "node/Input Pins[G:1]/ConnectionGUID/Value"             ;u64    #8D45F86D0000101E
+  "node/Output Pins[]"                                    ;s64    1                
+  "node/Output Pins[G:0]/pin/var/Name"                    ;string "Vec3"           
+  "node/Output Pins[G:0]/pin/var/TypeGUID"                ;u64    #6D3F16FEEBDA4452
+  "node/Output Pins[G:0]/pin/PinGUID/Value"               ;u64    #EE0AF83BB4DEFD8E
+  "node/Output Pins[G:0]/pin/ParamIndex"                  ;s32    -1               
+  "node/Output Pins[G:0]/SubElements[]"                   ;s64    3                
+  "node/Output Pins[G:0]/SubElements[G:0]/var/Name"       ;string "x"              
+  "node/Output Pins[G:0]/SubElements[G:0]/var/TypeGUID"   ;u64    #254786A97C52EF15
+  "node/Output Pins[G:0]/SubElements[G:0]/PinGUID/Value"  ;u64    #D21EAC9F1ED5C0BC
+  "node/Output Pins[G:0]/SubElements[G:0]/ParamIndex"     ;s32    -1               
+  "node/Output Pins[G:0]/SubElements[G:1]/var/Name"       ;string "y"              
+  "node/Output Pins[G:0]/SubElements[G:1]/var/TypeGUID"   ;u64    #254786A97C52EF15
+  "node/Output Pins[G:0]/SubElements[G:1]/PinGUID/Value"  ;u64    #2077AF47CF6296A0
+  "node/Output Pins[G:0]/SubElements[G:1]/ParamIndex"     ;s32    -1               
+  "node/Output Pins[G:0]/SubElements[G:2]/var/Name"       ;string "z"              
+  "node/Output Pins[G:0]/SubElements[G:2]/var/TypeGUID"   ;u64    #254786A97C52EF15
+  "node/Output Pins[G:0]/SubElements[G:2]/PinGUID/Value"  ;u64    #184173BA3EEFB0C9
+  "node/Output Pins[G:0]/SubElements[G:2]/ParamIndex"     ;s32    -1               
+  "node/Params[]"                                         ;s64    0                
+
+[ Node ]
+{ Guid:G             PrefabGuid:G      }
+//-----------------  -----------------
+  #8D45F86D00000110  #85FFBB7724DCDD00
+
+[ xProperties : 34 ]
+{ Name:s                                                  Value:?                   }
+//------------------------------------------------------  -------------------------
+  "node/Name"                                             ;string "Vec3 Multiply"  
+  "node/StepName"                                         ;string "EmissiveTint"   
+  "node/Position/X"                                       ;f32    0                
+  "node/Position/Y"                                       ;f32    0                
+  "node/Input Pins[]"                                     ;s64    2                
+  "node/Input Pins[G:0]/pin/var/Name"                     ;string "A(3)"           
+  "node/Input Pins[G:0]/pin/var/TypeGUID"                 ;u64    #6D3F16FEEBDA4452
+  "node/Input Pins[G:0]/pin/PinGUID/Value"                ;u64    #522536CB1EBAD349
+  "node/Input Pins[G:0]/pin/ParamIndex"                   ;s32    -1               
+  "node/Input Pins[G:0]/ConnectionGUID/Value"             ;u64    #8D45F86D00001012
+  "node/Input Pins[G:1]/pin/var/Name"                     ;string "B(3)"           
+  "node/Input Pins[G:1]/pin/var/TypeGUID"                 ;u64    #6D3F16FEEBDA4452
+  "node/Input Pins[G:1]/pin/PinGUID/Value"                ;u64    #2E2C31383576CD56
+  "node/Input Pins[G:1]/pin/ParamIndex"                   ;s32    -1               
+  "node/Input Pins[G:1]/ConnectionGUID/Value"             ;u64    #8D45F86D00001013
+  "node/Output Pins[]"                                    ;s64    1                
+  "node/Output Pins[G:0]/pin/var/Name"                    ;string "Vec3"           
+  "node/Output Pins[G:0]/pin/var/TypeGUID"                ;u64    #6D3F16FEEBDA4452
+  "node/Output Pins[G:0]/pin/PinGUID/Value"               ;u64    #2DED123AB3D6ABFA
+  "node/Output Pins[G:0]/pin/ParamIndex"                  ;s32    -1               
+  "node/Output Pins[G:0]/SubElements[]"                   ;s64    3                
+  "node/Output Pins[G:0]/SubElements[G:0]/var/Name"       ;string "x"              
+  "node/Output Pins[G:0]/SubElements[G:0]/var/TypeGUID"   ;u64    #254786A97C52EF15
+  "node/Output Pins[G:0]/SubElements[G:0]/PinGUID/Value"  ;u64    #7A8BC6B41B57C367
+  "node/Output Pins[G:0]/SubElements[G:0]/ParamIndex"     ;s32    -1               
+  "node/Output Pins[G:0]/SubElements[G:1]/var/Name"       ;string "y"              
+  "node/Output Pins[G:0]/SubElements[G:1]/var/TypeGUID"   ;u64    #254786A97C52EF15
+  "node/Output Pins[G:0]/SubElements[G:1]/PinGUID/Value"  ;u64    #AED885FA738DE3AA
+  "node/Output Pins[G:0]/SubElements[G:1]/ParamIndex"     ;s32    -1               
+  "node/Output Pins[G:0]/SubElements[G:2]/var/Name"       ;string "z"              
+  "node/Output Pins[G:0]/SubElements[G:2]/var/TypeGUID"   ;u64    #254786A97C52EF15
+  "node/Output Pins[G:0]/SubElements[G:2]/PinGUID/Value"  ;u64    #E9D13B9A9CBDB331
+  "node/Output Pins[G:0]/SubElements[G:2]/ParamIndex"     ;s32    -1               
+  "node/Params[]"                                         ;s64    0                
+
+[ Node ]
+{ Guid:G             PrefabGuid:G      }
+//-----------------  -----------------
+  #8D45F86D00000120  #85FFBB7724DCDD00
+
+[ xProperties : 34 ]
+{ Name:s                                                  Value:?                   }
+//------------------------------------------------------  -------------------------
+  "node/Name"                                             ;string "Vec3 Multiply"  
+  "node/StepName"                                         ;string "Emissive"       
+  "node/Position/X"                                       ;f32    0                
+  "node/Position/Y"                                       ;f32    0                
+  "node/Input Pins[]"                                     ;s64    2                
+  "node/Input Pins[G:0]/pin/var/Name"                     ;string "A(3)"           
+  "node/Input Pins[G:0]/pin/var/TypeGUID"                 ;u64    #6D3F16FEEBDA4452
+  "node/Input Pins[G:0]/pin/PinGUID/Value"                ;u64    #85D6D3CA5BF06FD6
+  "node/Input Pins[G:0]/pin/ParamIndex"                   ;s32    -1               
+  "node/Input Pins[G:0]/ConnectionGUID/Value"             ;u64    #8D45F86D00001014
+  "node/Input Pins[G:1]/pin/var/Name"                     ;string "B(3)"           
+  "node/Input Pins[G:1]/pin/var/TypeGUID"                 ;u64    #6D3F16FEEBDA4452
+  "node/Input Pins[G:1]/pin/PinGUID/Value"                ;u64    #484BD4C6A31C0464
+  "node/Input Pins[G:1]/pin/ParamIndex"                   ;s32    -1               
+  "node/Input Pins[G:1]/ConnectionGUID/Value"             ;u64    #8D45F86D00001015
+  "node/Output Pins[]"                                    ;s64    1                
+  "node/Output Pins[G:0]/pin/var/Name"                    ;string "Vec3"           
+  "node/Output Pins[G:0]/pin/var/TypeGUID"                ;u64    #6D3F16FEEBDA4452
+  "node/Output Pins[G:0]/pin/PinGUID/Value"               ;u64    #65AEE237FE71F3A7
+  "node/Output Pins[G:0]/pin/ParamIndex"                  ;s32    -1               
+  "node/Output Pins[G:0]/SubElements[]"                   ;s64    3                
+  "node/Output Pins[G:0]/SubElements[G:0]/var/Name"       ;string "x"              
+  "node/Output Pins[G:0]/SubElements[G:0]/var/TypeGUID"   ;u64    #254786A97C52EF15
+  "node/Output Pins[G:0]/SubElements[G:0]/PinGUID/Value"  ;u64    #DDF2CBFBA6C8EF44
+  "node/Output Pins[G:0]/SubElements[G:0]/ParamIndex"     ;s32    -1               
+  "node/Output Pins[G:0]/SubElements[G:1]/var/Name"       ;string "y"              
+  "node/Output Pins[G:0]/SubElements[G:1]/var/TypeGUID"   ;u64    #254786A97C52EF15
+  "node/Output Pins[G:0]/SubElements[G:1]/PinGUID/Value"  ;u64    #C7A06254785F8BB3
+  "node/Output Pins[G:0]/SubElements[G:1]/ParamIndex"     ;s32    -1               
+  "node/Output Pins[G:0]/SubElements[G:2]/var/Name"       ;string "z"              
+  "node/Output Pins[G:0]/SubElements[G:2]/var/TypeGUID"   ;u64    #254786A97C52EF15
+  "node/Output Pins[G:0]/SubElements[G:2]/PinGUID/Value"  ;u64    #4FF37B0B67F49A8E
+  "node/Output Pins[G:0]/SubElements[G:2]/ParamIndex"     ;s32    -1               
+  "node/Params[]"                                         ;s64    0                
+
+[ Node ]
+{ Guid:G             PrefabGuid:G      }
+//-----------------  -----------------
+  #8D45F86D00000130  #6B4E8B256C38D9B3
+
+[ xProperties : 22 ]
+{ Name:s                                       Value:?                   }
+//-------------------------------------------  -------------------------
+  "node/Name"                                  ;string "Float Multiply" 
+  "node/StepName"                              ;string "Roughness"      
+  "node/Position/X"                            ;f32    0                
+  "node/Position/Y"                            ;f32    0                
+  "node/Input Pins[]"                          ;s64    2                
+  "node/Input Pins[G:0]/pin/var/Name"          ;string "A(1)"           
+  "node/Input Pins[G:0]/pin/var/TypeGUID"      ;u64    #254786A97C52EF15
+  "node/Input Pins[G:0]/pin/PinGUID/Value"     ;u64    #CE12A955FA21266A
+  "node/Input Pins[G:0]/pin/ParamIndex"        ;s32    -1               
+  "node/Input Pins[G:0]/ConnectionGUID/Value"  ;u64    #8D45F86D0000100B
+  "node/Input Pins[G:1]/pin/var/Name"          ;string "B(1)"           
+  "node/Input Pins[G:1]/pin/var/TypeGUID"      ;u64    #254786A97C52EF15
+  "node/Input Pins[G:1]/pin/PinGUID/Value"     ;u64    #994047B8A8591398
+  "node/Input Pins[G:1]/pin/ParamIndex"        ;s32    -1               
+  "node/Input Pins[G:1]/ConnectionGUID/Value"  ;u64    #8D45F86D0000100C
+  "node/Output Pins[]"                         ;s64    1                
+  "node/Output Pins[G:0]/pin/var/Name"         ;string "A(1)"           
+  "node/Output Pins[G:0]/pin/var/TypeGUID"     ;u64    #254786A97C52EF15
+  "node/Output Pins[G:0]/pin/PinGUID/Value"    ;u64    #DF59E005916759A2
+  "node/Output Pins[G:0]/pin/ParamIndex"       ;s32    -1               
+  "node/Output Pins[G:0]/SubElements[]"        ;s64    0                
+  "node/Params[]"                              ;s64    0                
+
+[ Node ]
+{ Guid:G             PrefabGuid:G      }
+//-----------------  -----------------
+  #8D45F86D00000140  #6B4E8B256C38D9B3
+
+[ xProperties : 22 ]
+{ Name:s                                       Value:?                   }
+//-------------------------------------------  -------------------------
+  "node/Name"                                  ;string "Float Multiply" 
+  "node/StepName"                              ;string "Metallic"       
+  "node/Position/X"                            ;f32    0                
+  "node/Position/Y"                            ;f32    0                
+  "node/Input Pins[]"                          ;s64    2                
+  "node/Input Pins[G:0]/pin/var/Name"          ;string "A(1)"           
+  "node/Input Pins[G:0]/pin/var/TypeGUID"      ;u64    #254786A97C52EF15
+  "node/Input Pins[G:0]/pin/PinGUID/Value"     ;u64    #563141FB6642FAD3
+  "node/Input Pins[G:0]/pin/ParamIndex"        ;s32    -1               
+  "node/Input Pins[G:0]/ConnectionGUID/Value"  ;u64    #8D45F86D0000100D
+  "node/Input Pins[G:1]/pin/var/Name"          ;string "B(1)"           
+  "node/Input Pins[G:1]/pin/var/TypeGUID"      ;u64    #254786A97C52EF15
+  "node/Input Pins[G:1]/pin/PinGUID/Value"     ;u64    #1E3E94D0B51AB604
+  "node/Input Pins[G:1]/pin/ParamIndex"        ;s32    -1               
+  "node/Input Pins[G:1]/ConnectionGUID/Value"  ;u64    #8D45F86D0000100E
+  "node/Output Pins[]"                         ;s64    1                
+  "node/Output Pins[G:0]/pin/var/Name"         ;string "A(1)"           
+  "node/Output Pins[G:0]/pin/var/TypeGUID"     ;u64    #254786A97C52EF15
+  "node/Output Pins[G:0]/pin/PinGUID/Value"    ;u64    #9986318D05FD52E5
+  "node/Output Pins[G:0]/pin/ParamIndex"       ;s32    -1               
+  "node/Output Pins[G:0]/SubElements[]"        ;s64    0                
+  "node/Params[]"                              ;s64    0                
+
+[ Node ]
+{ Guid:G             PrefabGuid:G      }
+//-----------------  -----------------
+  #8D45F86D00000150  #80CEB2774D2FC71C
+
+[ xProperties : 27 ]
+{ Name:s                                       Value:?                   }
+//-------------------------------------------  -------------------------
+  "node/Name"                                  ;string "Float Mix"      
+  "node/StepName"                              ;string "AO"             
+  "node/Position/X"                            ;f32    0                
+  "node/Position/Y"                            ;f32    0                
+  "node/Input Pins[]"                          ;s64    3                
+  "node/Input Pins[G:0]/pin/var/Name"          ;string "A(1)"           
+  "node/Input Pins[G:0]/pin/var/TypeGUID"      ;u64    #254786A97C52EF15
+  "node/Input Pins[G:0]/pin/PinGUID/Value"     ;u64    #8C46B45CBD9F30C0
+  "node/Input Pins[G:0]/pin/ParamIndex"        ;s32    -1               
+  "node/Input Pins[G:0]/ConnectionGUID/Value"  ;u64    #8D45F86D0000100F
+  "node/Input Pins[G:1]/pin/var/Name"          ;string "B(1)"           
+  "node/Input Pins[G:1]/pin/var/TypeGUID"      ;u64    #254786A97C52EF15
+  "node/Input Pins[G:1]/pin/PinGUID/Value"     ;u64    #1AF28D319A9450E4
+  "node/Input Pins[G:1]/pin/ParamIndex"        ;s32    -1               
+  "node/Input Pins[G:1]/ConnectionGUID/Value"  ;u64    #8D45F86D00001010
+  "node/Input Pins[G:2]/pin/var/Name"          ;string "T(1)"           
+  "node/Input Pins[G:2]/pin/var/TypeGUID"      ;u64    #254786A97C52EF15
+  "node/Input Pins[G:2]/pin/PinGUID/Value"     ;u64    #85B38AD99042168C
+  "node/Input Pins[G:2]/pin/ParamIndex"        ;s32    -1               
+  "node/Input Pins[G:2]/ConnectionGUID/Value"  ;u64    #8D45F86D00001011
+  "node/Output Pins[]"                         ;s64    1                
+  "node/Output Pins[G:0]/pin/var/Name"         ;string "A(1)"           
+  "node/Output Pins[G:0]/pin/var/TypeGUID"     ;u64    #254786A97C52EF15
+  "node/Output Pins[G:0]/pin/PinGUID/Value"    ;u64    #C6304923700370C9
+  "node/Output Pins[G:0]/pin/ParamIndex"       ;s32    -1               
+  "node/Output Pins[G:0]/SubElements[]"        ;s64    0                
+  "node/Params[]"                              ;s64    0                
+
+[ Node ]
+{ Guid:G             PrefabGuid:G      }
+//-----------------  -----------------
+  #8D45F86D00000160  #8AB3C006E6A91F69
+
 [ xProperties : 58 ]
-{ Name:s                                       Value:?                                                                        }
-//-------------------------------------------  ------------------------------------------------------------------------------
-  "node/Name"                                  ;string    "Output: Shader File"                                              
-  "node/Position/X"                            ;f32       664                                                                
-  "node/Position/Y"                            ;f32       281                                                                
-  "node/Input Pins[]"                          ;s64       5                                                                  
-  "node/Input Pins[G:0]/pin/var/Name"          ;string    "Shader File"                                                      
-  "node/Input Pins[G:0]/pin/var/TypeGUID"      ;u64       #6D3F16FEEBDA4452                                                  
-  "node/Input Pins[G:0]/pin/PinGUID/Value"     ;u64       #9FFB803780172001                                                  
-  "node/Input Pins[G:0]/pin/ParamIndex"        ;s32       0                                                                  
-  "node/Input Pins[G:0]/ConnectionGUID/Value"  ;u64       #0                                                                 
-  "node/Input Pins[G:1]/pin/var/Name"          ;string    "SamplerShadowMap"                                                 
-  "node/Input Pins[G:1]/pin/var/TypeGUID"      ;u64       #3380EA40A8C5EC19                                                  
-  "node/Input Pins[G:1]/pin/PinGUID/Value"     ;u64       #64                                                                
-  "node/Input Pins[G:1]/pin/ParamIndex"        ;s32       1                                                                  
-  "node/Input Pins[G:1]/ConnectionGUID/Value"  ;u64       #0                                                                 
-  "node/Input Pins[G:2]/pin/var/Name"          ;string    "SamplerNormal"                                                    
-  "node/Input Pins[G:2]/pin/var/TypeGUID"      ;u64       #3380EA40A8C5EC19                                                  
-  "node/Input Pins[G:2]/pin/PinGUID/Value"     ;u64       #6E                                                                
-  "node/Input Pins[G:2]/pin/ParamIndex"        ;s32       2                                                                  
-  "node/Input Pins[G:2]/ConnectionGUID/Value"  ;u64       #0                                                                 
-  "node/Input Pins[G:3]/pin/var/Name"          ;string    "SamplerAlbedo"                                                    
-  "node/Input Pins[G:3]/pin/var/TypeGUID"      ;u64       #3380EA40A8C5EC19                                                  
-  "node/Input Pins[G:3]/pin/PinGUID/Value"     ;u64       #78                                                                
-  "node/Input Pins[G:3]/pin/ParamIndex"        ;s32       3                                                                  
-  "node/Input Pins[G:3]/ConnectionGUID/Value"  ;u64       #0                                                                 
-  "node/Input Pins[G:4]/pin/var/Name"          ;string    "SamplerORME"                                                      
-  "node/Input Pins[G:4]/pin/var/TypeGUID"      ;u64       #3380EA40A8C5EC19                                                  
-  "node/Input Pins[G:4]/pin/PinGUID/Value"     ;u64       #82                                                                
-  "node/Input Pins[G:4]/pin/ParamIndex"        ;s32       4                                                                  
-  "node/Input Pins[G:4]/ConnectionGUID/Value"  ;u64       #0                                                                 
-  "node/Output Pins[]"                         ;s64       0                                                                  
-  "node/Params[]"                              ;s64       5                                                                  
-  "node/Params[G:0]/Name"                      ;string    "Shader File"                                                      
-  "node/Params[G:0]/Type"                      ;enum      "FILE"                                                             
-  "node/Params[G:0]/File"                      ;wstring   "Assets\\DefaultAssets\\Materials\\mb_material_pbr_alpha_test.glsl"
-  "node/Params[G:0]/bCanExpose"                ;bool      0                                                                  
-  "node/Params[G:1]/Name"                      ;string    "SamplerShadowMap"                                                 
-  "node/Params[G:1]/Type"                      ;enum      "TEXTURE RESOURCE"                                                 
-  "node/Params[G:1]/TextureRef"                ;full_guid #A8AC000D81D711F3 #6701D481518BD833                                
-  "node/Params[G:1]/bCanExpose"                ;bool      1                                                                  
-  "node/Params[G:1]/bExpose"                   ;bool      0                                                                  
-  "node/Params[G:2]/Name"                      ;string    "SamplerNormal"                                                    
-  "node/Params[G:2]/Type"                      ;enum      "TEXTURE RESOURCE"                                                 
-  "node/Params[G:2]/TextureRef"                ;full_guid #189E50CFD884005F #6701D481518BD833                                
-  "node/Params[G:2]/bCanExpose"                ;bool      1                                                                  
-  "node/Params[G:2]/bExpose"                   ;bool      1                                                                  
-  "node/Params[G:2]/ExposeName"                ;string    "SamplerNormal"                                                    
-  "node/Params[G:3]/Name"                      ;string    "SamplerAlbedo"                                                    
-  "node/Params[G:3]/Type"                      ;enum      "TEXTURE RESOURCE"                                                 
-  "node/Params[G:3]/TextureRef"                ;full_guid #6542000CC1D6FB6F #6701D481518BD833                                
-  "node/Params[G:3]/bCanExpose"                ;bool      1                                                                  
-  "node/Params[G:3]/bExpose"                   ;bool      1                                                                  
-  "node/Params[G:3]/ExposeName"                ;string    "SamplerAlbedo"                                                    
-  "node/Params[G:4]/Name"                      ;string    "SamplerORME"                                                      
-  "node/Params[G:4]/Type"                      ;enum      "TEXTURE RESOURCE"                                                 
-  "node/Params[G:4]/TextureRef"                ;full_guid #DEFA017E0E0E0E01 #6701D481518BD833                                
-  "node/Params[G:4]/bCanExpose"                ;bool      1                                                                  
-  "node/Params[G:4]/bExpose"                   ;bool      1                                                                  
-  "node/Params[G:4]/ExposeName"                ;string    "SamplerORME"                                                      
+{ Name:s                                       Value:?                   }
+//-------------------------------------------  -------------------------
+  "node/Name"                                  ;string "Output: PBR"    
+  "node/StepName"                              ;string "Out"            
+  "node/Position/X"                            ;f32    0                
+  "node/Position/Y"                            ;f32    0                
+  "node/Input Pins[]"                          ;s64    7                
+  "node/Input Pins[G:0]/pin/var/Name"          ;string "Albedo(3)"      
+  "node/Input Pins[G:0]/pin/var/TypeGUID"      ;u64    #6D3F16FEEBDA4452
+  "node/Input Pins[G:0]/pin/PinGUID/Value"     ;u64    #29D23C3C76C38AD0
+  "node/Input Pins[G:0]/pin/ParamIndex"        ;s32    -1               
+  "node/Input Pins[G:0]/ConnectionGUID/Value"  ;u64    #8D45F86D00001016
+  "node/Input Pins[G:1]/pin/var/Name"          ;string "Roughness(1)"   
+  "node/Input Pins[G:1]/pin/var/TypeGUID"      ;u64    #254786A97C52EF15
+  "node/Input Pins[G:1]/pin/PinGUID/Value"     ;u64    #AACE88A91BEADC32
+  "node/Input Pins[G:1]/pin/ParamIndex"        ;s32    0                
+  "node/Input Pins[G:1]/ConnectionGUID/Value"  ;u64    #8D45F86D00001017
+  "node/Input Pins[G:2]/pin/var/Name"          ;string "Metallic(1)"    
+  "node/Input Pins[G:2]/pin/var/TypeGUID"      ;u64    #254786A97C52EF15
+  "node/Input Pins[G:2]/pin/PinGUID/Value"     ;u64    #BE54B2844DDF260E
+  "node/Input Pins[G:2]/pin/ParamIndex"        ;s32    1                
+  "node/Input Pins[G:2]/ConnectionGUID/Value"  ;u64    #8D45F86D00001018
+  "node/Input Pins[G:3]/pin/var/Name"          ;string "Normal(3)"      
+  "node/Input Pins[G:3]/pin/var/TypeGUID"      ;u64    #6D3F16FEEBDA4452
+  "node/Input Pins[G:3]/pin/PinGUID/Value"     ;u64    #8D4BA2495C3225BE
+  "node/Input Pins[G:3]/pin/ParamIndex"        ;s32    -1               
+  "node/Input Pins[G:3]/ConnectionGUID/Value"  ;u64    #8D45F86D00001019
+  "node/Input Pins[G:4]/pin/var/Name"          ;string "AO(1)"          
+  "node/Input Pins[G:4]/pin/var/TypeGUID"      ;u64    #254786A97C52EF15
+  "node/Input Pins[G:4]/pin/PinGUID/Value"     ;u64    #4690832E2A3D7AF8
+  "node/Input Pins[G:4]/pin/ParamIndex"        ;s32    2                
+  "node/Input Pins[G:4]/ConnectionGUID/Value"  ;u64    #8D45F86D0000101A
+  "node/Input Pins[G:5]/pin/var/Name"          ;string "Emissive(3)"    
+  "node/Input Pins[G:5]/pin/var/TypeGUID"      ;u64    #6D3F16FEEBDA4452
+  "node/Input Pins[G:5]/pin/PinGUID/Value"     ;u64    #79D4EE26CE10175C
+  "node/Input Pins[G:5]/pin/ParamIndex"        ;s32    -1               
+  "node/Input Pins[G:5]/ConnectionGUID/Value"  ;u64    #8D45F86D0000101B
+  "node/Input Pins[G:6]/pin/var/Name"          ;string "A(1)"           
+  "node/Input Pins[G:6]/pin/var/TypeGUID"      ;u64    #254786A97C52EF15
+  "node/Input Pins[G:6]/pin/PinGUID/Value"     ;u64    #678F6C075EA0F720
+  "node/Input Pins[G:6]/pin/ParamIndex"        ;s32    3                
+  "node/Input Pins[G:6]/ConnectionGUID/Value"  ;u64    #8D45F86D00001023
+  "node/Output Pins[]"                         ;s64    0                
+  "node/Params[]"                              ;s64    4                
+  "node/Params[G:0]/Name"                      ;string "roughness"      
+  "node/Params[G:0]/Type"                      ;enum   "FLOAT"          
+  "node/Params[G:0]/Float"                     ;f32    0.5              
+  "node/Params[G:0]/bCanExpose"                ;bool   0                
+  "node/Params[G:1]/Name"                      ;string "metallic"       
+  "node/Params[G:1]/Type"                      ;enum   "FLOAT"          
+  "node/Params[G:1]/Float"                     ;f32    0                
+  "node/Params[G:1]/bCanExpose"                ;bool   0                
+  "node/Params[G:2]/Name"                      ;string "ao"             
+  "node/Params[G:2]/Type"                      ;enum   "FLOAT"          
+  "node/Params[G:2]/Float"                     ;f32    1                
+  "node/Params[G:2]/bCanExpose"                ;bool   0                
+  "node/Params[G:3]/Name"                      ;string "a"              
+  "node/Params[G:3]/Type"                      ;enum   "FLOAT"          
+  "node/Params[G:3]/Float"                     ;f32    1                
+  "node/Params[G:3]/bCanExpose"                ;bool   0                
+
+[ Node ]
+{ Guid:G             PrefabGuid:G      }
+//-----------------  -----------------
+  #8D45F86D00000170  #85FFBB7724DCDD00
+
+[ xProperties : 34 ]
+{ Name:s                                                  Value:?                   }
+//------------------------------------------------------  -------------------------
+  "node/Name"                                             ;string "Vec3 Multiply"  
+  "node/StepName"                                         ;string "AlbedoTint"     
+  "node/Position/X"                                       ;f32    0                
+  "node/Position/Y"                                       ;f32    0                
+  "node/Input Pins[]"                                     ;s64    2                
+  "node/Input Pins[G:0]/pin/var/Name"                     ;string "A(3)"           
+  "node/Input Pins[G:0]/pin/var/TypeGUID"                 ;u64    #6D3F16FEEBDA4452
+  "node/Input Pins[G:0]/pin/PinGUID/Value"                ;u64    #C647C9DEE59A9756
+  "node/Input Pins[G:0]/pin/ParamIndex"                   ;s32    -1               
+  "node/Input Pins[G:0]/ConnectionGUID/Value"             ;u64    #8D45F86D00001009
+  "node/Input Pins[G:1]/pin/var/Name"                     ;string "B(3)"           
+  "node/Input Pins[G:1]/pin/var/TypeGUID"                 ;u64    #6D3F16FEEBDA4452
+  "node/Input Pins[G:1]/pin/PinGUID/Value"                ;u64    #2ACC32081773245 
+  "node/Input Pins[G:1]/pin/ParamIndex"                   ;s32    -1               
+  "node/Input Pins[G:1]/ConnectionGUID/Value"             ;u64    #8D45F86D0000100A
+  "node/Output Pins[]"                                    ;s64    1                
+  "node/Output Pins[G:0]/pin/var/Name"                    ;string "Vec3"           
+  "node/Output Pins[G:0]/pin/var/TypeGUID"                ;u64    #6D3F16FEEBDA4452
+  "node/Output Pins[G:0]/pin/PinGUID/Value"               ;u64    #F6DCF80E20358DDE
+  "node/Output Pins[G:0]/pin/ParamIndex"                  ;s32    -1               
+  "node/Output Pins[G:0]/SubElements[]"                   ;s64    3                
+  "node/Output Pins[G:0]/SubElements[G:0]/var/Name"       ;string "x"              
+  "node/Output Pins[G:0]/SubElements[G:0]/var/TypeGUID"   ;u64    #254786A97C52EF15
+  "node/Output Pins[G:0]/SubElements[G:0]/PinGUID/Value"  ;u64    #8B25FE3967B88715
+  "node/Output Pins[G:0]/SubElements[G:0]/ParamIndex"     ;s32    -1               
+  "node/Output Pins[G:0]/SubElements[G:1]/var/Name"       ;string "y"              
+  "node/Output Pins[G:0]/SubElements[G:1]/var/TypeGUID"   ;u64    #254786A97C52EF15
+  "node/Output Pins[G:0]/SubElements[G:1]/PinGUID/Value"  ;u64    #C0DF0B2FF4FFD6BB
+  "node/Output Pins[G:0]/SubElements[G:1]/ParamIndex"     ;s32    -1               
+  "node/Output Pins[G:0]/SubElements[G:2]/var/Name"       ;string "z"              
+  "node/Output Pins[G:0]/SubElements[G:2]/var/TypeGUID"   ;u64    #254786A97C52EF15
+  "node/Output Pins[G:0]/SubElements[G:2]/PinGUID/Value"  ;u64    #F17C3CE09134EDA7
+  "node/Output Pins[G:0]/SubElements[G:2]/ParamIndex"     ;s32    -1               
+  "node/Params[]"                                         ;s64    0                
+
+[ Node ]
+{ Guid:G             PrefabGuid:G      }
+//-----------------  -----------------
+  #8D45F86D00000180  #6B4E8B256C38D9B3
+
+[ xProperties : 22 ]
+{ Name:s                                       Value:?                   }
+//-------------------------------------------  -------------------------
+  "node/Name"                                  ;string "Float Multiply" 
+  "node/StepName"                              ;string "AlbedoAlpha"    
+  "node/Position/X"                            ;f32    0                
+  "node/Position/Y"                            ;f32    0                
+  "node/Input Pins[]"                          ;s64    2                
+  "node/Input Pins[G:0]/pin/var/Name"          ;string "A(1)"           
+  "node/Input Pins[G:0]/pin/var/TypeGUID"      ;u64    #254786A97C52EF15
+  "node/Input Pins[G:0]/pin/PinGUID/Value"     ;u64    #6B26921FA8379933
+  "node/Input Pins[G:0]/pin/ParamIndex"        ;s32    -1               
+  "node/Input Pins[G:0]/ConnectionGUID/Value"  ;u64    #8D45F86D0000101F
+  "node/Input Pins[G:1]/pin/var/Name"          ;string "B(1)"           
+  "node/Input Pins[G:1]/pin/var/TypeGUID"      ;u64    #254786A97C52EF15
+  "node/Input Pins[G:1]/pin/PinGUID/Value"     ;u64    #EA7C4A418007099E
+  "node/Input Pins[G:1]/pin/ParamIndex"        ;s32    -1               
+  "node/Input Pins[G:1]/ConnectionGUID/Value"  ;u64    #8D45F86D00001020
+  "node/Output Pins[]"                         ;s64    1                
+  "node/Output Pins[G:0]/pin/var/Name"         ;string "A(1)"           
+  "node/Output Pins[G:0]/pin/var/TypeGUID"     ;u64    #254786A97C52EF15
+  "node/Output Pins[G:0]/pin/PinGUID/Value"    ;u64    #FF4E14E49BB3D219
+  "node/Output Pins[G:0]/pin/ParamIndex"       ;s32    -1               
+  "node/Output Pins[G:0]/SubElements[]"        ;s64    0                
+  "node/Params[]"                              ;s64    0                
+
+[ Node ]
+{ Guid:G             PrefabGuid:G      }
+//-----------------  -----------------
+  #8D45F86D00000190  #6B4E8B256C38D9B3
+
+[ xProperties : 22 ]
+{ Name:s                                       Value:?                   }
+//-------------------------------------------  -------------------------
+  "node/Name"                                  ;string "Float Multiply" 
+  "node/StepName"                              ;string "Alpha"          
+  "node/Position/X"                            ;f32    0                
+  "node/Position/Y"                            ;f32    0                
+  "node/Input Pins[]"                          ;s64    2                
+  "node/Input Pins[G:0]/pin/var/Name"          ;string "A(1)"           
+  "node/Input Pins[G:0]/pin/var/TypeGUID"      ;u64    #254786A97C52EF15
+  "node/Input Pins[G:0]/pin/PinGUID/Value"     ;u64    #FDD73E8D40C1E895
+  "node/Input Pins[G:0]/pin/ParamIndex"        ;s32    -1               
+  "node/Input Pins[G:0]/ConnectionGUID/Value"  ;u64    #8D45F86D00001021
+  "node/Input Pins[G:1]/pin/var/Name"          ;string "B(1)"           
+  "node/Input Pins[G:1]/pin/var/TypeGUID"      ;u64    #254786A97C52EF15
+  "node/Input Pins[G:1]/pin/PinGUID/Value"     ;u64    #E40604BAFBE8EA96
+  "node/Input Pins[G:1]/pin/ParamIndex"        ;s32    -1               
+  "node/Input Pins[G:1]/ConnectionGUID/Value"  ;u64    #8D45F86D00001022
+  "node/Output Pins[]"                         ;s64    1                
+  "node/Output Pins[G:0]/pin/var/Name"         ;string "A(1)"           
+  "node/Output Pins[G:0]/pin/var/TypeGUID"     ;u64    #254786A97C52EF15
+  "node/Output Pins[G:0]/pin/PinGUID/Value"    ;u64    #FD6E05FAC9AA06C3
+  "node/Output Pins[G:0]/pin/ParamIndex"       ;s32    -1               
+  "node/Output Pins[G:0]/SubElements[]"        ;s64    0                
+  "node/Params[]"                              ;s64    0                
+
+[ Connection ]
+{ Guid:G            }
+//-----------------
+  #8D45F86D00001001
+
+[ xProperties : 2 ]
+{ Name:s                            Value:?                }
+//--------------------------------  ----------------------
+  "connection/InputPinGuid/Value"   ;u64 #A39BA28614AEFF26
+  "connection/OutputPinGuid/Value"  ;u64 #FF83A62F2C63C666
+
+[ Connection ]
+{ Guid:G            }
+//-----------------
+  #8D45F86D00001002
+
+[ xProperties : 2 ]
+{ Name:s                            Value:?                }
+//--------------------------------  ----------------------
+  "connection/InputPinGuid/Value"   ;u64 #B1310D436E1EDF6A
+  "connection/OutputPinGuid/Value"  ;u64 #FF83A62F2C63C666
+
+[ Connection ]
+{ Guid:G            }
+//-----------------
+  #8D45F86D00001003
+
+[ xProperties : 2 ]
+{ Name:s                            Value:?                }
+//--------------------------------  ----------------------
+  "connection/InputPinGuid/Value"   ;u64 #EAA8FE211E0086D0
+  "connection/OutputPinGuid/Value"  ;u64 #FF83A62F2C63C666
+
+[ Connection ]
+{ Guid:G            }
+//-----------------
+  #8D45F86D00001004
+
+[ xProperties : 2 ]
+{ Name:s                            Value:?                }
+//--------------------------------  ----------------------
+  "connection/InputPinGuid/Value"   ;u64 #4486C71289ABDFCB
+  "connection/OutputPinGuid/Value"  ;u64 #62F97D34D23999DD
+
+[ Connection ]
+{ Guid:G            }
+//-----------------
+  #8D45F86D00001005
+
+[ xProperties : 2 ]
+{ Name:s                            Value:?                }
+//--------------------------------  ----------------------
+  "connection/InputPinGuid/Value"   ;u64 #FE5049C2F0E7850F
+  "connection/OutputPinGuid/Value"  ;u64 #59534A8C1059342E
+
+[ Connection ]
+{ Guid:G            }
+//-----------------
+  #8D45F86D00001006
+
+[ xProperties : 2 ]
+{ Name:s                            Value:?                }
+//--------------------------------  ----------------------
+  "connection/InputPinGuid/Value"   ;u64 #EBC5959828AE92AF
+  "connection/OutputPinGuid/Value"  ;u64 #410757B6298597BC
+
+[ Connection ]
+{ Guid:G            }
+//-----------------
+  #8D45F86D00001007
+
+[ xProperties : 2 ]
+{ Name:s                            Value:?                }
+//--------------------------------  ----------------------
+  "connection/InputPinGuid/Value"   ;u64 #84701F2C143F128C
+  "connection/OutputPinGuid/Value"  ;u64 #284451DCDE0E52D7
+
+[ Connection ]
+{ Guid:G            }
+//-----------------
+  #8D45F86D00001008
+
+[ xProperties : 2 ]
+{ Name:s                            Value:?                }
+//--------------------------------  ----------------------
+  "connection/InputPinGuid/Value"   ;u64 #2E523E30BE7B0032
+  "connection/OutputPinGuid/Value"  ;u64 #35060BB716D34EC3
+
+[ Connection ]
+{ Guid:G            }
+//-----------------
+  #8D45F86D00001009
+
+[ xProperties : 2 ]
+{ Name:s                            Value:?                }
+//--------------------------------  ----------------------
+  "connection/InputPinGuid/Value"   ;u64 #C647C9DEE59A9756
+  "connection/OutputPinGuid/Value"  ;u64 #FF0F2FAC28949FBB
+
+[ Connection ]
+{ Guid:G            }
+//-----------------
+  #8D45F86D0000100A
+
+[ xProperties : 2 ]
+{ Name:s                            Value:?                }
+//--------------------------------  ----------------------
+  "connection/InputPinGuid/Value"   ;u64 #2ACC32081773245 
+  "connection/OutputPinGuid/Value"  ;u64 #E051148020BAC3B8
+
+[ Connection ]
+{ Guid:G            }
+//-----------------
+  #8D45F86D0000100B
+
+[ xProperties : 2 ]
+{ Name:s                            Value:?                }
+//--------------------------------  ----------------------
+  "connection/InputPinGuid/Value"   ;u64 #CE12A955FA21266A
+  "connection/OutputPinGuid/Value"  ;u64 #2E9CACC5F09FDEE8
+
+[ Connection ]
+{ Guid:G            }
+//-----------------
+  #8D45F86D0000100C
+
+[ xProperties : 2 ]
+{ Name:s                            Value:?                }
+//--------------------------------  ----------------------
+  "connection/InputPinGuid/Value"   ;u64 #994047B8A8591398
+  "connection/OutputPinGuid/Value"  ;u64 #521AF2834A8A54C8
+
+[ Connection ]
+{ Guid:G            }
+//-----------------
+  #8D45F86D0000100D
+
+[ xProperties : 2 ]
+{ Name:s                            Value:?                }
+//--------------------------------  ----------------------
+  "connection/InputPinGuid/Value"   ;u64 #563141FB6642FAD3
+  "connection/OutputPinGuid/Value"  ;u64 #EFD23DCABB4FF278
+
+[ Connection ]
+{ Guid:G            }
+//-----------------
+  #8D45F86D0000100E
+
+[ xProperties : 2 ]
+{ Name:s                            Value:?                }
+//--------------------------------  ----------------------
+  "connection/InputPinGuid/Value"   ;u64 #1E3E94D0B51AB604
+  "connection/OutputPinGuid/Value"  ;u64 #C9541EF61F3F3326
+
+[ Connection ]
+{ Guid:G            }
+//-----------------
+  #8D45F86D0000100F
+
+[ xProperties : 2 ]
+{ Name:s                            Value:?                }
+//--------------------------------  ----------------------
+  "connection/InputPinGuid/Value"   ;u64 #8C46B45CBD9F30C0
+  "connection/OutputPinGuid/Value"  ;u64 #F9D8826EC68CBE1E
+
+[ Connection ]
+{ Guid:G            }
+//-----------------
+  #8D45F86D00001010
+
+[ xProperties : 2 ]
+{ Name:s                            Value:?                }
+//--------------------------------  ----------------------
+  "connection/InputPinGuid/Value"   ;u64 #1AF28D319A9450E4
+  "connection/OutputPinGuid/Value"  ;u64 #D7506DB1EF368EB6
+
+[ Connection ]
+{ Guid:G            }
+//-----------------
+  #8D45F86D00001011
+
+[ xProperties : 2 ]
+{ Name:s                            Value:?                }
+//--------------------------------  ----------------------
+  "connection/InputPinGuid/Value"   ;u64 #85B38AD99042168C
+  "connection/OutputPinGuid/Value"  ;u64 #910C4F831B8847BE
+
+[ Connection ]
+{ Guid:G            }
+//-----------------
+  #8D45F86D00001012
+
+[ xProperties : 2 ]
+{ Name:s                            Value:?                }
+//--------------------------------  ----------------------
+  "connection/InputPinGuid/Value"   ;u64 #522536CB1EBAD349
+  "connection/OutputPinGuid/Value"  ;u64 #EE0AF83BB4DEFD8E
+
+[ Connection ]
+{ Guid:G            }
+//-----------------
+  #8D45F86D00001013
+
+[ xProperties : 2 ]
+{ Name:s                            Value:?                }
+//--------------------------------  ----------------------
+  "connection/InputPinGuid/Value"   ;u64 #2E2C31383576CD56
+  "connection/OutputPinGuid/Value"  ;u64 #86D323671C2D3F81
+
+[ Connection ]
+{ Guid:G            }
+//-----------------
+  #8D45F86D00001014
+
+[ xProperties : 2 ]
+{ Name:s                            Value:?                }
+//--------------------------------  ----------------------
+  "connection/InputPinGuid/Value"   ;u64 #85D6D3CA5BF06FD6
+  "connection/OutputPinGuid/Value"  ;u64 #2DED123AB3D6ABFA
+
+[ Connection ]
+{ Guid:G            }
+//-----------------
+  #8D45F86D00001015
+
+[ xProperties : 2 ]
+{ Name:s                            Value:?                }
+//--------------------------------  ----------------------
+  "connection/InputPinGuid/Value"   ;u64 #484BD4C6A31C0464
+  "connection/OutputPinGuid/Value"  ;u64 #5DFDF542668AB16D
+
+[ Connection ]
+{ Guid:G            }
+//-----------------
+  #8D45F86D00001016
+
+[ xProperties : 2 ]
+{ Name:s                            Value:?                }
+//--------------------------------  ----------------------
+  "connection/InputPinGuid/Value"   ;u64 #29D23C3C76C38AD0
+  "connection/OutputPinGuid/Value"  ;u64 #EE0AF83BB4DEFD8E
+
+[ Connection ]
+{ Guid:G            }
+//-----------------
+  #8D45F86D00001017
+
+[ xProperties : 2 ]
+{ Name:s                            Value:?                }
+//--------------------------------  ----------------------
+  "connection/InputPinGuid/Value"   ;u64 #AACE88A91BEADC32
+  "connection/OutputPinGuid/Value"  ;u64 #DF59E005916759A2
+
+[ Connection ]
+{ Guid:G            }
+//-----------------
+  #8D45F86D00001018
+
+[ xProperties : 2 ]
+{ Name:s                            Value:?                }
+//--------------------------------  ----------------------
+  "connection/InputPinGuid/Value"   ;u64 #BE54B2844DDF260E
+  "connection/OutputPinGuid/Value"  ;u64 #9986318D05FD52E5
+
+[ Connection ]
+{ Guid:G            }
+//-----------------
+  #8D45F86D00001019
+
+[ xProperties : 2 ]
+{ Name:s                            Value:?                }
+//--------------------------------  ----------------------
+  "connection/InputPinGuid/Value"   ;u64 #8D4BA2495C3225BE
+  "connection/OutputPinGuid/Value"  ;u64 #94B0EC2E5B02D1EA
+
+[ Connection ]
+{ Guid:G            }
+//-----------------
+  #8D45F86D0000101A
+
+[ xProperties : 2 ]
+{ Name:s                            Value:?                }
+//--------------------------------  ----------------------
+  "connection/InputPinGuid/Value"   ;u64 #4690832E2A3D7AF8
+  "connection/OutputPinGuid/Value"  ;u64 #C6304923700370C9
+
+[ Connection ]
+{ Guid:G            }
+//-----------------
+  #8D45F86D0000101B
+
+[ xProperties : 2 ]
+{ Name:s                            Value:?                }
+//--------------------------------  ----------------------
+  "connection/InputPinGuid/Value"   ;u64 #79D4EE26CE10175C
+  "connection/OutputPinGuid/Value"  ;u64 #65AEE237FE71F3A7
+
+[ Connection ]
+{ Guid:G            }
+//-----------------
+  #8D45F86D0000101D
+
+[ xProperties : 2 ]
+{ Name:s                            Value:?                }
+//--------------------------------  ----------------------
+  "connection/InputPinGuid/Value"   ;u64 #A9A918D740D6E30B
+  "connection/OutputPinGuid/Value"  ;u64 #F6DCF80E20358DDE
+
+[ Connection ]
+{ Guid:G            }
+//-----------------
+  #8D45F86D0000101E
+
+[ xProperties : 2 ]
+{ Name:s                            Value:?                }
+//--------------------------------  ----------------------
+  "connection/InputPinGuid/Value"   ;u64 #4F9EA88CE91A91B4
+  "connection/OutputPinGuid/Value"  ;u64 #B3E2B7A15108B792
+
+[ Connection ]
+{ Guid:G            }
+//-----------------
+  #8D45F86D0000101F
+
+[ xProperties : 2 ]
+{ Name:s                            Value:?                }
+//--------------------------------  ----------------------
+  "connection/InputPinGuid/Value"   ;u64 #6B26921FA8379933
+  "connection/OutputPinGuid/Value"  ;u64 #1E40DB707047791A
+
+[ Connection ]
+{ Guid:G            }
+//-----------------
+  #8D45F86D00001020
+
+[ xProperties : 2 ]
+{ Name:s                            Value:?                }
+//--------------------------------  ----------------------
+  "connection/InputPinGuid/Value"   ;u64 #EA7C4A418007099E
+  "connection/OutputPinGuid/Value"  ;u64 #C8A2A4C5ED678FE 
+
+[ Connection ]
+{ Guid:G            }
+//-----------------
+  #8D45F86D00001021
+
+[ xProperties : 2 ]
+{ Name:s                            Value:?                }
+//--------------------------------  ----------------------
+  "connection/InputPinGuid/Value"   ;u64 #FDD73E8D40C1E895
+  "connection/OutputPinGuid/Value"  ;u64 #FF4E14E49BB3D219
+
+[ Connection ]
+{ Guid:G            }
+//-----------------
+  #8D45F86D00001022
+
+[ xProperties : 2 ]
+{ Name:s                            Value:?                }
+//--------------------------------  ----------------------
+  "connection/InputPinGuid/Value"   ;u64 #E40604BAFBE8EA96
+  "connection/OutputPinGuid/Value"  ;u64 #24418817D554D512
+
+[ Connection ]
+{ Guid:G            }
+//-----------------
+  #8D45F86D00001023
+
+[ xProperties : 2 ]
+{ Name:s                            Value:?                }
+//--------------------------------  ----------------------
+  "connection/InputPinGuid/Value"   ;u64 #678F6C075EA0F720
+  "connection/OutputPinGuid/Value"  ;u64 #FD6E05FAC9AA06C3
+
+[ StackLayout ]
+{ nSections:d }
+//-----------
+       2     
+
+[ xProperties : 39 ]
+{ Name:s                                   Value:?                   }
+//---------------------------------------  -------------------------
+  "stack/Sections[]"                       ;s64    2                
+  "stack/Sections[G:0]/Guid/Value"         ;u64    #D382E8C8EC710A4E
+  "stack/Sections[G:0]/Name"               ;string "Steps"          
+  "stack/Sections[G:0]/Kind"               ;enum   "USER"           
+  "stack/Sections[G:0]/Stage"              ;enum   "FRAGMENT"       
+  "stack/Sections[G:0]/bCollapsed"         ;bool   0                
+  "stack/Sections[G:0]/Steps[]"            ;s64    24               
+  "stack/Sections[G:0]/Steps[G:0]/Value"   ;u64    #8D45F86D00000010
+  "stack/Sections[G:0]/Steps[G:1]/Value"   ;u64    #8D45F86D00000020
+  "stack/Sections[G:0]/Steps[G:2]/Value"   ;u64    #8D45F86D00000030
+  "stack/Sections[G:0]/Steps[G:3]/Value"   ;u64    #8D45F86D00000040
+  "stack/Sections[G:0]/Steps[G:4]/Value"   ;u64    #8D45F86D00000050
+  "stack/Sections[G:0]/Steps[G:5]/Value"   ;u64    #8D45F86D00000060
+  "stack/Sections[G:0]/Steps[G:6]/Value"   ;u64    #8D45F86D00000070
+  "stack/Sections[G:0]/Steps[G:7]/Value"   ;u64    #8D45F86D00000090
+  "stack/Sections[G:0]/Steps[G:8]/Value"   ;u64    #8D45F86D00000080
+  "stack/Sections[G:0]/Steps[G:9]/Value"   ;u64    #8D45F86D000000A0
+  "stack/Sections[G:0]/Steps[G:10]/Value"  ;u64    #8D45F86D000000B0
+  "stack/Sections[G:0]/Steps[G:11]/Value"  ;u64    #8D45F86D000000C0
+  "stack/Sections[G:0]/Steps[G:12]/Value"  ;u64    #8D45F86D000000D0
+  "stack/Sections[G:0]/Steps[G:13]/Value"  ;u64    #8D45F86D000000E0
+  "stack/Sections[G:0]/Steps[G:14]/Value"  ;u64    #8D45F86D000000F0
+  "stack/Sections[G:0]/Steps[G:15]/Value"  ;u64    #8D45F86D00000130
+  "stack/Sections[G:0]/Steps[G:16]/Value"  ;u64    #8D45F86D00000140
+  "stack/Sections[G:0]/Steps[G:17]/Value"  ;u64    #8D45F86D00000150
+  "stack/Sections[G:0]/Steps[G:18]/Value"  ;u64    #8D45F86D00000180
+  "stack/Sections[G:0]/Steps[G:19]/Value"  ;u64    #8D45F86D00000170
+  "stack/Sections[G:0]/Steps[G:20]/Value"  ;u64    #8D45F86D00000100
+  "stack/Sections[G:0]/Steps[G:21]/Value"  ;u64    #8D45F86D00000110
+  "stack/Sections[G:0]/Steps[G:22]/Value"  ;u64    #8D45F86D00000120
+  "stack/Sections[G:0]/Steps[G:23]/Value"  ;u64    #8D45F86D00000190
+  "stack/Sections[G:1]/Guid/Value"         ;u64    #FB55206CBB756001
+  "stack/Sections[G:1]/Name"               ;string "Output"         
+  "stack/Sections[G:1]/Kind"               ;enum   "OUTPUT"         
+  "stack/Sections[G:1]/Stage"              ;enum   "FRAGMENT"       
+  "stack/Sections[G:1]/bCollapsed"         ;bool   0                
+  "stack/Sections[G:1]/Steps[]"            ;s64    1                
+  "stack/Sections[G:1]/Steps[G:0]/Value"   ;u64    #8D45F86D00000160
+  "stack/Places[]"                         ;s64    0                
+
+[ Parameter ]
+{ Guid:G }
+//------
+   #6E  
+
+[ xProperties : 31 ]
+{ Name:s                       Value:?                                        }
+//---------------------------  ----------------------------------------------
+  "param_decl/ID"              ;u64       #6E                                
+  "param_decl/Name"            ;string    "SamplerNormal"                    
+  "param_decl/Type"            ;enum      "TEXTURE"                          
+  "param_decl/Kind"            ;enum      "DYNAMIC"                          
+  "param_decl/Stages"          ;u8        #1                                 
+  "param_decl/Default/X"       ;f32       0                                  
+  "param_decl/Default/Y"       ;f32       0                                  
+  "param_decl/Default/Z"       ;f32       0                                  
+  "param_decl/Default/W"       ;f32       0                                  
+  "param_decl/DefaultTexture"  ;full_guid #189E50CFD884005F #6701D481518BD833
+  "param_decl/ValidMin/X"      ;f32       -3.40282347e+38                    
+  "param_decl/ValidMin/Y"      ;f32       -3.40282347e+38                    
+  "param_decl/ValidMin/Z"      ;f32       -3.40282347e+38                    
+  "param_decl/ValidMin/W"      ;f32       -3.40282347e+38                    
+  "param_decl/ValidMax/X"      ;f32       3.40282347e+38                     
+  "param_decl/ValidMax/Y"      ;f32       3.40282347e+38                     
+  "param_decl/ValidMax/Z"      ;f32       3.40282347e+38                     
+  "param_decl/ValidMax/W"      ;f32       3.40282347e+38                     
+  "param_decl/UiMin/X"         ;f32       0                                  
+  "param_decl/UiMin/Y"         ;f32       0                                  
+  "param_decl/UiMin/Z"         ;f32       0                                  
+  "param_decl/UiMin/W"         ;f32       0                                  
+  "param_decl/UiMax/X"         ;f32       0                                  
+  "param_decl/UiMax/Y"         ;f32       0                                  
+  "param_decl/UiMax/Z"         ;f32       0                                  
+  "param_decl/UiMax/W"         ;f32       0                                  
+  "param_decl/bHDR"            ;bool      0                                  
+  "param_decl/bAlpha"          ;bool      1                                  
+  "param_decl/EntityField"     ;enum      "NONE"                             
+  "param_decl/Group"           ;string    ""                                 
+  "param_decl/Order"           ;s32       30                                 
+
+[ Parameter ]
+{ Guid:G }
+//------
+   #78  
+
+[ xProperties : 31 ]
+{ Name:s                       Value:?                                        }
+//---------------------------  ----------------------------------------------
+  "param_decl/ID"              ;u64       #78                                
+  "param_decl/Name"            ;string    "SamplerAlbedo"                    
+  "param_decl/Type"            ;enum      "TEXTURE"                          
+  "param_decl/Kind"            ;enum      "DYNAMIC"                          
+  "param_decl/Stages"          ;u8        #1                                 
+  "param_decl/Default/X"       ;f32       0                                  
+  "param_decl/Default/Y"       ;f32       0                                  
+  "param_decl/Default/Z"       ;f32       0                                  
+  "param_decl/Default/W"       ;f32       0                                  
+  "param_decl/DefaultTexture"  ;full_guid #6542000CC1D6FB6F #6701D481518BD833
+  "param_decl/ValidMin/X"      ;f32       -3.40282347e+38                    
+  "param_decl/ValidMin/Y"      ;f32       -3.40282347e+38                    
+  "param_decl/ValidMin/Z"      ;f32       -3.40282347e+38                    
+  "param_decl/ValidMin/W"      ;f32       -3.40282347e+38                    
+  "param_decl/ValidMax/X"      ;f32       3.40282347e+38                     
+  "param_decl/ValidMax/Y"      ;f32       3.40282347e+38                     
+  "param_decl/ValidMax/Z"      ;f32       3.40282347e+38                     
+  "param_decl/ValidMax/W"      ;f32       3.40282347e+38                     
+  "param_decl/UiMin/X"         ;f32       0                                  
+  "param_decl/UiMin/Y"         ;f32       0                                  
+  "param_decl/UiMin/Z"         ;f32       0                                  
+  "param_decl/UiMin/W"         ;f32       0                                  
+  "param_decl/UiMax/X"         ;f32       0                                  
+  "param_decl/UiMax/Y"         ;f32       0                                  
+  "param_decl/UiMax/Z"         ;f32       0                                  
+  "param_decl/UiMax/W"         ;f32       0                                  
+  "param_decl/bHDR"            ;bool      0                                  
+  "param_decl/bAlpha"          ;bool      1                                  
+  "param_decl/EntityField"     ;enum      "NONE"                             
+  "param_decl/Group"           ;string    ""                                 
+  "param_decl/Order"           ;s32       10                                 
+
+[ Parameter ]
+{ Guid:G }
+//------
+   #82  
+
+[ xProperties : 31 ]
+{ Name:s                       Value:?                                        }
+//---------------------------  ----------------------------------------------
+  "param_decl/ID"              ;u64       #82                                
+  "param_decl/Name"            ;string    "SamplerORME"                      
+  "param_decl/Type"            ;enum      "TEXTURE"                          
+  "param_decl/Kind"            ;enum      "DYNAMIC"                          
+  "param_decl/Stages"          ;u8        #1                                 
+  "param_decl/Default/X"       ;f32       0                                  
+  "param_decl/Default/Y"       ;f32       0                                  
+  "param_decl/Default/Z"       ;f32       0                                  
+  "param_decl/Default/W"       ;f32       0                                  
+  "param_decl/DefaultTexture"  ;full_guid #DEFA017E0E0E0E01 #6701D481518BD833
+  "param_decl/ValidMin/X"      ;f32       -3.40282347e+38                    
+  "param_decl/ValidMin/Y"      ;f32       -3.40282347e+38                    
+  "param_decl/ValidMin/Z"      ;f32       -3.40282347e+38                    
+  "param_decl/ValidMin/W"      ;f32       -3.40282347e+38                    
+  "param_decl/ValidMax/X"      ;f32       3.40282347e+38                     
+  "param_decl/ValidMax/Y"      ;f32       3.40282347e+38                     
+  "param_decl/ValidMax/Z"      ;f32       3.40282347e+38                     
+  "param_decl/ValidMax/W"      ;f32       3.40282347e+38                     
+  "param_decl/UiMin/X"         ;f32       0                                  
+  "param_decl/UiMin/Y"         ;f32       0                                  
+  "param_decl/UiMin/Z"         ;f32       0                                  
+  "param_decl/UiMin/W"         ;f32       0                                  
+  "param_decl/UiMax/X"         ;f32       0                                  
+  "param_decl/UiMax/Y"         ;f32       0                                  
+  "param_decl/UiMax/Z"         ;f32       0                                  
+  "param_decl/UiMax/W"         ;f32       0                                  
+  "param_decl/bHDR"            ;bool      0                                  
+  "param_decl/bAlpha"          ;bool      1                                  
+  "param_decl/EntityField"     ;enum      "NONE"                             
+  "param_decl/Group"           ;string    ""                                 
+  "param_decl/Order"           ;s32       50                                 
+
+[ Parameter ]
+{ Guid:G            }
+//-----------------
+  #65FCB2331C54F40A
+
+[ xProperties : 31 ]
+{ Name:s                       Value:?                      }
+//---------------------------  ----------------------------
+  "param_decl/ID"              ;u64       #65FCB2331C54F40A
+  "param_decl/Name"            ;string    "NormalStrength" 
+  "param_decl/Type"            ;enum      "FLOAT"          
+  "param_decl/Kind"            ;enum      "DYNAMIC"        
+  "param_decl/Stages"          ;u8        #1               
+  "param_decl/Default/X"       ;f32       1.5              
+  "param_decl/Default/Y"       ;f32       0                
+  "param_decl/Default/Z"       ;f32       0                
+  "param_decl/Default/W"       ;f32       0                
+  "param_decl/DefaultTexture"  ;full_guid #0 #0            
+  "param_decl/ValidMin/X"      ;f32       0                
+  "param_decl/ValidMin/Y"      ;f32       0                
+  "param_decl/ValidMin/Z"      ;f32       0                
+  "param_decl/ValidMin/W"      ;f32       0                
+  "param_decl/ValidMax/X"      ;f32       16               
+  "param_decl/ValidMax/Y"      ;f32       16               
+  "param_decl/ValidMax/Z"      ;f32       16               
+  "param_decl/ValidMax/W"      ;f32       16               
+  "param_decl/UiMin/X"         ;f32       0                
+  "param_decl/UiMin/Y"         ;f32       0                
+  "param_decl/UiMin/Z"         ;f32       0                
+  "param_decl/UiMin/W"         ;f32       0                
+  "param_decl/UiMax/X"         ;f32       4                
+  "param_decl/UiMax/Y"         ;f32       4                
+  "param_decl/UiMax/Z"         ;f32       4                
+  "param_decl/UiMax/W"         ;f32       4                
+  "param_decl/bHDR"            ;bool      0                
+  "param_decl/bAlpha"          ;bool      1                
+  "param_decl/EntityField"     ;enum      "NONE"           
+  "param_decl/Group"           ;string    ""               
+  "param_decl/Order"           ;s32       40               
+
+[ Parameter ]
+{ Guid:G            }
+//-----------------
+  #CAEB29DE86D04031
+
+[ xProperties : 31 ]
+{ Name:s                       Value:?                      }
+//---------------------------  ----------------------------
+  "param_decl/ID"              ;u64       #CAEB29DE86D04031
+  "param_decl/Name"            ;string    "RoughnessFactor"
+  "param_decl/Type"            ;enum      "FLOAT"          
+  "param_decl/Kind"            ;enum      "DYNAMIC"        
+  "param_decl/Stages"          ;u8        #1               
+  "param_decl/Default/X"       ;f32       1                
+  "param_decl/Default/Y"       ;f32       0                
+  "param_decl/Default/Z"       ;f32       0                
+  "param_decl/Default/W"       ;f32       0                
+  "param_decl/DefaultTexture"  ;full_guid #0 #0            
+  "param_decl/ValidMin/X"      ;f32       0                
+  "param_decl/ValidMin/Y"      ;f32       0                
+  "param_decl/ValidMin/Z"      ;f32       0                
+  "param_decl/ValidMin/W"      ;f32       0                
+  "param_decl/ValidMax/X"      ;f32       1                
+  "param_decl/ValidMax/Y"      ;f32       1                
+  "param_decl/ValidMax/Z"      ;f32       1                
+  "param_decl/ValidMax/W"      ;f32       1                
+  "param_decl/UiMin/X"         ;f32       0                
+  "param_decl/UiMin/Y"         ;f32       0                
+  "param_decl/UiMin/Z"         ;f32       0                
+  "param_decl/UiMin/W"         ;f32       0                
+  "param_decl/UiMax/X"         ;f32       1                
+  "param_decl/UiMax/Y"         ;f32       1                
+  "param_decl/UiMax/Z"         ;f32       1                
+  "param_decl/UiMax/W"         ;f32       1                
+  "param_decl/bHDR"            ;bool      0                
+  "param_decl/bAlpha"          ;bool      1                
+  "param_decl/EntityField"     ;enum      "NONE"           
+  "param_decl/Group"           ;string    ""               
+  "param_decl/Order"           ;s32       60               
+
+[ Parameter ]
+{ Guid:G            }
+//-----------------
+  #9E745295A7EF7678
+
+[ xProperties : 31 ]
+{ Name:s                       Value:?                      }
+//---------------------------  ----------------------------
+  "param_decl/ID"              ;u64       #9E745295A7EF7678
+  "param_decl/Name"            ;string    "MetallicFactor" 
+  "param_decl/Type"            ;enum      "FLOAT"          
+  "param_decl/Kind"            ;enum      "DYNAMIC"        
+  "param_decl/Stages"          ;u8        #1               
+  "param_decl/Default/X"       ;f32       1                
+  "param_decl/Default/Y"       ;f32       0                
+  "param_decl/Default/Z"       ;f32       0                
+  "param_decl/Default/W"       ;f32       0                
+  "param_decl/DefaultTexture"  ;full_guid #0 #0            
+  "param_decl/ValidMin/X"      ;f32       0                
+  "param_decl/ValidMin/Y"      ;f32       0                
+  "param_decl/ValidMin/Z"      ;f32       0                
+  "param_decl/ValidMin/W"      ;f32       0                
+  "param_decl/ValidMax/X"      ;f32       1                
+  "param_decl/ValidMax/Y"      ;f32       1                
+  "param_decl/ValidMax/Z"      ;f32       1                
+  "param_decl/ValidMax/W"      ;f32       1                
+  "param_decl/UiMin/X"         ;f32       0                
+  "param_decl/UiMin/Y"         ;f32       0                
+  "param_decl/UiMin/Z"         ;f32       0                
+  "param_decl/UiMin/W"         ;f32       0                
+  "param_decl/UiMax/X"         ;f32       1                
+  "param_decl/UiMax/Y"         ;f32       1                
+  "param_decl/UiMax/Z"         ;f32       1                
+  "param_decl/UiMax/W"         ;f32       1                
+  "param_decl/bHDR"            ;bool      0                
+  "param_decl/bAlpha"          ;bool      1                
+  "param_decl/EntityField"     ;enum      "NONE"           
+  "param_decl/Group"           ;string    ""               
+  "param_decl/Order"           ;s32       70               
+
+[ Parameter ]
+{ Guid:G            }
+//-----------------
+  #A0C9C126883ABD85
+
+[ xProperties : 31 ]
+{ Name:s                       Value:?                      }
+//---------------------------  ----------------------------
+  "param_decl/ID"              ;u64       #A0C9C126883ABD85
+  "param_decl/Name"            ;string    "AOStrength"     
+  "param_decl/Type"            ;enum      "FLOAT"          
+  "param_decl/Kind"            ;enum      "DYNAMIC"        
+  "param_decl/Stages"          ;u8        #1               
+  "param_decl/Default/X"       ;f32       1                
+  "param_decl/Default/Y"       ;f32       0                
+  "param_decl/Default/Z"       ;f32       0                
+  "param_decl/Default/W"       ;f32       0                
+  "param_decl/DefaultTexture"  ;full_guid #0 #0            
+  "param_decl/ValidMin/X"      ;f32       0                
+  "param_decl/ValidMin/Y"      ;f32       0                
+  "param_decl/ValidMin/Z"      ;f32       0                
+  "param_decl/ValidMin/W"      ;f32       0                
+  "param_decl/ValidMax/X"      ;f32       1                
+  "param_decl/ValidMax/Y"      ;f32       1                
+  "param_decl/ValidMax/Z"      ;f32       1                
+  "param_decl/ValidMax/W"      ;f32       1                
+  "param_decl/UiMin/X"         ;f32       0                
+  "param_decl/UiMin/Y"         ;f32       0                
+  "param_decl/UiMin/Z"         ;f32       0                
+  "param_decl/UiMin/W"         ;f32       0                
+  "param_decl/UiMax/X"         ;f32       1                
+  "param_decl/UiMax/Y"         ;f32       1                
+  "param_decl/UiMax/Z"         ;f32       1                
+  "param_decl/UiMax/W"         ;f32       1                
+  "param_decl/bHDR"            ;bool      0                
+  "param_decl/bAlpha"          ;bool      1                
+  "param_decl/EntityField"     ;enum      "NONE"           
+  "param_decl/Group"           ;string    ""               
+  "param_decl/Order"           ;s32       55               
+
+[ Parameter ]
+{ Guid:G            }
+//-----------------
+  #64B8FEC46B58F31E
+
+[ xProperties : 31 ]
+{ Name:s                       Value:?                      }
+//---------------------------  ----------------------------
+  "param_decl/ID"              ;u64       #64B8FEC46B58F31E
+  "param_decl/Name"            ;string    "BaseColorFactor"
+  "param_decl/Type"            ;enum      "COLOR"          
+  "param_decl/Kind"            ;enum      "DYNAMIC"        
+  "param_decl/Stages"          ;u8        #1               
+  "param_decl/Default/X"       ;f32       1                
+  "param_decl/Default/Y"       ;f32       1                
+  "param_decl/Default/Z"       ;f32       1                
+  "param_decl/Default/W"       ;f32       1                
+  "param_decl/DefaultTexture"  ;full_guid #0 #0            
+  "param_decl/ValidMin/X"      ;f32       -3.40282347e+38  
+  "param_decl/ValidMin/Y"      ;f32       -3.40282347e+38  
+  "param_decl/ValidMin/Z"      ;f32       -3.40282347e+38  
+  "param_decl/ValidMin/W"      ;f32       -3.40282347e+38  
+  "param_decl/ValidMax/X"      ;f32       3.40282347e+38   
+  "param_decl/ValidMax/Y"      ;f32       3.40282347e+38   
+  "param_decl/ValidMax/Z"      ;f32       3.40282347e+38   
+  "param_decl/ValidMax/W"      ;f32       3.40282347e+38   
+  "param_decl/UiMin/X"         ;f32       0                
+  "param_decl/UiMin/Y"         ;f32       0                
+  "param_decl/UiMin/Z"         ;f32       0                
+  "param_decl/UiMin/W"         ;f32       0                
+  "param_decl/UiMax/X"         ;f32       0                
+  "param_decl/UiMax/Y"         ;f32       0                
+  "param_decl/UiMax/Z"         ;f32       0                
+  "param_decl/UiMax/W"         ;f32       0                
+  "param_decl/bHDR"            ;bool      0                
+  "param_decl/bAlpha"          ;bool      1                
+  "param_decl/EntityField"     ;enum      "NONE"           
+  "param_decl/Group"           ;string    ""               
+  "param_decl/Order"           ;s32       20               
+
+[ Parameter ]
+{ Guid:G            }
+//-----------------
+  #CA5A41590BB69AD4
+
+[ xProperties : 31 ]
+{ Name:s                       Value:?                      }
+//---------------------------  ----------------------------
+  "param_decl/ID"              ;u64       #CA5A41590BB69AD4
+  "param_decl/Name"            ;string    "EmissiveColor"  
+  "param_decl/Type"            ;enum      "COLOR"          
+  "param_decl/Kind"            ;enum      "DYNAMIC"        
+  "param_decl/Stages"          ;u8        #1               
+  "param_decl/Default/X"       ;f32       1                
+  "param_decl/Default/Y"       ;f32       1                
+  "param_decl/Default/Z"       ;f32       1                
+  "param_decl/Default/W"       ;f32       1                
+  "param_decl/DefaultTexture"  ;full_guid #0 #0            
+  "param_decl/ValidMin/X"      ;f32       -3.40282347e+38  
+  "param_decl/ValidMin/Y"      ;f32       -3.40282347e+38  
+  "param_decl/ValidMin/Z"      ;f32       -3.40282347e+38  
+  "param_decl/ValidMin/W"      ;f32       -3.40282347e+38  
+  "param_decl/ValidMax/X"      ;f32       3.40282347e+38   
+  "param_decl/ValidMax/Y"      ;f32       3.40282347e+38   
+  "param_decl/ValidMax/Z"      ;f32       3.40282347e+38   
+  "param_decl/ValidMax/W"      ;f32       3.40282347e+38   
+  "param_decl/UiMin/X"         ;f32       0                
+  "param_decl/UiMin/Y"         ;f32       0                
+  "param_decl/UiMin/Z"         ;f32       0                
+  "param_decl/UiMin/W"         ;f32       0                
+  "param_decl/UiMax/X"         ;f32       0                
+  "param_decl/UiMax/Y"         ;f32       0                
+  "param_decl/UiMax/Z"         ;f32       0                
+  "param_decl/UiMax/W"         ;f32       0                
+  "param_decl/bHDR"            ;bool      1                
+  "param_decl/bAlpha"          ;bool      0                
+  "param_decl/EntityField"     ;enum      "NONE"           
+  "param_decl/Group"           ;string    ""               
+  "param_decl/Order"           ;s32       90               
+
+[ xProperties : 9 ]
+{ Name:s                              Value:?        }
+//----------------------------------  --------------
+  "render_settings/Blend Mode"        ;enum "Masked"
+  "render_settings/Alpha Cutoff"      ;f32  0.5     
+  "render_settings/Double Sided"      ;bool 0       
+  "render_settings/Back Face Normal"  ;enum "Flip"  
+  "render_settings/Depth Write"       ;enum "Auto"  
+  "render_settings/Depth Test"        ;bool 1       
+  "render_settings/Cast Shadows"      ;bool 1       
+  "render_settings/Sort Priority"     ;s8   0       
+  "render_settings/Wireframe"         ;bool 0       
