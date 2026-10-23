@@ -1628,10 +1628,10 @@
   "param_decl/ValidMin/Y"      ;f32       0                
   "param_decl/ValidMin/Z"      ;f32       0                
   "param_decl/ValidMin/W"      ;f32       0                
-  "param_decl/ValidMax/X"      ;f32       16               
-  "param_decl/ValidMax/Y"      ;f32       16               
-  "param_decl/ValidMax/Z"      ;f32       16               
-  "param_decl/ValidMax/W"      ;f32       16               
+  "param_decl/ValidMax/X"      ;f32       3.40282347e+38               
+  "param_decl/ValidMax/Y"      ;f32       3.40282347e+38               
+  "param_decl/ValidMax/Z"      ;f32       3.40282347e+38               
+  "param_decl/ValidMax/W"      ;f32       3.40282347e+38               
   "param_decl/UiMin/X"         ;f32       0                
   "param_decl/UiMin/Y"         ;f32       0                
   "param_decl/UiMin/Z"         ;f32       0                
@@ -1668,10 +1668,10 @@
   "param_decl/ValidMin/Y"      ;f32       0                
   "param_decl/ValidMin/Z"      ;f32       0                
   "param_decl/ValidMin/W"      ;f32       0                
-  "param_decl/ValidMax/X"      ;f32       1                
-  "param_decl/ValidMax/Y"      ;f32       1                
-  "param_decl/ValidMax/Z"      ;f32       1                
-  "param_decl/ValidMax/W"      ;f32       1                
+  "param_decl/ValidMax/X"      ;f32       3.40282347e+38                
+  "param_decl/ValidMax/Y"      ;f32       3.40282347e+38                
+  "param_decl/ValidMax/Z"      ;f32       3.40282347e+38                
+  "param_decl/ValidMax/W"      ;f32       3.40282347e+38                
   "param_decl/UiMin/X"         ;f32       0                
   "param_decl/UiMin/Y"         ;f32       0                
   "param_decl/UiMin/Z"         ;f32       0                
@@ -1708,10 +1708,10 @@
   "param_decl/ValidMin/Y"      ;f32       0                
   "param_decl/ValidMin/Z"      ;f32       0                
   "param_decl/ValidMin/W"      ;f32       0                
-  "param_decl/ValidMax/X"      ;f32       1                
-  "param_decl/ValidMax/Y"      ;f32       1                
-  "param_decl/ValidMax/Z"      ;f32       1                
-  "param_decl/ValidMax/W"      ;f32       1                
+  "param_decl/ValidMax/X"      ;f32       3.40282347e+38                
+  "param_decl/ValidMax/Y"      ;f32       3.40282347e+38                
+  "param_decl/ValidMax/Z"      ;f32       3.40282347e+38                
+  "param_decl/ValidMax/W"      ;f32       3.40282347e+38                
   "param_decl/UiMin/X"         ;f32       0                
   "param_decl/UiMin/Y"         ;f32       0                
   "param_decl/UiMin/Z"         ;f32       0                
@@ -1748,10 +1748,10 @@
   "param_decl/ValidMin/Y"      ;f32       0                
   "param_decl/ValidMin/Z"      ;f32       0                
   "param_decl/ValidMin/W"      ;f32       0                
-  "param_decl/ValidMax/X"      ;f32       1                
-  "param_decl/ValidMax/Y"      ;f32       1                
-  "param_decl/ValidMax/Z"      ;f32       1                
-  "param_decl/ValidMax/W"      ;f32       1                
+  "param_decl/ValidMax/X"      ;f32       3.40282347e+38                
+  "param_decl/ValidMax/Y"      ;f32       3.40282347e+38                
+  "param_decl/ValidMax/Z"      ;f32       3.40282347e+38                
+  "param_decl/ValidMax/W"      ;f32       3.40282347e+38                
   "param_decl/UiMin/X"         ;f32       0                
   "param_decl/UiMin/Y"         ;f32       0                
   "param_decl/UiMin/Z"         ;f32       0                
