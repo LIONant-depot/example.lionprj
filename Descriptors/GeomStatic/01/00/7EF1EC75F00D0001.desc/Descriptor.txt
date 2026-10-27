@@ -1,0 +1,43 @@
+
+[ DescriptorVersion ]
+{ Major:d  Minor:d }
+//-------  -------
+     1        0
+
+// New Types
+< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
+
+[ xProperties : 31 ]
+{ Name:s                                                    Value:?                               }
+//--------------------------------------------------------  -------------------------------------
+  "GeomStatic/ImportAsset"                                  ;wstring "Assets\\ReflectionTest\\sphere_grid.obj"
+  "GeomStatic/PreTranslation/AutoUnits"                     ;bool    0
+  "GeomStatic/PreTranslation/Scale/X"                       ;f32     #3F800000
+  "GeomStatic/PreTranslation/Scale/Y"                       ;f32     #3F800000
+  "GeomStatic/PreTranslation/Scale/Z"                       ;f32     #3F800000
+  "GeomStatic/PreTranslation/EditorLockScale"               ;bool    0
+  "GeomStatic/PreTranslation/Rotation/X"                    ;f32     #0
+  "GeomStatic/PreTranslation/Rotation/Y"                    ;f32     #0
+  "GeomStatic/PreTranslation/Rotation/Z"                    ;f32     #0
+  "GeomStatic/PreTranslation/Translation/X"                 ;f32     #0
+  "GeomStatic/PreTranslation/Translation/Y"                 ;f32     #0
+  "GeomStatic/PreTranslation/Translation/Z"                 ;f32     #0
+  "GeomStatic/bMergeAllMeshes"                              ;bool    1
+  "GeomStatic/AllMeshesDetails/Name"                        ;string  "Reflection Test Spheres"
+  "GeomStatic/AllMeshesDetails/LODs[]"                      ;s64     0
+  "GeomStatic/Merge Group List[]"                           ;s64     0
+  "GeomStatic/Ungroup Mesh List[]"                          ;s64     0
+  "GeomStatic/GI/Mode"                                      ;enum    "RECEIVE_AND_BOUNCE"
+  "GeomStatic/GI/Density"                                   ;enum    "SPLIT_TRIANGLES"
+  "GeomStatic/GI/SurfelSize"                                ;f32     #3F800000
+  "GeomStatic/GI/PatchDefects"                              ;bool    0
+  "GeomStatic/GI/LeakProtection"                            ;bool    0
+  "GeomStatic/Deleted List[]"                               ;s64     0
+  "GeomStatic/ImportMaterials/bImport"                      ;bool    1
+  "GeomStatic/ImportMaterials/Material"                     ;full_guid #8D45F86DC5F2C003 #8B3C028882EA813D
+  "GeomStatic/ImportMaterials/AlphaTest"                    ;full_guid #FF22104E737E58EB #8B3C028882EA813D
+  "GeomStatic/ImportMaterials/AlbedoCompression"            ;enum    "RGB_BC1"
+  "GeomStatic/ImportMaterials/AlbedoAlphaCompression"       ;enum    "RGBA_BC7"
+  "GeomStatic/ImportMaterials/NormalCompression"            ;enum    "RG_BC5"
+  "GeomStatic/ImportMaterials/Flip Y for normals"           ;bool    0
+  "GeomStatic/ImportMaterials/Normalize normals"            ;bool    1

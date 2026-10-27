@@ -1,0 +1,75 @@
+
+[ DescriptorVersion ]
+{ Major:d  Minor:d }
+//-------  -------
+     1        0   
+
+// New Types
+< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
+
+[ xProperties : 63 ]
+{ Name:s                                                                     Value:?                                        }
+//-------------------------------------------------------------------------  ----------------------------------------------
+  "material_instance_descriptor/Version"                                     ;s32       2                                  
+  "material_instance_descriptor/MaterialRef"                                 ;full_guid #8D45F86DC5F2C003 #8B3C028882EA813D
+  "material_instance_descriptor/ParentRef"                                   ;full_guid #0 #B673C5DA4A4A70AD               
+  "material_instance_descriptor/Overrides[]"                                 ;s64       7                                  
+  "material_instance_descriptor/Overrides[G:110]/ID"                         ;u64       #6E                                
+  "material_instance_descriptor/Overrides[G:110]/Type"                       ;enum      "TEXTURE"                          
+  "material_instance_descriptor/Overrides[G:110]/Value/X"                    ;f32       #0                                 
+  "material_instance_descriptor/Overrides[G:110]/Value/Y"                    ;f32       #0                                 
+  "material_instance_descriptor/Overrides[G:110]/Value/Z"                    ;f32       #0                                 
+  "material_instance_descriptor/Overrides[G:110]/Value/W"                    ;f32       #0                                 
+  "material_instance_descriptor/Overrides[G:110]/Texture"                    ;full_guid #6737FAA79276200B #6701D481518BD833
+  "material_instance_descriptor/Overrides[G:110]/NameHint"                   ;string    "SamplerNormal"                    
+  "material_instance_descriptor/Overrides[G:120]/ID"                         ;u64       #78                                
+  "material_instance_descriptor/Overrides[G:120]/Type"                       ;enum      "TEXTURE"                          
+  "material_instance_descriptor/Overrides[G:120]/Value/X"                    ;f32       #0                                 
+  "material_instance_descriptor/Overrides[G:120]/Value/Y"                    ;f32       #0                                 
+  "material_instance_descriptor/Overrides[G:120]/Value/Z"                    ;f32       #0                                 
+  "material_instance_descriptor/Overrides[G:120]/Value/W"                    ;f32       #0                                 
+  "material_instance_descriptor/Overrides[G:120]/Texture"                    ;full_guid #6D5252063FEABF75 #6701D481518BD833
+  "material_instance_descriptor/Overrides[G:120]/NameHint"                   ;string    "SamplerAlbedo"                    
+  "material_instance_descriptor/Overrides[G:130]/ID"                         ;u64       #82                                
+  "material_instance_descriptor/Overrides[G:130]/Type"                       ;enum      "TEXTURE"                          
+  "material_instance_descriptor/Overrides[G:130]/Value/X"                    ;f32       #0                                 
+  "material_instance_descriptor/Overrides[G:130]/Value/Y"                    ;f32       #0                                 
+  "material_instance_descriptor/Overrides[G:130]/Value/Z"                    ;f32       #0                                 
+  "material_instance_descriptor/Overrides[G:130]/Value/W"                    ;f32       #0                                 
+  "material_instance_descriptor/Overrides[G:130]/Texture"                    ;full_guid #6D5252063FEABF75 #6701D481518BD833
+  "material_instance_descriptor/Overrides[G:130]/NameHint"                   ;string    "SamplerORME"                      
+  "material_instance_descriptor/Overrides[G:7257830919075590942]/ID"         ;u64       #64B8FEC46B58F31E                  
+  "material_instance_descriptor/Overrides[G:7257830919075590942]/Type"       ;enum      "COLOR"                            
+  "material_instance_descriptor/Overrides[G:7257830919075590942]/Value/X"    ;f32       #3F4CCCCD                          
+  "material_instance_descriptor/Overrides[G:7257830919075590942]/Value/Y"    ;f32       #3F4CCCCD                          
+  "material_instance_descriptor/Overrides[G:7257830919075590942]/Value/Z"    ;f32       #3F4CCCCD                          
+  "material_instance_descriptor/Overrides[G:7257830919075590942]/Value/W"    ;f32       #3F800000                          
+  "material_instance_descriptor/Overrides[G:7257830919075590942]/Texture"    ;full_guid #0 #6701D481518BD833               
+  "material_instance_descriptor/Overrides[G:7257830919075590942]/NameHint"   ;string    "BaseColorFactor"                  
+  "material_instance_descriptor/Overrides[G:11417841758012143224]/ID"        ;u64       #9E745295A7EF7678                  
+  "material_instance_descriptor/Overrides[G:11417841758012143224]/Type"      ;enum      "FLOAT"                            
+  "material_instance_descriptor/Overrides[G:11417841758012143224]/Value/X"   ;f32       #0                                 
+  "material_instance_descriptor/Overrides[G:11417841758012143224]/Value/Y"   ;f32       #0                                 
+  "material_instance_descriptor/Overrides[G:11417841758012143224]/Value/Z"   ;f32       #0                                 
+  "material_instance_descriptor/Overrides[G:11417841758012143224]/Value/W"   ;f32       #0                                 
+  "material_instance_descriptor/Overrides[G:11417841758012143224]/Texture"   ;full_guid #0 #6701D481518BD833               
+  "material_instance_descriptor/Overrides[G:11417841758012143224]/NameHint"  ;string    "MetallicFactor"                   
+  "material_instance_descriptor/Overrides[G:14581038594269813460]/ID"        ;u64       #CA5A41590BB69AD4                  
+  "material_instance_descriptor/Overrides[G:14581038594269813460]/Type"      ;enum      "COLOR"                            
+  "material_instance_descriptor/Overrides[G:14581038594269813460]/Value/X"   ;f32       #0                                 
+  "material_instance_descriptor/Overrides[G:14581038594269813460]/Value/Y"   ;f32       #0                                 
+  "material_instance_descriptor/Overrides[G:14581038594269813460]/Value/Z"   ;f32       #0                                 
+  "material_instance_descriptor/Overrides[G:14581038594269813460]/Value/W"   ;f32       #3F800000                          
+  "material_instance_descriptor/Overrides[G:14581038594269813460]/Texture"   ;full_guid #0 #6701D481518BD833               
+  "material_instance_descriptor/Overrides[G:14581038594269813460]/NameHint"  ;string    "EmissiveColor"                    
+  "material_instance_descriptor/Overrides[G:14621826650909720625]/ID"        ;u64       #CAEB29DE86D04031                  
+  "material_instance_descriptor/Overrides[G:14621826650909720625]/Type"      ;enum      "FLOAT"                            
+  "material_instance_descriptor/Overrides[G:14621826650909720625]/Value/X"   ;f32       #3E4CCCCD                          
+  "material_instance_descriptor/Overrides[G:14621826650909720625]/Value/Y"   ;f32       #0                                 
+  "material_instance_descriptor/Overrides[G:14621826650909720625]/Value/Z"   ;f32       #0                                 
+  "material_instance_descriptor/Overrides[G:14621826650909720625]/Value/W"   ;f32       #0                                 
+  "material_instance_descriptor/Overrides[G:14621826650909720625]/Texture"   ;full_guid #0 #6701D481518BD833               
+  "material_instance_descriptor/Overrides[G:14621826650909720625]/NameHint"  ;string    "RoughnessFactor"                  
+  "material_instance_descriptor/Textures[]"                                  ;s64       0                                  
+  "material_instance_descriptor/TextureDefaults[]"                           ;s64       0                                  
+  "material_instance_descriptor/FinalTextures[]"                             ;s64       0                                  

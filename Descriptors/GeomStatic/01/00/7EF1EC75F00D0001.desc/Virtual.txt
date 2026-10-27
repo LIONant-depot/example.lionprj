@@ -1,0 +1,22 @@
+
+// New Types
+< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
+
+[ xProperties : 15 ]
+{ Name:s                                     Value:?                                        }
+//-----------------------------------------  ----------------------------------------------
+  "owned_virtual_resources/Resources[]"      ;s64       14                                 
+  "owned_virtual_resources/Resources[G:0]"   ;full_guid #141279835BE3B061 #B673C5DA4A4A70AD
+  "owned_virtual_resources/Resources[G:1]"   ;full_guid #1FC28C5891AFEDDD #B673C5DA4A4A70AD
+  "owned_virtual_resources/Resources[G:2]"   ;full_guid #29EF0571C15C7E03 #B673C5DA4A4A70AD
+  "owned_virtual_resources/Resources[G:3]"   ;full_guid #2DA4BABF061720F1 #B673C5DA4A4A70AD
+  "owned_virtual_resources/Resources[G:4]"   ;full_guid #51AAFE7F5F43CACB #B673C5DA4A4A70AD
+  "owned_virtual_resources/Resources[G:5]"   ;full_guid #6737FAA79276200B #6701D481518BD833
+  "owned_virtual_resources/Resources[G:6]"   ;full_guid #6D5252063FEABF75 #6701D481518BD833
+  "owned_virtual_resources/Resources[G:7]"   ;full_guid #735052E472261E5D #B673C5DA4A4A70AD
+  "owned_virtual_resources/Resources[G:8]"   ;full_guid #842DEAA083C249F3 #B673C5DA4A4A70AD
+  "owned_virtual_resources/Resources[G:9]"   ;full_guid #AD0C0802227748D9 #B673C5DA4A4A70AD
+  "owned_virtual_resources/Resources[G:10]"  ;full_guid #D8FDE74D29DAC55D #B673C5DA4A4A70AD
+  "owned_virtual_resources/Resources[G:11]"  ;full_guid #EC63D395B0FD752B #B673C5DA4A4A70AD
+  "owned_virtual_resources/Resources[G:12]"  ;full_guid #EFD5A878382D4D0B #B673C5DA4A4A70AD
+  "owned_virtual_resources/Resources[G:13]"  ;full_guid #F1CE2D69CB2171DD #B673C5DA4A4A70AD

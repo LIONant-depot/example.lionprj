@@ -28,7 +28,7 @@
 { Name:s                         Value:?           }
 //-----------------------------  -----------------
   "Transform/Position/X"         ;f32  0.800000012
-  "Transform/Position/Y"         ;f32  1.5        
+  "Transform/Position/Y"         ;f32  1.72894919 
   "Transform/Position/Z"         ;f32  5.30000019 
   "Transform/Rotation/X"         ;f32  0          
   "Transform/Rotation/Y"         ;f32  0          

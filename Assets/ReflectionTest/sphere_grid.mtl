@@ -1,0 +1,72 @@
+newmtl dielectric_r000
+Kd 0.8 0.8 0.8
+Pr 0.0
+Pm 0.0
+Ks 0 0 0
+
+newmtl dielectric_r020
+Kd 0.8 0.8 0.8
+Pr 0.2
+Pm 0.0
+Ks 0 0 0
+
+newmtl dielectric_r040
+Kd 0.8 0.8 0.8
+Pr 0.4
+Pm 0.0
+Ks 0 0 0
+
+newmtl dielectric_r060
+Kd 0.8 0.8 0.8
+Pr 0.6
+Pm 0.0
+Ks 0 0 0
+
+newmtl dielectric_r080
+Kd 0.8 0.8 0.8
+Pr 0.8
+Pm 0.0
+Ks 0 0 0
+
+newmtl dielectric_r100
+Kd 0.8 0.8 0.8
+Pr 1.0
+Pm 0.0
+Ks 0 0 0
+
+newmtl metal_r000
+Kd 0.95 0.93 0.88
+Pr 0.0
+Pm 1.0
+Ks 0 0 0
+
+newmtl metal_r020
+Kd 0.95 0.93 0.88
+Pr 0.2
+Pm 1.0
+Ks 0 0 0
+
+newmtl metal_r040
+Kd 0.95 0.93 0.88
+Pr 0.4
+Pm 1.0
+Ks 0 0 0
+
+newmtl metal_r060
+Kd 0.95 0.93 0.88
+Pr 0.6
+Pm 1.0
+Ks 0 0 0
+
+newmtl metal_r080
+Kd 0.95 0.93 0.88
+Pr 0.8
+Pm 1.0
+Ks 0 0 0
+
+newmtl metal_r100
+Kd 0.95 0.93 0.88
+Pr 1.0
+Pm 1.0
+Ks 0 0 0
+

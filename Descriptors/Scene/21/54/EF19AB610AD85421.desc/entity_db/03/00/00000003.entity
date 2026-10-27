@@ -13,26 +13,37 @@
 // New Types
 < s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG entity:G enum:s >
 
-[ xProperties : 17 ]
-{ Name:s                      Value:?           }
-//--------------------------  -----------------
-  "Environment/SkyZenith/X"   ;f32  0          
-  "Environment/SkyZenith/Y"   ;f32  0          
-  "Environment/SkyZenith/Z"   ;f32  0          
-  "Environment/SkyHorizon/X"  ;f32  0          
-  "Environment/SkyHorizon/Y"  ;f32  0          
-  "Environment/SkyHorizon/Z"  ;f32  0          
-  "Environment/SkyGround/X"   ;f32  0          
-  "Environment/SkyGround/Y"   ;f32  0          
-  "Environment/SkyGround/Z"   ;f32  0          
-  "Environment/SkyIntensity"  ;f32  0.300000012
-  "Environment/Ambient/X"     ;f32  0          
-  "Environment/Ambient/Y"     ;f32  0          
-  "Environment/Ambient/Z"     ;f32  0          
-  "Environment/GI"            ;bool 1          
-  "Environment/GIRayBudget"   ;s32  16384      
-  "Environment/GIDebug"       ;enum "NONE"     
-  "Environment/GIPerPixel"    ;bool 1          
+[ xProperties : 28 ]
+{ Name:s                                Value:?           }
+//------------------------------------  -----------------
+  "Environment/SkyZenith/X"             ;f32  0          
+  "Environment/SkyZenith/Y"             ;f32  0          
+  "Environment/SkyZenith/Z"             ;f32  0          
+  "Environment/SkyHorizon/X"            ;f32  0          
+  "Environment/SkyHorizon/Y"            ;f32  0          
+  "Environment/SkyHorizon/Z"            ;f32  0          
+  "Environment/SkyGround/X"             ;f32  0          
+  "Environment/SkyGround/Y"             ;f32  0          
+  "Environment/SkyGround/Z"             ;f32  0          
+  "Environment/SkyIntensity"            ;f32  0.300000012
+  "Environment/Ambient/X"               ;f32  0          
+  "Environment/Ambient/Y"               ;f32  0          
+  "Environment/Ambient/Z"               ;f32  0          
+  "Environment/GI"                      ;bool 1          
+  "Environment/GIRayBudget"             ;s32  16384      
+  "Environment/GIRaysPerSurfel"         ;s32  8          
+  "Environment/GIMoments"               ;bool 1          
+  "Environment/GIFilterPasses"          ;s32  4          
+  "Environment/GIEmissiveScale"         ;f32  100        
+  "Environment/GIEmitterLights"         ;bool 0          
+  "Environment/GIDebug"                 ;enum "NONE"     
+  "Environment/GIPerPixel"              ;bool 1          
+  "Environment/GIHalfRes"               ;bool 1          
+  "Environment/ReflectionMaxRoughness"  ;f32  0.5        
+  "Environment/ReflectionFloor"         ;bool 1          
+  "Environment/ReflectionFloorAuto"     ;bool 1          
+  "Environment/ReflectionFloorY"        ;f32  0          
+  "Environment/ReflectionDebug"         ;bool 0          
 
 [ xProperties : 14 ]
 { Name:s                         Value:? }
