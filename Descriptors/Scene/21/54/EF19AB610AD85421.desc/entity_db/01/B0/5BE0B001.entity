@@ -14,18 +14,18 @@
 < s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG entity:G enum:s >
 
 [ xProperties : 4 ]
-{ Name:s                       Value:?         }
-//---------------------------  ---------------
-  "ReflectionProbe/Extents/X"  ;f32 3         
-  "ReflectionProbe/Extents/Y"  ;f32 1.70000005
-  "ReflectionProbe/Extents/Z"  ;f32 3.5       
-  "ReflectionProbe/Blend"      ;f32 1         
+{ Name:s                       Value:?          }
+//---------------------------  ----------------
+  "ReflectionProbe/Extents/X"  ;f32 3          
+  "ReflectionProbe/Extents/Y"  ;f32 1.54999995 
+  "ReflectionProbe/Extents/Z"  ;f32 3.5        
+  "ReflectionProbe/Blend"      ;f32 0.100000001
 
 [ xProperties : 14 ]
 { Name:s                         Value:?           }
 //-----------------------------  -----------------
   "Transform/Position/X"         ;f32  0.600000024
-  "Transform/Position/Y"         ;f32  1.70000005 
+  "Transform/Position/Y"         ;f32  3.20000005 
   "Transform/Position/Z"         ;f32  2.5999999  
   "Transform/Rotation/X"         ;f32  0          
   "Transform/Rotation/Y"         ;f32  0          
