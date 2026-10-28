@@ -39,7 +39,7 @@
   "Environment/GIDebug"                 ;enum "NONE"     
   "Environment/GIPerPixel"              ;bool 1          
   "Environment/GIHalfRes"               ;bool 1          
-  "Environment/ReflectionMaxRoughness"  ;f32  0.150000006
+  "Environment/ReflectionMaxRoughness"  ;f32  0.5        
   "Environment/ReflectionFloor"         ;bool 1          
   "Environment/ReflectionFloorAuto"     ;bool 1          
   "Environment/ReflectionFloorY"        ;f32  0          
