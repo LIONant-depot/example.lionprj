@@ -7,18 +7,19 @@
 // New Types
 < s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
 
-[ xProperties : 19 ]
+[ xProperties : 20 ]
 { Name:s                         Value:?               }
 //-----------------------------  ---------------------
   "Scene/ParentScenes[]"         ;s64    0            
   "Scene/ExternalRefs[]"         ;s64    0            
-  "Scene/ActiveEntities[]"       ;s64    6            
+  "Scene/ActiveEntities[]"       ;s64    7            
   "Scene/ActiveEntities[G:0]"    ;u64    #1           
   "Scene/ActiveEntities[G:1]"    ;u64    #2           
   "Scene/ActiveEntities[G:2]"    ;u64    #3           
   "Scene/ActiveEntities[G:3]"    ;u64    #11F1E001    
   "Scene/ActiveEntities[G:4]"    ;u64    #42D560D7    
-  "Scene/ActiveEntities[G:5]"    ;u64    #7EF1EC75    
+  "Scene/ActiveEntities[G:5]"    ;u64    #5BE0B001    
+  "Scene/ActiveEntities[G:6]"    ;u64    #7EF1EC75    
   "Scene/Folders[]"              ;s64    0            
   "Scene/EntityNames[]"          ;s64    4            
   "Scene/EntityNames[G:0]/Id"    ;u64    #1           
