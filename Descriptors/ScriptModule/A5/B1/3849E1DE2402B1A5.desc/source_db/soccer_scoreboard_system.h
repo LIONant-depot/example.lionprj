@@ -1,7 +1,8 @@
 #pragma once
 
-// The scoreboard: a bar for each team beside the pitch that gets longer with every goal, the number of goals written beside each one, and a GOAL! over the pitch while a goal is celebrated.
+// The scoreboard: a bar for each team beside the pitch that gets longer with every goal, the number of goals written beside each one, a KICKOFF countdown over the pitch while waiting, and GOAL! while a goal is celebrated.
 #include "soccer_components.h"
+#include <cmath>
 
 namespace soccer
 {
@@ -34,11 +35,19 @@ namespace soccer
                 }
 
                 {
-                    const std::wstring Goal = std::wstring(L"GOAL!\n") + (Rules.m_LastScorer == team::BLUE ? L"BLUE SCORES" : L"RED SCORES");
+                    // GOAL! while celebrating; during Kickoff a live countdown so the wait is visible; blank while Playing.
+                    std::wstring Banner;
+                    if (Rules.m_Phase == phase::GOAL)
+                        Banner = std::wstring(L"GOAL!\n") + (Rules.m_LastScorer == team::BLUE ? L"BLUE SCORES" : L"RED SCORES");
+                    else if (Rules.m_Phase == phase::KICKOFF)
+                    {
+                        const int Sec = std::max(1, static_cast<int>(std::ceil(Rules.m_Timer)));
+                        Banner = std::wstring(L"KICKOFF\n") + std::to_wstring(Sec);
+                    }
 
                     xecs::query::instance Banners;
                     Banners.m_Must.AddFromComponents<xlionrender::text, banner>();
-                    Foreach(Search(Banners), [&](xlionrender::text& Tx) noexcept { Say(Tx, Rules.m_Phase == phase::GOAL ? Goal : std::wstring()); });
+                    Foreach(Search(Banners), [&](xlionrender::text& Tx) noexcept { Say(Tx, Banner); });
                 }
             });
         }
