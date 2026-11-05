@@ -7,34 +7,33 @@
 // New Types
 < s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
 
-[ xProperties : 28 ]
-{ Name:s                                                 Value:?                                        }
-//-----------------------------------------------------  ----------------------------------------------
-  "GeomSkin/ImportAsset"                                 ;wstring   "Assets\\WalkingSkin\\Walking.fbx" 
-  "GeomSkin/ImportSkeletonAndAnimation" ;bool 0
-  "GeomSkin/SkeletonRef"                                 ;full_guid #D4721069138B4003 #F5D3BE1ED860ABF7
-  "GeomSkin/PreTranslation/Scale/X"                      ;f32       #3F800000                          
-  "GeomSkin/PreTranslation/Scale/Y"                      ;f32       #3F800000                          
-  "GeomSkin/PreTranslation/Scale/Z"                      ;f32       #3F800000                          
-  "GeomSkin/PreTranslation/Rotation/X"                   ;f32       #0                                 
-  "GeomSkin/PreTranslation/Rotation/Y"                   ;f32       #0                                 
-  "GeomSkin/PreTranslation/Rotation/Z"                   ;f32       #0                                 
-  "GeomSkin/PreTranslation/Translation/X"                ;f32       #0                                 
-  "GeomSkin/PreTranslation/Translation/Y"                ;f32       #0                                 
-  "GeomSkin/PreTranslation/Translation/Z"                ;f32       #0                                 
-  "GeomSkin/bMergeAllMeshes"                             ;bool      1                                  
-  "GeomSkin/AllMeshesDetails/Name"                       ;string    "WalkingSkin"                      
-  "GeomSkin/AllMeshesDetails/LODs[]"                     ;s64       0                                  
-  "GeomSkin/Merge Group List[]"                          ;s64       0                                  
-  "GeomSkin/Ungroup Mesh List[]"                         ;s64       1                                  
-  "GeomSkin/Ungroup Mesh List[G:0]/Node Path"            ;string    "RootNode/Mesh"                    
-  "GeomSkin/Ungroup Mesh List[G:0]/Mesh Name"            ;string    "Default"                          
-  "GeomSkin/Ungroup Mesh List[G:0]/Mesh Details/Name"    ;string    ""                                 
-  "GeomSkin/Ungroup Mesh List[G:0]/Mesh Details/LODs[]"  ;s64       0                                  
-  "GeomSkin/Deleted List[]"                              ;s64       0                                  
-  "GeomSkin/MaterialDetailsList[]"                       ;s64       1                                  
-  "GeomSkin/MaterialDetailsList[G:0]/Name"               ;string    "Ch03_Body"                        
-  "GeomSkin/MaterialDetailsList[G:0]/RefCount"           ;s32       1                                  
-  "GeomSkin/MaterialInstance[]"                          ;s64       1                                  
-  "GeomSkin/MaterialInstance[G:0]"                       ;full_guid #48861CDCAA683C51 #B673C5DA4A4A70AD
-  "GeomSkin/ImportMaterials/bImport" ;bool 0
+[ xProperties : 27 ]
+{ Name:s                                                          Value:?                                        }
+//--------------------------------------------------------------  ----------------------------------------------
+  "GeomSkin/ImportAsset"                                          ;wstring   "Assets\\WalkingSkin\\Walking.fbx" 
+  "GeomSkin/ImportSkeletonAndAnimation"                           ;bool      0                                  
+  "GeomSkin/SkeletonRef"                                          ;full_guid #D4721069138B4003 #F5D3BE1ED860ABF7
+  "GeomSkin/AnimationRef"                                         ;full_guid #0 #E69E8A8439A9BB1B               
+  "GeomSkin/bMergeAllMeshes"                                      ;bool      1                                  
+  "GeomSkin/AllMeshesDetails/Name"                                ;string    "WalkingSkin"                      
+  "GeomSkin/AllMeshesDetails/LODs[]"                              ;s64       0                                  
+  "GeomSkin/Merge Group List[]"                                   ;s64       0                                  
+  "GeomSkin/Ungroup Mesh List[]"                                  ;s64       1                                  
+  "GeomSkin/Ungroup Mesh List[G:0]/Node Path"                     ;string    "RootNode/Mesh"                    
+  "GeomSkin/Ungroup Mesh List[G:0]/Mesh Name"                     ;string    "Mesh"                             
+  "GeomSkin/Ungroup Mesh List[G:0]/Mesh Details/Name"             ;string    ""                                 
+  "GeomSkin/Ungroup Mesh List[G:0]/Mesh Details/LODs[]"           ;s64       0                                  
+  "GeomSkin/Deleted List[]"                                       ;s64       0                                  
+  "GeomSkin/MaterialDetailsList[]"                                ;s64       1                                  
+  "GeomSkin/MaterialDetailsList[G:8503164327209008664]/Name"      ;string    "Ch03_Body"                        
+  "GeomSkin/MaterialDetailsList[G:8503164327209008664]/RefCount"  ;s32       1                                  
+  "GeomSkin/MaterialDetailsList[G:8503164327209008664]/Instance"  ;full_guid #48861CDCAA683C51 #B673C5DA4A4A70AD
+  "GeomSkin/ImportMaterials/bImport"                              ;bool      0                                  
+  "GeomSkin/ImportMaterials/Material"                             ;full_guid #8D45F86DC5F2C003 #8B3C028882EA813D
+  "GeomSkin/ImportMaterials/AlphaTest"                            ;full_guid #FF22104E737E58EB #8B3C028882EA813D
+  "GeomSkin/ImportMaterials/AlbedoCompression"                    ;enum      "RGB_BC1"                          
+  "GeomSkin/ImportMaterials/AlbedoAlphaCompression"               ;enum      "RGBA_BC7"                         
+  "GeomSkin/ImportMaterials/NormalCompression"                    ;enum      "RG_BC5"                           
+  "GeomSkin/ImportMaterials/Flip Y for normals"                   ;bool      0                                  
+  "GeomSkin/ImportMaterials/Normalize normals"                    ;bool      1                                  
+  "GeomSkin/ImportMaterials/ORMECompression"                      ;enum      "RGBA_BC7"                         
