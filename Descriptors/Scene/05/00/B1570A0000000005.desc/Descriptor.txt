@@ -1,0 +1,293 @@
+
+[ DescriptorVersion ]
+{ Major:d  Minor:d }
+//-------  -------
+     1        0   
+
+// New Types
+< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
+
+[ xProperties : 281 ]
+{ Name:s                        Value:?   }
+//----------------------------  ---------
+  "Scene/ParentScenes[]"        ;s64 0   
+  "Scene/ExternalRefs[]"        ;s64 0   
+  "Scene/ActiveEntities[]"      ;s64 92  
+  "Scene/ActiveEntities[G:0]"   ;u64 #1  
+  "Scene/ActiveEntities[G:1]"   ;u64 #2  
+  "Scene/ActiveEntities[G:2]"   ;u64 #3  
+  "Scene/ActiveEntities[G:3]"   ;u64 #100
+  "Scene/ActiveEntities[G:4]"   ;u64 #101
+  "Scene/ActiveEntities[G:5]"   ;u64 #102
+  "Scene/ActiveEntities[G:6]"   ;u64 #103
+  "Scene/ActiveEntities[G:7]"   ;u64 #104
+  "Scene/ActiveEntities[G:8]"   ;u64 #105
+  "Scene/ActiveEntities[G:9]"   ;u64 #106
+  "Scene/ActiveEntities[G:10]"  ;u64 #107
+  "Scene/ActiveEntities[G:11]"  ;u64 #108
+  "Scene/ActiveEntities[G:12]"  ;u64 #109
+  "Scene/ActiveEntities[G:13]"  ;u64 #10A
+  "Scene/ActiveEntities[G:14]"  ;u64 #10B
+  "Scene/ActiveEntities[G:15]"  ;u64 #10C
+  "Scene/ActiveEntities[G:16]"  ;u64 #10D
+  "Scene/ActiveEntities[G:17]"  ;u64 #10E
+  "Scene/ActiveEntities[G:18]"  ;u64 #10F
+  "Scene/ActiveEntities[G:19]"  ;u64 #110
+  "Scene/ActiveEntities[G:20]"  ;u64 #111
+  "Scene/ActiveEntities[G:21]"  ;u64 #112
+  "Scene/ActiveEntities[G:22]"  ;u64 #113
+  "Scene/ActiveEntities[G:23]"  ;u64 #114
+  "Scene/ActiveEntities[G:24]"  ;u64 #115
+  "Scene/ActiveEntities[G:25]"  ;u64 #116
+  "Scene/ActiveEntities[G:26]"  ;u64 #117
+  "Scene/ActiveEntities[G:27]"  ;u64 #118
+  "Scene/ActiveEntities[G:28]"  ;u64 #119
+  "Scene/ActiveEntities[G:29]"  ;u64 #11A
+  "Scene/ActiveEntities[G:30]"  ;u64 #11B
+  "Scene/ActiveEntities[G:31]"  ;u64 #200
+  "Scene/ActiveEntities[G:32]"  ;u64 #201
+  "Scene/ActiveEntities[G:33]"  ;u64 #202
+  "Scene/ActiveEntities[G:34]"  ;u64 #203
+  "Scene/ActiveEntities[G:35]"  ;u64 #204
+  "Scene/ActiveEntities[G:36]"  ;u64 #300
+  "Scene/ActiveEntities[G:37]"  ;u64 #301
+  "Scene/ActiveEntities[G:38]"  ;u64 #302
+  "Scene/ActiveEntities[G:39]"  ;u64 #303
+  "Scene/ActiveEntities[G:40]"  ;u64 #304
+  "Scene/ActiveEntities[G:41]"  ;u64 #305
+  "Scene/ActiveEntities[G:42]"  ;u64 #306
+  "Scene/ActiveEntities[G:43]"  ;u64 #307
+  "Scene/ActiveEntities[G:44]"  ;u64 #308
+  "Scene/ActiveEntities[G:45]"  ;u64 #309
+  "Scene/ActiveEntities[G:46]"  ;u64 #30A
+  "Scene/ActiveEntities[G:47]"  ;u64 #30B
+  "Scene/ActiveEntities[G:48]"  ;u64 #30C
+  "Scene/ActiveEntities[G:49]"  ;u64 #30D
+  "Scene/ActiveEntities[G:50]"  ;u64 #30E
+  "Scene/ActiveEntities[G:51]"  ;u64 #30F
+  "Scene/ActiveEntities[G:52]"  ;u64 #310
+  "Scene/ActiveEntities[G:53]"  ;u64 #311
+  "Scene/ActiveEntities[G:54]"  ;u64 #312
+  "Scene/ActiveEntities[G:55]"  ;u64 #313
+  "Scene/ActiveEntities[G:56]"  ;u64 #314
+  "Scene/ActiveEntities[G:57]"  ;u64 #315
+  "Scene/ActiveEntities[G:58]"  ;u64 #316
+  "Scene/ActiveEntities[G:59]"  ;u64 #317
+  "Scene/ActiveEntities[G:60]"  ;u64 #318
+  "Scene/ActiveEntities[G:61]"    ;u64    #319            
+  "Scene/ActiveEntities[G:62]"    ;u64    #31A            
+  "Scene/ActiveEntities[G:63]"    ;u64    #31B            
+  "Scene/ActiveEntities[G:64]"    ;u64    #31C            
+  "Scene/ActiveEntities[G:65]"    ;u64    #31D            
+  "Scene/ActiveEntities[G:66]"    ;u64    #31E            
+  "Scene/ActiveEntities[G:67]"    ;u64    #31F            
+  "Scene/ActiveEntities[G:68]"    ;u64    #320            
+  "Scene/ActiveEntities[G:69]"    ;u64    #321            
+  "Scene/ActiveEntities[G:70]"    ;u64    #322            
+  "Scene/ActiveEntities[G:71]"    ;u64    #323            
+  "Scene/ActiveEntities[G:72]"    ;u64    #324            
+  "Scene/ActiveEntities[G:73]"    ;u64    #325            
+  "Scene/ActiveEntities[G:74]"    ;u64    #326            
+  "Scene/ActiveEntities[G:75]"    ;u64    #327            
+  "Scene/ActiveEntities[G:76]"    ;u64    #400            
+  "Scene/ActiveEntities[G:77]"    ;u64    #401            
+  "Scene/ActiveEntities[G:78]"    ;u64    #402            
+  "Scene/ActiveEntities[G:79]"    ;u64    #403            
+  "Scene/ActiveEntities[G:80]"    ;u64    #404            
+  "Scene/ActiveEntities[G:81]"    ;u64    #501            
+  "Scene/ActiveEntities[G:82]"    ;u64    #502            
+  "Scene/ActiveEntities[G:83]"    ;u64    #503            
+  "Scene/ActiveEntities[G:84]"    ;u64    #504            
+  "Scene/ActiveEntities[G:85]"    ;u64    #505            
+  "Scene/ActiveEntities[G:86]"    ;u64    #506            
+  "Scene/ActiveEntities[G:87]"    ;u64    #507            
+  "Scene/ActiveEntities[G:88]"    ;u64    #508            
+  "Scene/ActiveEntities[G:89]"    ;u64    #509            
+  "Scene/ActiveEntities[G:90]"    ;u64    #50A            
+  "Scene/ActiveEntities[G:91]"    ;u64    #601            
+  "Scene/Folders[]"               ;s64    0               
+  "Scene/EntityNames[]"           ;s64    92              
+  "Scene/EntityNames[G:0]/Id"     ;u64    #1              
+  "Scene/EntityNames[G:0]/Name"   ;string "Bistro"        
+  "Scene/EntityNames[G:1]/Id"     ;u64    #2              
+  "Scene/EntityNames[G:1]/Name"   ;string "Sun"           
+  "Scene/EntityNames[G:2]/Id"     ;u64    #3              
+  "Scene/EntityNames[G:2]/Name"   ;string "Environment"   
+  "Scene/EntityNames[G:3]/Id"     ;u64    #100            
+  "Scene/EntityNames[G:3]/Name"   ;string "Street lamp 1" 
+  "Scene/EntityNames[G:4]/Id"     ;u64    #101            
+  "Scene/EntityNames[G:4]/Name"   ;string "Street lamp 2" 
+  "Scene/EntityNames[G:5]/Id"     ;u64    #102            
+  "Scene/EntityNames[G:5]/Name"   ;string "Street lamp 3" 
+  "Scene/EntityNames[G:6]/Id"     ;u64    #103            
+  "Scene/EntityNames[G:6]/Name"   ;string "Street lamp 4" 
+  "Scene/EntityNames[G:7]/Id"     ;u64    #104            
+  "Scene/EntityNames[G:7]/Name"   ;string "Street lamp 5" 
+  "Scene/EntityNames[G:8]/Id"     ;u64    #105            
+  "Scene/EntityNames[G:8]/Name"   ;string "Street lamp 6" 
+  "Scene/EntityNames[G:9]/Id"     ;u64    #106            
+  "Scene/EntityNames[G:9]/Name"   ;string "Street lamp 7" 
+  "Scene/EntityNames[G:10]/Id"    ;u64    #107            
+  "Scene/EntityNames[G:10]/Name"  ;string "Street lamp 8" 
+  "Scene/EntityNames[G:11]/Id"    ;u64    #108            
+  "Scene/EntityNames[G:11]/Name"  ;string "Street lamp 9" 
+  "Scene/EntityNames[G:12]/Id"    ;u64    #109            
+  "Scene/EntityNames[G:12]/Name"  ;string "Street lamp 10"
+  "Scene/EntityNames[G:13]/Id"    ;u64    #10A            
+  "Scene/EntityNames[G:13]/Name"  ;string "Street lamp 11"
+  "Scene/EntityNames[G:14]/Id"    ;u64    #10B            
+  "Scene/EntityNames[G:14]/Name"  ;string "Street lamp 12"
+  "Scene/EntityNames[G:15]/Id"    ;u64    #10C            
+  "Scene/EntityNames[G:15]/Name"  ;string "Street lamp 13"
+  "Scene/EntityNames[G:16]/Id"    ;u64    #10D            
+  "Scene/EntityNames[G:16]/Name"  ;string "Street lamp 14"
+  "Scene/EntityNames[G:17]/Id"    ;u64    #10E            
+  "Scene/EntityNames[G:17]/Name"  ;string "Street lamp 15"
+  "Scene/EntityNames[G:18]/Id"    ;u64    #10F            
+  "Scene/EntityNames[G:18]/Name"  ;string "Street lamp 16"
+  "Scene/EntityNames[G:19]/Id"    ;u64    #110            
+  "Scene/EntityNames[G:19]/Name"  ;string "Street lamp 17"
+  "Scene/EntityNames[G:20]/Id"    ;u64    #111            
+  "Scene/EntityNames[G:20]/Name"  ;string "Street lamp 18"
+  "Scene/EntityNames[G:21]/Id"    ;u64    #112            
+  "Scene/EntityNames[G:21]/Name"  ;string "Street lamp 19"
+  "Scene/EntityNames[G:22]/Id"    ;u64    #113            
+  "Scene/EntityNames[G:22]/Name"  ;string "Street lamp 20"
+  "Scene/EntityNames[G:23]/Id"    ;u64    #114            
+  "Scene/EntityNames[G:23]/Name"  ;string "Street lamp 21"
+  "Scene/EntityNames[G:24]/Id"    ;u64    #115            
+  "Scene/EntityNames[G:24]/Name"  ;string "Street lamp 22"
+  "Scene/EntityNames[G:25]/Id"    ;u64    #116            
+  "Scene/EntityNames[G:25]/Name"  ;string "Street lamp 23"
+  "Scene/EntityNames[G:26]/Id"    ;u64    #117            
+  "Scene/EntityNames[G:26]/Name"  ;string "Street lamp 24"
+  "Scene/EntityNames[G:27]/Id"    ;u64    #118            
+  "Scene/EntityNames[G:27]/Name"  ;string "Street lamp 25"
+  "Scene/EntityNames[G:28]/Id"    ;u64    #119            
+  "Scene/EntityNames[G:28]/Name"  ;string "Street lamp 26"
+  "Scene/EntityNames[G:29]/Id"    ;u64    #11A            
+  "Scene/EntityNames[G:29]/Name"  ;string "Street lamp 27"
+  "Scene/EntityNames[G:30]/Id"    ;u64    #11B            
+  "Scene/EntityNames[G:30]/Name"  ;string "Street lamp 28"
+  "Scene/EntityNames[G:31]/Id"    ;u64    #200            
+  "Scene/EntityNames[G:31]/Name"  ;string "Lantern 1"     
+  "Scene/EntityNames[G:32]/Id"    ;u64    #201            
+  "Scene/EntityNames[G:32]/Name"  ;string "Lantern 2"     
+  "Scene/EntityNames[G:33]/Id"    ;u64    #202            
+  "Scene/EntityNames[G:33]/Name"  ;string "Lantern 3"     
+  "Scene/EntityNames[G:34]/Id"    ;u64    #203            
+  "Scene/EntityNames[G:34]/Name"  ;string "Lantern 4"     
+  "Scene/EntityNames[G:35]/Id"    ;u64    #204            
+  "Scene/EntityNames[G:35]/Name"  ;string "Lantern 5"     
+  "Scene/EntityNames[G:36]/Id"    ;u64    #300            
+  "Scene/EntityNames[G:36]/Name"  ;string "String bulb 1" 
+  "Scene/EntityNames[G:37]/Id"    ;u64    #301            
+  "Scene/EntityNames[G:37]/Name"  ;string "String bulb 2" 
+  "Scene/EntityNames[G:38]/Id"    ;u64    #302            
+  "Scene/EntityNames[G:38]/Name"  ;string "String bulb 3" 
+  "Scene/EntityNames[G:39]/Id"    ;u64    #303            
+  "Scene/EntityNames[G:39]/Name"  ;string "String bulb 4" 
+  "Scene/EntityNames[G:40]/Id"    ;u64    #304            
+  "Scene/EntityNames[G:40]/Name"  ;string "String bulb 5" 
+  "Scene/EntityNames[G:41]/Id"    ;u64    #305            
+  "Scene/EntityNames[G:41]/Name"  ;string "String bulb 6" 
+  "Scene/EntityNames[G:42]/Id"    ;u64    #306            
+  "Scene/EntityNames[G:42]/Name"  ;string "String bulb 7" 
+  "Scene/EntityNames[G:43]/Id"    ;u64    #307            
+  "Scene/EntityNames[G:43]/Name"  ;string "String bulb 8" 
+  "Scene/EntityNames[G:44]/Id"    ;u64    #308            
+  "Scene/EntityNames[G:44]/Name"  ;string "String bulb 9" 
+  "Scene/EntityNames[G:45]/Id"    ;u64    #309            
+  "Scene/EntityNames[G:45]/Name"  ;string "String bulb 10"
+  "Scene/EntityNames[G:46]/Id"    ;u64    #30A            
+  "Scene/EntityNames[G:46]/Name"  ;string "String bulb 11"
+  "Scene/EntityNames[G:47]/Id"    ;u64    #30B            
+  "Scene/EntityNames[G:47]/Name"  ;string "String bulb 12"
+  "Scene/EntityNames[G:48]/Id"    ;u64    #30C            
+  "Scene/EntityNames[G:48]/Name"  ;string "String bulb 13"
+  "Scene/EntityNames[G:49]/Id"    ;u64    #30D            
+  "Scene/EntityNames[G:49]/Name"  ;string "String bulb 14"
+  "Scene/EntityNames[G:50]/Id"    ;u64    #30E            
+  "Scene/EntityNames[G:50]/Name"  ;string "String bulb 15"
+  "Scene/EntityNames[G:51]/Id"    ;u64    #30F            
+  "Scene/EntityNames[G:51]/Name"  ;string "String bulb 16"
+  "Scene/EntityNames[G:52]/Id"    ;u64    #310            
+  "Scene/EntityNames[G:52]/Name"  ;string "String bulb 17"
+  "Scene/EntityNames[G:53]/Id"    ;u64    #311            
+  "Scene/EntityNames[G:53]/Name"  ;string "String bulb 18"
+  "Scene/EntityNames[G:54]/Id"    ;u64    #312            
+  "Scene/EntityNames[G:54]/Name"  ;string "String bulb 19"
+  "Scene/EntityNames[G:55]/Id"    ;u64    #313            
+  "Scene/EntityNames[G:55]/Name"  ;string "String bulb 20"
+  "Scene/EntityNames[G:56]/Id"    ;u64    #314            
+  "Scene/EntityNames[G:56]/Name"  ;string "String bulb 21"
+  "Scene/EntityNames[G:57]/Id"    ;u64    #315            
+  "Scene/EntityNames[G:57]/Name"  ;string "String bulb 22"
+  "Scene/EntityNames[G:58]/Id"    ;u64    #316            
+  "Scene/EntityNames[G:58]/Name"  ;string "String bulb 23"
+  "Scene/EntityNames[G:59]/Id"    ;u64    #317            
+  "Scene/EntityNames[G:59]/Name"  ;string "String bulb 24"
+  "Scene/EntityNames[G:60]/Id"    ;u64    #318            
+  "Scene/EntityNames[G:60]/Name"  ;string "String bulb 25"
+  "Scene/EntityNames[G:61]/Id"    ;u64    #319            
+  "Scene/EntityNames[G:61]/Name"  ;string "String bulb 26"
+  "Scene/EntityNames[G:62]/Id"    ;u64    #31A            
+  "Scene/EntityNames[G:62]/Name"  ;string "String bulb 27"
+  "Scene/EntityNames[G:63]/Id"    ;u64    #31B            
+  "Scene/EntityNames[G:63]/Name"  ;string "String bulb 28"
+  "Scene/EntityNames[G:64]/Id"    ;u64    #31C            
+  "Scene/EntityNames[G:64]/Name"  ;string "String bulb 29"
+  "Scene/EntityNames[G:65]/Id"    ;u64    #31D            
+  "Scene/EntityNames[G:65]/Name"  ;string "String bulb 30"
+  "Scene/EntityNames[G:66]/Id"    ;u64    #31E            
+  "Scene/EntityNames[G:66]/Name"  ;string "String bulb 31"
+  "Scene/EntityNames[G:67]/Id"    ;u64    #31F            
+  "Scene/EntityNames[G:67]/Name"  ;string "String bulb 32"
+  "Scene/EntityNames[G:68]/Id"    ;u64    #320            
+  "Scene/EntityNames[G:68]/Name"  ;string "String bulb 33"
+  "Scene/EntityNames[G:69]/Id"    ;u64    #321            
+  "Scene/EntityNames[G:69]/Name"  ;string "String bulb 34"
+  "Scene/EntityNames[G:70]/Id"    ;u64    #322            
+  "Scene/EntityNames[G:70]/Name"  ;string "String bulb 35"
+  "Scene/EntityNames[G:71]/Id"    ;u64    #323            
+  "Scene/EntityNames[G:71]/Name"  ;string "String bulb 36"
+  "Scene/EntityNames[G:72]/Id"    ;u64    #324            
+  "Scene/EntityNames[G:72]/Name"  ;string "String bulb 37"
+  "Scene/EntityNames[G:73]/Id"    ;u64    #325            
+  "Scene/EntityNames[G:73]/Name"  ;string "String bulb 38"
+  "Scene/EntityNames[G:74]/Id"    ;u64    #326            
+  "Scene/EntityNames[G:74]/Name"  ;string "String bulb 39"
+  "Scene/EntityNames[G:75]/Id"    ;u64    #327            
+  "Scene/EntityNames[G:75]/Name"  ;string "String bulb 40"
+  "Scene/EntityNames[G:76]/Id"    ;u64    #400            
+  "Scene/EntityNames[G:76]/Name"  ;string "Spot 1"        
+  "Scene/EntityNames[G:77]/Id"    ;u64    #401            
+  "Scene/EntityNames[G:77]/Name"  ;string "Spot 2"        
+  "Scene/EntityNames[G:78]/Id"    ;u64    #402            
+  "Scene/EntityNames[G:78]/Name"  ;string "Spot 3"        
+  "Scene/EntityNames[G:79]/Id"    ;u64    #403            
+  "Scene/EntityNames[G:79]/Name"  ;string "Spot 4"         
+  "Scene/EntityNames[G:80]/Id"    ;u64    #404             
+  "Scene/EntityNames[G:80]/Name"  ;string "Spot 5"         
+  "Scene/EntityNames[G:81]/Id"    ;u64    #501             
+  "Scene/EntityNames[G:81]/Name"  ;string "Walker 1"       
+  "Scene/EntityNames[G:82]/Id"    ;u64    #502             
+  "Scene/EntityNames[G:82]/Name"  ;string "Person 2"       
+  "Scene/EntityNames[G:83]/Id"    ;u64    #503             
+  "Scene/EntityNames[G:83]/Name"  ;string "Person 3"       
+  "Scene/EntityNames[G:84]/Id"    ;u64    #504             
+  "Scene/EntityNames[G:84]/Name"  ;string "Person 4"       
+  "Scene/EntityNames[G:85]/Id"    ;u64    #505             
+  "Scene/EntityNames[G:85]/Name"  ;string "Person 5"       
+  "Scene/EntityNames[G:86]/Id"    ;u64    #506             
+  "Scene/EntityNames[G:86]/Name"  ;string "Person 6"       
+  "Scene/EntityNames[G:87]/Id"    ;u64    #507             
+  "Scene/EntityNames[G:87]/Name"  ;string "Person 7"       
+  "Scene/EntityNames[G:88]/Id"    ;u64    #508             
+  "Scene/EntityNames[G:88]/Name"  ;string "Person 8"       
+  "Scene/EntityNames[G:89]/Id"    ;u64    #509             
+  "Scene/EntityNames[G:89]/Name"  ;string "Person 9"       
+  "Scene/EntityNames[G:90]/Id"    ;u64    #50A             
+  "Scene/EntityNames[G:90]/Name"  ;string "Person 10"      
+  "Scene/EntityNames[G:91]/Id"    ;u64    #601             
+  "Scene/EntityNames[G:91]/Name"  ;string "Carried lantern"

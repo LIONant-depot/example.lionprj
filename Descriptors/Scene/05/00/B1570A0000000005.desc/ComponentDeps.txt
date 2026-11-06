@@ -1,0 +1,16 @@
+
+[ ComponentDeps : 12 ]
+{ Guid:G             Name:s            Module:G          }
+//-----------------  ----------------  -----------------
+                 #0  "Entity"                         #0
+  #3478FF1169E53A3D  "Mesh"                           #0
+  #38CA66FD784FB50D  "LightPoint"                     #0
+  #3CF3880E33E0D190  "Animation"                      #0
+  #3D0C567B5D9C79C1  "LightSun"                       #0
+  #4148BF578D263E71  "Environment"                    #0
+  #46A381BFFDBB6161  "BistroCircler"   #B1570A0000000007
+  #49512D8CCC5F0958  "BistroWalker"    #B1570A0000000007
+  #663773C47FA1D0BA  "Transform"                      #0
+  #A607CEB9BC595944  "LightSpot"                      #0
+  #E3B47B7275F30E4F  "SkinnedMesh"                    #0
+  #E5E1A0039EBA6062  "BistroDayCycle"  #B1570A0000000007

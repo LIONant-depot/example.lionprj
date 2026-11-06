@@ -1,0 +1,19 @@
+
+[ DescriptorVersion ]
+{ Major:d  Minor:d }
+//-------  -------
+     1        0   
+
+// New Types
+< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
+
+[ xProperties : 7 ]
+{ Name:s                             Value:?                   }
+//---------------------------------  -------------------------
+  "ScriptModule/Files[]"             ;s64    2                
+  "ScriptModule/Files[G:0]/Path"     ;string "bistro_life.h"  
+  "ScriptModule/Files[G:0]/Exclude"  ;bool   0                
+  "ScriptModule/Files[G:1]/Path"     ;string "bistro_life.cpp"
+  "ScriptModule/Files[G:1]/Exclude"  ;bool   0                
+  "ScriptModule/Libraries[]"         ;s64    0                
+  "ScriptModule/Defines[]"           ;s64    0                
