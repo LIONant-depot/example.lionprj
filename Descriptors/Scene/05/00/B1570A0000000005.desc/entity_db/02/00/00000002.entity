@@ -29,22 +29,22 @@
   "LightSun/SourceAngle"           ;f32  0.400000006
 
 [ xProperties : 14 ]
-{ Name:s                         Value:?             }
-//-----------------------------  -------------------
-  "Transform/Position/X"         ;f32  0            
-  "Transform/Position/Y"         ;f32  0            
-  "Transform/Position/Z"         ;f32  0            
-  "Transform/Rotation/X"         ;f32  -0.51550889  
-  "Transform/Rotation/Y"         ;f32  1.1920929e-07
-  "Transform/Rotation/Z"         ;f32  -0.360963047 
-  "Transform/Rotation/W"         ;f32  0.777146161  
-  "Transform/RotationDegrees/X"  ;f32  -53.2497787  
-  "Transform/RotationDegrees/Y"  ;f32  38.4622955   
-  "Transform/RotationDegrees/Z"  ;f32  -69.6661758  
-  "Transform/Scale/X"            ;f32  1            
-  "Transform/Scale/Y"            ;f32  1            
-  "Transform/Scale/Z"            ;f32  1            
-  "Transform/EditorLockScale"    ;bool 0            
+{ Name:s                         Value:?            }
+//-----------------------------  ------------------
+  "Transform/Position/X"         ;f32  0           
+  "Transform/Position/Y"         ;f32  0           
+  "Transform/Position/Z"         ;f32  0           
+  "Transform/Rotation/X"         ;f32  -0.378241986
+  "Transform/Rotation/Y"         ;f32  0           
+  "Transform/Rotation/Z"         ;f32  -0.264847994
+  "Transform/Rotation/W"         ;f32  0.887010992 
+  "Transform/RotationDegrees/X"  ;f32  -42.145031  
+  "Transform/RotationDegrees/Y"  ;f32  15.6772785  
+  "Transform/RotationDegrees/Z"  ;f32  -39.3226509 
+  "Transform/Scale/X"            ;f32  1           
+  "Transform/Scale/Y"            ;f32  1           
+  "Transform/Scale/Z"            ;f32  1           
+  "Transform/EditorLockScale"    ;bool 0           
 
 [ xProperties : 6 ]
 { Name:s                            Value:?  }

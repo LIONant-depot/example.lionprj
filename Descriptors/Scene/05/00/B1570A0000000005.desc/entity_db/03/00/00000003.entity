@@ -29,7 +29,7 @@
   "Environment/Ambient/X"                        ;f32  0          
   "Environment/Ambient/Y"                        ;f32  0          
   "Environment/Ambient/Z"                        ;f32  0          
-  "Environment/GI"                               ;bool 0          
+  "Environment/GI"                               ;bool 1          
   "Environment/GIRayBudget"                      ;s32  16384      
   "Environment/GIRaysPerSurfel"                  ;s32  8          
   "Environment/GIMoments"                        ;bool 1          
