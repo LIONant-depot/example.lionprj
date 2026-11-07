@@ -27,6 +27,15 @@ namespace soccer
     , xproperty::settings::enum_item{ "Goal",    phase::GOAL    }
     };
 
+    // What a player is doing besides running: a goalkeeper's dive, a field player's slide tackle (soccer_player_system.h).
+    enum class action : std::uint8_t { NONE, DIVE, SLIDE };
+
+    inline constexpr auto action_list_v = std::array
+    { xproperty::settings::enum_item{ "None",  action::NONE  }
+    , xproperty::settings::enum_item{ "Dive",  action::DIVE  }
+    , xproperty::settings::enum_item{ "Slide", action::SLIDE }
+    };
+
     struct match
     {
         constexpr static auto typedef_v = xecs::component::type::data{ .m_pName = "SoccerMatch" };
@@ -35,6 +44,7 @@ namespace soccer
         float   m_HalfLength    = 12.0f;        // the goals are at x = -HalfLength (Blue defends) and +HalfLength (Red defends)
         float   m_HalfWidth     = 7.0f;         // the touchlines are at z = -HalfWidth and +HalfWidth
         float   m_GoalHalfWidth = 2.0f;         // the mouth of each goal is this far to each side of its center
+        float   m_GoalHeight    = 1.125f;       // and this high (the underside of the crossbar)
         float   m_KickoffDelay  = 2.0f;         // seconds everybody waits before the ball is in play
         float   m_GoalPause     = 2.5f;         // seconds the celebration lasts after a goal
 
@@ -45,12 +55,16 @@ namespace soccer
         int     m_ScoreRed      = 0;
         team    m_LastScorer    = team::BLUE;
         int     m_Round         = 0;            // goes up at every kickoff: the others see it change and walk back to their places
+        int     m_Dives         = 0;            // how many times a goalkeeper has dived (the players system counts them; the Inspector and the tests read them)
+        int     m_Lofts         = 0;            // shots that left the ground on purpose
+        int     m_Tackles       = 0;            // slide tackles that took the ball
 
         XPROPERTY_DEF
         ( "SoccerMatch", match
         , obj_member<"HalfLength",    &match::m_HalfLength>
         , obj_member<"HalfWidth",     &match::m_HalfWidth>
         , obj_member<"GoalHalfWidth", &match::m_GoalHalfWidth>
+        , obj_member<"GoalHeight",    &match::m_GoalHeight>
         , obj_member<"KickoffDelay",  &match::m_KickoffDelay>
         , obj_member<"GoalPause",     &match::m_GoalPause>
         , obj_member<"Phase",         &match::m_Phase, member_enum_span<phase_list_v>, member_flags<flags::SHOW_READONLY>>
@@ -59,6 +73,9 @@ namespace soccer
         , obj_member<"ScoreRed",      &match::m_ScoreRed,                               member_flags<flags::SHOW_READONLY>>
         , obj_member<"LastScorer",    &match::m_LastScorer, member_enum_span<team_list_v>, member_flags<flags::SHOW_READONLY>>
         , obj_member<"Round",         &match::m_Round,                                  member_flags<flags::SHOW_READONLY>>
+        , obj_member<"Dives",         &match::m_Dives,                                  member_flags<flags::SHOW_READONLY>>
+        , obj_member<"Lofts",         &match::m_Lofts,                                  member_flags<flags::SHOW_READONLY>>
+        , obj_member<"Tackles",       &match::m_Tackles,                                member_flags<flags::SHOW_READONLY>>
         )
     };
     XSCRIPT_REGISTER_COMPONENT(match, "Soccer", 100)
@@ -130,6 +147,12 @@ namespace soccer
         int             m_Round         = -1;                           // the kickoff he last walked to his place for
         bool            m_bHolding      = false;                        // a goalkeeper that has the ball in his hands
         float           m_HoldTime      = 0.0f;                         // seconds left before he kicks it away
+        action          m_Action        = action::NONE;                 // a dive (goalkeeper) or a slide (field player) in progress
+        float           m_ActionTime    = 0.0f;                         // seconds left of it
+        float           m_ActionCooldown = 0.0f;                        // seconds before he may start another one
+        float           m_ActionX       = 0.0f;                         // the direction of a slide on the ground, or the sideways speed of a dive (x, z)
+        float           m_ActionZ       = 0.0f;
+        float           m_ActionUp      = 0.0f;                         // the upward speed a dive asks of his legs
 
         XPROPERTY_DEF
         ( "SoccerPlayer", player
@@ -141,6 +164,7 @@ namespace soccer
         , obj_member<"Skill",     &player::m_Skill>
         , obj_member<"Holding",   &player::m_bHolding, member_flags<flags::SHOW_READONLY>>
         , obj_member<"HoldTime",  &player::m_HoldTime, member_flags<flags::SHOW_READONLY>>
+        , obj_member<"Action",    &player::m_Action, member_enum_span<action_list_v>, member_flags<flags::SHOW_READONLY>>
         )
     };
     XSCRIPT_REGISTER_COMPONENT(player, "Soccer", 120)

@@ -125,6 +125,28 @@ namespace soccer
                            , Ball.m_Mass * (TargetZ - Ball.m_LinearVelocity.m_Z) / kFixedDt );
     }
 
+    // The upward speed that makes a ball kicked at Speed along the ground arrive Distance away at Height (y = Up * t - g * t * t / 2, t = Distance / Speed). Clamped to MaxUp.
+    inline float LoftUp(float Distance, float Speed, float Height, float MaxUp) noexcept
+    {
+        if (Speed <= 1.0e-3f || Distance <= 0.0f) return 0.0f;
+        const float t = Distance / Speed;
+        return Clamp((Height + 0.5f * kGravity * t * t) / t, 0.0f, MaxUp);
+    }
+
+    // Where a ball that flies freely crosses the vertical plane x = LineX: in how many seconds (Time < 0: it never does, it moves away or along it), at which z and at which height.
+    struct crossing { float m_Time = -1.0f; float m_Z = 0.0f; float m_Y = 0.0f; };
+    inline crossing CrossingAt(float LineX, vec2 BallPos, float BallY, vec2 BallVel, float BallVelY) noexcept
+    {
+        crossing C;
+        if (std::fabs(BallVel.x) < 1.0e-3f) return C;
+        const float t = (LineX - BallPos.x) / BallVel.x;
+        if (t < 0.0f) return C;
+        C.m_Time = t;
+        C.m_Z    = BallPos.z + BallVel.z * t;
+        C.m_Y    = std::max(0.0f, BallY + BallVelY * t - 0.5f * kGravity * t * t);       // (the ground stops it: a bounce is not predicted)
+        return C;
+    }
+
     // A tiny deterministic random source, so a match plays out the same way twice (and a test can rely on it).
     struct random
     {

@@ -14,6 +14,14 @@
 // everybody takes position in the middle of the field. A ball that comes too fast he can
 // only clear: he kicks it away.
 //
+// Three moves on top of that (all of them pushes on the bodies within the same force limits as running, jumping and kicking):
+//   - a goalkeeper DIVES: a ball flying at his goal that he cannot reach on his feet (too far to the side, or too high) makes him push off with
+//     both legs, up and to the side where it is going to cross his line; in the air his hands reach farther and higher - he catches what is slow
+//     enough and parries the rest away from the goal;
+//   - a field player LOFTS a shot: from farther out, or when an opponent stands in the way, the shot leaves the ground and drops into the goal;
+//   - a field player SLIDES: when an opponent has the ball at his feet, a little out of his reach, and he does not come from behind, he slides
+//     at it; reaching the ball pokes it away for his team, and either way he needs a moment to get up again.
+//
 // The match component says what is going on: at a kickoff everybody walks to his place, and after a goal the team that scored jumps.
 #include "soccer_components.h"
 
@@ -49,6 +57,70 @@ namespace soccer
             return Distance(P, A + AB * t);
         }
 
+        // The goalkeeper's dive.
+        inline constexpr float kDiveMinTime     = 0.12f;    // s: a ball that crosses his line sooner than this is past him already
+        inline constexpr float kDiveMaxTime     = 0.9f;     // s: a ball that crosses it later he can walk to
+        inline constexpr float kDiveMinBall     = 4.0f;     // m/s toward his goal: a slower ball he plays on his feet
+        inline constexpr float kKeeperReach     = 0.6f;     // m to the side he covers standing (arms out)
+        inline constexpr float kStandReachY     = 1.6f;     // m: the height his hands reach without jumping
+        inline constexpr float kDiveSideMax     = 5.0f;     // m/s sideways his legs can give him
+        inline constexpr float kDiveUpMin       = 1.5f;     // m/s up: a low dive still leaves the ground
+        inline constexpr float kDiveUpMax       = 3.3f;     // m/s up as his feet leave the ground: about 0.55 m more of flight, on top of kDiveLegs
+        inline constexpr float kDiveTakeoff     = 0.2f;     // s his legs push at most
+        inline constexpr float kDiveLegs        = 0.45f;    // m: they push until his body is this much over where it stands (the legs are straight)
+        inline constexpr float kDiveTime        = 0.9f;     // s the dive lasts, the landing included
+        inline constexpr float kDiveCooldown    = 1.5f;     // s on the ground before he may dive again
+        inline constexpr float kDiveReach       = 1.3f;     // m: in the air his hands reach this far (on the ground: kCatchRange)
+        inline constexpr float kDiveReachY      = 0.9f;     // m above and below his hands
+        inline constexpr float kParrySpeed      = 7.0f;     // m/s: a ball too fast to hold is pushed this fast, out toward the side
+        inline constexpr float kParryUp         = 2.5f;
+
+        // The slide tackle.
+        inline constexpr float kSlideMin        = 0.9f;     // m from the ball: nearer he just kicks it
+        inline constexpr float kSlideMax        = 2.4f;     // m: farther he cannot get there sliding
+        inline constexpr float kCarrierRange    = 0.9f;     // m: an opponent this near the ball has it at his feet
+        inline constexpr float kSlideChance     = 0.05f;    // per fixed step, when he can: he does not always go to ground
+        inline constexpr float kSlideTime       = 0.5f;     // s on the ground sliding
+        inline constexpr float kSlideRecover    = 0.5f;     // s getting up (he moves slowly)
+        inline constexpr float kSlideCooldown   = 2.5f;     // s before he may slide again
+        inline constexpr float kSlideReach      = 1.2f;     // m: a sliding leg reaches this far
+        inline constexpr float kSlidePoke       = 6.0f;     // m/s the ball leaves a sliding leg
+
+        // Lofted shots.
+        inline constexpr float kLoftMinDistance = 4.0f;     // m from the goal: farther out a shot is lofted
+        inline constexpr float kLoftMinHeight   = 0.5f;     // m at the goal line: the ball's center, from this ...
+        inline constexpr float kLoftUnderBar    = 0.3f;     // ... up to this much under the bar (the ball's radius, 0.21 m, and a margin)
+        inline constexpr float kOverTheBar      = 0.35f;    // m: a ball whose center crosses this much over the bar goes over it (bar 0.15 m thick, ball 0.21 m)
+        inline constexpr float kMaxLoftUp       = 6.0f;     // m/s up at most
+
+        // A dive: the sideways (z) and upward speeds his legs must give him to meet a ball that crosses his line as C says. False when it is not worth diving: it misses the goal,
+        // it comes too soon or too late, or he gets there on his feet and it is not over his head.
+        struct dive { float m_Side = 0.0f; float m_Up = 0.0f; };
+        inline bool PlanDive(const crossing& C, float KeeperZ, float GoalHalfWidth, float GoalHeight, float WalkSpeed, dive& Out) noexcept
+        {
+            if (C.m_Time < kDiveMinTime || C.m_Time > kDiveMaxTime) return false;
+            if (std::fabs(C.m_Z) > GoalHalfWidth + 0.3f) return false;                                     // wide of the post: let it go
+            if (C.m_Y > GoalHeight + kOverTheBar) return false;                                            // over the bar: let it go
+            const float Gap   = C.m_Z - KeeperZ;
+            const bool  bHigh = C.m_Y > kStandReachY;
+            if (std::fabs(Gap) <= WalkSpeed * C.m_Time * 0.5f + kKeeperReach && !bHigh) return false;    // he gets there on his feet
+            Out.m_Side = Clamp(Gap / std::max(C.m_Time, 0.15f), -kDiveSideMax, kDiveSideMax);
+            Out.m_Up   = bHigh ? Clamp(std::sqrt(2.0f * kGravity * std::max(0.0f, C.m_Y - kStandReachY - kDiveLegs)), kDiveUpMin, kDiveUpMax) : kDiveUpMin;   // (his legs straighten first)
+            return true;
+        }
+
+        // Can he slide at the ball an opponent (at CarrierPos, moving CarrierVel) has at his feet? He is a little too far to kick it but close enough to slide, and he does not come from
+        // behind the carrier (a tackle from behind is a foul).
+        inline bool CanSlide(vec2 Pos, vec2 BallPos, vec2 CarrierPos, vec2 CarrierVel) noexcept
+        {
+            const float D = Distance(Pos, BallPos);
+            if (D < kSlideMin || D > kSlideMax) return false;
+            if (Distance(CarrierPos, BallPos) > kCarrierRange) return false;
+            const vec2 Heading = Normalized(CarrierVel);
+            if (Length(Heading) > 0.5f && Dot(Normalized(Pos - CarrierPos), Heading) < -0.5f) return false;
+            return true;
+        }
+
         // The vector V turned by Angle radians.
         inline vec2 Turned(vec2 V, float Angle) noexcept
         {
@@ -63,6 +135,10 @@ namespace soccer
         using query = std::tuple<xecs::query::must<xlioncore::transform, player, identity>>;
 
         random      m_Random;
+
+        // What happened during this fixed step (dives, lofted shots, slide tackles that took the ball): added to the match's counters at its end.
+        struct events { int m_Dives = 0; int m_Lofts = 0; int m_Tackles = 0; };
+        events      m_Events;
 
         // What was decided for the ball this frame, applied to it once everybody has been visited: a kick (m_Up: a kick that lifts it), or a goalkeeper holding it (it goes to m_HoldAt).
         struct kick
@@ -92,16 +168,17 @@ namespace soccer
             //
             match Rules;
             if (!ReadMatch(*this, Rules)) return;
+            m_Events = {};
 
             vec2 BallPos, BallVel;
-            float BallY = 0.0f;
+            float BallY = 0.0f, BallVelY = 0.0f;
             ball  Ball;
             {
                 xecs::query::instance Query;
                 Query.m_Must.AddFromComponents<xlioncore::transform, ball, xlioncore::physics::physics_dynamics>();
                 Foreach(Search(Query), [&](const xecs::component::entity&, const xlioncore::transform& T, const ball& B, const xlioncore::physics::physics_dynamics& Body) noexcept
                 {
-                    BallPos = Flat(T.m_Position); BallVel = Flat(Body.m_LinearVelocity); BallY = T.m_Position.m_Y; Ball = B;
+                    BallPos = Flat(T.m_Position); BallVel = Flat(Body.m_LinearVelocity); BallY = T.m_Position.m_Y; BallVelY = Body.m_LinearVelocity.m_Y; Ball = B;
                 });
             }
 
@@ -133,7 +210,7 @@ namespace soccer
                 Query.m_Must.AddFromComponents<xlioncore::transform, player, identity, xlioncore::physics::physics_dynamics>();
                 Foreach(Search(Query), [&](const xecs::component::entity& Entity, xlioncore::transform& T, player& P, const identity& Id, xlioncore::physics::physics_dynamics& Body) noexcept
                 {
-                    Act(Dt, Rules, BallPos, BallVel, BallY, Ball, All, Kick, Entity, T, P, Id, Body);
+                    Act(Dt, Rules, BallPos, BallVel, BallY, BallVelY, Ball, All, Kick, Entity, T, P, Id, Body);
                 });
             }
 
@@ -159,10 +236,25 @@ namespace soccer
                     AddForce(Body, F.m_X, F.m_Y, F.m_Z, kMaxKickForce);
                 });
             }
+
+            //
+            // What happened, for the match's counters
+            //
+            if (m_Events.m_Dives || m_Events.m_Lofts || m_Events.m_Tackles)
+            {
+                xecs::query::instance Query;
+                Query.m_Must.AddFromComponents<match>();
+                Foreach(Search(Query), [&](const xecs::component::entity&, match& M) noexcept
+                {
+                    M.m_Dives   += m_Events.m_Dives;
+                    M.m_Lofts   += m_Events.m_Lofts;
+                    M.m_Tackles += m_Events.m_Tackles;
+                });
+            }
         }
 
         // One player, one frame.
-        void Act(float Dt, const match& Rules, vec2 BallPos, vec2 BallVel, float BallY, const ball& Ball, const std::vector<details::person>& All, kick& Kick
+        void Act(float Dt, const match& Rules, vec2 BallPos, vec2 BallVel, float BallY, float BallVelY, const ball& Ball, const std::vector<details::person>& All, kick& Kick
                , const xecs::component::entity& Entity, xlioncore::transform& T, player& P, const identity& Id, xlioncore::physics::physics_dynamics& Body) noexcept
         {
             using namespace details;
@@ -179,10 +271,27 @@ namespace soccer
                 P.m_Cooldown = 0.0f;
                 P.m_bHolding = false;
                 P.m_HoldTime = 0.0f;
+                P.m_Action   = action::NONE;
+                P.m_ActionTime = 0.0f;
+                P.m_ActionCooldown = 0.0f;
                 xlioncore::physics::TeleportDynamicBody(getGameMgr(), Entity, xmath::fvec3(Home.x, T.m_Position.m_Y, Home.z), xmath::fquat::fromIdentity());
                 return;
             }
             P.m_Cooldown = std::max(0.0f, P.m_Cooldown - Dt);
+            P.m_ActionCooldown = std::max(0.0f, P.m_ActionCooldown - Dt);
+            const bool bGrounded = T.m_Position.m_Y < P.m_Home.m_Y + 0.12f && Body.m_LinearVelocity.m_Y < 3.0f;
+
+            // A dive or a slide runs its time out (and ends at once when the play stops).
+            if (P.m_Action != action::NONE)
+            {
+                P.m_ActionTime -= Dt;
+                if (P.m_ActionTime <= 0.0f || Rules.m_Phase != phase::PLAYING)
+                {
+                    P.m_ActionCooldown = P.m_Action == action::DIVE ? kDiveCooldown : kSlideCooldown;
+                    P.m_Action         = action::NONE;
+                    P.m_ActionTime     = 0.0f;
+                }
+            }
 
             //
             // Where does he want to be?
@@ -212,7 +321,36 @@ namespace soccer
                         if (BallPos.x * Dir > 0.0f) Target.x += Dir * 1.5f;                                                            // the ball is in their half: move up
                     }
 
-                    if (!bWaiting && !Ball.m_bHeld && BallDist < kKickRange && BallY < kKickHeight && P.m_Cooldown <= 0.0f) DecideKickField(Rules, Dir, Pos, BallPos, All, Kick, P, Id);
+                    // A slide tackle: the opponent nearest the ball has it at his feet, a little out of this player's reach (he is the one chasing it)
+                    if (P.m_Action == action::NONE && P.m_ActionCooldown <= 0.0f && Rank == 0 && !bWaiting && !Ball.m_bHeld && bGrounded && BallY < kKickHeight)
+                    {
+                        const person* pCarrier = nullptr;
+                        for (const person& O : All)
+                            if (!O.m_bReferee && (pCarrier == nullptr || Distance(O.m_Pos, BallPos) < Distance(pCarrier->m_Pos, BallPos))) pCarrier = &O;
+                        if (pCarrier && pCarrier->m_Team != P.m_Team && CanSlide(Pos, BallPos, pCarrier->m_Pos, pCarrier->m_Vel) && m_Random.Unit() < kSlideChance)
+                        {
+                            const vec2 Way = Normalized((BallPos + BallVel * 0.2f) - Pos);
+                            P.m_Action     = action::SLIDE;
+                            P.m_ActionTime = kSlideTime + kSlideRecover;
+                            P.m_ActionX    = Way.x;
+                            P.m_ActionZ    = Way.z;
+                        }
+                    }
+                    const bool bSliding = P.m_Action == action::SLIDE && P.m_ActionTime > kSlideRecover;
+                    if (bSliding && !Kick.m_bValid && !Kick.m_bHold && !Ball.m_bHeld && BallDist < kSlideReach && BallY < kKickHeight * 0.6f && P.m_Cooldown <= 0.0f)
+                    {
+                        // the leg reaches the ball: it goes on the way he slides, turned a little toward the goal his team attacks
+                        const vec2 Way = Normalized(vec2{ P.m_ActionX, P.m_ActionZ } + vec2{ Dir * 0.6f, 0.0f });
+                        Kick.m_bValid   = true;
+                        Kick.m_Velocity = Way * kSlidePoke;
+                        Kick.m_Up       = 0.0f;
+                        Kick.m_Team     = P.m_Team;
+                        Kick.m_Id       = Id.m_Id;
+                        P.m_Cooldown    = 0.45f;
+                        P.m_ActionTime  = std::min(P.m_ActionTime, kSlideRecover);                                                    // the slide is over: he gets up
+                        ++m_Events.m_Tackles;
+                    }
+                    else if (P.m_Action == action::NONE && !bWaiting && !Ball.m_bHeld && BallDist < kKickRange && BallY < kKickHeight && P.m_Cooldown <= 0.0f) DecideKickField(Rules, Dir, Pos, BallPos, All, Kick, P, Id);
                 }
                 else                                                                                                                   // goalkeeper
                 {
@@ -226,14 +364,57 @@ namespace soccer
                         P.m_HoldTime -= Dt;
                         if (P.m_HoldTime <= 0.0f) ThrowToTheMiddle(Rules, Pos, BallPos, All, Kick, P, Id, Target);
                     }
+                    else if (P.m_Action == action::DIVE)                                                                                // in the air: his hands reach farther and higher
+                    {
+                        Target = Pos;
+                        const float HandsY   = T.m_Position.m_Y + kHandsHeight;
+                        const bool  bPassBack = Ball.m_LastTouch == P.m_Team && Ball.m_LastKicker >= 0;
+                        if (!bPassBack && !Ball.m_bHeld && !Kick.m_bValid && !Kick.m_bHold && P.m_Cooldown <= 0.0f && BallDist < kDiveReach && std::fabs(BallY - HandsY) < kDiveReachY)
+                        {
+                            const float Speed = std::sqrt(Dot(BallVel, BallVel) + BallVelY * BallVelY);
+                            Kick.m_Team = P.m_Team;
+                            Kick.m_Id   = Id.m_Id;
+                            if (Speed < kCatchSpeed)                                                                                    // slow enough: he holds it
+                            {
+                                P.m_bHolding = true;
+                                P.m_HoldTime = kHoldSeconds;
+                                Kick.m_bHold = true;
+                                Kick.m_HoldAt = xmath::fvec3(Pos.x + Dir * kHandsAhead, HandsY, Pos.z);
+                            }
+                            else                                                                                                        // he pushes it away: out of the goal, to the side it was going
+                            {
+                                const float Side = BallPos.z >= 0.0f ? 1.0f : -1.0f;
+                                Kick.m_bValid   = true;
+                                Kick.m_Velocity = Normalized(vec2{ Dir, Side }) * kParrySpeed;
+                                Kick.m_Up       = kParryUp;
+                                P.m_Cooldown    = 0.6f;
+                            }
+                        }
+                    }
                     else
                     {
+                        // A ball flying at his goal that he cannot reach on his feet: he dives (up, left or right) to meet it where it crosses his line
+                        if (P.m_ActionCooldown <= 0.0f && bGrounded && !Ball.m_bHeld && BallVel.x * Dir < -kDiveMinBall && !(Ball.m_LastTouch == P.m_Team && Ball.m_LastKicker >= 0))
+                        {
+                            dive Plan;
+                            if (PlanDive(CrossingAt(Pos.x, BallPos, BallY, BallVel, BallVelY), Pos.z, Rules.m_GoalHalfWidth, Rules.m_GoalHeight, P.m_Speed, Plan))
+                            {
+                                P.m_Action     = action::DIVE;
+                                P.m_ActionTime = kDiveTime;
+                                P.m_ActionX    = 0.0f;
+                                P.m_ActionZ    = Plan.m_Side;
+                                P.m_ActionUp   = Plan.m_Up;
+                                ++m_Events.m_Dives;
+                            }
+                        }
+
                         const float Reach = Rules.m_GoalHalfWidth - 0.3f;
                         Target = { Home.x, Clamp(BallPos.z * 0.55f, -Reach, Reach) };
                         const bool bComing = BallVel.x * Dir < 0.2f;                                                                   // not moving away from his goal
                         if (Distance(BallPos, Home) < 4.5f && bComing) Target = StandOff(Pos, BallPos);                                               // rush out
 
-                        if (CanCatch(Home, Pos, BallPos, BallVel, BallY, Ball, P))                                                    // the right time: pick it up
+                        if (P.m_Action == action::DIVE) Target = Pos;                                                                  // (he just took off)
+                        else if (CanCatch(Home, Pos, BallPos, BallVel, BallY, Ball, P))                                               // the right time: pick it up
                         {
                             P.m_bHolding = true;
                             P.m_HoldTime = kHoldSeconds;
@@ -266,15 +447,32 @@ namespace soccer
                     if (L < 1.0f && L > 1.0e-3f) Desired = Desired + Away * ((1.0f - L) * 3.0f / L);
                 }
             }
+            if (P.m_Action == action::SLIDE)                                                                                           // sliding: straight on, at his top speed; then getting up, slowly
+                Desired = P.m_ActionTime > kSlideRecover ? vec2{ P.m_ActionX, P.m_ActionZ } * P.m_Speed : Desired * 0.25f;
             if (Length(Desired) > P.m_Speed) Desired = Normalized(Desired) * P.m_Speed;                                                 // nobody runs faster than his top speed
-            vec2 Accel = (Desired - Vel) * (1.0f / kFixedDt);                                                                         // (above it, this brakes him)
-            const float MaxAccel = 9.0f;                                                                                               // m/s2
-            if (Length(Accel) > MaxAccel) Accel = Normalized(Accel) * MaxAccel;
-            const vec2 Push = LimitedPush(Accel * Body.m_Mass, Vel, P.m_Speed);                                                       // (at his top speed: no more push ahead)
-            AddForce(Body, Push.x, 0.0f, Push.z, kMaxRunForce);
+
+            if (P.m_Action == action::DIVE)
+            {
+                // the dive: while his legs are still on the ground (the first kDiveTakeoff seconds, until they are straight) they push him toward the speeds
+                // asked for - up (his weight carried as well), to the side, and none along x (he stays on his line); in the air nothing pushes, the physics flies him
+                if (T.m_Position.m_Y < P.m_Home.m_Y + kDiveLegs && P.m_ActionTime > kDiveTime - kDiveTakeoff)
+                {
+                    const float Fx = Body.m_Mass * (0.0f            - Body.m_LinearVelocity.m_X) / kFixedDt;
+                    const float Fy = Body.m_Mass * (P.m_ActionUp   - Body.m_LinearVelocity.m_Y) / kFixedDt + Body.m_Mass * kGravity;
+                    const float Fz = Body.m_Mass * (P.m_ActionZ    - Body.m_LinearVelocity.m_Z) / kFixedDt;
+                    AddForce(Body, Fx, std::max(0.0f, Fy), Fz, kMaxJumpForce);
+                }
+            }
+            else
+            {
+                vec2 Accel = (Desired - Vel) * (1.0f / kFixedDt);                                                                     // (above it, this brakes him)
+                const float MaxAccel = 9.0f;                                                                                           // m/s2
+                if (Length(Accel) > MaxAccel) Accel = Normalized(Accel) * MaxAccel;
+                const vec2 Push = LimitedPush(Accel * Body.m_Mass, Vel, P.m_Speed);                                                   // (at his top speed: no more push ahead)
+                AddForce(Body, Push.x, 0.0f, Push.z, kMaxRunForce);
+            }
 
             // the team that just scored jumps: a push of the legs (about 2 kN, three times his weight) while his feet are on the ground
-            const bool bGrounded = T.m_Position.m_Y < P.m_Home.m_Y + 0.12f && Body.m_LinearVelocity.m_Y < 3.0f;
             if (Rules.m_Phase == phase::GOAL && Rules.m_LastScorer == P.m_Team && bGrounded && std::sin(Rules.m_Timer * 5.0f + static_cast<float>(Id.m_Id)) > 0.0f)
                 AddForce(Body, 0.0f, 2200.0f, 0.0f, kMaxJumpForce);
 
@@ -396,12 +594,20 @@ namespace soccer
 
             vec2  Aim;
             float Speed;
+            float Up = 0.0f;
 
             if (GoalDist < 6.5f)                                                                                                       // close enough: shoot
             {
                 const float Side = m_Random.Range(0.0f, 1.0f) < 0.5f ? -1.0f : 1.0f;                                                   // into a corner, away from the keeper
                 Aim   = { Goal.x, Side * (Rules.m_GoalHalfWidth - 0.5f) };
                 Speed = P.m_KickSpeed * 1.3f;
+
+                // from farther out, or with an opponent standing in the way, the shot leaves the ground and drops under the bar
+                bool bBlocked = false;
+                for (const person& Q : All)
+                    if (!Q.m_bReferee && Q.m_Team != P.m_Team && DistanceToSegment(Q.m_Pos, Pos, Aim) < 0.8f && Distance(Q.m_Pos, Pos) > 0.5f) bBlocked = true;
+                if (GoalDist > kLoftMinDistance || bBlocked)
+                    Up = LoftUp(Distance(BallPos, Aim), Speed, m_Random.Range(kLoftMinHeight, std::max(kLoftMinHeight, Rules.m_GoalHeight - kLoftUnderBar)), kMaxLoftUp);
             }
             else
             {
@@ -440,7 +646,7 @@ namespace soccer
                     Speed = 8.0f;
                 }
             }
-            Shoot(BallPos, Aim, Speed, Kick, P, Id);
+            Shoot(BallPos, Aim, Speed, Kick, P, Id, Up);
         }
 
         // The goalkeeper has the ball: a long pass to the team-mate that is the most ahead and free, or a clearance.
@@ -465,8 +671,8 @@ namespace soccer
             Shoot(BallPos, Aim, Clamp(Distance(Aim, Pos) * 1.4f + 3.0f, 8.0f, P.m_KickSpeed * 1.1f), Kick, P, Id);
         }
 
-        // Kicks the ball from BallPos toward Aim, with an error that gets smaller with skill.
-        void Shoot(vec2 BallPos, vec2 Aim, float Speed, kick& Kick, player& P, const identity& Id) noexcept
+        // Kicks the ball from BallPos toward Aim, with an error that gets smaller with skill (Up: m/s up, a lofted shot).
+        void Shoot(vec2 BallPos, vec2 Aim, float Speed, kick& Kick, player& P, const identity& Id, float Up = 0.0f) noexcept
         {
             using namespace details;
             if (Kick.m_bValid) return;                                                                                                  // only one kick per frame
@@ -476,9 +682,11 @@ namespace soccer
 
             Kick.m_bValid   = true;
             Kick.m_Velocity = Direction * Speed;
+            Kick.m_Up       = Up;
             Kick.m_Team     = P.m_Team;
             Kick.m_Id       = Id.m_Id;
             P.m_Cooldown    = 0.45f;
+            if (Up > 0.0f) ++m_Events.m_Lofts;
         }
     };
     XSCRIPT_REGISTER_SYSTEM(player_system)
