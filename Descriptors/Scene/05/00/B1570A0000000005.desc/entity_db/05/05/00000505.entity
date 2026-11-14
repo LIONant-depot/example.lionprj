@@ -38,9 +38,9 @@
 [ xProperties : 14 ]
 { Name:s                         Value:?           }
 //-----------------------------  -----------------
-  "Transform/Position/X"         ;f32  -2.14199996
-  "Transform/Position/Y"         ;f32  0.119999997
-  "Transform/Position/Z"         ;f32  1.495      
+  "Transform/Position/X"         ;f32  -2.57792449
+  "Transform/Position/Y"         ;f32  0.225492716
+  "Transform/Position/Z"         ;f32  0.279108167
   "Transform/Rotation/X"         ;f32  0          
   "Transform/Rotation/Y"         ;f32  0.087156035
   "Transform/Rotation/Z"         ;f32  0          

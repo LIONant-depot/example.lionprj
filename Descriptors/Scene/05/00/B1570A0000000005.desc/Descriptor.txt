@@ -7,12 +7,12 @@
 // New Types
 < s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
 
-[ xProperties : 281 ]
+[ xProperties : 282 ]
 { Name:s                        Value:?   }
 //----------------------------  ---------
   "Scene/ParentScenes[]"        ;s64 0   
   "Scene/ExternalRefs[]"        ;s64 0   
-  "Scene/ActiveEntities[]"      ;s64 92  
+  "Scene/ActiveEntities[]"      ;s64 93  
   "Scene/ActiveEntities[G:0]"   ;u64 #1  
   "Scene/ActiveEntities[G:1]"   ;u64 #2  
   "Scene/ActiveEntities[G:2]"   ;u64 #3  
@@ -105,6 +105,7 @@
   "Scene/ActiveEntities[G:89]"    ;u64    #509            
   "Scene/ActiveEntities[G:90]"    ;u64    #50A            
   "Scene/ActiveEntities[G:91]"    ;u64    #601            
+  "Scene/ActiveEntities[G:92]"    ;u64    #D0DE           
   "Scene/Folders[]"               ;s64    0               
   "Scene/EntityNames[]"           ;s64    92              
   "Scene/EntityNames[G:0]/Id"     ;u64    #1              
@@ -265,7 +266,7 @@
   "Scene/EntityNames[G:77]/Name"  ;string "Spot 2"        
   "Scene/EntityNames[G:78]/Id"    ;u64    #402            
   "Scene/EntityNames[G:78]/Name"  ;string "Spot 3"        
-  "Scene/EntityNames[G:79]/Id"    ;u64    #403            
+  "Scene/EntityNames[G:79]/Id"    ;u64    #403             
   "Scene/EntityNames[G:79]/Name"  ;string "Spot 4"         
   "Scene/EntityNames[G:80]/Id"    ;u64    #404             
   "Scene/EntityNames[G:80]/Name"  ;string "Spot 5"         

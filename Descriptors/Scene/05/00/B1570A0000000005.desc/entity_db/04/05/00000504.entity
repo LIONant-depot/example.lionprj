@@ -25,22 +25,22 @@
   "Animation/Playing"  ;bool      1                   
 
 [ xProperties : 14 ]
-{ Name:s                         Value:?            }
-//-----------------------------  ------------------
-  "Transform/Position/X"         ;f32  -4.18400002 
-  "Transform/Position/Y"         ;f32  0.119999997 
-  "Transform/Position/Z"         ;f32  2.4059999   
-  "Transform/Rotation/X"         ;f32  0           
-  "Transform/Rotation/Y"         ;f32  0.766044021 
-  "Transform/Rotation/Z"         ;f32  0           
-  "Transform/Rotation/W"         ;f32  -0.642787993
-  "Transform/RotationDegrees/X"  ;f32  -0          
-  "Transform/RotationDegrees/Y"  ;f32  -99.9999313 
-  "Transform/RotationDegrees/Z"  ;f32  0           
-  "Transform/Scale/X"            ;f32  1           
-  "Transform/Scale/Y"            ;f32  1           
-  "Transform/Scale/Z"            ;f32  1           
-  "Transform/EditorLockScale"    ;bool 0           
+{ Name:s                         Value:?           }
+//-----------------------------  -----------------
+  "Transform/Position/X"         ;f32  -5.10974932
+  "Transform/Position/Y"         ;f32  0.150304466
+  "Transform/Position/Z"         ;f32  3.0293231  
+  "Transform/Rotation/X"         ;f32  0          
+  "Transform/Rotation/Y"         ;f32  -0.76604408
+  "Transform/Rotation/Z"         ;f32  0          
+  "Transform/Rotation/W"         ;f32  0.642788053
+  "Transform/RotationDegrees/X"  ;f32  -0         
+  "Transform/RotationDegrees/Y"  ;f32  -99.9999313
+  "Transform/RotationDegrees/Z"  ;f32  0          
+  "Transform/Scale/X"            ;f32  1          
+  "Transform/Scale/Y"            ;f32  1          
+  "Transform/Scale/Z"            ;f32  1          
+  "Transform/EditorLockScale"    ;bool 0          
 
 [ xProperties : 2 ]
 { Name:s                            Value:?                                       }

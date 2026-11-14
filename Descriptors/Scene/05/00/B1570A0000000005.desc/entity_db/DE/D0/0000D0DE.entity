@@ -1,0 +1,19 @@
+
+[ EntityInfo ]
+{ PermanentId:g  nComponents:d }
+//-------------  -------------
+      #D0DE            1      
+
+[ ComponentTypes : 1 ]
+{ Guid:G            }
+//-----------------
+  #6CEC5D3C3907F288
+
+// New Types
+< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG entity:G enum:s >
+
+[ xProperties : 2 ]
+{ Name:s               Value:?                         }
+//-------------------  -------------------------------
+  "SkyDome/Cubemap"    ;full_guid #0 #6701D481518BD833
+  "SkyDome/Intensity"  ;f32       1                   

@@ -27,13 +27,13 @@
 [ xProperties : 14 ]
 { Name:s                         Value:?            }
 //-----------------------------  ------------------
-  "Transform/Position/X"         ;f32  2.73200011  
-  "Transform/Position/Y"         ;f32  0.119999997 
-  "Transform/Position/Z"         ;f32  2.65100002  
+  "Transform/Position/X"         ;f32  2.75235105  
+  "Transform/Position/Y"         ;f32  0.193963587 
+  "Transform/Position/Z"         ;f32  3.04611516  
   "Transform/Rotation/X"         ;f32  0           
-  "Transform/Rotation/Y"         ;f32  0.906307995 
+  "Transform/Rotation/Y"         ;f32  -0.906307936
   "Transform/Rotation/Z"         ;f32  0           
-  "Transform/Rotation/W"         ;f32  -0.422618002
+  "Transform/Rotation/W"         ;f32  0.422617912 
   "Transform/RotationDegrees/X"  ;f32  -0          
   "Transform/RotationDegrees/Y"  ;f32  -130.000031 
   "Transform/RotationDegrees/Z"  ;f32  0           

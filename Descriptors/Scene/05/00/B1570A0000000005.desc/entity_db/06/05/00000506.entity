@@ -28,12 +28,12 @@
 { Name:s                         Value:?            }
 //-----------------------------  ------------------
   "Transform/Position/X"         ;f32  -3.14700007 
-  "Transform/Position/Y"         ;f32  0.119999997 
+  "Transform/Position/Y"         ;f32  0.216860995 
   "Transform/Position/Z"         ;f32  4.29300022  
   "Transform/Rotation/X"         ;f32  0           
-  "Transform/Rotation/Y"         ;f32  0.5         
+  "Transform/Rotation/Y"         ;f32  -0.499999911
   "Transform/Rotation/Z"         ;f32  0           
-  "Transform/Rotation/W"         ;f32  -0.866024971
+  "Transform/Rotation/W"         ;f32  0.866025448 
   "Transform/RotationDegrees/X"  ;f32  -0          
   "Transform/RotationDegrees/Y"  ;f32  -59.9999847 
   "Transform/RotationDegrees/Z"  ;f32  0           

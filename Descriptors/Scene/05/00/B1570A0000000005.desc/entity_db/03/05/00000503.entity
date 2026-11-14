@@ -36,22 +36,22 @@
   "BistroWalker/T"      ;f32 0.449999988
 
 [ xProperties : 14 ]
-{ Name:s                         Value:?           }
-//-----------------------------  -----------------
-  "Transform/Position/X"         ;f32  -2.67199993
-  "Transform/Position/Y"         ;f32  0.119999997
-  "Transform/Position/Z"         ;f32  -1.01100004
-  "Transform/Rotation/X"         ;f32  0          
-  "Transform/Rotation/Y"         ;f32  0.86602515 
-  "Transform/Rotation/Z"         ;f32  0          
-  "Transform/Rotation/W"         ;f32  0.500000477
-  "Transform/RotationDegrees/X"  ;f32  0          
-  "Transform/RotationDegrees/Y"  ;f32  119.999931 
-  "Transform/RotationDegrees/Z"  ;f32  0          
-  "Transform/Scale/X"            ;f32  1          
-  "Transform/Scale/Y"            ;f32  1          
-  "Transform/Scale/Z"            ;f32  1          
-  "Transform/EditorLockScale"    ;bool 0          
+{ Name:s                         Value:?            }
+//-----------------------------  ------------------
+  "Transform/Position/X"         ;f32  -6.88655329 
+  "Transform/Position/Y"         ;f32  0.215786695 
+  "Transform/Position/Z"         ;f32  0.888587713 
+  "Transform/Rotation/X"         ;f32  0           
+  "Transform/Rotation/Y"         ;f32  -0.972401977
+  "Transform/Rotation/Z"         ;f32  0           
+  "Transform/Rotation/W"         ;f32  0.233311892 
+  "Transform/RotationDegrees/X"  ;f32  0           
+  "Transform/RotationDegrees/Y"  ;f32  -153.015732 
+  "Transform/RotationDegrees/Z"  ;f32  0           
+  "Transform/Scale/X"            ;f32  1           
+  "Transform/Scale/Y"            ;f32  1           
+  "Transform/Scale/Z"            ;f32  1           
+  "Transform/EditorLockScale"    ;bool 0           
 
 [ xProperties : 2 ]
 { Name:s                            Value:?                                       }

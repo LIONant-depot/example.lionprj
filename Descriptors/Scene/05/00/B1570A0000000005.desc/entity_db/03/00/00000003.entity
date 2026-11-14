@@ -13,40 +13,53 @@
 // New Types
 < s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG entity:G enum:s >
 
-[ xProperties : 31 ]
-{ Name:s                                         Value:?           }
-//---------------------------------------------  -----------------
-  "Environment/SkyZenith/X"                      ;f32  0.159999996
-  "Environment/SkyZenith/Y"                      ;f32  0.25999999 
-  "Environment/SkyZenith/Z"                      ;f32  0.519999981
-  "Environment/SkyHorizon/X"                     ;f32  0.850000024
-  "Environment/SkyHorizon/Y"                     ;f32  0.620000005
-  "Environment/SkyHorizon/Z"                     ;f32  0.449999988
-  "Environment/SkyGround/X"                      ;f32  0.159999996
-  "Environment/SkyGround/Y"                      ;f32  0.129999995
-  "Environment/SkyGround/Z"                      ;f32  0.100000001
-  "Environment/SkyIntensity"                     ;f32  10         
-  "Environment/Ambient/X"                        ;f32  0          
-  "Environment/Ambient/Y"                        ;f32  0          
-  "Environment/Ambient/Z"                        ;f32  0          
-  "Environment/GI"                               ;bool 1          
-  "Environment/GIRayBudget"                      ;s32  16384      
-  "Environment/GIRaysPerSurfel"                  ;s32  8          
-  "Environment/GIMoments"                        ;bool 1          
-  "Environment/GIFilterPasses"                   ;s32  4          
-  "Environment/GIEmissiveScale"                  ;f32  100        
-  "Environment/GIEmitterLights"                  ;bool 0          
-  "Environment/GIDebug"                          ;enum "NONE"     
-  "Environment/GIPerPixel"                       ;bool 1          
-  "Environment/GIHalfRes"                        ;bool 1          
-  "Environment/ReflectionMaxRoughness"           ;f32  0.300000012
-  "Environment/ReflectionScreen"                 ;bool 0          
-  "Environment/ReflectionFloor"                  ;bool 0          
-  "Environment/ReflectionFloorAuto"              ;bool 1          
-  "Environment/ReflectionFloorY"                 ;f32  0          
-  "Environment/ReflectionTextureMaxRoughness"    ;f32  0.300000012
-  "Environment/ReflectionTextureMinReflectance"  ;f32  0.600000024
-  "Environment/ReflectionDebug"                  ;bool 0          
+[ xProperties : 44 ]
+{ Name:s                                         Value:?                                        }
+//---------------------------------------------  ----------------------------------------------
+  "Environment/SkyZenith/X"                      ;f32       0.159999996                        
+  "Environment/SkyZenith/Y"                      ;f32       0.25999999                         
+  "Environment/SkyZenith/Z"                      ;f32       0.519999981                        
+  "Environment/SkyHorizon/X"                     ;f32       0.850000024                        
+  "Environment/SkyHorizon/Y"                     ;f32       0.620000005                        
+  "Environment/SkyHorizon/Z"                     ;f32       0.449999988                        
+  "Environment/SkyGround/X"                      ;f32       0.159999996                        
+  "Environment/SkyGround/Y"                      ;f32       0.129999995                        
+  "Environment/SkyGround/Z"                      ;f32       0.100000001                        
+  "Environment/SkyIntensity"                     ;f32       10                                 
+  "Environment/SkyCubemap"                       ;full_guid #189E00067C9E0001 #6701D481518BD833
+  "Environment/Ambient/X"                        ;f32       0                                  
+  "Environment/Ambient/Y"                        ;f32       0                                  
+  "Environment/Ambient/Z"                        ;f32       0                                  
+  "Environment/GI"                               ;bool      1                                  
+  "Environment/GIRayBudget"                      ;s32       16384                              
+  "Environment/GIRaysPerSurfel"                  ;s32       8                                  
+  "Environment/GIMoments"                        ;bool      1                                  
+  "Environment/GIFilterPasses"                   ;s32       4                                  
+  "Environment/GIEmissiveScale"                  ;f32       100                                
+  "Environment/GIEmitterLights"                  ;bool      0                                  
+  "Environment/GIDebug"                          ;enum      "NONE"                             
+  "Environment/GIPerPixel"                       ;bool      1                                  
+  "Environment/GIHalfRes"                        ;bool      1                                  
+  "Environment/ReflectionMaxRoughness"           ;f32       0.300000012                        
+  "Environment/ReflectionScreen"                 ;bool      0                                  
+  "Environment/ReflectionFloor"                  ;bool      0                                  
+  "Environment/ReflectionFloorAuto"              ;bool      1                                  
+  "Environment/ReflectionFloorY"                 ;f32       0                                  
+  "Environment/ReflectionTextureMaxRoughness"    ;f32       0.300000012                        
+  "Environment/ReflectionTextureMinReflectance"  ;f32       0.600000024                        
+  "Environment/ReflectionDebug"                  ;bool      0                                  
+  "Environment/Bloom"                            ;f32       0.200000003                        
+  "Environment/BloomThreshold"                   ;f32       0.99000001                         
+  "Environment/BloomKnee"                        ;f32       0.5                                
+  "Environment/BloomSpread"                      ;f32       0.699999988                        
+  "Environment/AutoExposure"                     ;bool      1                                  
+  "Environment/ExposureKey"                      ;f32       0.115000002                        
+  "Environment/ExposureRate"                     ;f32       1.5                                
+  "Environment/ExposureMin"                      ;f32       0.0299999993                       
+  "Environment/ExposureMax"                      ;f32       30                                 
+  "Environment/TAA"                              ;bool      1                                  
+  "Environment/RenderGraph"                      ;full_guid #0 #EFCA44B9E5893F8D               
+  "Environment/TAABlend"                         ;f32       0.100000001                        
 
 [ xProperties : 14 ]
 { Name:s                         Value:? }

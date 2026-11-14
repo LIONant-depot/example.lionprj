@@ -1,5 +1,5 @@
 
-[ ComponentDeps : 12 ]
+[ ComponentDeps : 13 ]
 { Guid:G             Name:s            Module:G          }
 //-----------------  ----------------  -----------------
                  #0  "Entity"                         #0
@@ -11,6 +11,7 @@
   #46A381BFFDBB6161  "BistroCircler"   #B1570A0000000007
   #49512D8CCC5F0958  "BistroWalker"    #B1570A0000000007
   #663773C47FA1D0BA  "Transform"                      #0
+  #6CEC5D3C3907F288  "SkyDome"                        #0
   #A607CEB9BC595944  "LightSpot"                      #0
   #E3B47B7275F30E4F  "SkinnedMesh"                    #0
   #E5E1A0039EBA6062  "BistroDayCycle"  #B1570A0000000007
