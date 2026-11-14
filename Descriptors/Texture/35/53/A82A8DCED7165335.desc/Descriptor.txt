@@ -7,10 +7,10 @@
 // New Types
 < s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
 
-[ xProperties : 30 ]
+[ xProperties : 34 ]
 { Name:s                                             Value:?                                                     }
 //-------------------------------------------------  -----------------------------------------------------------
-  "Texture/Usage"                                    ;enum    "COLOR_AND_ALPHA"                                 
+  "Texture/Usage"                                    ;enum    "COLOR_AND_CUTOUT"                                
   "Texture/Wrap Mode U"                              ;enum    "WRAP"                                            
   "Texture/Wrap Mode V"                              ;enum    "WRAP"                                            
   "Texture/InputType"                                ;enum    "MIX_SOURCE"                                      
@@ -19,11 +19,15 @@
   "Texture/Input/Mixes[G:0]/Copy To"                 ;enum    "RGB"                                             
   "Texture/Input/Mixes[G:0]/FileName"                ;wstring "Assets\\Sponza\\textures\\chain_texture.tga"     
   "Texture/Input/Mixes[G:0]/Constant"                ;f32     #3F800000                                         
+  "Texture/Input/Mixes[G:0]/Invert"                  ;bool    0                                                 
   "Texture/Input/Mixes[G:1]/Copy From"               ;enum    "R"                                               
   "Texture/Input/Mixes[G:1]/Copy To"                 ;enum    "A"                                               
   "Texture/Input/Mixes[G:1]/FileName"                ;wstring "Assets\\Sponza\\textures\\chain_texture_mask.tga"
   "Texture/Input/Mixes[G:1]/Constant"                ;f32     #3F800000                                         
+  "Texture/Input/Mixes[G:1]/Invert"                  ;bool    0                                                 
   "Texture/Compression"                              ;enum    "RGBA_BC7"                                        
+  "Texture/SuperCompression"                         ;enum    "NONE"                                            
+  "Texture/SuperCompressionStrength"                 ;f32     #3F000000                                         
   "Texture/AlphaThreshold"                           ;u8      #80                                               
   "Texture/Quality"                                  ;f32     #3F000000                                         
   "Texture/SRGB"                                     ;bool    1                                                 

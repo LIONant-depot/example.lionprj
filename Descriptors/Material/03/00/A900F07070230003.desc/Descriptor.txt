@@ -1,8 +1,8 @@
 
 [ Info ]
-{ nNodes:d  nConnections:d }
-//--------  --------------
-     1            0       
+{ nNodes:d  nConnections:d  Version:d  nParameters:d }
+//--------  --------------  ---------  -------------
+     1            0             4            0      
 
 [ Node ]
 { Guid:G             PrefabGuid:G      }
@@ -12,10 +12,11 @@
 // New Types
 < s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
 
-[ xProperties : 58 ]
+[ xProperties : 59 ]
 { Name:s                                       Value:?                                                                        }
 //-------------------------------------------  ------------------------------------------------------------------------------
   "node/Name"                                  ;string    "Output: Shader File"                                              
+  "node/StepName"                              ;string    "Output__Shader_File"                                              
   "node/Position/X"                            ;f32       712                                                                
   "node/Position/Y"                            ;f32       234                                                                
   "node/Input Pins[]"                          ;s64       5                                                                  
@@ -73,3 +74,34 @@
   "node/Params[G:4]/bCanExpose"                ;bool      1                                                                  
   "node/Params[G:4]/bExpose"                   ;bool      1                                                                  
   "node/Params[G:4]/ExposeName"                ;string    "SamplerORME"                                                      
+
+[ StackLayout ]
+{ nSections:d }
+//-----------
+       1     
+
+[ xProperties : 9 ]
+{ Name:s                                  Value:?                   }
+//--------------------------------------  -------------------------
+  "stack/Sections[]"                      ;s64    1                
+  "stack/Sections[G:0]/Guid/Value"        ;u64    #1AAB886D5F502009
+  "stack/Sections[G:0]/Name"              ;string "Output"         
+  "stack/Sections[G:0]/Kind"              ;enum   "OUTPUT"         
+  "stack/Sections[G:0]/Stage"             ;enum   "FRAGMENT"       
+  "stack/Sections[G:0]/bCollapsed"        ;bool   0                
+  "stack/Sections[G:0]/Steps[]"           ;s64    1                
+  "stack/Sections[G:0]/Steps[G:0]/Value"  ;u64    #A310583838998000
+  "stack/Places[]"                        ;s64    0                
+
+[ xProperties : 9 ]
+{ Name:s                              Value:?        }
+//----------------------------------  --------------
+  "render_settings/Blend Mode"        ;enum "Opaque"
+  "render_settings/Alpha Cutoff"      ;f32  0.5     
+  "render_settings/Double Sided"      ;bool 0       
+  "render_settings/Back Face Normal"  ;enum "Flip"  
+  "render_settings/Depth Write"       ;enum "Auto"  
+  "render_settings/Depth Test"        ;bool 1       
+  "render_settings/Cast Shadows"      ;bool 1       
+  "render_settings/Sort Priority"     ;s8   0       
+  "render_settings/Wireframe"         ;bool 0       

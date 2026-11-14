@@ -1,0 +1,79 @@
+
+[ DescriptorVersion ]
+{ Major:d  Minor:d }
+//-------  -------
+     1        0   
+
+// New Types
+< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
+
+[ xProperties : 67 ]
+{ Name:s                                                   Value:?                                                                    }
+//-------------------------------------------------------  --------------------------------------------------------------------------
+  "GeomStatic/ImportAsset"                                 ;wstring   "Assets\\10-2k-space-pbr-textures-free\\source\\3DTextures.fbx"
+  "GeomStatic/PreTranslation/AutoUnits"                    ;bool      1                                                              
+  "GeomStatic/PreTranslation/Scale/X"                      ;f32       #3F800000                                                      
+  "GeomStatic/PreTranslation/Scale/Y"                      ;f32       #3F800000                                                      
+  "GeomStatic/PreTranslation/Scale/Z"                      ;f32       #3F800000                                                      
+  "GeomStatic/PreTranslation/EditorLockScale"              ;bool      1                                                              
+  "GeomStatic/PreTranslation/Rotation/X"                   ;f32       #0                                                             
+  "GeomStatic/PreTranslation/Rotation/Y"                   ;f32       #0                                                             
+  "GeomStatic/PreTranslation/Rotation/Z"                   ;f32       #0                                                             
+  "GeomStatic/PreTranslation/Translation/X"                ;f32       #0                                                             
+  "GeomStatic/PreTranslation/Translation/Y"                ;f32       #0                                                             
+  "GeomStatic/PreTranslation/Translation/Z"                ;f32       #0                                                             
+  "GeomStatic/bMergeAllMeshes"                             ;bool      1                                                              
+  "GeomStatic/AllMeshesDetails/Name"                       ;string    "rapters"                                                      
+  "GeomStatic/AllMeshesDetails/LODs[]"                     ;s64       0                                                              
+  "GeomStatic/Merge Group List[]"                          ;s64       0                                                              
+  "GeomStatic/Ungroup Mesh List[]"                         ;s64       1                                                              
+  "GeomStatic/Ungroup Mesh List[G:0]/Node Path"            ;string    "RootNode/Cube.005"                                            
+  "GeomStatic/Ungroup Mesh List[G:0]/Mesh Name"            ;string    "Cube.021"                                                     
+  "GeomStatic/Ungroup Mesh List[G:0]/Mesh Details/Name"    ;string    ""                                                             
+  "GeomStatic/Ungroup Mesh List[G:0]/Mesh Details/LODs[]"  ;s64       0                                                              
+  "GeomStatic/GI/Mode"                                     ;enum      "RECEIVE_AND_BOUNCE"                                           
+  "GeomStatic/GI/Density"                                  ;enum      "AS_AUTHORED"                                                  
+  "GeomStatic/GI/SurfelSize"                               ;f32       #3F000000                                                      
+  "GeomStatic/GI/PatchDefects"                             ;bool      0                                                              
+  "GeomStatic/GI/LeakProtection"                           ;bool      0                                                              
+  "GeomStatic/Deleted List[]"                              ;s64       0                                                              
+  "GeomStatic/MaterialDetailsList[]"                       ;s64       10                                                             
+  "GeomStatic/MaterialDetailsList[G:1076335608713526460]/Name"               ;string    "ControlPanel"                                                 
+  "GeomStatic/MaterialDetailsList[G:1076335608713526460]/RefCount"           ;s32       1                                                              
+  "GeomStatic/MaterialDetailsList[G:1076335608713526460]/Instance"  ;full_guid  #E0D7ADF3ADF5B4DB #B673C5DA4A4A70AD
+  "GeomStatic/MaterialDetailsList[G:2905731943122693026]/Name"               ;string    "MunRock"                                                      
+  "GeomStatic/MaterialDetailsList[G:2905731943122693026]/RefCount"           ;s32       1                                                              
+  "GeomStatic/MaterialDetailsList[G:2905731943122693026]/Instance"  ;full_guid  #178275ADB0DBC4F #B673C5DA4A4A70AD
+  "GeomStatic/MaterialDetailsList[G:2530060681147670545]/Name"               ;string    "MunSand"                                                      
+  "GeomStatic/MaterialDetailsList[G:2530060681147670545]/RefCount"           ;s32       1                                                              
+  "GeomStatic/MaterialDetailsList[G:2530060681147670545]/Instance"  ;full_guid  #D49A6E614B35645F #B673C5DA4A4A70AD
+  "GeomStatic/MaterialDetailsList[G:2570300579349028100]/Name"               ;string    "MoonDust"                                                     
+  "GeomStatic/MaterialDetailsList[G:2570300579349028100]/RefCount"           ;s32       1                                                              
+  "GeomStatic/MaterialDetailsList[G:2570300579349028100]/Instance"  ;full_guid  #AE5777AF77B8171B #B673C5DA4A4A70AD
+  "GeomStatic/MaterialDetailsList[G:8025581255792662727]/Name"               ;string    "Cargo"                                                        
+  "GeomStatic/MaterialDetailsList[G:8025581255792662727]/RefCount"           ;s32       1                                                              
+  "GeomStatic/MaterialDetailsList[G:8025581255792662727]/Instance"  ;full_guid  #FF10CE0DB71AC335 #B673C5DA4A4A70AD
+  "GeomStatic/MaterialDetailsList[G:9458029671500543159]/Name"               ;string    "Corridor"                                                     
+  "GeomStatic/MaterialDetailsList[G:9458029671500543159]/RefCount"           ;s32       1                                                              
+  "GeomStatic/MaterialDetailsList[G:9458029671500543159]/Instance"  ;full_guid  #2A423FB48E7827FB #B673C5DA4A4A70AD
+  "GeomStatic/MaterialDetailsList[G:6906781970582094099]/Name"               ;string    "MachineryWall"                                                
+  "GeomStatic/MaterialDetailsList[G:6906781970582094099]/RefCount"           ;s32       1                                                              
+  "GeomStatic/MaterialDetailsList[G:6906781970582094099]/Instance"  ;full_guid  #FE7C486867CB9457 #B673C5DA4A4A70AD
+  "GeomStatic/MaterialDetailsList[G:13526967474275515400]/Name"               ;string    "FloorHeavy"                                                   
+  "GeomStatic/MaterialDetailsList[G:13526967474275515400]/RefCount"           ;s32       1                                                              
+  "GeomStatic/MaterialDetailsList[G:13526967474275515400]/Instance"  ;full_guid  #E03AF1DF47DF8517 #B673C5DA4A4A70AD
+  "GeomStatic/MaterialDetailsList[G:8690547442823038606]/Name"               ;string    "Heatblanket"                                                  
+  "GeomStatic/MaterialDetailsList[G:8690547442823038606]/RefCount"           ;s32       1                                                              
+  "GeomStatic/MaterialDetailsList[G:8690547442823038606]/Instance"  ;full_guid  #E80C354A6473FC97 #B673C5DA4A4A70AD
+  "GeomStatic/MaterialDetailsList[G:1962475855083213402]/Name"               ;string    "Metalpanel"                                                   
+  "GeomStatic/MaterialDetailsList[G:1962475855083213402]/RefCount"           ;s32       1                                                              
+  "GeomStatic/MaterialDetailsList[G:1962475855083213402]/Instance"  ;full_guid  #6D11386B2C3A5F65 #B673C5DA4A4A70AD
+  "GeomStatic/ImportMaterials/bImport"                     ;bool      1                                                              
+  "GeomStatic/ImportMaterials/Material"                    ;full_guid #8D45F86DC5F2C003 #8B3C028882EA813D                            
+  "GeomStatic/ImportMaterials/AlphaTest"                   ;full_guid #FF22104E737E58EB #8B3C028882EA813D                            
+  "GeomStatic/ImportMaterials/AlbedoCompression"           ;enum      "RGB_BC1"                                                      
+  "GeomStatic/ImportMaterials/AlbedoAlphaCompression"      ;enum      "RGBA_BC7"                                                     
+  "GeomStatic/ImportMaterials/NormalCompression"           ;enum      "RG_BC5"                                                       
+  "GeomStatic/ImportMaterials/Flip Y for normals"          ;bool      1                                                              
+  "GeomStatic/ImportMaterials/Normalize normals"           ;bool      1                                                              
+  "GeomStatic/ImportMaterials/ORMECompression"             ;enum      "RGBA_BC7"                                                     

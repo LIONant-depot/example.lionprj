@@ -1,0 +1,27 @@
+
+[ DescriptorVersion ]
+{ Major:d  Minor:d }
+//-------  -------
+     1        0   
+
+// New Types
+< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
+
+[ xProperties : 15 ]
+{ Name:s                                                  Value:?                                        }
+//------------------------------------------------------  ----------------------------------------------
+  "material_instance_descriptor/Version"                  ;s32       2                                  
+  "material_instance_descriptor/MaterialRef"              ;full_guid #5E1CE0A110000001 #8B3C028882EA813D
+  "material_instance_descriptor/ParentRef"                ;full_guid #0 #B673C5DA4A4A70AD               
+  "material_instance_descriptor/Overrides[]"              ;s64       1                                  
+  "material_instance_descriptor/Overrides[G:11836956997064738154]/ID"        ;u64       #A44551AC879E456A                  
+  "material_instance_descriptor/Overrides[G:11836956997064738154]/Type"      ;enum      "COLOR"                            
+  "material_instance_descriptor/Overrides[G:11836956997064738154]/Value/X"   ;f32       #3F800000                          
+  "material_instance_descriptor/Overrides[G:11836956997064738154]/Value/Y"   ;f32       #0                                 
+  "material_instance_descriptor/Overrides[G:11836956997064738154]/Value/Z"   ;f32       #0                                 
+  "material_instance_descriptor/Overrides[G:11836956997064738154]/Value/W"   ;f32       #3F800000                          
+  "material_instance_descriptor/Overrides[G:11836956997064738154]/Texture"   ;full_guid #0 #6701D481518BD833               
+  "material_instance_descriptor/Overrides[G:11836956997064738154]/NameHint"  ;string    "Tint"                             
+  "material_instance_descriptor/Textures[]"               ;s64       0                                  
+  "material_instance_descriptor/TextureDefaults[]"        ;s64       0                                  
+  "material_instance_descriptor/FinalTextures[]"          ;s64       0                                  

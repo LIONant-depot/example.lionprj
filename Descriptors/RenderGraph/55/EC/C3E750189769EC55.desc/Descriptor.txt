@@ -1,0 +1,91 @@
+
+[ DescriptorVersion ]
+{ Major:d  Minor:d }
+//-------  -------
+     1        0   
+
+// New Types
+< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
+
+[ xProperties : 79 ]
+{ Name:s                             Value:?                              }
+//---------------------------------  ------------------------------------
+  "RenderGraph/Nodes[]"              ;s64    5                           
+  "RenderGraph/Nodes[G:0]/Type"      ;enum   "TAA"                       
+  "RenderGraph/Nodes[G:0]/On"        ;bool   1                           
+  "RenderGraph/Nodes[G:0]/NodeType"  ;u64    #0                          
+  "RenderGraph/Nodes[G:1]/Type"      ;enum   "Custom"                    
+  "RenderGraph/Nodes[G:1]/On"        ;bool   1                           
+  "RenderGraph/Nodes[G:1]/NodeType"  ;u64    #D75B7E72421A7BAF           
+  "RenderGraph/Nodes[G:2]/Type"      ;enum   "Bloom"                     
+  "RenderGraph/Nodes[G:2]/On"        ;bool   1                           
+  "RenderGraph/Nodes[G:2]/NodeType"  ;u64    #0                          
+  "RenderGraph/Nodes[G:3]/Type"      ;enum   "Exposure"                  
+  "RenderGraph/Nodes[G:3]/On"        ;bool   1                           
+  "RenderGraph/Nodes[G:3]/NodeType"  ;u64    #0                          
+  "RenderGraph/Nodes[G:4]/Type"      ;enum   "ToneMap"                   
+  "RenderGraph/Nodes[G:4]/On"        ;bool   1                           
+  "RenderGraph/Nodes[G:4]/NodeType"  ;u64    #0                          
+  "RenderGraph/Params[]"             ;s64    10                          
+  "RenderGraph/Params[G:0]/Name"     ;string "Bloom"                     
+  "RenderGraph/Params[G:0]/Source"   ;string "scene.post.bloom"          
+  "RenderGraph/Params[G:0]/Type"     ;enum   "Float"                     
+  "RenderGraph/Params[G:0]/Default"  ;f32    #0                          
+  "RenderGraph/Params[G:0]/Min"      ;f32    #0                          
+  "RenderGraph/Params[G:0]/Max"      ;f32    #3F800000                   
+  "RenderGraph/Params[G:1]/Name"     ;string "BloomThreshold"            
+  "RenderGraph/Params[G:1]/Source"   ;string "scene.post.bloom_threshold"
+  "RenderGraph/Params[G:1]/Type"     ;enum   "Float"                     
+  "RenderGraph/Params[G:1]/Default"  ;f32    #3F7D70A4                   
+  "RenderGraph/Params[G:1]/Min"      ;f32    #0                          
+  "RenderGraph/Params[G:1]/Max"      ;f32    #41800000                   
+  "RenderGraph/Params[G:2]/Name"     ;string "BloomKnee"                 
+  "RenderGraph/Params[G:2]/Source"   ;string "scene.post.bloom_knee"     
+  "RenderGraph/Params[G:2]/Type"     ;enum   "Float"                     
+  "RenderGraph/Params[G:2]/Default"  ;f32    #3F000000                   
+  "RenderGraph/Params[G:2]/Min"      ;f32    #0                          
+  "RenderGraph/Params[G:2]/Max"      ;f32    #40800000                   
+  "RenderGraph/Params[G:3]/Name"     ;string "BloomSpread"               
+  "RenderGraph/Params[G:3]/Source"   ;string "scene.post.bloom_spread"   
+  "RenderGraph/Params[G:3]/Type"     ;enum   "Float"                     
+  "RenderGraph/Params[G:3]/Default"  ;f32    #3F333333                   
+  "RenderGraph/Params[G:3]/Min"      ;f32    #0                          
+  "RenderGraph/Params[G:3]/Max"      ;f32    #3F800000                   
+  "RenderGraph/Params[G:4]/Name"     ;string "AutoExposure"              
+  "RenderGraph/Params[G:4]/Source"   ;string "scene.post.auto_exposure"  
+  "RenderGraph/Params[G:4]/Type"     ;enum   "Bool"                      
+  "RenderGraph/Params[G:4]/Default"  ;f32    #0                          
+  "RenderGraph/Params[G:4]/Min"      ;f32    #0                          
+  "RenderGraph/Params[G:4]/Max"      ;f32    #3F800000                   
+  "RenderGraph/Params[G:5]/Name"     ;string "TAABlend"                  
+  "RenderGraph/Params[G:5]/Source"   ;string "scene.post.taa_blend"      
+  "RenderGraph/Params[G:5]/Type"     ;enum   "Float"                     
+  "RenderGraph/Params[G:5]/Default"  ;f32    #3DCCCCCD                   
+  "RenderGraph/Params[G:5]/Min"      ;f32    #3C23D70A                   
+  "RenderGraph/Params[G:5]/Max"      ;f32    #3F800000                   
+  "RenderGraph/Params[G:6]/Name"     ;string "ExposureKey"               
+  "RenderGraph/Params[G:6]/Source"   ;string "scene.post.exposure_key"   
+  "RenderGraph/Params[G:6]/Type"     ;enum   "Float"                     
+  "RenderGraph/Params[G:6]/Default"  ;f32    #3DEB851F                   
+  "RenderGraph/Params[G:6]/Min"      ;f32    #3A83126F                   
+  "RenderGraph/Params[G:6]/Max"      ;f32    #41200000                   
+  "RenderGraph/Params[G:7]/Name"     ;string "ExposureRate"              
+  "RenderGraph/Params[G:7]/Source"   ;string "scene.post.exposure_rate"  
+  "RenderGraph/Params[G:7]/Type"     ;enum   "Float"                     
+  "RenderGraph/Params[G:7]/Default"  ;f32    #3FC00000                   
+  "RenderGraph/Params[G:7]/Min"      ;f32    #0                          
+  "RenderGraph/Params[G:7]/Max"      ;f32    #41A00000                   
+  "RenderGraph/Params[G:8]/Name"     ;string "ExposureMin"               
+  "RenderGraph/Params[G:8]/Source"   ;string "scene.post.exposure_min"   
+  "RenderGraph/Params[G:8]/Type"     ;enum   "Float"                     
+  "RenderGraph/Params[G:8]/Default"  ;f32    #3CF5C28F                   
+  "RenderGraph/Params[G:8]/Min"      ;f32    #38D1B717                   
+  "RenderGraph/Params[G:8]/Max"      ;f32    #447A0000                   
+  "RenderGraph/Params[G:9]/Name"     ;string "ExposureMax"               
+  "RenderGraph/Params[G:9]/Source"   ;string "scene.post.exposure_max"   
+  "RenderGraph/Params[G:9]/Type"     ;enum   "Float"                     
+  "RenderGraph/Params[G:9]/Default"  ;f32    #41F00000                   
+  "RenderGraph/Params[G:9]/Min"      ;f32    #38D1B717                   
+  "RenderGraph/Params[G:9]/Max"      ;f32    #447A0000                   
+  "RenderGraph/Stages[]"             ;s64    0                           
+  "RenderGraph/StageParams[]"        ;s64    0                           

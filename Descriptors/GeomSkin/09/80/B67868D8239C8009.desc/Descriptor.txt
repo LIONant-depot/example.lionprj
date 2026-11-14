@@ -1,0 +1,94 @@
+
+[ DescriptorVersion ]
+{ Major:d  Minor:d }
+//-------  -------
+     1        0   
+
+// New Types
+< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
+
+[ xProperties : 82 ]
+{ Name:s                                                 Value:?                                                   }
+//-----------------------------------------------------  ---------------------------------------------------------
+  "GeomSkin/ImportAsset"                                 ;wstring   "Assets\\LadyNJ\\lady.fbx"                    
+  "GeomSkin/ImportSkeletonAndAnimation"                  ;bool      1                                             
+  "GeomSkin/SkeletonRef"                                 ;full_guid #F7D5FDDD672AF305 #F5D3BE1ED860ABF7           
+  "GeomSkin/AnimationRef"                                ;full_guid #A5BA0F632A704A5 #E69E8A8439A9BB1B            
+  "GeomSkin/bMergeAllMeshes"                             ;bool      1                                             
+  "GeomSkin/AllMeshesDetails/Name"                       ;string    "sexy ninja"                                  
+  "GeomSkin/AllMeshesDetails/LODs[]"                     ;s64       0                                             
+  "GeomSkin/Merge Group List[]"                          ;s64       0                                             
+  "GeomSkin/Ungroup Mesh List[]"                         ;s64       1                                             
+  "GeomSkin/Ungroup Mesh List[G:0]/Node Path"            ;string    "RootNode/Genesis3Female/Genesis3Female.Shape"
+  "GeomSkin/Ungroup Mesh List[G:0]/Mesh Name"            ;string    "Default"                                     
+  "GeomSkin/Ungroup Mesh List[G:0]/Mesh Details/Name"    ;string    ""                                            
+  "GeomSkin/Ungroup Mesh List[G:0]/Mesh Details/LODs[]"  ;s64       0                                             
+  "GeomSkin/Deleted List[]"                              ;s64       0                                             
+  "GeomSkin/MaterialDetailsList[]"                       ;s64       20                                            
+  "GeomSkin/MaterialDetailsList[G:14466972932498727490]/Name"               ;string    "Eyelashes"                                   
+  "GeomSkin/MaterialDetailsList[G:14466972932498727490]/RefCount"           ;s32       1                                             
+  "GeomSkin/MaterialDetailsList[G:14466972932498727490]/Instance"  ;full_guid  #FD8D3F1EC494EF4B #B673C5DA4A4A70AD
+  "GeomSkin/MaterialDetailsList[G:6164615767986910209]/Name"               ;string    "Fingernails"                                 
+  "GeomSkin/MaterialDetailsList[G:6164615767986910209]/RefCount"           ;s32       1                                             
+  "GeomSkin/MaterialDetailsList[G:6164615767986910209]/Instance"  ;full_guid  #483182E5DB5CF2AB #B673C5DA4A4A70AD
+  "GeomSkin/MaterialDetailsList[G:4778170183900452972]/Name"               ;string    "Toenails"                                    
+  "GeomSkin/MaterialDetailsList[G:4778170183900452972]/RefCount"           ;s32       1                                             
+  "GeomSkin/MaterialDetailsList[G:4778170183900452972]/Instance"  ;full_guid  #617B712B05885317 #B673C5DA4A4A70AD
+  "GeomSkin/MaterialDetailsList[G:2552055427803803524]/Name"               ;string    "Torso"                                       
+  "GeomSkin/MaterialDetailsList[G:2552055427803803524]/RefCount"           ;s32       1                                             
+  "GeomSkin/MaterialDetailsList[G:2552055427803803524]/Instance"  ;full_guid  #CF32E0F3311572C9 #B673C5DA4A4A70AD
+  "GeomSkin/MaterialDetailsList[G:15450423059564644057]/Name"               ;string    "Cornea"                                      
+  "GeomSkin/MaterialDetailsList[G:15450423059564644057]/RefCount"           ;s32       1                                             
+  "GeomSkin/MaterialDetailsList[G:15450423059564644057]/Instance"  ;full_guid  #8CB20409C559733B #B673C5DA4A4A70AD
+  "GeomSkin/MaterialDetailsList[G:13532866147735581284]/Name"               ;string    "Pupils"                                      
+  "GeomSkin/MaterialDetailsList[G:13532866147735581284]/RefCount"           ;s32       1                                             
+  "GeomSkin/MaterialDetailsList[G:13532866147735581284]/Instance"  ;full_guid  #D3D36CC913526A4D #B673C5DA4A4A70AD
+  "GeomSkin/MaterialDetailsList[G:1851360449506262364]/Name"               ;string    "Face"                                        
+  "GeomSkin/MaterialDetailsList[G:1851360449506262364]/RefCount"           ;s32       1                                             
+  "GeomSkin/MaterialDetailsList[G:1851360449506262364]/Instance"  ;full_guid  #84B6389A0D120B9D #B673C5DA4A4A70AD
+  "GeomSkin/MaterialDetailsList[G:11181943846848226337]/Name"               ;string    "Teeth"                                       
+  "GeomSkin/MaterialDetailsList[G:11181943846848226337]/RefCount"           ;s32       1                                             
+  "GeomSkin/MaterialDetailsList[G:11181943846848226337]/Instance"  ;full_guid  #6B88769D434C1491 #B673C5DA4A4A70AD
+  "GeomSkin/MaterialDetailsList[G:5206328759347530560]/Name"               ;string    "Ears"                                        
+  "GeomSkin/MaterialDetailsList[G:5206328759347530560]/RefCount"           ;s32       1                                             
+  "GeomSkin/MaterialDetailsList[G:5206328759347530560]/Instance"  ;full_guid  #F20D018088D84535 #B673C5DA4A4A70AD
+  "GeomSkin/MaterialDetailsList[G:15908173688331624608]/Name"               ;string    "EyeMoisture"                                 
+  "GeomSkin/MaterialDetailsList[G:15908173688331624608]/RefCount"           ;s32       1                                             
+  "GeomSkin/MaterialDetailsList[G:15908173688331624608]/Instance"  ;full_guid  #804EAA83EF47184D #B673C5DA4A4A70AD
+  "GeomSkin/MaterialDetailsList[G:13953526755221441880]/Name"              ;string    "Base"                                        
+  "GeomSkin/MaterialDetailsList[G:13953526755221441880]/RefCount"          ;s32       2                                             
+  "GeomSkin/MaterialDetailsList[G:13953526755221441880]/Instance"  ;full_guid  #58126319A30FDF15 #B673C5DA4A4A70AD
+  "GeomSkin/MaterialDetailsList[G:15103253142749942164]/Name"              ;string    "armor"                                       
+  "GeomSkin/MaterialDetailsList[G:15103253142749942164]/RefCount"          ;s32       1                                             
+  "GeomSkin/MaterialDetailsList[G:15103253142749942164]/Instance"  ;full_guid  #B55E6E0E07E8A835 #B673C5DA4A4A70AD
+  "GeomSkin/MaterialDetailsList[G:3234539286893443223]/Name"              ;string    "gloves"                                      
+  "GeomSkin/MaterialDetailsList[G:3234539286893443223]/RefCount"          ;s32       1                                             
+  "GeomSkin/MaterialDetailsList[G:3234539286893443223]/Instance"  ;full_guid  #D5B95D3CE082D6A1 #B673C5DA4A4A70AD
+  "GeomSkin/MaterialDetailsList[G:4218055952522458036]/Name"              ;string    "lights"                                      
+  "GeomSkin/MaterialDetailsList[G:4218055952522458036]/RefCount"          ;s32       1                                             
+  "GeomSkin/MaterialDetailsList[G:4218055952522458036]/Instance"  ;full_guid  #B4B9794A0AD3EF5B #B673C5DA4A4A70AD
+  "GeomSkin/MaterialDetailsList[G:3850912071959999152]/Name"              ;string    "padding15"                                   
+  "GeomSkin/MaterialDetailsList[G:3850912071959999152]/RefCount"          ;s32       1                                             
+  "GeomSkin/MaterialDetailsList[G:3850912071959999152]/Instance"  ;full_guid  #AD71D8C41FDDCD7 #B673C5DA4A4A70AD
+  "GeomSkin/MaterialDetailsList[G:11572629982477782512]/Name"              ;string    "Belt"                                        
+  "GeomSkin/MaterialDetailsList[G:11572629982477782512]/RefCount"          ;s32       1                                             
+  "GeomSkin/MaterialDetailsList[G:11572629982477782512]/Instance"  ;full_guid  #F2404668A2A14EB3 #B673C5DA4A4A70AD
+  "GeomSkin/MaterialDetailsList[G:18154919593620077596]/Name"              ;string    "Metal"                                       
+  "GeomSkin/MaterialDetailsList[G:18154919593620077596]/RefCount"          ;s32       1                                             
+  "GeomSkin/MaterialDetailsList[G:18154919593620077596]/Instance"  ;full_guid  #372652D0ED2A47C3 #B673C5DA4A4A70AD
+  "GeomSkin/MaterialDetailsList[G:13209854455569609880]/Name"              ;string    "Skirt"                                       
+  "GeomSkin/MaterialDetailsList[G:13209854455569609880]/RefCount"          ;s32       1                                             
+  "GeomSkin/MaterialDetailsList[G:13209854455569609880]/Instance"  ;full_guid  #CB05A50C1F57D9F5 #B673C5DA4A4A70AD
+  "GeomSkin/MaterialDetailsList[G:17371477837405241354]/Name"              ;string    "Skullcap"                                    
+  "GeomSkin/MaterialDetailsList[G:17371477837405241354]/RefCount"          ;s32       1                                             
+  "GeomSkin/MaterialDetailsList[G:17371477837405241354]/Instance"  ;full_guid  #D2AC261463BFA90B #B673C5DA4A4A70AD
+  "GeomSkin/MaterialDetailsList[G:2249371691748366409]/Name"              ;string    "mask"                                        
+  "GeomSkin/MaterialDetailsList[G:2249371691748366409]/RefCount"          ;s32       1                                             
+  "GeomSkin/MaterialDetailsList[G:2249371691748366409]/Instance"  ;full_guid  #25560C89580452F1 #B673C5DA4A4A70AD
+  "GeomSkin/ImportMaterials/bImport"                     ;bool      1                                             
+  "GeomSkin/ImportMaterials/Material"                    ;full_guid #8D45F86DC5F2C003 #8B3C028882EA813D           
+  "GeomSkin/ImportMaterials/AlphaTest"                   ;full_guid #FF22104E737E58EB #8B3C028882EA813D           
+  "GeomSkin/ImportMaterials/AlbedoCompression"           ;enum      "RGB_BC1"                                     
+  "GeomSkin/ImportMaterials/AlbedoAlphaCompression"      ;enum      "RGBA_BC7"                                    
+  "GeomSkin/ImportMaterials/NormalCompression"           ;enum      "RG_BC5"                                      
+  "GeomSkin/ImportMaterials/ORMECompression"             ;enum      "RGBA_BC7"                                    

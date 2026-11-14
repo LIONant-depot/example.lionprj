@@ -1,0 +1,60 @@
+
+[ EntityInfo ]
+{ PermanentId:g  nComponents:d }
+//-------------  -------------
+    #5E1C0A01          3      
+
+[ ComponentTypes : 3 ]
+{ Guid:G            }
+//-----------------
+  #3478FF1169E53A3D
+  #663773C47FA1D0BA
+  #F8938203F2B02B8B
+
+// New Types
+< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG entity:G enum:s >
+
+[ xProperties : 2 ]
+{ Name:s         Value:?                                        }
+//-------------  ----------------------------------------------
+  "Mesh/Geom"    ;full_guid #5E1CE0A110000009 #E5359948C52D26D1
+  "Mesh/GIRole"  ;enum      "ASSET"                            
+
+[ xProperties : 14 ]
+{ Name:s                         Value:?  }
+//-----------------------------  --------
+  "Transform/Position/X"         ;f32  -2
+  "Transform/Position/Y"         ;f32  0 
+  "Transform/Position/Z"         ;f32  0 
+  "Transform/Rotation/X"         ;f32  0 
+  "Transform/Rotation/Y"         ;f32  0 
+  "Transform/Rotation/Z"         ;f32  0 
+  "Transform/Rotation/W"         ;f32  1 
+  "Transform/RotationDegrees/X"  ;f32  0 
+  "Transform/RotationDegrees/Y"  ;f32  0 
+  "Transform/RotationDegrees/Z"  ;f32  0 
+  "Transform/Scale/X"            ;f32  1 
+  "Transform/Scale/Y"            ;f32  1 
+  "Transform/Scale/Z"            ;f32  1 
+  "Transform/EditorLockScale"    ;bool 0 
+
+[ xProperties : 17 ]
+{ Name:s                          Value:?                                        }
+//------------------------------  ----------------------------------------------
+  "MeshMaterial/Slots[]"          ;s64       1                                  
+  "MeshMaterial/Slots[G:0]"       ;full_guid #5E1CE0A110000003 #B673C5DA4A4A70AD
+  "MeshMaterial/Tint/Override"    ;bool      0                                  
+  "MeshMaterial/Tint/X"           ;f32       1                                  
+  "MeshMaterial/Tint/Y"           ;f32       1                                  
+  "MeshMaterial/Tint/Z"           ;f32       1                                  
+  "MeshMaterial/Tint/W"           ;f32       1                                  
+  "MeshMaterial/Param0/Override"  ;bool      0                                  
+  "MeshMaterial/Param0/X"         ;f32       0                                  
+  "MeshMaterial/Param0/Y"         ;f32       0                                  
+  "MeshMaterial/Param0/Z"         ;f32       0                                  
+  "MeshMaterial/Param0/W"         ;f32       0                                  
+  "MeshMaterial/Param1/Override"  ;bool      0                                  
+  "MeshMaterial/Param1/X"         ;f32       0                                  
+  "MeshMaterial/Param1/Y"         ;f32       0                                  
+  "MeshMaterial/Param1/Z"         ;f32       0                                  
+  "MeshMaterial/Param1/W"         ;f32       0                                  

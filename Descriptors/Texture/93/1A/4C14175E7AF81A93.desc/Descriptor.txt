@@ -10,7 +10,7 @@
 [ xProperties : 30 ]
 { Name:s                                             Value:?                                           }
 //-------------------------------------------------  -------------------------------------------------
-  "Texture/Usage"                                    ;enum    "COLOR_AND_ALPHA"                       
+  "Texture/Usage"                                    ;enum    "COLOR_AND_CUTOUT"                       
   "Texture/Wrap Mode U"                              ;enum    "WRAP"                                  
   "Texture/Wrap Mode V"                              ;enum    "WRAP"                                  
   "Texture/InputType"                                ;enum    "MIX_SOURCE"                            

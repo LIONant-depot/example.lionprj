@@ -1,0 +1,94 @@
+
+[ DescriptorVersion ]
+{ Major:d  Minor:d }
+//-------  -------
+     1        0   
+
+// New Types
+< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
+
+[ xProperties : 82 ]
+{ Name:s                                                           Value:?                                                                     }
+//---------------------------------------------------------------  ---------------------------------------------------------------------------
+  "GeomSkin/ImportAsset"                                           ;wstring   "Assets\\sci-fi-warrior-armor\\source\\Sci-FI Warrior Armor.fbx"
+  "GeomSkin/ImportSkeletonAndAnimation"                            ;bool      1                                                               
+  "GeomSkin/SkeletonRef"                                           ;full_guid #ED6CE56697448FC9 #F5D3BE1ED860ABF7                             
+  "GeomSkin/AnimationRef"                                          ;full_guid #7B43295409BE859F #E69E8A8439A9BB1B                             
+  "GeomSkin/bMergeAllMeshes"                                       ;bool      1                                                               
+  "GeomSkin/AllMeshesDetails/Name"                                 ;string    "warrior"                                                       
+  "GeomSkin/AllMeshesDetails/LODs[]" ;s64 3
+  "GeomSkin/AllMeshesDetails/LODs[G:0]/LODReduction" ;f32 0.5
+  "GeomSkin/AllMeshesDetails/LODs[G:0]/ScreenArea" ;f32 0
+  "GeomSkin/AllMeshesDetails/LODs[G:1]/LODReduction" ;f32 0.5
+  "GeomSkin/AllMeshesDetails/LODs[G:1]/ScreenArea" ;f32 0
+  "GeomSkin/AllMeshesDetails/LODs[G:2]/LODReduction" ;f32 0.5
+  "GeomSkin/AllMeshesDetails/LODs[G:2]/ScreenArea" ;f32 0
+  "GeomSkin/Merge Group List[]"                                    ;s64       0                                                               
+  "GeomSkin/Ungroup Mesh List[]"                                   ;s64       8                                                               
+  "GeomSkin/Ungroup Mesh List[G:0]/Node Path"                      ;string    "RootNode/glass"                                                
+  "GeomSkin/Ungroup Mesh List[G:0]/Mesh Name"                      ;string    "glass"                                                         
+  "GeomSkin/Ungroup Mesh List[G:0]/Mesh Details/Name"              ;string    ""                                                              
+  "GeomSkin/Ungroup Mesh List[G:0]/Mesh Details/LODs[]"            ;s64       0                                                               
+  "GeomSkin/Ungroup Mesh List[G:1]/Node Path"                      ;string    "RootNode/head"                                                 
+  "GeomSkin/Ungroup Mesh List[G:1]/Mesh Name"                      ;string    "head"                                                          
+  "GeomSkin/Ungroup Mesh List[G:1]/Mesh Details/Name"              ;string    ""                                                              
+  "GeomSkin/Ungroup Mesh List[G:1]/Mesh Details/LODs[]"            ;s64       0                                                               
+  "GeomSkin/Ungroup Mesh List[G:2]/Node Path"                      ;string    "RootNode/lights"                                               
+  "GeomSkin/Ungroup Mesh List[G:2]/Mesh Name"                      ;string    "lights"                                                        
+  "GeomSkin/Ungroup Mesh List[G:2]/Mesh Details/Name"              ;string    ""                                                              
+  "GeomSkin/Ungroup Mesh List[G:2]/Mesh Details/LODs[]"            ;s64       0                                                               
+  "GeomSkin/Ungroup Mesh List[G:3]/Node Path"                      ;string    "RootNode/gas"                                                  
+  "GeomSkin/Ungroup Mesh List[G:3]/Mesh Name"                      ;string    "gas"                                                           
+  "GeomSkin/Ungroup Mesh List[G:3]/Mesh Details/Name"              ;string    ""                                                              
+  "GeomSkin/Ungroup Mesh List[G:3]/Mesh Details/LODs[]"            ;s64       0                                                               
+  "GeomSkin/Ungroup Mesh List[G:4]/Node Path"                      ;string    "RootNode/leg"                                                  
+  "GeomSkin/Ungroup Mesh List[G:4]/Mesh Name"                      ;string    "leg"                                                           
+  "GeomSkin/Ungroup Mesh List[G:4]/Mesh Details/Name"              ;string    ""                                                              
+  "GeomSkin/Ungroup Mesh List[G:4]/Mesh Details/LODs[]"            ;s64       0                                                               
+  "GeomSkin/Ungroup Mesh List[G:5]/Node Path"                      ;string    "RootNode/torss"                                                
+  "GeomSkin/Ungroup Mesh List[G:5]/Mesh Name"                      ;string    "torss"                                                         
+  "GeomSkin/Ungroup Mesh List[G:5]/Mesh Details/Name"              ;string    ""                                                              
+  "GeomSkin/Ungroup Mesh List[G:5]/Mesh Details/LODs[]"            ;s64       0                                                               
+  "GeomSkin/Ungroup Mesh List[G:6]/Node Path"                      ;string    "RootNode/arm"                                                  
+  "GeomSkin/Ungroup Mesh List[G:6]/Mesh Name"                      ;string    "arm"                                                           
+  "GeomSkin/Ungroup Mesh List[G:6]/Mesh Details/Name"              ;string    ""                                                              
+  "GeomSkin/Ungroup Mesh List[G:6]/Mesh Details/LODs[]"            ;s64       0                                                               
+  "GeomSkin/Ungroup Mesh List[G:7]/Node Path"                      ;string    "RootNode/bag"                                                  
+  "GeomSkin/Ungroup Mesh List[G:7]/Mesh Name"                      ;string    "bag"                                                           
+  "GeomSkin/Ungroup Mesh List[G:7]/Mesh Details/Name"              ;string    ""                                                              
+  "GeomSkin/Ungroup Mesh List[G:7]/Mesh Details/LODs[]"            ;s64       0                                                               
+  "GeomSkin/Deleted List[]"                                        ;s64       0                                                               
+  "GeomSkin/MaterialDetailsList[]"                                 ;s64       8                                                               
+  "GeomSkin/MaterialDetailsList[G:17336656063595574603]/Name"      ;string    "glass"                                                         
+  "GeomSkin/MaterialDetailsList[G:17336656063595574603]/RefCount"  ;s32       1                                                               
+  "GeomSkin/MaterialDetailsList[G:17336656063595574603]/Instance"  ;full_guid #CDF61EA6D6F16D73 #B673C5DA4A4A70AD                             
+  "GeomSkin/MaterialDetailsList[G:760847531035462659]/Name"        ;string    "head"                                                          
+  "GeomSkin/MaterialDetailsList[G:760847531035462659]/RefCount"    ;s32       1                                                               
+  "GeomSkin/MaterialDetailsList[G:760847531035462659]/Instance"    ;full_guid #8C5954C4A4AE5FD #B673C5DA4A4A70AD                              
+  "GeomSkin/MaterialDetailsList[G:4218055952522458036]/Name"       ;string    "lights"                                                        
+  "GeomSkin/MaterialDetailsList[G:4218055952522458036]/RefCount"   ;s32       1                                                               
+  "GeomSkin/MaterialDetailsList[G:4218055952522458036]/Instance"   ;full_guid #4E701BE80BC84BEB #B673C5DA4A4A70AD                             
+  "GeomSkin/MaterialDetailsList[G:15343860794760012962]/Name"      ;string    "gas"                                                           
+  "GeomSkin/MaterialDetailsList[G:15343860794760012962]/RefCount"  ;s32       1                                                               
+  "GeomSkin/MaterialDetailsList[G:15343860794760012962]/Instance"  ;full_guid #F49C7006F266F3D7 #B673C5DA4A4A70AD                             
+  "GeomSkin/MaterialDetailsList[G:1329251391739017879]/Name"       ;string    "leg"                                                           
+  "GeomSkin/MaterialDetailsList[G:1329251391739017879]/RefCount"   ;s32       1                                                               
+  "GeomSkin/MaterialDetailsList[G:1329251391739017879]/Instance"   ;full_guid #7BF824C570DBFBCF #B673C5DA4A4A70AD                             
+  "GeomSkin/MaterialDetailsList[G:7181787290577216496]/Name"       ;string    "torss"                                                         
+  "GeomSkin/MaterialDetailsList[G:7181787290577216496]/RefCount"   ;s32       1                                                               
+  "GeomSkin/MaterialDetailsList[G:7181787290577216496]/Instance"   ;full_guid #EE17A971E0226A0B #B673C5DA4A4A70AD                             
+  "GeomSkin/MaterialDetailsList[G:16669722284456463541]/Name"      ;string    "arm"                                                           
+  "GeomSkin/MaterialDetailsList[G:16669722284456463541]/RefCount"  ;s32       1                                                               
+  "GeomSkin/MaterialDetailsList[G:16669722284456463541]/Instance"  ;full_guid #8B3CB91CDEC81A3 #B673C5DA4A4A70AD                              
+  "GeomSkin/MaterialDetailsList[G:16080465252918737]/Name"         ;string    "bag"                                                           
+  "GeomSkin/MaterialDetailsList[G:16080465252918737]/RefCount"     ;s32       1                                                               
+  "GeomSkin/MaterialDetailsList[G:16080465252918737]/Instance"     ;full_guid #5443CD892BBACF59 #B673C5DA4A4A70AD                             
+  "GeomSkin/ImportMaterials/bImport"                               ;bool      1                                                               
+  "GeomSkin/ImportMaterials/Material"                              ;full_guid #8D45F86DC5F2C003 #8B3C028882EA813D                             
+  "GeomSkin/ImportMaterials/AlphaTest"                             ;full_guid #FF22104E737E58EB #8B3C028882EA813D                             
+  "GeomSkin/ImportMaterials/AlbedoCompression"                     ;enum      "RGB_BC1"                                                       
+  "GeomSkin/ImportMaterials/AlbedoAlphaCompression"                ;enum      "RGBA_BC7"                                                      
+  "GeomSkin/ImportMaterials/NormalCompression"                     ;enum      "RG_BC5"                                                        
+  "GeomSkin/ImportMaterials/Flip Y for normals"                    ;bool      1                                                               
+  "GeomSkin/ImportMaterials/Normalize normals"                     ;bool      1                                                               
+  "GeomSkin/ImportMaterials/ORMECompression"                       ;enum      "RGBA_BC7"                                                      

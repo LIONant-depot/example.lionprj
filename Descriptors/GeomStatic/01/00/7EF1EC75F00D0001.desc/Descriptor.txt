@@ -29,7 +29,7 @@
   "GeomStatic/Ungroup Mesh List[]"                          ;s64     0
   "GeomStatic/GI/Mode"                                      ;enum    "RECEIVE_AND_BOUNCE"
   "GeomStatic/GI/Density"                                   ;enum    "SPLIT_TRIANGLES"
-  "GeomStatic/GI/SurfelSize"                                ;f32     #3F800000
+  "GeomStatic/GI/SurfelSize"                                ;f32     #3E800000
   "GeomStatic/GI/PatchDefects"                              ;bool    0
   "GeomStatic/GI/LeakProtection"                            ;bool    0
   "GeomStatic/Deleted List[]"                               ;s64     0

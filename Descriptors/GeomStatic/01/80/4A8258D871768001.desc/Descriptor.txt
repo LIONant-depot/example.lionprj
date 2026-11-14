@@ -1,0 +1,339 @@
+
+[ DescriptorVersion ]
+{ Major:d  Minor:d }
+//-------  -------
+     1        0   
+
+// New Types
+< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
+
+[ xProperties : 327 ]
+{ Name:s                                                    Value:?                                                                            }
+//--------------------------------------------------------  ----------------------------------------------------------------------------------
+  "GeomStatic/ImportAsset"                                  ;wstring "Assets\\2024_ducati_streetfighter_v4_s\\scene.gltf"                     
+  "GeomStatic/PreTranslation/AutoUnits"                     ;bool    1                                                                        
+  "GeomStatic/PreTranslation/Scale/X"                       ;f32     #3F800000                                                                
+  "GeomStatic/PreTranslation/Scale/Y"                       ;f32     #3F800000                                                                
+  "GeomStatic/PreTranslation/Scale/Z"                       ;f32     #3F800000                                                                
+  "GeomStatic/PreTranslation/EditorLockScale"               ;bool    1                                                                        
+  "GeomStatic/PreTranslation/Rotation/X"                    ;f32     #0                                                                       
+  "GeomStatic/PreTranslation/Rotation/Y"                    ;f32     #0                                                                       
+  "GeomStatic/PreTranslation/Rotation/Z"                    ;f32     #0                                                                       
+  "GeomStatic/PreTranslation/Translation/X"                 ;f32     #0                                                                       
+  "GeomStatic/PreTranslation/Translation/Y"                 ;f32     #0                                                                       
+  "GeomStatic/PreTranslation/Translation/Z"                 ;f32     #0                                                                       
+  "GeomStatic/bMergeAllMeshes"                              ;bool    1                                                                        
+  "GeomStatic/AllMeshesDetails/Name"                        ;string  "d"                                                                      
+  "GeomStatic/AllMeshesDetails/LODs[]"                      ;s64     0                                                                        
+  "GeomStatic/Merge Group List[]"                           ;s64     0                                                                        
+  "GeomStatic/Ungroup Mesh List[]"                          ;s64     42                                                                       
+  "GeomStatic/Ungroup Mesh List[G:0]/Node Path"             ;string  "Sketchfab_model/root/GLTF_SceneRootNode/SM_Engine_0000.006_0/Object_4"  
+  "GeomStatic/Ungroup Mesh List[G:0]/Mesh Name"             ;string  "Object_0"                                                               
+  "GeomStatic/Ungroup Mesh List[G:0]/Mesh Details/Name"     ;string  ""                                                                       
+  "GeomStatic/Ungroup Mesh List[G:0]/Mesh Details/LODs[]"   ;s64     0                                                                        
+  "GeomStatic/Ungroup Mesh List[G:1]/Node Path"             ;string  "Sketchfab_model/root/GLTF_SceneRootNode/SM_Swingarm_0000.001_1/Object_6"
+  "GeomStatic/Ungroup Mesh List[G:1]/Mesh Name"             ;string  "Object_1"                                                               
+  "GeomStatic/Ungroup Mesh List[G:1]/Mesh Details/Name"     ;string  ""                                                                       
+  "GeomStatic/Ungroup Mesh List[G:1]/Mesh Details/LODs[]"   ;s64     0                                                                        
+  "GeomStatic/Ungroup Mesh List[G:2]/Node Path"             ;string  "Sketchfab_model/root/GLTF_SceneRootNode/SM_Swingarm_0000.001_1/Object_7"
+  "GeomStatic/Ungroup Mesh List[G:2]/Mesh Name"             ;string  "Object_2"                                                               
+  "GeomStatic/Ungroup Mesh List[G:2]/Mesh Details/Name"     ;string  ""                                                                       
+  "GeomStatic/Ungroup Mesh List[G:2]/Mesh Details/LODs[]"   ;s64     0                                                                        
+  "GeomStatic/Ungroup Mesh List[G:3]/Node Path"             ;string  "Sketchfab_model/root/GLTF_SceneRootNode/SM_Swingarm_0000.001_1/Object_8"
+  "GeomStatic/Ungroup Mesh List[G:3]/Mesh Name"             ;string  "Object_3"                                                               
+  "GeomStatic/Ungroup Mesh List[G:3]/Mesh Details/Name"     ;string  ""                                                                       
+  "GeomStatic/Ungroup Mesh List[G:3]/Mesh Details/LODs[]"   ;s64     0                                                                        
+  "GeomStatic/Ungroup Mesh List[G:4]/Node Path"             ;string  "Sketchfab_model/root/GLTF_SceneRootNode/SM_Swingarm_0000.001_1/Object_9"
+  "GeomStatic/Ungroup Mesh List[G:4]/Mesh Name"             ;string  "Object_4"                                                               
+  "GeomStatic/Ungroup Mesh List[G:4]/Mesh Details/Name"     ;string  ""                                                                       
+  "GeomStatic/Ungroup Mesh List[G:4]/Mesh Details/LODs[]"   ;s64     0                                                                        
+  "GeomStatic/Ungroup Mesh List[G:5]/Node Path"             ;string  "Sketchfab_model/root/GLTF_SceneRootNode/SM_Disk_F_0000.001_2/Object_11" 
+  "GeomStatic/Ungroup Mesh List[G:5]/Mesh Name"             ;string  "Object_5"                                                               
+  "GeomStatic/Ungroup Mesh List[G:5]/Mesh Details/Name"     ;string  ""                                                                       
+  "GeomStatic/Ungroup Mesh List[G:5]/Mesh Details/LODs[]"   ;s64     0                                                                        
+  "GeomStatic/Ungroup Mesh List[G:6]/Node Path"             ;string  "Sketchfab_model/root/GLTF_SceneRootNode/SM_Disk_R_0000.017_3/Object_13" 
+  "GeomStatic/Ungroup Mesh List[G:6]/Mesh Name"             ;string  "Object_6"                                                               
+  "GeomStatic/Ungroup Mesh List[G:6]/Mesh Details/Name"     ;string  ""                                                                       
+  "GeomStatic/Ungroup Mesh List[G:6]/Mesh Details/LODs[]"   ;s64     0                                                                        
+  "GeomStatic/Ungroup Mesh List[G:7]/Node Path"             ;string  "Sketchfab_model/root/GLTF_SceneRootNode/SM_Tire_F_0000.001_4/Object_15" 
+  "GeomStatic/Ungroup Mesh List[G:7]/Mesh Name"             ;string  "Object_7"                                                               
+  "GeomStatic/Ungroup Mesh List[G:7]/Mesh Details/Name"     ;string  ""                                                                       
+  "GeomStatic/Ungroup Mesh List[G:7]/Mesh Details/LODs[]"   ;s64     0                                                                        
+  "GeomStatic/Ungroup Mesh List[G:8]/Node Path"             ;string  "Sketchfab_model/root/GLTF_SceneRootNode/SM_Tire_F_0000.001_4/Object_16" 
+  "GeomStatic/Ungroup Mesh List[G:8]/Mesh Name"             ;string  "Object_8"                                                               
+  "GeomStatic/Ungroup Mesh List[G:8]/Mesh Details/Name"     ;string  ""                                                                       
+  "GeomStatic/Ungroup Mesh List[G:8]/Mesh Details/LODs[]"   ;s64     0                                                                        
+  "GeomStatic/Ungroup Mesh List[G:9]/Node Path"             ;string  "Sketchfab_model/root/GLTF_SceneRootNode/SM_RearKit_0000.016_5/Object_18"
+  "GeomStatic/Ungroup Mesh List[G:9]/Mesh Name"             ;string  "Object_9"                                                               
+  "GeomStatic/Ungroup Mesh List[G:9]/Mesh Details/Name"     ;string  ""                                                                       
+  "GeomStatic/Ungroup Mesh List[G:9]/Mesh Details/LODs[]"   ;s64     0                                                                        
+  "GeomStatic/Ungroup Mesh List[G:10]/Node Path"            ;string  "Sketchfab_model/root/GLTF_SceneRootNode/SM_RearKit_0000.016_5/Object_19"
+  "GeomStatic/Ungroup Mesh List[G:10]/Mesh Name"            ;string  "Object_10"                                                              
+  "GeomStatic/Ungroup Mesh List[G:10]/Mesh Details/Name"    ;string  ""                                                                       
+  "GeomStatic/Ungroup Mesh List[G:10]/Mesh Details/LODs[]"  ;s64     0                                                                        
+  "GeomStatic/Ungroup Mesh List[G:11]/Node Path"            ;string  "Sketchfab_model/root/GLTF_SceneRootNode/SM_RearKit_0000.016_5/Object_20"
+  "GeomStatic/Ungroup Mesh List[G:11]/Mesh Name"            ;string  "Object_11"                                                              
+  "GeomStatic/Ungroup Mesh List[G:11]/Mesh Details/Name"    ;string  ""                                                                       
+  "GeomStatic/Ungroup Mesh List[G:11]/Mesh Details/LODs[]"  ;s64     0                                                                                              
+  "GeomStatic/Ungroup Mesh List[G:12]/Node Path"            ;string  "Sketchfab_model/root/GLTF_SceneRootNode/SM_RearKit_0000.016_5/Object_21"                      
+  "GeomStatic/Ungroup Mesh List[G:12]/Mesh Name"            ;string  "Object_12"                                                                                    
+  "GeomStatic/Ungroup Mesh List[G:12]/Mesh Details/Name"    ;string  ""                                                                                             
+  "GeomStatic/Ungroup Mesh List[G:12]/Mesh Details/LODs[]"  ;s64     0                                                                                              
+  "GeomStatic/Ungroup Mesh List[G:13]/Node Path"            ;string  "Sketchfab_model/root/GLTF_SceneRootNode/SM_Root_Ducati_StreetFighter_V4S_2024.001_6/Object_23"
+  "GeomStatic/Ungroup Mesh List[G:13]/Mesh Name"            ;string  "Object_13"                                                                                    
+  "GeomStatic/Ungroup Mesh List[G:13]/Mesh Details/Name"    ;string  ""                                                                                             
+  "GeomStatic/Ungroup Mesh List[G:13]/Mesh Details/LODs[]"  ;s64     0                                                                                              
+  "GeomStatic/Ungroup Mesh List[G:14]/Node Path"            ;string  "Sketchfab_model/root/GLTF_SceneRootNode/SM_Fender_F_0000.001_7/Object_25"                     
+  "GeomStatic/Ungroup Mesh List[G:14]/Mesh Name"            ;string  "Object_14"                                                                                    
+  "GeomStatic/Ungroup Mesh List[G:14]/Mesh Details/Name"    ;string  ""                                                                                             
+  "GeomStatic/Ungroup Mesh List[G:14]/Mesh Details/LODs[]"  ;s64     0                                                                                              
+  "GeomStatic/Ungroup Mesh List[G:15]/Node Path"            ;string  "Sketchfab_model/root/GLTF_SceneRootNode/SM_Fender_F_0000.001_7/Object_26"                     
+  "GeomStatic/Ungroup Mesh List[G:15]/Mesh Name"            ;string  "Object_15"                                                                                    
+  "GeomStatic/Ungroup Mesh List[G:15]/Mesh Details/Name"    ;string  ""                                                                                             
+  "GeomStatic/Ungroup Mesh List[G:15]/Mesh Details/LODs[]"  ;s64     0                                                                                              
+  "GeomStatic/Ungroup Mesh List[G:16]/Node Path"            ;string  "Sketchfab_model/root/GLTF_SceneRootNode/SM_FrontKit_0000.017_8/Object_28"                     
+  "GeomStatic/Ungroup Mesh List[G:16]/Mesh Name"            ;string  "Object_16"                                                                                    
+  "GeomStatic/Ungroup Mesh List[G:16]/Mesh Details/Name"    ;string  ""                                                                                             
+  "GeomStatic/Ungroup Mesh List[G:16]/Mesh Details/LODs[]"  ;s64     0                                                                                              
+  "GeomStatic/Ungroup Mesh List[G:17]/Node Path"            ;string  "Sketchfab_model/root/GLTF_SceneRootNode/SM_FrontKit_0000.017_8/Object_29"                     
+  "GeomStatic/Ungroup Mesh List[G:17]/Mesh Name"            ;string  "Object_17"                                                                                    
+  "GeomStatic/Ungroup Mesh List[G:17]/Mesh Details/Name"    ;string  ""                                                                                             
+  "GeomStatic/Ungroup Mesh List[G:17]/Mesh Details/LODs[]"  ;s64     0                                                                                              
+  "GeomStatic/Ungroup Mesh List[G:18]/Node Path"            ;string  "Sketchfab_model/root/GLTF_SceneRootNode/SM_FrontKit_0000.017_8/Object_30"                     
+  "GeomStatic/Ungroup Mesh List[G:18]/Mesh Name"            ;string  "Object_18"                                                                                    
+  "GeomStatic/Ungroup Mesh List[G:18]/Mesh Details/Name"    ;string  ""                                                                                             
+  "GeomStatic/Ungroup Mesh List[G:18]/Mesh Details/LODs[]"  ;s64     0                                                                                              
+  "GeomStatic/Ungroup Mesh List[G:19]/Node Path"            ;string  "Sketchfab_model/root/GLTF_SceneRootNode/SM_FrontKit_0000.017_8/Object_31"                     
+  "GeomStatic/Ungroup Mesh List[G:19]/Mesh Name"            ;string  "Object_19"                                                                                    
+  "GeomStatic/Ungroup Mesh List[G:19]/Mesh Details/Name"    ;string  ""                                                                                             
+  "GeomStatic/Ungroup Mesh List[G:19]/Mesh Details/LODs[]"  ;s64     0                                                                                              
+  "GeomStatic/Ungroup Mesh List[G:20]/Node Path"            ;string  "Sketchfab_model/root/GLTF_SceneRootNode/SM_FrontKit_0000.017_8/Object_32"                     
+  "GeomStatic/Ungroup Mesh List[G:20]/Mesh Name"            ;string  "Object_20"                                                                                    
+  "GeomStatic/Ungroup Mesh List[G:20]/Mesh Details/Name"    ;string  ""                                                                                             
+  "GeomStatic/Ungroup Mesh List[G:20]/Mesh Details/LODs[]"  ;s64     0                                                                                              
+  "GeomStatic/Ungroup Mesh List[G:21]/Node Path"            ;string  "Sketchfab_model/root/GLTF_SceneRootNode/SM_Fork_0000.001_9/Object_34"                         
+  "GeomStatic/Ungroup Mesh List[G:21]/Mesh Name"            ;string  "Object_21"                                                                                    
+  "GeomStatic/Ungroup Mesh List[G:21]/Mesh Details/Name"    ;string  ""                                                                                             
+  "GeomStatic/Ungroup Mesh List[G:21]/Mesh Details/LODs[]"  ;s64     0                                                                                              
+  "GeomStatic/Ungroup Mesh List[G:22]/Node Path"            ;string  "Sketchfab_model/root/GLTF_SceneRootNode/SM_Fork_0000.001_9/Object_35"                         
+  "GeomStatic/Ungroup Mesh List[G:22]/Mesh Name"            ;string  "Object_22"                                                                                    
+  "GeomStatic/Ungroup Mesh List[G:22]/Mesh Details/Name"    ;string  ""                                                                                             
+  "GeomStatic/Ungroup Mesh List[G:22]/Mesh Details/LODs[]"  ;s64     0                                                                                              
+  "GeomStatic/Ungroup Mesh List[G:23]/Node Path"            ;string  "Sketchfab_model/root/GLTF_SceneRootNode/SM_Fork_0000.001_9/Object_36"                         
+  "GeomStatic/Ungroup Mesh List[G:23]/Mesh Name"            ;string  "Object_23"                                                                                    
+  "GeomStatic/Ungroup Mesh List[G:23]/Mesh Details/Name"    ;string  ""                                                                                             
+  "GeomStatic/Ungroup Mesh List[G:23]/Mesh Details/LODs[]"  ;s64     0                                                                                              
+  "GeomStatic/Ungroup Mesh List[G:24]/Node Path"            ;string  "Sketchfab_model/root/GLTF_SceneRootNode/SM_Fork_0000.001_9/Object_37"                         
+  "GeomStatic/Ungroup Mesh List[G:24]/Mesh Name"            ;string  "Object_24"                                                                                    
+  "GeomStatic/Ungroup Mesh List[G:24]/Mesh Details/Name"    ;string  ""                                                                                             
+  "GeomStatic/Ungroup Mesh List[G:24]/Mesh Details/LODs[]"  ;s64     0                                                                                              
+  "GeomStatic/Ungroup Mesh List[G:25]/Node Path"            ;string  "Sketchfab_model/root/GLTF_SceneRootNode/SM_Fork_0000.001_9/Object_38"                         
+  "GeomStatic/Ungroup Mesh List[G:25]/Mesh Name"            ;string  "Object_25"                                                                                    
+  "GeomStatic/Ungroup Mesh List[G:25]/Mesh Details/Name"    ;string  ""                                                                                             
+  "GeomStatic/Ungroup Mesh List[G:25]/Mesh Details/LODs[]"  ;s64     0                                                                                              
+  "GeomStatic/Ungroup Mesh List[G:26]/Node Path"            ;string  "Sketchfab_model/root/GLTF_SceneRootNode/SM_Frame_0000.001_10/Object_40"                       
+  "GeomStatic/Ungroup Mesh List[G:26]/Mesh Name"            ;string  "Object_26"                                                                                    
+  "GeomStatic/Ungroup Mesh List[G:26]/Mesh Details/Name"    ;string  ""                                                                                             
+  "GeomStatic/Ungroup Mesh List[G:26]/Mesh Details/LODs[]"  ;s64     0                                                                                              
+  "GeomStatic/Ungroup Mesh List[G:27]/Node Path"            ;string  "Sketchfab_model/root/GLTF_SceneRootNode/SM_Frame_0000.001_10/Object_41"                       
+  "GeomStatic/Ungroup Mesh List[G:27]/Mesh Name"            ;string  "Object_27"                                                                                    
+  "GeomStatic/Ungroup Mesh List[G:27]/Mesh Details/Name"    ;string  ""                                                                                             
+  "GeomStatic/Ungroup Mesh List[G:27]/Mesh Details/LODs[]"  ;s64     0                                                                                              
+  "GeomStatic/Ungroup Mesh List[G:28]/Node Path"            ;string  "Sketchfab_model/root/GLTF_SceneRootNode/SM_Frame_0000.001_10/Object_42"                       
+  "GeomStatic/Ungroup Mesh List[G:28]/Mesh Name"            ;string  "Object_28"                                                                                    
+  "GeomStatic/Ungroup Mesh List[G:28]/Mesh Details/Name"    ;string  ""                                                                                             
+  "GeomStatic/Ungroup Mesh List[G:28]/Mesh Details/LODs[]"  ;s64     0                                                                                              
+  "GeomStatic/Ungroup Mesh List[G:29]/Node Path"            ;string  "Sketchfab_model/root/GLTF_SceneRootNode/SM_Frame_0000.001_10/Object_43"                       
+  "GeomStatic/Ungroup Mesh List[G:29]/Mesh Name"            ;string  "Object_29"                                                                                    
+  "GeomStatic/Ungroup Mesh List[G:29]/Mesh Details/Name"    ;string  ""                                                                                             
+  "GeomStatic/Ungroup Mesh List[G:29]/Mesh Details/LODs[]"  ;s64     0                                                                                              
+  "GeomStatic/Ungroup Mesh List[G:30]/Node Path"            ;string  "Sketchfab_model/root/GLTF_SceneRootNode/SM_Frame_0000.001_10/Object_44"                       
+  "GeomStatic/Ungroup Mesh List[G:30]/Mesh Name"            ;string  "Object_30"                                                                                    
+  "GeomStatic/Ungroup Mesh List[G:30]/Mesh Details/Name"    ;string  ""                                                                                             
+  "GeomStatic/Ungroup Mesh List[G:30]/Mesh Details/LODs[]"  ;s64     0                                                                                              
+  "GeomStatic/Ungroup Mesh List[G:31]/Node Path"            ;string  "Sketchfab_model/root/GLTF_SceneRootNode/SM_Frame_0000.001_10/Object_45"                       
+  "GeomStatic/Ungroup Mesh List[G:31]/Mesh Name"            ;string  "Object_31"                                                                                    
+  "GeomStatic/Ungroup Mesh List[G:31]/Mesh Details/Name"    ;string  ""                                                                                             
+  "GeomStatic/Ungroup Mesh List[G:31]/Mesh Details/LODs[]"  ;s64     0                                                                                              
+  "GeomStatic/Ungroup Mesh List[G:32]/Node Path"            ;string  "Sketchfab_model/root/GLTF_SceneRootNode/SM_Frame_0000.001_10/Object_46"                       
+  "GeomStatic/Ungroup Mesh List[G:32]/Mesh Name"            ;string  "Object_32"                                                                                    
+  "GeomStatic/Ungroup Mesh List[G:32]/Mesh Details/Name"    ;string  ""                                                                                             
+  "GeomStatic/Ungroup Mesh List[G:32]/Mesh Details/LODs[]"  ;s64     0                                                                                              
+  "GeomStatic/Ungroup Mesh List[G:33]/Node Path"            ;string  "Sketchfab_model/root/GLTF_SceneRootNode/SM_Fender_R_0000.001_11/Object_48"                    
+  "GeomStatic/Ungroup Mesh List[G:33]/Mesh Name"            ;string  "Object_33"                                                                                    
+  "GeomStatic/Ungroup Mesh List[G:33]/Mesh Details/Name"    ;string  ""                                                                                             
+  "GeomStatic/Ungroup Mesh List[G:33]/Mesh Details/LODs[]"  ;s64     0                                                                                              
+  "GeomStatic/Ungroup Mesh List[G:34]/Node Path"            ;string  "Sketchfab_model/root/GLTF_SceneRootNode/SM_Base_0000.017_12/Object_50"                        
+  "GeomStatic/Ungroup Mesh List[G:34]/Mesh Name"            ;string  "Object_34"                                                                                    
+  "GeomStatic/Ungroup Mesh List[G:34]/Mesh Details/Name"    ;string  ""                                                                                             
+  "GeomStatic/Ungroup Mesh List[G:34]/Mesh Details/LODs[]"  ;s64     0                                                                                              
+  "GeomStatic/Ungroup Mesh List[G:35]/Node Path"            ;string  "Sketchfab_model/root/GLTF_SceneRootNode/SM_Base_0000.017_12/Object_51"                        
+  "GeomStatic/Ungroup Mesh List[G:35]/Mesh Name"            ;string  "Object_35"                                                                                    
+  "GeomStatic/Ungroup Mesh List[G:35]/Mesh Details/Name"    ;string  ""                                                                                             
+  "GeomStatic/Ungroup Mesh List[G:35]/Mesh Details/LODs[]"  ;s64     0                                                                                              
+  "GeomStatic/Ungroup Mesh List[G:36]/Node Path"            ;string  "Sketchfab_model/root/GLTF_SceneRootNode/SM_Base_0000.017_12/Object_52"                        
+  "GeomStatic/Ungroup Mesh List[G:36]/Mesh Name"            ;string  "Object_36"                                                                                    
+  "GeomStatic/Ungroup Mesh List[G:36]/Mesh Details/Name"    ;string  ""                                                                                             
+  "GeomStatic/Ungroup Mesh List[G:36]/Mesh Details/LODs[]"  ;s64     0                                                                                              
+  "GeomStatic/Ungroup Mesh List[G:37]/Node Path"            ;string  "Sketchfab_model/root/GLTF_SceneRootNode/SM_Base_0000.017_12/Object_53"                        
+  "GeomStatic/Ungroup Mesh List[G:37]/Mesh Name"            ;string  "Object_37"                                                                                    
+  "GeomStatic/Ungroup Mesh List[G:37]/Mesh Details/Name"    ;string  ""                                                                                             
+  "GeomStatic/Ungroup Mesh List[G:37]/Mesh Details/LODs[]"  ;s64     0                                                                                              
+  "GeomStatic/Ungroup Mesh List[G:38]/Node Path"            ;string  "Sketchfab_model/root/GLTF_SceneRootNode/SM_Exhaust_0000.001_13/Object_55"                     
+  "GeomStatic/Ungroup Mesh List[G:38]/Mesh Name"            ;string  "Object_38"                                                                                    
+  "GeomStatic/Ungroup Mesh List[G:38]/Mesh Details/Name"    ;string  ""                                                                                             
+  "GeomStatic/Ungroup Mesh List[G:38]/Mesh Details/LODs[]"  ;s64     0                                                                                              
+  "GeomStatic/Ungroup Mesh List[G:39]/Node Path"            ;string  "Sketchfab_model/root/GLTF_SceneRootNode/SM_Exhaust_0000.001_13/Object_56"                     
+  "GeomStatic/Ungroup Mesh List[G:39]/Mesh Name"            ;string  "Object_39"                                                                                    
+  "GeomStatic/Ungroup Mesh List[G:39]/Mesh Details/Name"    ;string  ""                                                                                             
+  "GeomStatic/Ungroup Mesh List[G:39]/Mesh Details/LODs[]"  ;s64     0                                                                                              
+  "GeomStatic/Ungroup Mesh List[G:40]/Node Path"            ;string  "Sketchfab_model/root/GLTF_SceneRootNode/SM_Tire_R_0000.001_14/Object_58"                      
+  "GeomStatic/Ungroup Mesh List[G:40]/Mesh Name"            ;string  "Object_40"                                                                                    
+  "GeomStatic/Ungroup Mesh List[G:40]/Mesh Details/Name"    ;string  ""                                                                                             
+  "GeomStatic/Ungroup Mesh List[G:40]/Mesh Details/LODs[]"  ;s64     0                                                                                              
+  "GeomStatic/Ungroup Mesh List[G:41]/Node Path"            ;string  "Sketchfab_model/root/GLTF_SceneRootNode/SM_Tire_R_0000.001_14/Object_59"                      
+  "GeomStatic/Ungroup Mesh List[G:41]/Mesh Name"            ;string  "Object_41"                                                                                    
+  "GeomStatic/Ungroup Mesh List[G:41]/Mesh Details/Name"    ;string  ""                                                                                             
+  "GeomStatic/Ungroup Mesh List[G:41]/Mesh Details/LODs[]"  ;s64     0                                                                                              
+  "GeomStatic/GI/Mode"                                      ;enum    "RECEIVE_AND_BOUNCE"                                                                           
+  "GeomStatic/GI/Density"                                   ;enum    "AS_AUTHORED"                                                                                  
+  "GeomStatic/GI/SurfelSize"                                ;f32     #3F800000                                                                                      
+  "GeomStatic/GI/PatchDefects"                              ;bool    0                                                                                              
+  "GeomStatic/GI/LeakProtection"                            ;bool    0                                                                                              
+  "GeomStatic/Deleted List[]"                               ;s64     0                                                                                              
+  "GeomStatic/MaterialDetailsList[]"                        ;s64     42                                                                                             
+  "GeomStatic/MaterialDetailsList[G:4542038159095369106]/Name"       ;string    "MAT_Details_Engine.016"                                                                       
+  "GeomStatic/MaterialDetailsList[G:4542038159095369106]/RefCount"   ;s32       1                                                                                              
+  "GeomStatic/MaterialDetailsList[G:4542038159095369106]/Instance"   ;full_guid #73F79FFE691BFC49 #B673C5DA4A4A70AD                                                            
+  "GeomStatic/MaterialDetailsList[G:15506361494028194789]/Name"      ;string    "MAT_Tire_Brake.481"                                                                           
+  "GeomStatic/MaterialDetailsList[G:15506361494028194789]/RefCount"  ;s32       1                                                                                              
+  "GeomStatic/MaterialDetailsList[G:15506361494028194789]/Instance"  ;full_guid #F5ACFEC831A30455 #B673C5DA4A4A70AD                                                            
+  "GeomStatic/MaterialDetailsList[G:16891541336915895065]/Name"      ;string    "MAT_Details_EXT.504"                                                                          
+  "GeomStatic/MaterialDetailsList[G:16891541336915895065]/RefCount"  ;s32       1                                                                                              
+  "GeomStatic/MaterialDetailsList[G:16891541336915895065]/Instance"  ;full_guid #95E6EF1BAF9833DD #B673C5DA4A4A70AD                                                            
+  "GeomStatic/MaterialDetailsList[G:6390749206075988426]/Name"       ;string    "MAT_Details_Add_01.033"                                                                       
+  "GeomStatic/MaterialDetailsList[G:6390749206075988426]/RefCount"   ;s32       1                                                                                              
+  "GeomStatic/MaterialDetailsList[G:6390749206075988426]/Instance"   ;full_guid #7298239BA8FA880F #B673C5DA4A4A70AD                                                            
+  "GeomStatic/MaterialDetailsList[G:3727953268860953773]/Name"       ;string    "MAT_Details_MAT.903"                                                                          
+  "GeomStatic/MaterialDetailsList[G:3727953268860953773]/RefCount"   ;s32       1                                                                                              
+  "GeomStatic/MaterialDetailsList[G:3727953268860953773]/Instance"   ;full_guid #87BED82DEDACA9D7 #B673C5DA4A4A70AD                                                            
+  "GeomStatic/MaterialDetailsList[G:205228213833091368]/Name"        ;string    "MAT_Alpha_01.024"                                                                             
+  "GeomStatic/MaterialDetailsList[G:205228213833091368]/RefCount"    ;s32       1                                                                                              
+  "GeomStatic/MaterialDetailsList[G:205228213833091368]/Instance"    ;full_guid #AE533CE30EAFDAB #B673C5DA4A4A70AD                                                             
+  "GeomStatic/MaterialDetailsList[G:12172202447317579868]/Name"      ;string    "MAT_Tires_Tyre_F.005"                                                                         
+  "GeomStatic/MaterialDetailsList[G:12172202447317579868]/RefCount"  ;s32       1                                                                                              
+  "GeomStatic/MaterialDetailsList[G:12172202447317579868]/Instance"  ;full_guid #DA7AE60A5F645F5B #B673C5DA4A4A70AD                                                            
+  "GeomStatic/MaterialDetailsList[G:10433778875878323050]/Name"      ;string    "MAT_Tires_Hub.032"                                                                            
+  "GeomStatic/MaterialDetailsList[G:10433778875878323050]/RefCount"  ;s32       1                                                                                              
+  "GeomStatic/MaterialDetailsList[G:10433778875878323050]/Instance"  ;full_guid #DFE0307E985AC691 #B673C5DA4A4A70AD                                                            
+  "GeomStatic/MaterialDetailsList[G:4298821524900127561]/Name"       ;string    "MAT_Details_Seat.005"                                                                         
+  "GeomStatic/MaterialDetailsList[G:4298821524900127561]/RefCount"   ;s32       1                                                                                              
+  "GeomStatic/MaterialDetailsList[G:4298821524900127561]/Instance"   ;full_guid #B9E4489EFEFA46BF #B673C5DA4A4A70AD                                                            
+  "GeomStatic/MaterialDetailsList[G:1031166586256764872]/Name"       ;string    "MAT_Lights.490"                                                                               
+  "GeomStatic/MaterialDetailsList[G:1031166586256764872]/RefCount"   ;s32       1                                                                                              
+  "GeomStatic/MaterialDetailsList[G:1031166586256764872]/Instance"   ;full_guid #10D8BAFDE27EFCCB #B673C5DA4A4A70AD                                                            
+  "GeomStatic/MaterialDetailsList[G:12958096721830986690]/Name"      ;string    "MAT_Glass.415"                                                                                
+  "GeomStatic/MaterialDetailsList[G:12958096721830986690]/RefCount"  ;s32       1                                                                                              
+  "GeomStatic/MaterialDetailsList[G:12958096721830986690]/Instance"  ;full_guid #89A821137206F27B #B673C5DA4A4A70AD                                                            
+  "GeomStatic/MaterialDetailsList[G:8377172559346975522]/Name"       ;string    "MAT_Ducati_StreetFighter_V4S_Carpaint.008"                                                    
+  "GeomStatic/MaterialDetailsList[G:8377172559346975522]/RefCount"   ;s32       1                                                                                              
+  "GeomStatic/MaterialDetailsList[G:8377172559346975522]/Instance"   ;full_guid #5BA17300CC333E7D #B673C5DA4A4A70AD                                                            
+  "GeomStatic/MaterialDetailsList[G:810981098996432324]/Name"        ;string    "MAT_Ducati_StreetFighter_V4S_Carpaint_Red.028"                                                
+  "GeomStatic/MaterialDetailsList[G:810981098996432324]/RefCount"    ;s32       1                                                                                              
+  "GeomStatic/MaterialDetailsList[G:810981098996432324]/Instance"    ;full_guid #32CEC6EFDDE17C5 #B673C5DA4A4A70AD                                                             
+  "GeomStatic/MaterialDetailsList[G:6499442298014897241]/Name"       ;string    "MAT_Details_Grid_01.248"                                                                      
+  "GeomStatic/MaterialDetailsList[G:6499442298014897241]/RefCount"   ;s32       1                                                                                              
+  "GeomStatic/MaterialDetailsList[G:6499442298014897241]/Instance"   ;full_guid #18D6279879860B95 #B673C5DA4A4A70AD                                                            
+  "GeomStatic/MaterialDetailsList[G:12957109360389042437]/Name"      ;string    "MAT_Glass.407"                                                                                
+  "GeomStatic/MaterialDetailsList[G:12957109360389042437]/RefCount"  ;s32       1                                                                                              
+  "GeomStatic/MaterialDetailsList[G:12957109360389042437]/Instance"  ;full_guid #2F74CCD4281AE9A5 #B673C5DA4A4A70AD                                                            
+  "GeomStatic/MaterialDetailsList[G:16230183993207355879]/Name"      ;string    "MAT_Details_EXT.494"                                                                          
+  "GeomStatic/MaterialDetailsList[G:16230183993207355879]/RefCount"  ;s32       1                                                                                              
+  "GeomStatic/MaterialDetailsList[G:16230183993207355879]/Instance"  ;full_guid #A9A3D23B9CFC2B6B #B673C5DA4A4A70AD                                                            
+  "GeomStatic/MaterialDetailsList[G:5613837715872198272]/Name"       ;string    "MAT_Ducati_StreetFighter_V4S_Carpaint_Red"                                                    
+  "GeomStatic/MaterialDetailsList[G:5613837715872198272]/RefCount"   ;s32       1                                                                                              
+  "GeomStatic/MaterialDetailsList[G:5613837715872198272]/Instance"   ;full_guid #BFEA7B9062AC413D #B673C5DA4A4A70AD                                                            
+  "GeomStatic/MaterialDetailsList[G:11266345339691677464]/Name"      ;string    "MAT_Details_Exhaust.005"                                                                      
+  "GeomStatic/MaterialDetailsList[G:11266345339691677464]/RefCount"  ;s32       1                                                                                              
+  "GeomStatic/MaterialDetailsList[G:11266345339691677464]/Instance"  ;full_guid #3A24BB6F723D2147 #B673C5DA4A4A70AD                                                            
+  "GeomStatic/MaterialDetailsList[G:16822971122505812000]/Name"      ;string    "MAT_Tires_Tyre_R.005"                                                                         
+  "GeomStatic/MaterialDetailsList[G:16822971122505812000]/RefCount"  ;s32       1                                                                                              
+  "GeomStatic/MaterialDetailsList[G:16822971122505812000]/Instance"  ;full_guid #52C440A3B98E2A87 #B673C5DA4A4A70AD                                                            
+  "GeomStatic/MaterialDetailsList[G:205223815786578524]/Name"        ;string    "MAT_Alpha_01.028"                                                                             
+  "GeomStatic/MaterialDetailsList[G:205223815786578524]/RefCount"    ;s32       1                                                                                              
+  "GeomStatic/MaterialDetailsList[G:205223815786578524]/Instance"    ;full_guid #DA2882FB6016A1E9 #B673C5DA4A4A70AD                                                            
+  "GeomStatic/MaterialDetailsList[G:4389448051523019334]/Name"       ;string    "MAT_Details_MAT.898"                                                                          
+  "GeomStatic/MaterialDetailsList[G:4389448051523019334]/RefCount"   ;s32       1                                                                                              
+  "GeomStatic/MaterialDetailsList[G:4389448051523019334]/Instance"   ;full_guid #B45741DBA1578ED1 #B673C5DA4A4A70AD                                                            
+  "GeomStatic/MaterialDetailsList[G:4376068094521968825]/Name"       ;string    "MAT_Details_MAT.873"                                                                          
+  "GeomStatic/MaterialDetailsList[G:4376068094521968825]/RefCount"   ;s32       1                                                                                              
+  "GeomStatic/MaterialDetailsList[G:4376068094521968825]/Instance"   ;full_guid #3DFBCD7256DE73E1 #B673C5DA4A4A70AD                                                            
+  "GeomStatic/MaterialDetailsList[G:16229181238602616672]/Name"      ;string    "MAT_Details_EXT.486"                                                                          
+  "GeomStatic/MaterialDetailsList[G:16229181238602616672]/RefCount"  ;s32       1                                                                                              
+  "GeomStatic/MaterialDetailsList[G:16229181238602616672]/Instance"  ;full_guid #B0717D85FEB164B7 #B673C5DA4A4A70AD                                                            
+  "GeomStatic/MaterialDetailsList[G:16230169699556189136]/Name"      ;string    "MAT_Details_EXT.499"                                                                          
+  "GeomStatic/MaterialDetailsList[G:16230169699556189136]/RefCount"  ;s32       1                                                                                              
+  "GeomStatic/MaterialDetailsList[G:16230169699556189136]/Instance"  ;full_guid #32B658D8FB054717 #B673C5DA4A4A70AD                                                            
+  "GeomStatic/MaterialDetailsList[G:4389455748104416811]/Name"       ;string    "MAT_Details_MAT.893"                                                                          
+  "GeomStatic/MaterialDetailsList[G:4389455748104416811]/RefCount"   ;s32       1                                                                                              
+  "GeomStatic/MaterialDetailsList[G:4389455748104416811]/Instance"   ;full_guid #6748C250104C5DA7 #B673C5DA4A4A70AD                                                            
+  "GeomStatic/MaterialDetailsList[G:1032162743791734813]/Name"       ;string    "MAT_Lights.484"                                                                               
+  "GeomStatic/MaterialDetailsList[G:1032162743791734813]/RefCount"   ;s32       1                                                                                              
+  "GeomStatic/MaterialDetailsList[G:1032162743791734813]/Instance"   ;full_guid #2618F1316FA858F7 #B673C5DA4A4A70AD                                                            
+  "GeomStatic/MaterialDetailsList[G:12958092323784473846]/Name"      ;string    "MAT_Glass.411"                                                                                
+  "GeomStatic/MaterialDetailsList[G:12958092323784473846]/RefCount"  ;s32       1                                                                                              
+  "GeomStatic/MaterialDetailsList[G:12958092323784473846]/Instance"  ;full_guid #BBA27BA9AA632B2D #B673C5DA4A4A70AD                                                            
+  "GeomStatic/MaterialDetailsList[G:12957104962342529593]/Name"      ;string    "MAT_Glass.403"                                                                                
+  "GeomStatic/MaterialDetailsList[G:12957104962342529593]/RefCount"  ;s32       1                                                                                              
+  "GeomStatic/MaterialDetailsList[G:12957104962342529593]/Instance"  ;full_guid #69F3C3A22BBB2713 #B673C5DA4A4A70AD                                                            
+  "GeomStatic/MaterialDetailsList[G:1029321605745005264]/Name"       ;string    "MAT_Lights.472"                                                                               
+  "GeomStatic/MaterialDetailsList[G:1029321605745005264]/RefCount"   ;s32       1                                                                                              
+  "GeomStatic/MaterialDetailsList[G:1029321605745005264]/Instance"   ;full_guid #EDCC76E4B6EE2FD3 #B673C5DA4A4A70AD                                                            
+  "GeomStatic/MaterialDetailsList[G:15516911308098797859]/Name"      ;string    "MAT_Tire_Brake.476"                                                                           
+  "GeomStatic/MaterialDetailsList[G:15516911308098797859]/RefCount"  ;s32       1                                                                                              
+  "GeomStatic/MaterialDetailsList[G:15516911308098797859]/Instance"  ;full_guid #BBA394D250A7BB3F #B673C5DA4A4A70AD                                                            
+  "GeomStatic/MaterialDetailsList[G:16229197731277039837]/Name"      ;string    "MAT_Details_EXT.489"                                                                          
+  "GeomStatic/MaterialDetailsList[G:16229197731277039837]/RefCount"  ;s32       1                                                                                              
+  "GeomStatic/MaterialDetailsList[G:16229197731277039837]/Instance"  ;full_guid #C13B4C6CCBAA70B #B673C5DA4A4A70AD                                                             
+  "GeomStatic/MaterialDetailsList[G:4390449706616130330]/Name"       ;string    "MAT_Details_MAT.883"                                                                          
+  "GeomStatic/MaterialDetailsList[G:4390449706616130330]/RefCount"   ;s32       1                                                                                              
+  "GeomStatic/MaterialDetailsList[G:4390449706616130330]/Instance"   ;full_guid #6BBFF329C44EAD5 #B673C5DA4A4A70AD                                                             
+  "GeomStatic/MaterialDetailsList[G:6389888288471288438]/Name"       ;string    "MAT_Details_Add_01.028"                                                                       
+  "GeomStatic/MaterialDetailsList[G:6389888288471288438]/RefCount"   ;s32       1                                                                                              
+  "GeomStatic/MaterialDetailsList[G:6389888288471288438]/Instance"   ;full_guid #18E6A57355793877 #B673C5DA4A4A70AD                                                            
+  "GeomStatic/MaterialDetailsList[G:4390439811011476431]/Name"       ;string    "MAT_Details_MAT.888"                                                                          
+  "GeomStatic/MaterialDetailsList[G:4390439811011476431]/RefCount"   ;s32       1                                                                                              
+  "GeomStatic/MaterialDetailsList[G:4390439811011476431]/Instance"   ;full_guid #EA706C260E9D77B9 #B673C5DA4A4A70AD                                                            
+  "GeomStatic/MaterialDetailsList[G:1029332600861287374]/Name"       ;string    "MAT_Lights.478"                                                                               
+  "GeomStatic/MaterialDetailsList[G:1029332600861287374]/RefCount"   ;s32       1                                                                                              
+  "GeomStatic/MaterialDetailsList[G:1029332600861287374]/Instance"   ;full_guid #6C1B7F66C4A273F3 #B673C5DA4A4A70AD                                                            
+  "GeomStatic/MaterialDetailsList[G:813798047787341231]/Name"        ;string    "MAT_Ducati_StreetFighter_V4S_Carpaint_Red.018"                                                
+  "GeomStatic/MaterialDetailsList[G:813798047787341231]/RefCount"    ;s32       1                                                                                              
+  "GeomStatic/MaterialDetailsList[G:813798047787341231]/Instance"    ;full_guid #2E990BEDA108C625 #B673C5DA4A4A70AD                                                            
+  "GeomStatic/MaterialDetailsList[G:4376073592080109880]/Name"       ;string    "MAT_Details_MAT.878"                                                                          
+  "GeomStatic/MaterialDetailsList[G:4376073592080109880]/RefCount"   ;s32       1                                                                                              
+  "GeomStatic/MaterialDetailsList[G:4376073592080109880]/Instance"   ;full_guid #3826E78DE8267721 #B673C5DA4A4A70AD                                                            
+  "GeomStatic/MaterialDetailsList[G:16229188935184014149]/Name"      ;string    "MAT_Details_EXT.481"                                                                          
+  "GeomStatic/MaterialDetailsList[G:16229188935184014149]/RefCount"  ;s32       1                                                                                              
+  "GeomStatic/MaterialDetailsList[G:16229188935184014149]/Instance"  ;full_guid #C51D7A9D89BF9507 #B673C5DA4A4A70AD                                                            
+  "GeomStatic/MaterialDetailsList[G:6499447795573038296]/Name"       ;string    "MAT_Details_Grid_01.243"                                                                      
+  "GeomStatic/MaterialDetailsList[G:6499447795573038296]/RefCount"   ;s32       1                                                                                              
+  "GeomStatic/MaterialDetailsList[G:6499447795573038296]/Instance"   ;full_guid #45DB27218255EDBD #B673C5DA4A4A70AD                                                            
+  "GeomStatic/MaterialDetailsList[G:4377065351568566977]/Name"       ;string    "MAT_Details_MAT.868"                                                                          
+  "GeomStatic/MaterialDetailsList[G:4377065351568566977]/RefCount"   ;s32       1                                                                                              
+  "GeomStatic/MaterialDetailsList[G:4377065351568566977]/Instance"   ;full_guid #6552769640D04B09 #B673C5DA4A4A70AD                                                            
+  "GeomStatic/MaterialDetailsList[G:4544865003490931912]/Name"       ;string    "MAT_Details_Engine.021"                                                                       
+  "GeomStatic/MaterialDetailsList[G:4544865003490931912]/RefCount"   ;s32       1                                                                                              
+  "GeomStatic/MaterialDetailsList[G:4544865003490931912]/Instance"   ;full_guid #D7228BF3393ACC13 #B673C5DA4A4A70AD                                                            
+  "GeomStatic/MaterialDetailsList[G:10433775577343438417]/Name"      ;string    "MAT_Tires_Hub.037"                                                                            
+  "GeomStatic/MaterialDetailsList[G:10433775577343438417]/RefCount"  ;s32       1                                                                                              
+  "GeomStatic/MaterialDetailsList[G:10433775577343438417]/Instance"  ;full_guid #1B7958A59F86D391 #B673C5DA4A4A70AD                                                            
+  "GeomStatic/ImportMaterials/bImport"                               ;bool      1                                                                                              
+  "GeomStatic/ImportMaterials/Material"                              ;full_guid #8D45F86DC5F2C003 #8B3C028882EA813D                                                            
+  "GeomStatic/ImportMaterials/AlphaTest"                             ;full_guid #FF22104E737E58EB #8B3C028882EA813D                                                            
+  "GeomStatic/ImportMaterials/AlbedoCompression"                     ;enum      "RGB_BC1"                                                                                      
+  "GeomStatic/ImportMaterials/AlbedoAlphaCompression"                ;enum      "RGBA_BC7"                                                                                     
+  "GeomStatic/ImportMaterials/NormalCompression"                     ;enum      "RG_BC5"                                                                                       
+  "GeomStatic/ImportMaterials/Flip Y for normals"                    ;bool      1                                                                                              
+  "GeomStatic/ImportMaterials/Normalize normals"                     ;bool      1                                                                                              
+  "GeomStatic/ImportMaterials/ORMECompression"                       ;enum      "RGBA_BC7"                                                                                     

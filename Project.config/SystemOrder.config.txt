@@ -2,10 +2,10 @@
 // New Types
 < s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
 
-[ xProperties : 67 ]
+[ xProperties : 85 ]
 { Name:s                                           Value:?                     }
 //-----------------------------------------------  ---------------------------
-  "SystemOrderConfig/UpdateOrder[]"                ;s64    11                 
+  "SystemOrderConfig/UpdateOrder[]"                ;s64    14                 
   "SystemOrderConfig/UpdateOrder[G:0]/Guid"        ;u64    #FE5EC75487196B0E  
   "SystemOrderConfig/UpdateOrder[G:0]/Name"        ;string "Tick Logger A"    
   "SystemOrderConfig/UpdateOrder[G:0]/Enabled"     ;bool   1                  
@@ -72,3 +72,21 @@
   "SystemOrderConfig/UpdateOrder[G:10]/ParentGuid"  ;u64    #0                 
   "SystemOrderConfig/UpdateOrder[G:10]/Connector"   ;string ""                 
   "SystemOrderConfig/UpdateOrder[G:10]/Placed"      ;bool   1                  
+  "SystemOrderConfig/UpdateOrder[G:11]/Guid"        ;u64    #9488823BFBB0FFAB  
+  "SystemOrderConfig/UpdateOrder[G:11]/Name"        ;string "Bistro Day Cycle" 
+  "SystemOrderConfig/UpdateOrder[G:11]/Enabled"     ;bool   1                  
+  "SystemOrderConfig/UpdateOrder[G:11]/ParentGuid"  ;u64    #0                 
+  "SystemOrderConfig/UpdateOrder[G:11]/Connector"   ;string ""                 
+  "SystemOrderConfig/UpdateOrder[G:11]/Placed"      ;bool   0                  
+  "SystemOrderConfig/UpdateOrder[G:12]/Guid"        ;u64    #A67FA213A8680A81  
+  "SystemOrderConfig/UpdateOrder[G:12]/Name"        ;string "Bistro Circlers"  
+  "SystemOrderConfig/UpdateOrder[G:12]/Enabled"     ;bool   1                  
+  "SystemOrderConfig/UpdateOrder[G:12]/ParentGuid"  ;u64    #0                 
+  "SystemOrderConfig/UpdateOrder[G:12]/Connector"   ;string ""                 
+  "SystemOrderConfig/UpdateOrder[G:12]/Placed"      ;bool   0                  
+  "SystemOrderConfig/UpdateOrder[G:13]/Guid"        ;u64    #AE838FD44A00D5D7  
+  "SystemOrderConfig/UpdateOrder[G:13]/Name"        ;string "Bistro Walkers"   
+  "SystemOrderConfig/UpdateOrder[G:13]/Enabled"     ;bool   1                  
+  "SystemOrderConfig/UpdateOrder[G:13]/ParentGuid"  ;u64    #0                 
+  "SystemOrderConfig/UpdateOrder[G:13]/Connector"   ;string ""                 
+  "SystemOrderConfig/UpdateOrder[G:13]/Placed"      ;bool   0                  

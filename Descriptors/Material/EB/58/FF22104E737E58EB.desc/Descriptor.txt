@@ -384,7 +384,7 @@
   "node/Params[]"                              ;s64    1                
   "node/Params[G:0]/Name"                      ;string "x"              
   "node/Params[G:0]/Type"                      ;enum   "FLOAT"          
-  "node/Params[G:0]/Float"                     ;f32    1.5              
+  "node/Params[G:0]/Float"                     ;f32    1                
   "node/Params[G:0]/bCanExpose"                ;bool   0                
   "node/Params[G:0]/ParamID"                   ;u64    #65FCB2331C54F40A
 
@@ -1619,7 +1619,7 @@
   "param_decl/Type"            ;enum      "FLOAT"          
   "param_decl/Kind"            ;enum      "DYNAMIC"        
   "param_decl/Stages"          ;u8        #1               
-  "param_decl/Default/X"       ;f32       1.5              
+  "param_decl/Default/X"       ;f32       1                
   "param_decl/Default/Y"       ;f32       0                
   "param_decl/Default/Z"       ;f32       0                
   "param_decl/Default/W"       ;f32       0                
@@ -1628,10 +1628,10 @@
   "param_decl/ValidMin/Y"      ;f32       0                
   "param_decl/ValidMin/Z"      ;f32       0                
   "param_decl/ValidMin/W"      ;f32       0                
-  "param_decl/ValidMax/X"      ;f32       3.40282347e+38               
-  "param_decl/ValidMax/Y"      ;f32       3.40282347e+38               
-  "param_decl/ValidMax/Z"      ;f32       3.40282347e+38               
-  "param_decl/ValidMax/W"      ;f32       3.40282347e+38               
+  "param_decl/ValidMax/X"      ;f32       3.40282347e+38   
+  "param_decl/ValidMax/Y"      ;f32       3.40282347e+38   
+  "param_decl/ValidMax/Z"      ;f32       3.40282347e+38   
+  "param_decl/ValidMax/W"      ;f32       3.40282347e+38   
   "param_decl/UiMin/X"         ;f32       0                
   "param_decl/UiMin/Y"         ;f32       0                
   "param_decl/UiMin/Z"         ;f32       0                
@@ -1668,10 +1668,10 @@
   "param_decl/ValidMin/Y"      ;f32       0                
   "param_decl/ValidMin/Z"      ;f32       0                
   "param_decl/ValidMin/W"      ;f32       0                
-  "param_decl/ValidMax/X"      ;f32       3.40282347e+38                
-  "param_decl/ValidMax/Y"      ;f32       3.40282347e+38                
-  "param_decl/ValidMax/Z"      ;f32       3.40282347e+38                
-  "param_decl/ValidMax/W"      ;f32       3.40282347e+38                
+  "param_decl/ValidMax/X"      ;f32       3.40282347e+38   
+  "param_decl/ValidMax/Y"      ;f32       3.40282347e+38   
+  "param_decl/ValidMax/Z"      ;f32       3.40282347e+38   
+  "param_decl/ValidMax/W"      ;f32       3.40282347e+38   
   "param_decl/UiMin/X"         ;f32       0                
   "param_decl/UiMin/Y"         ;f32       0                
   "param_decl/UiMin/Z"         ;f32       0                
@@ -1708,10 +1708,10 @@
   "param_decl/ValidMin/Y"      ;f32       0                
   "param_decl/ValidMin/Z"      ;f32       0                
   "param_decl/ValidMin/W"      ;f32       0                
-  "param_decl/ValidMax/X"      ;f32       3.40282347e+38                
-  "param_decl/ValidMax/Y"      ;f32       3.40282347e+38                
-  "param_decl/ValidMax/Z"      ;f32       3.40282347e+38                
-  "param_decl/ValidMax/W"      ;f32       3.40282347e+38                
+  "param_decl/ValidMax/X"      ;f32       3.40282347e+38   
+  "param_decl/ValidMax/Y"      ;f32       3.40282347e+38   
+  "param_decl/ValidMax/Z"      ;f32       3.40282347e+38   
+  "param_decl/ValidMax/W"      ;f32       3.40282347e+38   
   "param_decl/UiMin/X"         ;f32       0                
   "param_decl/UiMin/Y"         ;f32       0                
   "param_decl/UiMin/Z"         ;f32       0                
@@ -1748,10 +1748,10 @@
   "param_decl/ValidMin/Y"      ;f32       0                
   "param_decl/ValidMin/Z"      ;f32       0                
   "param_decl/ValidMin/W"      ;f32       0                
-  "param_decl/ValidMax/X"      ;f32       3.40282347e+38                
-  "param_decl/ValidMax/Y"      ;f32       3.40282347e+38                
-  "param_decl/ValidMax/Z"      ;f32       3.40282347e+38                
-  "param_decl/ValidMax/W"      ;f32       3.40282347e+38                
+  "param_decl/ValidMax/X"      ;f32       3.40282347e+38   
+  "param_decl/ValidMax/Y"      ;f32       3.40282347e+38   
+  "param_decl/ValidMax/Z"      ;f32       3.40282347e+38   
+  "param_decl/ValidMax/W"      ;f32       3.40282347e+38   
   "param_decl/UiMin/X"         ;f32       0                
   "param_decl/UiMin/Y"         ;f32       0                
   "param_decl/UiMin/Z"         ;f32       0                

@@ -1,0 +1,179 @@
+
+[ DescriptorVersion ]
+{ Major:d  Minor:d }
+//-------  -------
+     1        0   
+
+// New Types
+< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
+
+[ xProperties : 167 ]
+{ Name:s                                                  Value:?                                                            }
+//------------------------------------------------------  ------------------------------------------------------------------
+  "GeomSkin/ImportAsset"                                  ;wstring   "Assets\\Tomorrow Hood Down\\Full Body with Shorts.fbx"
+  "GeomSkin/ImportSkeletonAndAnimation"                   ;bool      1                                                      
+  "GeomSkin/SkeletonRef"                                  ;full_guid #644181904ABF7FF3 #F5D3BE1ED860ABF7                    
+  "GeomSkin/AnimationRef"                                 ;full_guid #0 #E69E8A8439A9BB1B                                   
+  "GeomSkin/bMergeAllMeshes"                              ;bool      1                                                      
+  "GeomSkin/AllMeshesDetails/Name"                        ;string    "down"                                                 
+  "GeomSkin/AllMeshesDetails/LODs[]" ;s64 3
+  "GeomSkin/AllMeshesDetails/LODs[G:0]/LODReduction" ;f32 0.5
+  "GeomSkin/AllMeshesDetails/LODs[G:0]/ScreenArea" ;f32 0
+  "GeomSkin/AllMeshesDetails/LODs[G:1]/LODReduction" ;f32 0.5
+  "GeomSkin/AllMeshesDetails/LODs[G:1]/ScreenArea" ;f32 0
+  "GeomSkin/AllMeshesDetails/LODs[G:2]/LODReduction" ;f32 0.5
+  "GeomSkin/AllMeshesDetails/LODs[G:2]/ScreenArea" ;f32 0
+  "GeomSkin/Merge Group List[]"                           ;s64       0                                                      
+  "GeomSkin/Ungroup Mesh List[]"                          ;s64       35                                                     
+  "GeomSkin/Ungroup Mesh List[G:0]/Node Path"             ;string    "RootNode/CastMesh"                                    
+  "GeomSkin/Ungroup Mesh List[G:0]/Mesh Name"             ;string    "CastMesh"                                             
+  "GeomSkin/Ungroup Mesh List[G:0]/Mesh Details/Name"     ;string    ""                                                     
+  "GeomSkin/Ungroup Mesh List[G:0]/Mesh Details/LODs[]"   ;s64       0                                                      
+  "GeomSkin/Ungroup Mesh List[G:1]/Node Path"             ;string    "RootNode/CastMesh.001"                                
+  "GeomSkin/Ungroup Mesh List[G:1]/Mesh Name"             ;string    "CastMesh.001"                                         
+  "GeomSkin/Ungroup Mesh List[G:1]/Mesh Details/Name"     ;string    ""                                                     
+  "GeomSkin/Ungroup Mesh List[G:1]/Mesh Details/LODs[]"   ;s64       0                                                      
+  "GeomSkin/Ungroup Mesh List[G:2]/Node Path"             ;string    "RootNode/CastMesh.002"                                
+  "GeomSkin/Ungroup Mesh List[G:2]/Mesh Name"             ;string    "CastMesh.002"                                         
+  "GeomSkin/Ungroup Mesh List[G:2]/Mesh Details/Name"     ;string    ""                                                     
+  "GeomSkin/Ungroup Mesh List[G:2]/Mesh Details/LODs[]"   ;s64       0                                                      
+  "GeomSkin/Ungroup Mesh List[G:3]/Node Path"             ;string    "RootNode/CastMesh.003"                                
+  "GeomSkin/Ungroup Mesh List[G:3]/Mesh Name"             ;string    "CastMesh.003"                                         
+  "GeomSkin/Ungroup Mesh List[G:3]/Mesh Details/Name"     ;string    ""                                                     
+  "GeomSkin/Ungroup Mesh List[G:3]/Mesh Details/LODs[]"   ;s64       0                                                      
+  "GeomSkin/Ungroup Mesh List[G:4]/Node Path"             ;string    "RootNode/CastMesh.004"                                
+  "GeomSkin/Ungroup Mesh List[G:4]/Mesh Name"             ;string    "CastMesh.004"                                         
+  "GeomSkin/Ungroup Mesh List[G:4]/Mesh Details/Name"     ;string    ""                                                     
+  "GeomSkin/Ungroup Mesh List[G:4]/Mesh Details/LODs[]"   ;s64       0                                                      
+  "GeomSkin/Ungroup Mesh List[G:5]/Node Path"             ;string    "RootNode/CastMesh.005"                                
+  "GeomSkin/Ungroup Mesh List[G:5]/Mesh Name"             ;string    "CastMesh.005"                                         
+  "GeomSkin/Ungroup Mesh List[G:5]/Mesh Details/Name"     ;string    ""                                                     
+  "GeomSkin/Ungroup Mesh List[G:5]/Mesh Details/LODs[]"   ;s64       0                                                      
+  "GeomSkin/Ungroup Mesh List[G:6]/Node Path"             ;string    "RootNode/CastMesh.006"                                
+  "GeomSkin/Ungroup Mesh List[G:6]/Mesh Name"             ;string    "CastMesh.006"                                         
+  "GeomSkin/Ungroup Mesh List[G:6]/Mesh Details/Name"     ;string    ""                                                     
+  "GeomSkin/Ungroup Mesh List[G:6]/Mesh Details/LODs[]"   ;s64       0                                                      
+  "GeomSkin/Ungroup Mesh List[G:7]/Node Path"             ;string    "RootNode/CastMesh.007"                                
+  "GeomSkin/Ungroup Mesh List[G:7]/Mesh Name"             ;string    "CastMesh.007"                                         
+  "GeomSkin/Ungroup Mesh List[G:7]/Mesh Details/Name"     ;string    ""                                                     
+  "GeomSkin/Ungroup Mesh List[G:7]/Mesh Details/LODs[]"   ;s64       0                                                      
+  "GeomSkin/Ungroup Mesh List[G:8]/Node Path"             ;string    "RootNode/CastMesh.008"                                
+  "GeomSkin/Ungroup Mesh List[G:8]/Mesh Name"             ;string    "CastMesh.008"                                         
+  "GeomSkin/Ungroup Mesh List[G:8]/Mesh Details/Name"     ;string    ""                                                     
+  "GeomSkin/Ungroup Mesh List[G:8]/Mesh Details/LODs[]"   ;s64       0                                                      
+  "GeomSkin/Ungroup Mesh List[G:9]/Node Path"             ;string    "RootNode/CastMesh.009"                                
+  "GeomSkin/Ungroup Mesh List[G:9]/Mesh Name"             ;string    "CastMesh.009"                                         
+  "GeomSkin/Ungroup Mesh List[G:9]/Mesh Details/Name"     ;string    ""                                                     
+  "GeomSkin/Ungroup Mesh List[G:9]/Mesh Details/LODs[]"   ;s64       0                                                      
+  "GeomSkin/Ungroup Mesh List[G:10]/Node Path"            ;string    "RootNode/CastMesh.010"                                
+  "GeomSkin/Ungroup Mesh List[G:10]/Mesh Name"            ;string    "CastMesh.010"                                         
+  "GeomSkin/Ungroup Mesh List[G:10]/Mesh Details/Name"    ;string    ""                                                     
+  "GeomSkin/Ungroup Mesh List[G:10]/Mesh Details/LODs[]"  ;s64       0                                                      
+  "GeomSkin/Ungroup Mesh List[G:11]/Node Path"            ;string    "RootNode/CastMesh.011"                                
+  "GeomSkin/Ungroup Mesh List[G:11]/Mesh Name"            ;string    "CastMesh.011"                                         
+  "GeomSkin/Ungroup Mesh List[G:11]/Mesh Details/Name"    ;string    ""                                                     
+  "GeomSkin/Ungroup Mesh List[G:11]/Mesh Details/LODs[]"  ;s64       0                                                      
+  "GeomSkin/Ungroup Mesh List[G:12]/Node Path"            ;string    "RootNode/CastMesh.012"                                
+  "GeomSkin/Ungroup Mesh List[G:12]/Mesh Name"            ;string    "CastMesh.012"                                         
+  "GeomSkin/Ungroup Mesh List[G:12]/Mesh Details/Name"    ;string    ""                                                     
+  "GeomSkin/Ungroup Mesh List[G:12]/Mesh Details/LODs[]"  ;s64       0                                                      
+  "GeomSkin/Ungroup Mesh List[G:13]/Node Path"            ;string    "RootNode/CastMesh.013"                                
+  "GeomSkin/Ungroup Mesh List[G:13]/Mesh Name"            ;string    "CastMesh.013"                                         
+  "GeomSkin/Ungroup Mesh List[G:13]/Mesh Details/Name"    ;string    ""                                                     
+  "GeomSkin/Ungroup Mesh List[G:13]/Mesh Details/LODs[]"  ;s64       0                                                      
+  "GeomSkin/Ungroup Mesh List[G:14]/Node Path"            ;string    "RootNode/CastMesh.014"                                
+  "GeomSkin/Ungroup Mesh List[G:14]/Mesh Name"            ;string    "CastMesh.014"                                         
+  "GeomSkin/Ungroup Mesh List[G:14]/Mesh Details/Name"    ;string    ""                                                     
+  "GeomSkin/Ungroup Mesh List[G:14]/Mesh Details/LODs[]"  ;s64       0                                                      
+  "GeomSkin/Ungroup Mesh List[G:15]/Node Path"            ;string    "RootNode/CastMesh.015"                                
+  "GeomSkin/Ungroup Mesh List[G:15]/Mesh Name"            ;string    "CastMesh.015"                                         
+  "GeomSkin/Ungroup Mesh List[G:15]/Mesh Details/Name"    ;string    ""                                                     
+  "GeomSkin/Ungroup Mesh List[G:15]/Mesh Details/LODs[]"  ;s64       0                                                      
+  "GeomSkin/Ungroup Mesh List[G:16]/Node Path"            ;string    "RootNode/CastMesh.016"                                
+  "GeomSkin/Ungroup Mesh List[G:16]/Mesh Name"            ;string    "CastMesh.016"                                         
+  "GeomSkin/Ungroup Mesh List[G:16]/Mesh Details/Name"    ;string    ""                                                     
+  "GeomSkin/Ungroup Mesh List[G:16]/Mesh Details/LODs[]"  ;s64       0                                                      
+  "GeomSkin/Ungroup Mesh List[G:17]/Node Path"            ;string    "RootNode/CastMesh.017"                                
+  "GeomSkin/Ungroup Mesh List[G:17]/Mesh Name"            ;string    "CastMesh.017"                                         
+  "GeomSkin/Ungroup Mesh List[G:17]/Mesh Details/Name"    ;string    ""                                                     
+  "GeomSkin/Ungroup Mesh List[G:17]/Mesh Details/LODs[]"  ;s64       0                                                      
+  "GeomSkin/Ungroup Mesh List[G:18]/Node Path"            ;string    "RootNode/CastMesh.018"                                
+  "GeomSkin/Ungroup Mesh List[G:18]/Mesh Name"            ;string    "CastMesh.018"                                         
+  "GeomSkin/Ungroup Mesh List[G:18]/Mesh Details/Name"    ;string    ""                                                     
+  "GeomSkin/Ungroup Mesh List[G:18]/Mesh Details/LODs[]"  ;s64       0                                                      
+  "GeomSkin/Ungroup Mesh List[G:19]/Node Path"            ;string    "RootNode/CastMesh.019"                                
+  "GeomSkin/Ungroup Mesh List[G:19]/Mesh Name"            ;string    "CastMesh.019"                                         
+  "GeomSkin/Ungroup Mesh List[G:19]/Mesh Details/Name"    ;string    ""                                                     
+  "GeomSkin/Ungroup Mesh List[G:19]/Mesh Details/LODs[]"  ;s64       0                                                      
+  "GeomSkin/Ungroup Mesh List[G:20]/Node Path"            ;string    "RootNode/CastMesh.020"                                
+  "GeomSkin/Ungroup Mesh List[G:20]/Mesh Name"            ;string    "CastMesh.020"                                         
+  "GeomSkin/Ungroup Mesh List[G:20]/Mesh Details/Name"    ;string    ""                                                     
+  "GeomSkin/Ungroup Mesh List[G:20]/Mesh Details/LODs[]"  ;s64       0                                                      
+  "GeomSkin/Ungroup Mesh List[G:21]/Node Path"            ;string    "RootNode/CastMesh.021"                                
+  "GeomSkin/Ungroup Mesh List[G:21]/Mesh Name"            ;string    "CastMesh.021"                                         
+  "GeomSkin/Ungroup Mesh List[G:21]/Mesh Details/Name"    ;string    ""                                                     
+  "GeomSkin/Ungroup Mesh List[G:21]/Mesh Details/LODs[]"  ;s64       0                                                      
+  "GeomSkin/Ungroup Mesh List[G:22]/Node Path"            ;string    "RootNode/CastMesh.022"                                
+  "GeomSkin/Ungroup Mesh List[G:22]/Mesh Name"            ;string    "CastMesh.022"                                         
+  "GeomSkin/Ungroup Mesh List[G:22]/Mesh Details/Name"    ;string    ""                                                     
+  "GeomSkin/Ungroup Mesh List[G:22]/Mesh Details/LODs[]"  ;s64       0                                                      
+  "GeomSkin/Ungroup Mesh List[G:23]/Node Path"            ;string    "RootNode/CastMesh.023"                                
+  "GeomSkin/Ungroup Mesh List[G:23]/Mesh Name"            ;string    "CastMesh.023"                                         
+  "GeomSkin/Ungroup Mesh List[G:23]/Mesh Details/Name"    ;string    ""                                                     
+  "GeomSkin/Ungroup Mesh List[G:23]/Mesh Details/LODs[]"  ;s64       0                                                      
+  "GeomSkin/Ungroup Mesh List[G:24]/Node Path"            ;string    "RootNode/CastMesh.024"                                
+  "GeomSkin/Ungroup Mesh List[G:24]/Mesh Name"            ;string    "CastMesh.024"                                         
+  "GeomSkin/Ungroup Mesh List[G:24]/Mesh Details/Name"    ;string    ""                                                     
+  "GeomSkin/Ungroup Mesh List[G:24]/Mesh Details/LODs[]"  ;s64       0                                                      
+  "GeomSkin/Ungroup Mesh List[G:25]/Node Path"            ;string    "RootNode/CastMesh.025"                                
+  "GeomSkin/Ungroup Mesh List[G:25]/Mesh Name"            ;string    "CastMesh.025"                                         
+  "GeomSkin/Ungroup Mesh List[G:25]/Mesh Details/Name"    ;string    ""                                                     
+  "GeomSkin/Ungroup Mesh List[G:25]/Mesh Details/LODs[]"  ;s64       0                                                      
+  "GeomSkin/Ungroup Mesh List[G:26]/Node Path"            ;string    "RootNode/CastMesh.026"                                
+  "GeomSkin/Ungroup Mesh List[G:26]/Mesh Name"            ;string    "CastMesh.026"                                         
+  "GeomSkin/Ungroup Mesh List[G:26]/Mesh Details/Name"    ;string    ""                                                     
+  "GeomSkin/Ungroup Mesh List[G:26]/Mesh Details/LODs[]"  ;s64       0                                                      
+  "GeomSkin/Ungroup Mesh List[G:27]/Node Path"            ;string    "RootNode/CastMesh.027"                                
+  "GeomSkin/Ungroup Mesh List[G:27]/Mesh Name"            ;string    "CastMesh.027"                                         
+  "GeomSkin/Ungroup Mesh List[G:27]/Mesh Details/Name"    ;string    ""                                                     
+  "GeomSkin/Ungroup Mesh List[G:27]/Mesh Details/LODs[]"  ;s64       0                                                      
+  "GeomSkin/Ungroup Mesh List[G:28]/Node Path"            ;string    "RootNode/CastMesh.028"                                
+  "GeomSkin/Ungroup Mesh List[G:28]/Mesh Name"            ;string    "CastMesh.028"                                         
+  "GeomSkin/Ungroup Mesh List[G:28]/Mesh Details/Name"    ;string    ""                                                     
+  "GeomSkin/Ungroup Mesh List[G:28]/Mesh Details/LODs[]"  ;s64       0                                                      
+  "GeomSkin/Ungroup Mesh List[G:29]/Node Path"            ;string    "RootNode/CastMesh.029"                                
+  "GeomSkin/Ungroup Mesh List[G:29]/Mesh Name"            ;string    "CastMesh.029"                                         
+  "GeomSkin/Ungroup Mesh List[G:29]/Mesh Details/Name"    ;string    ""                                                     
+  "GeomSkin/Ungroup Mesh List[G:29]/Mesh Details/LODs[]"  ;s64       0                                                      
+  "GeomSkin/Ungroup Mesh List[G:30]/Node Path"            ;string    "RootNode/CastMesh.030"                                
+  "GeomSkin/Ungroup Mesh List[G:30]/Mesh Name"            ;string    "CastMesh.030"                                         
+  "GeomSkin/Ungroup Mesh List[G:30]/Mesh Details/Name"    ;string    ""                                                     
+  "GeomSkin/Ungroup Mesh List[G:30]/Mesh Details/LODs[]"  ;s64       0                                                      
+  "GeomSkin/Ungroup Mesh List[G:31]/Node Path"            ;string    "RootNode/CastMesh.031"                                
+  "GeomSkin/Ungroup Mesh List[G:31]/Mesh Name"            ;string    "CastMesh.031"                                         
+  "GeomSkin/Ungroup Mesh List[G:31]/Mesh Details/Name"    ;string    ""                                                     
+  "GeomSkin/Ungroup Mesh List[G:31]/Mesh Details/LODs[]"  ;s64       0                                                      
+  "GeomSkin/Ungroup Mesh List[G:32]/Node Path"            ;string    "RootNode/CastMesh.032"                                
+  "GeomSkin/Ungroup Mesh List[G:32]/Mesh Name"            ;string    "CastMesh.032"                                         
+  "GeomSkin/Ungroup Mesh List[G:32]/Mesh Details/Name"    ;string    ""                                                     
+  "GeomSkin/Ungroup Mesh List[G:32]/Mesh Details/LODs[]"  ;s64       0                                                      
+  "GeomSkin/Ungroup Mesh List[G:33]/Node Path"            ;string    "RootNode/CastMesh.033"                                
+  "GeomSkin/Ungroup Mesh List[G:33]/Mesh Name"            ;string    "CastMesh.033"                                         
+  "GeomSkin/Ungroup Mesh List[G:33]/Mesh Details/Name"    ;string    ""                                                     
+  "GeomSkin/Ungroup Mesh List[G:33]/Mesh Details/LODs[]"  ;s64       0                                                      
+  "GeomSkin/Ungroup Mesh List[G:34]/Node Path"            ;string    "RootNode/CastMesh.034"                                
+  "GeomSkin/Ungroup Mesh List[G:34]/Mesh Name"            ;string    "CastMesh.034"                                         
+  "GeomSkin/Ungroup Mesh List[G:34]/Mesh Details/Name"    ;string    ""                                                     
+  "GeomSkin/Ungroup Mesh List[G:34]/Mesh Details/LODs[]"  ;s64       0                                                      
+  "GeomSkin/Deleted List[]"                               ;s64       0                                                      
+  "GeomSkin/MaterialDetailsList[]"                        ;s64       1                                                      
+  "GeomSkin/MaterialDetailsList[G:4538306335341268131]/Name"                ;string    "DefaultMaterial"                                      
+  "GeomSkin/MaterialDetailsList[G:4538306335341268131]/RefCount"            ;s32       35                                                     
+  "GeomSkin/MaterialDetailsList[G:4538306335341268131]/Instance"  ;full_guid  #DF261495D95F7627 #B673C5DA4A4A70AD
+  "GeomSkin/ImportMaterials/bImport"                      ;bool      1                                                      
+  "GeomSkin/ImportMaterials/Material"                     ;full_guid #8D45F86DC5F2C003 #8B3C028882EA813D                    
+  "GeomSkin/ImportMaterials/AlphaTest"                    ;full_guid #FF22104E737E58EB #8B3C028882EA813D                    
+  "GeomSkin/ImportMaterials/AlbedoCompression"            ;enum      "RGB_BC1"                                              
+  "GeomSkin/ImportMaterials/AlbedoAlphaCompression"       ;enum      "RGBA_BC7"                                             
+  "GeomSkin/ImportMaterials/NormalCompression"            ;enum      "RG_BC5"                                               
+  "GeomSkin/ImportMaterials/ORMECompression"              ;enum      "RGBA_BC7"                                             

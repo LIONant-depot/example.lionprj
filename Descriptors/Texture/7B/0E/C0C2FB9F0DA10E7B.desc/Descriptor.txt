@@ -7,7 +7,7 @@
 // New Types
 < s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
 
-[ xProperties : 22 ]
+[ xProperties : 23 ]
 { Name:s                                             Value:?                                                                     }
 //-------------------------------------------------  ---------------------------------------------------------------------------
   "Texture/Usage"                                    ;enum    "INTENSITY"                                                       
@@ -16,6 +16,7 @@
   "Texture/InputType"                                ;enum    "SINGLE_INPUT"                                                    
   "Texture/Input/Filename"                           ;wstring "Cache/Descriptors/Texture/7B/0E/C0C2FB9F0DA10E7B.desc/bitmap.png"
   "Texture/Compression"                              ;enum    "R_BC4"                                                           
+  "Texture/Super Compression"                        ;bool    0                                                                 
   "Texture/AlphaThreshold"                           ;u8      #80                                                               
   "Texture/Quality"                                  ;f32     #3F800000                                                         
   "Texture/SRGB"                                     ;bool    0                                                                 

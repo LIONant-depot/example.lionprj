@@ -7,13 +7,15 @@
 // New Types
 < s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
 
-[ xProperties : 140 ]
+[ xProperties : 150 ]
 { Name:s                                                    Value:?                                                       }
 //--------------------------------------------------------  -------------------------------------------------------------
   "GeomStatic/ImportAsset"                                  ;wstring "Assets\\miller-falls-hand-drill\\source\\Drill.fbx"
-  "GeomStatic/PreTranslation/Scale/X"                       ;f32     #3C23D70A                                           
-  "GeomStatic/PreTranslation/Scale/Y"                       ;f32     #3C23D70A                                           
-  "GeomStatic/PreTranslation/Scale/Z"                       ;f32     #3C23D70A                                           
+  "GeomStatic/PreTranslation/AutoUnits"                     ;bool    0                                                   
+  "GeomStatic/PreTranslation/Scale/X"                       ;f32     #3CA3D70A                                           
+  "GeomStatic/PreTranslation/Scale/Y"                       ;f32     #3CA3D70A                                           
+  "GeomStatic/PreTranslation/Scale/Z"                       ;f32     #3CA3D70A                                           
+  "GeomStatic/PreTranslation/EditorLockScale"               ;bool    1                                                   
   "GeomStatic/PreTranslation/Rotation/X"                    ;f32     #42340000                                           
   "GeomStatic/PreTranslation/Rotation/Y"                    ;f32     #0                                                  
   "GeomStatic/PreTranslation/Rotation/Z"                    ;f32     #0                                                  
@@ -136,17 +138,25 @@
   "GeomStatic/Ungroup Mesh List[G:27]/Node Path"            ;string  "RootNode/Wheel_Screw_low"                          
   "GeomStatic/Ungroup Mesh List[G:27]/Mesh Name"            ;string  "Wheel_Screw_low.001"                               
   "GeomStatic/Ungroup Mesh List[G:27]/Mesh Details/Name"    ;string  ""                                                  
-  "GeomStatic/Ungroup Mesh List[G:27]/Mesh Details/LODs[]"  ;s64     0                                                   
-  "GeomStatic/Ungroup Mesh List[G:28]/Node Path"            ;string  "RootNode/Wheel_low"                                
+  "GeomStatic/Ungroup Mesh List[G:27]/Mesh Details/LODs[]"  ;s64       0                                                   
+  "GeomStatic/Ungroup Mesh List[G:28]/Node Path"            ;string    "RootNode/Wheel_low"                                
   "GeomStatic/Ungroup Mesh List[G:28]/Mesh Name"            ;string    "Wheel_low.001"                                     
   "GeomStatic/Ungroup Mesh List[G:28]/Mesh Details/Name"    ;string    ""                                                  
   "GeomStatic/Ungroup Mesh List[G:28]/Mesh Details/LODs[]"  ;s64       0                                                   
   "GeomStatic/GI/Mode"                                      ;enum      "RECEIVE_AND_BOUNCE"                                
-  "GeomStatic/GI/Density"                                   ;enum      "SPLIT_TRIANGLES"                                   
+  "GeomStatic/GI/Density"                                   ;enum      "AS_AUTHORED"                                       
   "GeomStatic/GI/SurfelSize"                                ;f32       #3F000000                                           
+  "GeomStatic/GI/PatchDefects"                              ;bool      0                                                   
+  "GeomStatic/GI/LeakProtection"                            ;bool      0                                                   
   "GeomStatic/Deleted List[]"                               ;s64       0                                                   
   "GeomStatic/MaterialDetailsList[]"                        ;s64       1                                                   
-  "GeomStatic/MaterialDetailsList[G:0]/Name"                ;string    "LP"                                                
-  "GeomStatic/MaterialDetailsList[G:0]/RefCount"            ;s32       29                                                  
-  "GeomStatic/MaterialInstance[]"                           ;s64       1                                                   
-  "GeomStatic/MaterialInstance[G:0]"                        ;full_guid #AFFF086F0C900003 #B673C5DA4A4A70AD                 
+  "GeomStatic/MaterialDetailsList[G:655678399174374721]/Name"                ;string    "LP"                                                
+  "GeomStatic/MaterialDetailsList[G:655678399174374721]/RefCount"            ;s32       29                                                  
+  "GeomStatic/MaterialDetailsList[G:655678399174374721]/Instance"  ;full_guid  #AFFF086F0C900003 #B673C5DA4A4A70AD
+  "GeomStatic/ImportMaterials/bImport"                      ;bool      0                                                   
+  "GeomStatic/ImportMaterials/Material"                     ;full_guid #8D45F86DC5F2C003 #8B3C028882EA813D                 
+  "GeomStatic/ImportMaterials/AlphaTest"                    ;full_guid #FF22104E737E58EB #8B3C028882EA813D                 
+  "GeomStatic/ImportMaterials/AlbedoCompression"            ;enum      "RGB_BC1"                                           
+  "GeomStatic/ImportMaterials/AlbedoAlphaCompression"       ;enum      "RGBA_BC7"                                          
+  "GeomStatic/ImportMaterials/NormalCompression"            ;enum      "RG_BC5"                                            
+  "GeomStatic/ImportMaterials/ORMECompression"              ;enum      "RGBA_BC7"                                          

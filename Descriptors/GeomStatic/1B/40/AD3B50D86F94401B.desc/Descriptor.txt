@@ -1,0 +1,52 @@
+
+[ DescriptorVersion ]
+{ Major:d  Minor:d }
+//-------  -------
+     1        0   
+
+// New Types
+< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
+
+[ xProperties : 40 ]
+{ Name:s                                                            Value:?                                                                                                                  }
+//----------------------------------------------------------------  ------------------------------------------------------------------------------------------------------------------------
+  "GeomStatic/ImportAsset"                                          ;wstring   "Assets\\steampunk-clockwork-golem-automaton\\source\\tripo_convert_b6a8537e-ab0f-4334-b885-09254c3c3a89.fbx"
+  "GeomStatic/PreTranslation/AutoUnits"                             ;bool      1                                                                                                            
+  "GeomStatic/PreTranslation/Scale/X"                               ;f32       #40800000                                                                                                    
+  "GeomStatic/PreTranslation/Scale/Y"                               ;f32       #40800000                                                                                                    
+  "GeomStatic/PreTranslation/Scale/Z"                               ;f32       #40800000                                                                                                    
+  "GeomStatic/PreTranslation/EditorLockScale"                       ;bool      1                                                                                                            
+  "GeomStatic/PreTranslation/Rotation/X"                            ;f32       #0                                                                                                           
+  "GeomStatic/PreTranslation/Rotation/Y"                            ;f32       #0                                                                                                           
+  "GeomStatic/PreTranslation/Rotation/Z"                            ;f32       #0                                                                                                           
+  "GeomStatic/PreTranslation/Translation/X"                         ;f32       #0                                                                                                           
+  "GeomStatic/PreTranslation/Translation/Y"                         ;f32       #BDA2730C                                                                                                    
+  "GeomStatic/PreTranslation/Translation/Z"                         ;f32       #0                                                                                                           
+  "GeomStatic/bMergeAllMeshes"                                      ;bool      1                                                                                                            
+  "GeomStatic/AllMeshesDetails/Name"                                ;string    "a"                                                                                                          
+  "GeomStatic/AllMeshesDetails/LODs[]"                              ;s64       0                                                                                                            
+  "GeomStatic/Merge Group List[]"                                   ;s64       0                                                                                                            
+  "GeomStatic/Ungroup Mesh List[]"                                  ;s64       1                                                                                                            
+  "GeomStatic/Ungroup Mesh List[G:0]/Node Path"                     ;string    "RootNode/tripo_node_b6a8537e"                                                                               
+  "GeomStatic/Ungroup Mesh List[G:0]/Mesh Name"                     ;string    "tripo_mesh_b6a8537e"                                                                                        
+  "GeomStatic/Ungroup Mesh List[G:0]/Mesh Details/Name"             ;string    ""                                                                                                           
+  "GeomStatic/Ungroup Mesh List[G:0]/Mesh Details/LODs[]"           ;s64       0                                                                                                            
+  "GeomStatic/GI/Mode"                                              ;enum      "RECEIVE_AND_BOUNCE"                                                                                         
+  "GeomStatic/GI/Density"                                           ;enum      "AS_AUTHORED"                                                                                                
+  "GeomStatic/GI/SurfelSize"                                        ;f32       #40000000                                                                                                    
+  "GeomStatic/GI/PatchDefects"                                      ;bool      0                                                                                                            
+  "GeomStatic/GI/LeakProtection"                                    ;bool      0                                                                                                            
+  "GeomStatic/Deleted List[]"                                       ;s64       0                                                                                                            
+  "GeomStatic/MaterialDetailsList[]"                                ;s64       1                                                                                                            
+  "GeomStatic/MaterialDetailsList[G:1297302548769051614]/Name"      ;string    "tripo_mat_b6a8537e"                                                                                         
+  "GeomStatic/MaterialDetailsList[G:1297302548769051614]/RefCount"  ;s32       1                                                                                                            
+  "GeomStatic/MaterialDetailsList[G:1297302548769051614]/Instance"  ;full_guid #78C9105A5F473DF #B673C5DA4A4A70AD                                                                           
+  "GeomStatic/ImportMaterials/bImport"                              ;bool      1                                                                                                            
+  "GeomStatic/ImportMaterials/Material"                             ;full_guid #8D45F86DC5F2C003 #8B3C028882EA813D                                                                          
+  "GeomStatic/ImportMaterials/AlphaTest"                            ;full_guid #FF22104E737E58EB #8B3C028882EA813D                                                                          
+  "GeomStatic/ImportMaterials/AlbedoCompression"                    ;enum      "RGB_BC1"                                                                                                    
+  "GeomStatic/ImportMaterials/AlbedoAlphaCompression"               ;enum      "RGBA_BC7"                                                                                                   
+  "GeomStatic/ImportMaterials/NormalCompression"                    ;enum      "RG_BC5"                                                                                                     
+  "GeomStatic/ImportMaterials/Flip Y for normals"                   ;bool      1                                                                                                            
+  "GeomStatic/ImportMaterials/Normalize normals"                    ;bool      1                                                                                                            
+  "GeomStatic/ImportMaterials/ORMECompression"                      ;enum      "RGBA_BC7"                                                                                                   

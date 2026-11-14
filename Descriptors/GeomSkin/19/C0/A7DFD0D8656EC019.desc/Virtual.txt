@@ -1,0 +1,27 @@
+
+// New Types
+< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
+
+[ xProperties : 20 ]
+{ Name:s                                     Value:?                                        }
+//-----------------------------------------  ----------------------------------------------
+  "owned_virtual_resources/Resources[]"      ;s64       19                                 
+  "owned_virtual_resources/Resources[G:0]"   ;full_guid #823156F83811FA1 #6701D481518BD833 
+  "owned_virtual_resources/Resources[G:1]"   ;full_guid #18FC67E505A02001 #6701D481518BD833
+  "owned_virtual_resources/Resources[G:2]"   ;full_guid #31F9954F120C6953 #6701D481518BD833
+  "owned_virtual_resources/Resources[G:3]"   ;full_guid #501202AAE9C68C41 #B673C5DA4A4A70AD
+  "owned_virtual_resources/Resources[G:4]"   ;full_guid #52E30FC9D2A3C49B #6701D481518BD833
+  "owned_virtual_resources/Resources[G:5]"   ;full_guid #54CCFDBF5A2EA24F #B673C5DA4A4A70AD
+  "owned_virtual_resources/Resources[G:6]"   ;full_guid #57A14983D606494D #F5D3BE1ED860ABF7
+  "owned_virtual_resources/Resources[G:7]"   ;full_guid #596D3C414F6A21EB #B673C5DA4A4A70AD
+  "owned_virtual_resources/Resources[G:8]"   ;full_guid #6301BF4A89C9F7B5 #6701D481518BD833
+  "owned_virtual_resources/Resources[G:9]"   ;full_guid #6831C8CE21E4F92B #6701D481518BD833
+  "owned_virtual_resources/Resources[G:10]"  ;full_guid #7A73136676F56D1F #6701D481518BD833
+  "owned_virtual_resources/Resources[G:11]"  ;full_guid #97270C7EED130179 #B673C5DA4A4A70AD
+  "owned_virtual_resources/Resources[G:12]"  ;full_guid #A5C2279A13DED947 #E69E8A8439A9BB1B
+  "owned_virtual_resources/Resources[G:13]"  ;full_guid #AE9886F4870A4EDF #B673C5DA4A4A70AD
+  "owned_virtual_resources/Resources[G:14]"  ;full_guid #D50F786C4527A0BB #B673C5DA4A4A70AD
+  "owned_virtual_resources/Resources[G:15]"  ;full_guid #D57D5C50F466C467 #B673C5DA4A4A70AD
+  "owned_virtual_resources/Resources[G:16]"  ;full_guid #D78FE0AC692E5E47 #6701D481518BD833
+  "owned_virtual_resources/Resources[G:17]"  ;full_guid #DD74300482F9EC95 #6701D481518BD833
+  "owned_virtual_resources/Resources[G:18]"  ;full_guid #ED83205957343B1F #6701D481518BD833

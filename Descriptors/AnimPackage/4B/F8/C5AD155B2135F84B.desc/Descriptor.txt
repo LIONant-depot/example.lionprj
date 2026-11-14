@@ -1,0 +1,24 @@
+
+[ DescriptorVersion ]
+{ Major:d  Minor:d }
+//-------  -------
+     1        0   
+
+// New Types
+< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
+
+[ xProperties : 12 ]
+{ Name:s                                                      Value:?                                        }
+//----------------------------------------------------------  ----------------------------------------------
+  "AnimPackage/ImportSources[]"                               ;s64       1                                  
+  "AnimPackage/ImportSources[G:0]/Path"                       ;wstring   "Assets\\ren\\source\\Ren-1.fbx"   
+  "AnimPackage/ImportSources[G:0]/Clips[]"                    ;s64       1                                  
+  "AnimPackage/ImportSources[G:0]/Clips[G:0]/OriginalName"    ;string    "FBXExportClip_0"                  
+  "AnimPackage/ImportSources[G:0]/Clips[G:0]/Name"            ;string    "FBXExportClip_0"                  
+  "AnimPackage/ImportSources[G:0]/Clips[G:0]/Delete"          ;bool      0                                  
+  "AnimPackage/ImportSources[G:0]/Clips[G:0]/Loop"            ;bool      0                                  
+  "AnimPackage/ImportSources[G:0]/Clips[G:0]/DownsampleFPS"   ;s32       0                                  
+  "AnimPackage/ImportSources[G:0]/Clips[G:0]/TrimStartFrame"  ;s32       -1                                 
+  "AnimPackage/ImportSources[G:0]/Clips[G:0]/TrimEndFrame"    ;s32       -1                                 
+  "AnimPackage/ImportSources[G:0]/Clips[G:0]/RootMotion"      ;enum      "None"                             
+  "AnimPackage/SkeletonRef"                                   ;full_guid #D68AF0C4D23B6483 #F5D3BE1ED860ABF7

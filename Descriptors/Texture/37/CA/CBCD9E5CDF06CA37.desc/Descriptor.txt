@@ -1,0 +1,51 @@
+
+[ DescriptorVersion ]
+{ Major:d  Minor:d }
+//-------  -------
+     1        0   
+
+// New Types
+< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
+
+[ xProperties : 39 ]
+{ Name:s                                             Value:?                                                                                              }
+//-------------------------------------------------  ----------------------------------------------------------------------------------------------------
+  "Texture/Usage"                                    ;enum    "ORME"                                                                                     
+  "Texture/Wrap Mode U"                              ;enum    "WRAP"                                                                                     
+  "Texture/Wrap Mode V"                              ;enum    "WRAP"                                                                                     
+  "Texture/InputType"                                ;enum    "ORME_INPUT"                                                                               
+  "Texture/Input/Occlusion (R)/Copy From"            ;enum    "CUSTOM_CONSTANT"                                                                          
+  "Texture/Input/Occlusion (R)/FileName"             ;wstring ""                                                                                         
+  "Texture/Input/Occlusion (R)/Constant"             ;f32     #3F800000                                                                                  
+  "Texture/Input/Occlusion (R)/Invert"               ;bool    0                                                                                          
+  "Texture/Input/Roughness (G)/Copy From"            ;enum    "A"                                                                                        
+  "Texture/Input/Roughness (G)/FileName"             ;wstring "Assets\\Bistro\\PropTextures\\Street\\Paris_StreetLight_01\\Paris_StreetLight_01_spec.png"
+  "Texture/Input/Roughness (G)/Constant"             ;f32     #3F800000                                                                                  
+  "Texture/Input/Roughness (G)/Invert"               ;bool    0                                                                                          
+  "Texture/Input/Metallic (B)/Copy From"             ;enum    "CUSTOM_CONSTANT"                                                                          
+  "Texture/Input/Metallic (B)/FileName"              ;wstring ""                                                                                         
+  "Texture/Input/Metallic (B)/Constant"              ;f32     #0                                                                                         
+  "Texture/Input/Metallic (B)/Invert"                ;bool    0                                                                                          
+  "Texture/Input/Emissive (A)/Copy From"             ;enum    "CUSTOM_CONSTANT"                                                                          
+  "Texture/Input/Emissive (A)/FileName"              ;wstring ""                                                                                         
+  "Texture/Input/Emissive (A)/Constant"              ;f32     #0                                                                                         
+  "Texture/Input/Emissive (A)/Invert"                ;bool    0                                                                                          
+  "Texture/Compression"                              ;enum    "RGBA_BC7"                                                                                 
+  "Texture/SuperCompression"                         ;enum    "NONE"                                                                                     
+  "Texture/SuperCompressionStrength"                 ;f32     #3F000000                                                                                  
+  "Texture/AlphaThreshold"                           ;u8      #80                                                                                        
+  "Texture/Quality"                                  ;f32     #3F000000                                                                                  
+  "Texture/SRGB"                                     ;bool    0                                                                                          
+  "Texture/Mipmaps/GenerateMips"                     ;bool    1                                                                                          
+  "Texture/Mipmaps/Mipmap Filter"                    ;enum    "BOX"                                                                                      
+  "Texture/Mipmaps/MinSize"                          ;s32     1                                                                                          
+  "Texture/FillAveColorByAlpha/FillAveColorByAlpha"  ;bool    0                                                                                          
+  "Texture/FillAveColorByAlpha/AlphaThreshold"       ;u8      #80                                                                                        
+  "Texture/Tillable Filter/Tillable Filter"          ;bool    0                                                                                          
+  "Texture/Tillable Filter/Width Blend Percentage"   ;f32     #3DCCCCCD                                                                                  
+  "Texture/Tillable Filter/Height Blend Percentage"  ;f32     #3DCCCCCD                                                                                  
+  "Texture/Normalize Normals"                        ;bool    1                                                                                          
+  "Texture/Normal Flip Y"                            ;bool    0                                                                                          
+  "Texture/CubeMap/Convert To CubeMap"               ;bool    0                                                                                          
+  "Texture/CubeMap/Face Size"                        ;u32     #400                                                                                       
+  "Texture/CubeMap/Use Bilinear"                     ;bool    1                                                                                          

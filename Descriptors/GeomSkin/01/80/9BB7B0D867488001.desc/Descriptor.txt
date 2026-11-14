@@ -1,0 +1,101 @@
+
+[ DescriptorVersion ]
+{ Major:d  Minor:d }
+//-------  -------
+     1        0   
+
+// New Types
+< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
+
+[ xProperties : 89 ]
+{ Name:s                                                 Value:?                                        }
+//-----------------------------------------------------  ----------------------------------------------
+  "GeomSkin/ImportAsset"                                 ;wstring   "Assets\\ren\\source\\Ren-1.fbx"   
+  "GeomSkin/ImportSkeletonAndAnimation"                  ;bool      1                                  
+  "GeomSkin/SkeletonRef"                                 ;full_guid #D68AF0C4D23B6483 #F5D3BE1ED860ABF7
+  "GeomSkin/AnimationRef"                                ;full_guid #C5AD155B2135F84B #E69E8A8439A9BB1B
+  "GeomSkin/bMergeAllMeshes"                             ;bool      1                                  
+  "GeomSkin/AllMeshesDetails/Name"                       ;string    "ren"                              
+  "GeomSkin/AllMeshesDetails/LODs[]" ;s64 3
+  "GeomSkin/AllMeshesDetails/LODs[G:0]/LODReduction" ;f32 0.5
+  "GeomSkin/AllMeshesDetails/LODs[G:0]/ScreenArea" ;f32 0
+  "GeomSkin/AllMeshesDetails/LODs[G:1]/LODReduction" ;f32 0.5
+  "GeomSkin/AllMeshesDetails/LODs[G:1]/ScreenArea" ;f32 0
+  "GeomSkin/AllMeshesDetails/LODs[G:2]/LODReduction" ;f32 0.5
+  "GeomSkin/AllMeshesDetails/LODs[G:2]/ScreenArea" ;f32 0
+  "GeomSkin/Merge Group List[]"                          ;s64       0                                  
+  "GeomSkin/Ungroup Mesh List[]"                         ;s64       9                                  
+  "GeomSkin/Ungroup Mesh List[G:0]/Node Path"            ;string    "RootNode/mesh0_mesh0000"          
+  "GeomSkin/Ungroup Mesh List[G:0]/Mesh Name"            ;string    "mesh0_mesh0000"                   
+  "GeomSkin/Ungroup Mesh List[G:0]/Mesh Details/Name"    ;string    ""                                 
+  "GeomSkin/Ungroup Mesh List[G:0]/Mesh Details/LODs[]"  ;s64       0                                  
+  "GeomSkin/Ungroup Mesh List[G:1]/Node Path"            ;string    "RootNode/mesh0_0"                 
+  "GeomSkin/Ungroup Mesh List[G:1]/Mesh Name"            ;string    "mesh0_0"                          
+  "GeomSkin/Ungroup Mesh List[G:1]/Mesh Details/Name"    ;string    ""                                 
+  "GeomSkin/Ungroup Mesh List[G:1]/Mesh Details/LODs[]"  ;s64       0                                  
+  "GeomSkin/Ungroup Mesh List[G:2]/Node Path"            ;string    "RootNode/mesh1"                   
+  "GeomSkin/Ungroup Mesh List[G:2]/Mesh Name"            ;string    "mesh1"                            
+  "GeomSkin/Ungroup Mesh List[G:2]/Mesh Details/Name"    ;string    ""                                 
+  "GeomSkin/Ungroup Mesh List[G:2]/Mesh Details/LODs[]"  ;s64       0                                  
+  "GeomSkin/Ungroup Mesh List[G:3]/Node Path"            ;string    "RootNode/mesh2"                   
+  "GeomSkin/Ungroup Mesh List[G:3]/Mesh Name"            ;string    "mesh2"                            
+  "GeomSkin/Ungroup Mesh List[G:3]/Mesh Details/Name"    ;string    ""                                 
+  "GeomSkin/Ungroup Mesh List[G:3]/Mesh Details/LODs[]"  ;s64       0                                  
+  "GeomSkin/Ungroup Mesh List[G:4]/Node Path"            ;string    "RootNode/mesh3"                   
+  "GeomSkin/Ungroup Mesh List[G:4]/Mesh Name"            ;string    "mesh3"                            
+  "GeomSkin/Ungroup Mesh List[G:4]/Mesh Details/Name"    ;string    ""                                 
+  "GeomSkin/Ungroup Mesh List[G:4]/Mesh Details/LODs[]"  ;s64       0                                  
+  "GeomSkin/Ungroup Mesh List[G:5]/Node Path"            ;string    "RootNode/mesh4"                   
+  "GeomSkin/Ungroup Mesh List[G:5]/Mesh Name"            ;string    "mesh4"                            
+  "GeomSkin/Ungroup Mesh List[G:5]/Mesh Details/Name"    ;string    ""                                 
+  "GeomSkin/Ungroup Mesh List[G:5]/Mesh Details/LODs[]"  ;s64       0                                  
+  "GeomSkin/Ungroup Mesh List[G:6]/Node Path"            ;string    "RootNode/mesh5"                   
+  "GeomSkin/Ungroup Mesh List[G:6]/Mesh Name"            ;string    "mesh5"                            
+  "GeomSkin/Ungroup Mesh List[G:6]/Mesh Details/Name"    ;string    ""                                 
+  "GeomSkin/Ungroup Mesh List[G:6]/Mesh Details/LODs[]"  ;s64       0                                  
+  "GeomSkin/Ungroup Mesh List[G:7]/Node Path"            ;string    "RootNode/mesh6"                   
+  "GeomSkin/Ungroup Mesh List[G:7]/Mesh Name"            ;string    "mesh6"                            
+  "GeomSkin/Ungroup Mesh List[G:7]/Mesh Details/Name"    ;string    ""                                 
+  "GeomSkin/Ungroup Mesh List[G:7]/Mesh Details/LODs[]"  ;s64       0                                  
+  "GeomSkin/Ungroup Mesh List[G:8]/Node Path"            ;string    "RootNode/mesh7"                   
+  "GeomSkin/Ungroup Mesh List[G:8]/Mesh Name"            ;string    "mesh7"                            
+  "GeomSkin/Ungroup Mesh List[G:8]/Mesh Details/Name"    ;string    ""                                 
+  "GeomSkin/Ungroup Mesh List[G:8]/Mesh Details/LODs[]"  ;s64       0                                  
+  "GeomSkin/Deleted List[]"                              ;s64       0                                  
+  "GeomSkin/MaterialDetailsList[]"                       ;s64       9                                  
+  "GeomSkin/MaterialDetailsList[G:16389479019807595888]/Name"               ;string    "wp_mn_kzrn_00_mi"                 
+  "GeomSkin/MaterialDetailsList[G:16389479019807595888]/RefCount"           ;s32       1                                  
+  "GeomSkin/MaterialDetailsList[G:16389479019807595888]/Instance"  ;full_guid  #43554243B67B3F1D #B673C5DA4A4A70AD
+  "GeomSkin/MaterialDetailsList[G:887663473762034384]/Name"               ;string    "armor_mat1"                       
+  "GeomSkin/MaterialDetailsList[G:887663473762034384]/RefCount"           ;s32       1                                  
+  "GeomSkin/MaterialDetailsList[G:887663473762034384]/Instance"  ;full_guid  #856F10847D600EE3 #B673C5DA4A4A70AD
+  "GeomSkin/MaterialDetailsList[G:887666772296919017]/Name"               ;string    "armor_mat2"                       
+  "GeomSkin/MaterialDetailsList[G:887666772296919017]/RefCount"           ;s32       1                                  
+  "GeomSkin/MaterialDetailsList[G:887666772296919017]/Instance"  ;full_guid  #97A8D3860A00050D #B673C5DA4A4A70AD
+  "GeomSkin/MaterialDetailsList[G:887665672785290806]/Name"               ;string    "armor_mat3"                       
+  "GeomSkin/MaterialDetailsList[G:887665672785290806]/RefCount"           ;s32       1                                  
+  "GeomSkin/MaterialDetailsList[G:887665672785290806]/Instance"  ;full_guid  #FC5E951757C0B651 #B673C5DA4A4A70AD
+  "GeomSkin/MaterialDetailsList[G:887668971320175439]/Name"               ;string    "armor_mat4"                       
+  "GeomSkin/MaterialDetailsList[G:887668971320175439]/RefCount"           ;s32       1                                  
+  "GeomSkin/MaterialDetailsList[G:887668971320175439]/Instance"  ;full_guid  #E648D90E5B59FD65 #B673C5DA4A4A70AD
+  "GeomSkin/MaterialDetailsList[G:2180921521442105641]/Name"               ;string    "face_mat_1"                       
+  "GeomSkin/MaterialDetailsList[G:2180921521442105641]/RefCount"           ;s32       1                                  
+  "GeomSkin/MaterialDetailsList[G:2180921521442105641]/Instance"  ;full_guid  #FE834CE2A38C63A3 #B673C5DA4A4A70AD
+  "GeomSkin/MaterialDetailsList[G:8755900919370755644]/Name"               ;string    "eye_iris_1"                       
+  "GeomSkin/MaterialDetailsList[G:8755900919370755644]/RefCount"           ;s32       1                                  
+  "GeomSkin/MaterialDetailsList[G:8755900919370755644]/Instance"  ;full_guid  #AF67474D3BA9E6CF #B673C5DA4A4A70AD
+  "GeomSkin/MaterialDetailsList[G:17314477367811247160]/Name"               ;string    "lash_mat_1"                       
+  "GeomSkin/MaterialDetailsList[G:17314477367811247160]/RefCount"           ;s32       1                                  
+  "GeomSkin/MaterialDetailsList[G:17314477367811247160]/Instance"  ;full_guid  #1C0C706BFD3A312B #B673C5DA4A4A70AD
+  "GeomSkin/MaterialDetailsList[G:9866336394782953380]/Name"               ;string    "hair_mat_1"                       
+  "GeomSkin/MaterialDetailsList[G:9866336394782953380]/RefCount"           ;s32       1                                  
+  "GeomSkin/MaterialDetailsList[G:9866336394782953380]/Instance"  ;full_guid  #CCC7D34B9D2EA53D #B673C5DA4A4A70AD
+  "GeomSkin/ImportMaterials/bImport"                     ;bool      1                                  
+  "GeomSkin/ImportMaterials/Material"                    ;full_guid #8D45F86DC5F2C003 #8B3C028882EA813D
+  "GeomSkin/ImportMaterials/AlphaTest"                   ;full_guid #FF22104E737E58EB #8B3C028882EA813D
+  "GeomSkin/ImportMaterials/AlbedoCompression"           ;enum      "RGB_BC1"                          
+  "GeomSkin/ImportMaterials/AlbedoAlphaCompression"      ;enum      "RGBA_BC7"                         
+  "GeomSkin/ImportMaterials/NormalCompression"           ;enum      "RG_BC5"                           
+  "GeomSkin/ImportMaterials/Flip Y for normals"          ;bool      1                                  
+  "GeomSkin/ImportMaterials/Normalize normals"           ;bool      0                                  
+  "GeomSkin/ImportMaterials/ORMECompression"             ;enum      "RGBA_BC7"                         

@@ -1,8 +1,8 @@
 
 [ Info ]
-{ nNodes:d  nConnections:d }
-//--------  --------------
-     2            2       
+{ nNodes:d  nConnections:d  Version:d  nParameters:d }
+//--------  --------------  ---------  -------------
+     2            1             4            0      
 
 [ Node ]
 { Guid:G             PrefabGuid:G      }
@@ -12,10 +12,11 @@
 // New Types
 < s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
 
-[ xProperties : 50 ]
+[ xProperties : 51 ]
 { Name:s                                                  Value:?                   }
 //------------------------------------------------------  -------------------------
   "node/Name"                                             ;string "Vec3"           
+  "node/StepName"                                         ;string "Vec3"           
   "node/Position/X"                                       ;f32    376              
   "node/Position/Y"                                       ;f32    271              
   "node/Input Pins[]"                                     ;s64    3                
@@ -71,10 +72,11 @@
 //-----------------  -----------------
   #64E6882CBF87C02D  #CF18C47A6F31C2FC
 
-[ xProperties : 20 ]
+[ xProperties : 21 ]
 { Name:s                                       Value:?                        }
 //-------------------------------------------  ------------------------------
   "node/Name"                                  ;string "Output: Target Color"
+  "node/StepName"                              ;string "Output__Target_Color"
   "node/Position/X"                            ;f32    735                   
   "node/Position/Y"                            ;f32    330                   
   "node/Input Pins[]"                          ;s64    2                     
@@ -98,17 +100,6 @@
 [ Connection ]
 { Guid:G            }
 //-----------------
-  #8CE6882CBF88C038
-
-[ xProperties : 2 ]
-{ Name:s                            Value:?                }
-//--------------------------------  ----------------------
-  "connection/InputPinGuid/Value"   ;u64 #4CE6882CBF87C02E
-  "connection/OutputPinGuid/Value"  ;u64 #34E6882CBF886034
-
-[ Connection ]
-{ Guid:G            }
-//-----------------
   #DE28203339EE2009
 
 [ xProperties : 2 ]
@@ -116,3 +107,41 @@
 //--------------------------------  ----------------------
   "connection/InputPinGuid/Value"   ;u64 #CE28203339ED8007
   "connection/OutputPinGuid/Value"  ;u64 #9628203339ED8003
+
+[ StackLayout ]
+{ nSections:d }
+//-----------
+       2     
+
+[ xProperties : 16 ]
+{ Name:s                                  Value:?                   }
+//--------------------------------------  -------------------------
+  "stack/Sections[]"                      ;s64    2                
+  "stack/Sections[G:0]/Guid/Value"        ;u64    #12AB886D5F502002
+  "stack/Sections[G:0]/Name"              ;string "Steps"          
+  "stack/Sections[G:0]/Kind"              ;enum   "USER"           
+  "stack/Sections[G:0]/Stage"             ;enum   "FRAGMENT"       
+  "stack/Sections[G:0]/bCollapsed"        ;bool   0                
+  "stack/Sections[G:0]/Steps[]"           ;s64    1                
+  "stack/Sections[G:0]/Steps[G:0]/Value"  ;u64    #54E6882CBF886030
+  "stack/Sections[G:1]/Guid/Value"        ;u64    #72AB886D5F502003
+  "stack/Sections[G:1]/Name"              ;string "Output"         
+  "stack/Sections[G:1]/Kind"              ;enum   "OUTPUT"         
+  "stack/Sections[G:1]/Stage"             ;enum   "FRAGMENT"       
+  "stack/Sections[G:1]/bCollapsed"        ;bool   0                
+  "stack/Sections[G:1]/Steps[]"           ;s64    1                
+  "stack/Sections[G:1]/Steps[G:0]/Value"  ;u64    #64E6882CBF87C02D
+  "stack/Places[]"                        ;s64    0                
+
+[ xProperties : 9 ]
+{ Name:s                              Value:?        }
+//----------------------------------  --------------
+  "render_settings/Blend Mode"        ;enum "Opaque"
+  "render_settings/Alpha Cutoff"      ;f32  0.5     
+  "render_settings/Double Sided"      ;bool 0       
+  "render_settings/Back Face Normal"  ;enum "Flip"  
+  "render_settings/Depth Write"       ;enum "Auto"  
+  "render_settings/Depth Test"        ;bool 1       
+  "render_settings/Cast Shadows"      ;bool 1       
+  "render_settings/Sort Priority"     ;s8   0       
+  "render_settings/Wireframe"         ;bool 0       

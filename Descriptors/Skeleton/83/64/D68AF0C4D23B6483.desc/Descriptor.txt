@@ -1,0 +1,150 @@
+
+[ DescriptorVersion ]
+{ Major:d  Minor:d }
+//-------  -------
+     1        1   
+
+// New Types
+< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
+
+[ xProperties : 31 ]
+{ Name:s                                    Value:?                                   }
+//----------------------------------------  -----------------------------------------
+  "Skeleton/ImportAsset"                    ;wstring "Assets\\ren\\source\\Ren-1.fbx"
+  "Skeleton/PreTransform/Scale/X"           ;f32     #3C83126F                       
+  "Skeleton/PreTransform/Scale/Y"           ;f32     #3C83126F                       
+  "Skeleton/PreTransform/Scale/Z"           ;f32     #3C83126F                       
+  "Skeleton/PreTransform/EditorLockScale"   ;bool    1                               
+  "Skeleton/PreTransform/Rotation/X"        ;f32     #43340000                       
+  "Skeleton/PreTransform/Rotation/Y"        ;f32     #C2B40000                       
+  "Skeleton/PreTransform/Rotation/Z"        ;f32     #0                              
+  "Skeleton/PreTransform/Translation/X"     ;f32     #0                              
+  "Skeleton/PreTransform/Translation/Y"     ;f32     #0                              
+  "Skeleton/PreTransform/Translation/Z"     ;f32     #0                              
+  "Skeleton/PostTransform/Scale/X"          ;f32     #3F800000                       
+  "Skeleton/PostTransform/Scale/Y"          ;f32     #3F800000                       
+  "Skeleton/PostTransform/Scale/Z"          ;f32     #3F800000                       
+  "Skeleton/PostTransform/EditorLockScale"  ;bool    1                               
+  "Skeleton/PostTransform/Rotation/X"       ;f32     #42B40000                       
+  "Skeleton/PostTransform/Rotation/Y"       ;f32     #C2B40000                       
+  "Skeleton/PostTransform/Rotation/Z"       ;f32     #0                              
+  "Skeleton/PostTransform/Translation/X"    ;f32     #0                              
+  "Skeleton/PostTransform/Translation/Y"    ;f32     #0                              
+  "Skeleton/PostTransform/Translation/Z"    ;f32     #0                              
+  "Skeleton/RootBone/Name"                  ;string  ""                              
+  "Skeleton/RootBone/Rename"                ;string  ""                              
+  "Skeleton/RootBone/Type"                  ;enum    "NORMAL"                        
+  "Skeleton/RootBone/Expose"                ;bool    0                               
+  "Skeleton/RootBone/DeleteBone"            ;bool    0                               
+  "Skeleton/RootBone/LODLevel"              ;s32     0                               
+  "Skeleton/RootBone/Intent"                ;enum    "Auto"                          
+  "Skeleton/RootBone/Bones[]"               ;s64     0                               
+  "Skeleton/MaskGroups[]"                   ;s64     0                               
+  "Skeleton/CompactTree"                    ;bool    1                               
+
+[ BoneOverrides : 103 ]
+{ Parent:d  Name:s                  Rename:s  Type:d  Expose:d  Delete:d  LOD:d }
+//--------  ----------------------  --------  ------  --------  --------  -----
+     -1     "RootNode"                 ""       0        0         0        0  
+      0     "RL_BoneRoot"              ""       0        0         0        0  
+      1     "b_root"                   ""       0        0         0        0  
+      2     "bip001"                   ""       0        0         0        0  
+      3     "bip001_pelvis"            ""       0        0         0        0  
+      4     "bip001_l_thigh"           ""       0        0         0        0  
+      5     "bip001_l_calf"            ""       0        0         0        0  
+      6     "bip001_l_foot"            ""       0        0         0        0  
+      7     "bip001_l_toe0"            ""       0        0         0        0  
+      4     "bip001_r_thigh"           ""       0        0         0        0  
+      9     "bip001_r_calf"            ""       0        0         0        0  
+     10     "bip001_r_foot"            ""       0        0         0        0  
+     11     "bip001_r_toe0"            ""       0        0         0        0  
+      4     "bip001_spine"             ""       0        0         0        0  
+     13     "bip001_spine1"            ""       0        0         0        0  
+     14     "bip001_spine2"            ""       0        0         0        0  
+     15     "b_cloak_fl_01"            ""       0        0         0        0  
+     15     "b_cloak_fr_01"            ""       0        0         0        0  
+     15     "b_cape_l_01"              ""       0        0         0        0  
+     18     "b_cape_l_02"              ""       0        0         0        0  
+     19     "b_cape_l_03"              ""       0        0         0        0  
+     20     "b_cape_l_04"              ""       0        0         0        0  
+     15     "b_cape_lb_01"             ""       0        0         0        0  
+     22     "b_cape_lb_02"             ""       0        0         0        0  
+     23     "b_cape_lb_03"             ""       0        0         0        0  
+     24     "b_cape_lb_04"             ""       0        0         0        0  
+     15     "b_cape_r_01"              ""       0        0         0        0  
+     26     "b_cape_r_02"              ""       0        0         0        0  
+     27     "b_cape_r_03"              ""       0        0         0        0  
+     28     "b_cape_r_04"              ""       0        0         0        0  
+     15     "b_cape_rb_01"             ""       0        0         0        0  
+     30     "b_cape_rb_02"             ""       0        0         0        0  
+     31     "b_cape_rb_03"             ""       0        0         0        0  
+     32     "b_cape_rb_04"             ""       0        0         0        0  
+     15     "bip001_neck"              ""       0        0         0        0  
+     34     "bip001_head"              ""       0        0         0        0  
+     35     "b_fc_root"                ""       0        0         0        0  
+     36     "b_fc_cheek_l"             ""       0        0         0        0  
+     36     "b_fc_cheek_r"             ""       0        0         0        0  
+     36     "b_fc_eye_l"               ""       0        0         0        0  
+     36     "b_fc_eye_r"               ""       0        0         0        0  
+     36     "b_fc_eyebrow_l"           ""       0        0         0        0  
+     36     "b_fc_eyebrow_r"           ""       0        0         0        0  
+     36     "b_fc_mouth_l"             ""       0        0         0        0  
+     36     "b_fc_mouth_r"             ""       0        0         0        0  
+     36     "b_fc_mouth_u"             ""       0        0         0        0  
+     36     "b_fc_pupil_l"             ""       0        0         0        0  
+     36     "b_fc_pupil_r"             ""       0        0         0        0  
+     36     "b_fc_jaw"                 ""       0        0         0        0  
+     48     "b_fc_mouth_d"             ""       0        0         0        0  
+     15     "bip001_l_clavicle"        ""       0        0         0        0  
+     50     "bip001_l_upperarm"        ""       0        0         0        0  
+     51     "b_cloak_fl_03"            ""       0        0         0        0  
+     52     "b_cloak_fl_04"            ""       0        0         0        0  
+     51     "b_upperarmtwist_l_01"     ""       0        0         0        0  
+     54     "b_upperarmtwist_l_02"     ""       0        0         0        0  
+     51     "bip001_l_forearm"         ""       0        0         0        0  
+     56     "b_forearmtwist_l_01"      ""       0        0         0        0  
+     57     "b_forearmtwist_l_02"      ""       0        0         0        0  
+     56     "bip001_l_hand"            ""       0        0         0        0  
+     59     "bip001_l_finger0"         ""       0        0         0        0  
+     60     "bip001_l_finger01"        ""       0        0         0        0  
+     61     "bip001_l_finger02"        ""       0        0         0        0  
+     59     "bip001_l_finger1"         ""       0        0         0        0  
+     63     "bip001_l_finger11"        ""       0        0         0        0  
+     64     "bip001_l_finger12"        ""       0        0         0        0  
+     59     "bip001_l_finger2"         ""       0        0         0        0  
+     66     "bip001_l_finger21"        ""       0        0         0        0  
+     67     "bip001_l_finger22"        ""       0        0         0        0  
+     59     "bip001_l_finger3"         ""       0        0         0        0  
+     69     "bip001_l_finger31"        ""       0        0         0        0  
+     70     "bip001_l_finger32"        ""       0        0         0        0  
+     59     "bip001_l_finger4"         ""       0        0         0        0  
+     72     "bip001_l_finger41"        ""       0        0         0        0  
+     73     "bip001_l_finger42"        ""       0        0         0        0  
+     15     "bip001_r_clavicle"        ""       0        0         0        0  
+     75     "bip001_r_upperarm"        ""       0        0         0        0  
+     76     "b_cloak_fr_03"            ""       0        0         0        0  
+     77     "b_cloak_fr_04"            ""       0        0         0        0  
+     76     "b_upperarmtwist_r_01"     ""       0        0         0        0  
+     79     "b_upperarmtwist_r_02"     ""       0        0         0        0  
+     76     "bip001_r_forearm"         ""       0        0         0        0  
+     81     "b_forearmtwist_r_01"      ""       0        0         0        0  
+     82     "b_forearmtwist_r_02"      ""       0        0         0        0  
+     81     "bip001_r_hand"            ""       0        0         0        0  
+     84     "b_wp_1"                   ""       0        0         0        0  
+     85     "scythe"                   ""       0        0         0        0  
+     86     "b_root_0"                 ""       0        0         0        0  
+     84     "bip001_r_finger0"         ""       0        0         0        0  
+     88     "bip001_r_finger01"        ""       0        0         0        0  
+     89     "bip001_r_finger02"        ""       0        0         0        0  
+     84     "bip001_r_finger1"         ""       0        0         0        0  
+     91     "bip001_r_finger11"        ""       0        0         0        0  
+     92     "bip001_r_finger12"        ""       0        0         0        0  
+     84     "bip001_r_finger2"         ""       0        0         0        0  
+     94     "bip001_r_finger21"        ""       0        0         0        0  
+     95     "bip001_r_finger22"        ""       0        0         0        0  
+     84     "bip001_r_finger3"         ""       0        0         0        0  
+     97     "bip001_r_finger31"        ""       0        0         0        0  
+     98     "bip001_r_finger32"        ""       0        0         0        0  
+     84     "bip001_r_finger4"         ""       0        0         0        0  
+    100     "bip001_r_finger41"        ""       0        0         0        0  
+    101     "bip001_r_finger42"        ""       0        0         0        0  

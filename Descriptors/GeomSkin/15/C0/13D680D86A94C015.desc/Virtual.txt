@@ -1,0 +1,35 @@
+
+// New Types
+< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
+
+[ xProperties : 28 ]
+{ Name:s                                     Value:?                                        }
+//-----------------------------------------  ----------------------------------------------
+  "owned_virtual_resources/Resources[]"      ;s64       27                                 
+  "owned_virtual_resources/Resources[G:0]"   ;full_guid #8B3CB91CDEC81A3 #B673C5DA4A4A70AD 
+  "owned_virtual_resources/Resources[G:1]"   ;full_guid #8C5954C4A4AE5FD #B673C5DA4A4A70AD 
+  "owned_virtual_resources/Resources[G:2]"   ;full_guid #F50180F282B2061 #6701D481518BD833 
+  "owned_virtual_resources/Resources[G:3]"   ;full_guid #20931F5EF77654D3 #6701D481518BD833
+  "owned_virtual_resources/Resources[G:4]"   ;full_guid #230AC642FACE89DF #6701D481518BD833
+  "owned_virtual_resources/Resources[G:5]"   ;full_guid #465EC6573F36EA83 #6701D481518BD833
+  "owned_virtual_resources/Resources[G:6]"   ;full_guid #4E701BE80BC84BEB #B673C5DA4A4A70AD
+  "owned_virtual_resources/Resources[G:7]"   ;full_guid #5443CD892BBACF59 #B673C5DA4A4A70AD
+  "owned_virtual_resources/Resources[G:8]"   ;full_guid #62202685D9DFB97D #6701D481518BD833
+  "owned_virtual_resources/Resources[G:9]"   ;full_guid #751CAA1D86489605 #6701D481518BD833
+  "owned_virtual_resources/Resources[G:10]"  ;full_guid #7B43295409BE859F #E69E8A8439A9BB1B
+  "owned_virtual_resources/Resources[G:11]"  ;full_guid #7BF824C570DBFBCF #B673C5DA4A4A70AD
+  "owned_virtual_resources/Resources[G:12]"  ;full_guid #7CEA167F7A272175 #6701D481518BD833
+  "owned_virtual_resources/Resources[G:13]"  ;full_guid #8023203CE333BAE3 #6701D481518BD833
+  "owned_virtual_resources/Resources[G:14]"  ;full_guid #8F00172952417ECB #6701D481518BD833
+  "owned_virtual_resources/Resources[G:15]"  ;full_guid #941DDDD8E87C5829 #6701D481518BD833
+  "owned_virtual_resources/Resources[G:16]"  ;full_guid #975D751FA1C115DD #6701D481518BD833
+  "owned_virtual_resources/Resources[G:17]"  ;full_guid #9C7EC813C31B00BB #6701D481518BD833
+  "owned_virtual_resources/Resources[G:18]"  ;full_guid #AF66DA601E66C36D #6701D481518BD833
+  "owned_virtual_resources/Resources[G:19]"  ;full_guid #B111BE0E0E5A734F #6701D481518BD833
+  "owned_virtual_resources/Resources[G:20]"  ;full_guid #BF5A19072C17EE3D #6701D481518BD833
+  "owned_virtual_resources/Resources[G:21]"  ;full_guid #CDF61EA6D6F16D73 #B673C5DA4A4A70AD
+  "owned_virtual_resources/Resources[G:22]"  ;full_guid #D4C3BEA52FAC22D5 #6701D481518BD833
+  "owned_virtual_resources/Resources[G:23]"  ;full_guid #ED6CE56697448FC9 #F5D3BE1ED860ABF7
+  "owned_virtual_resources/Resources[G:24]"  ;full_guid #EE17A971E0226A0B #B673C5DA4A4A70AD
+  "owned_virtual_resources/Resources[G:25]"  ;full_guid #F49C7006F266F3D7 #B673C5DA4A4A70AD
+  "owned_virtual_resources/Resources[G:26]"  ;full_guid #F50CBE666F407257 #6701D481518BD833

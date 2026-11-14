@@ -1,0 +1,105 @@
+
+[ DescriptorVersion ]
+{ Major:d  Minor:d }
+//-------  -------
+     1        1   
+
+// New Types
+< s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
+
+[ xProperties : 31 ]
+{ Name:s                                    Value:?                                                    }
+//----------------------------------------  ----------------------------------------------------------
+  "Skeleton/ImportAsset"                    ;wstring "Assets\\reaper-raptor\\source\\Velociraptor.fbx"
+  "Skeleton/PreTransform/Scale/X"           ;f32     #3B03126F                                        
+  "Skeleton/PreTransform/Scale/Y"           ;f32     #3B03126F                                        
+  "Skeleton/PreTransform/Scale/Z"           ;f32     #3B03126F                                        
+  "Skeleton/PreTransform/EditorLockScale"   ;bool    1                                                
+  "Skeleton/PreTransform/Rotation/X"        ;f32     #C2B40000                                        
+  "Skeleton/PreTransform/Rotation/Y"        ;f32     #43340000                                        
+  "Skeleton/PreTransform/Rotation/Z"        ;f32     #0                                               
+  "Skeleton/PreTransform/Translation/X"     ;f32     #0                                               
+  "Skeleton/PreTransform/Translation/Y"     ;f32     #0                                               
+  "Skeleton/PreTransform/Translation/Z"     ;f32     #0                                               
+  "Skeleton/PostTransform/Scale/X"          ;f32     #3F800000                                        
+  "Skeleton/PostTransform/Scale/Y"          ;f32     #3F800000                                        
+  "Skeleton/PostTransform/Scale/Z"          ;f32     #3F800000                                        
+  "Skeleton/PostTransform/EditorLockScale"  ;bool    1                                                
+  "Skeleton/PostTransform/Rotation/X"       ;f32     #0                                               
+  "Skeleton/PostTransform/Rotation/Y"       ;f32     #0                                               
+  "Skeleton/PostTransform/Rotation/Z"       ;f32     #0                                               
+  "Skeleton/PostTransform/Translation/X"    ;f32     #0                                               
+  "Skeleton/PostTransform/Translation/Y"    ;f32     #0                                               
+  "Skeleton/PostTransform/Translation/Z"    ;f32     #0                                               
+  "Skeleton/RootBone/Name"                  ;string  ""                                               
+  "Skeleton/RootBone/Rename"                ;string  ""                                               
+  "Skeleton/RootBone/Type"                  ;enum    "NORMAL"                                         
+  "Skeleton/RootBone/Expose"                ;bool    0                                                
+  "Skeleton/RootBone/DeleteBone"            ;bool    0                                                
+  "Skeleton/RootBone/LODLevel"              ;s32     0                                                
+  "Skeleton/RootBone/Intent"                ;enum    "Auto"                                           
+  "Skeleton/RootBone/Bones[]"               ;s64     0                                                
+  "Skeleton/MaskGroups[]"                   ;s64     0                                                
+  "Skeleton/CompactTree"                    ;bool    1                                                
+
+[ BoneOverrides : 58 ]
+{ Parent:d  Name:s          Rename:s  Type:d  Expose:d  Delete:d  LOD:d }
+//--------  --------------  --------  ------  --------  --------  -----
+     -1     "RootNode"         ""       0        0         0        0  
+      0     "Armature.002"     ""       0        0         0        0  
+      1     "Coluna"           ""       0        0         0        0  
+      2     "Coxa.L"           ""       0        0         0        0  
+      3     "Canela.L"         ""       0        0         0        0  
+      4     "Metacarpal.L"     ""       0        0         0        0  
+      5     "Pe.L"             ""       0        0         0        0  
+      6     "Dedo1.L"          ""       0        0         0        0  
+      6     "Dedo2.L"          ""       0        0         0        0  
+      6     "Foice.L"          ""       0        0         0        0  
+      2     "Coxa.R"           ""       0        0         0        0  
+     10     "Canela.R"         ""       0        0         0        0  
+     11     "Metacarpal.R"     ""       0        0         0        0  
+     12     "Pe.R"             ""       0        0         0        0  
+     13     "Dedo1.R"          ""       0        0         0        0  
+     13     "Dedo2.R"          ""       0        0         0        0  
+     13     "Foice.R"          ""       0        0         0        0  
+      2     "Rabo"             ""       0        0         0        0  
+     17     "Rabo.004"         ""       0        0         0        0  
+     18     "Rabo.002"         ""       0        0         0        0  
+     19     "Rabo.006"         ""       0        0         0        0  
+     20     "Rabo.001"         ""       0        0         0        0  
+     21     "Rabo.008"         ""       0        0         0        0  
+     22     "Rabo.005"         ""       0        0         0        0  
+     23     "Rabo.010"         ""       0        0         0        0  
+     24     "Rabo.003"         ""       0        0         0        0  
+     25     "Rabo.009"         ""       0        0         0        0  
+     26     "Rabo.007"         ""       0        0         0        0  
+     27     "Rabo.011"         ""       0        0         0        0  
+      2     "Coluna.001"       ""       0        0         0        0  
+     29     "Pescoco"          ""       0        0         0        0  
+     30     "Pescoco.002"      ""       0        0         0        0  
+     31     "Pescoco.001"      ""       0        0         0        0  
+     32     "Pescoco.003"      ""       0        0         0        0  
+     33     "Cabeca"           ""       0        0         0        0  
+     34     "Maxilar"          ""       0        0         0        0  
+     29     "Braco.L"          ""       0        0         0        0  
+     36     "Antebraci.L"      ""       0        0         0        0  
+     37     "Mao.L"            ""       0        0         0        0  
+     38     "DedoMao1.L"       ""       0        0         0        0  
+     39     "DedoMao11.L"      ""       0        0         0        0  
+     38     "DedoMao2.L"       ""       0        0         0        0  
+     41     "DedoMao21.L"      ""       0        0         0        0  
+     42     "DedoMao22.L"      ""       0        0         0        0  
+     38     "DedoMao3.L"       ""       0        0         0        0  
+     44     "DedoMao31.L"      ""       0        0         0        0  
+     45     "DedoMao32.L"      ""       0        0         0        0  
+     29     "Braco.R"          ""       0        0         0        0  
+     47     "Antebraci.R"      ""       0        0         0        0  
+     48     "Mao.R"            ""       0        0         0        0  
+     49     "DedoMao1.R"       ""       0        0         0        0  
+     50     "DedoMao11.R"      ""       0        0         0        0  
+     49     "DedoMao2.R"       ""       0        0         0        0  
+     52     "DedoMao21.R"      ""       0        0         0        0  
+     53     "DedoMao22.R"      ""       0        0         0        0  
+     49     "DedoMao3.R"       ""       0        0         0        0  
+     55     "DedoMao31.R"      ""       0        0         0        0  
+     56     "DedoMao32.R"      ""       0        0         0        0  
