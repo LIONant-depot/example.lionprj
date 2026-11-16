@@ -7,7 +7,7 @@
 // New Types
 < s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
 
-[ xProperties : 31 ]
+[ xProperties : 33 ]
 { Name:s                                    Value:?                                    }
 //----------------------------------------  ------------------------------------------
   "Skeleton/ImportAsset"                    ;wstring "Assets\\lily\\source\\Lilly.fbx"
@@ -41,6 +41,8 @@
   "Skeleton/RootBone/Bones[]"               ;s64     0                                
   "Skeleton/MaskGroups[]"                   ;s64     0                                
   "Skeleton/CompactTree"                    ;bool    1                                
+  "Skeleton/JointLimits"                    ;enum    "On"                             
+  "Skeleton/JointProfile"                   ;enum    "Humanoid v2"                    
 
 [ BoneOverrides : 169 ]
 { Parent:d  Name:s               Rename:s  Type:d  Expose:d  Delete:d  LOD:d }
