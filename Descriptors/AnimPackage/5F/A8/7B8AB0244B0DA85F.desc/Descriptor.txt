@@ -7,11 +7,17 @@
 // New Types
 < s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
 
-[ xProperties : 12 ]
+[ xProperties : 20 ]
 { Name:s                                                      Value:?                                        }
 //----------------------------------------------------------  ----------------------------------------------
+  "AnimPackage/SkeletonRef"                                   ;full_guid #ED3E316F29144BE9 #F5D3BE1ED860ABF7
   "AnimPackage/ImportSources[]"                               ;s64       1                                  
+  "AnimPackage/ImportSources[G:0]/Type"                       ;enum      "Same skeleton: animation asset"   
   "AnimPackage/ImportSources[G:0]/Path"                       ;wstring   "Assets\\lily\\source\\Lilly.fbx"  
+  "AnimPackage/ImportSources[G:0]/Seconds"                    ;f32       #40000000                          
+  "AnimPackage/ImportSources[G:0]/FPS"                        ;s32       30                                 
+  "AnimPackage/ImportSources[G:0]/Package"                    ;full_guid #0 #E69E8A8439A9BB1B               
+  "AnimPackage/ImportSources[G:0]/Retarget"                   ;full_guid #0 #322457A2B8F24F7B               
   "AnimPackage/ImportSources[G:0]/Clips[]"                    ;s64       1                                  
   "AnimPackage/ImportSources[G:0]/Clips[G:0]/OriginalName"    ;string    "1940680868208_TempMotion"         
   "AnimPackage/ImportSources[G:0]/Clips[G:0]/Name"            ;string    "1940680868208_TempMotion"         
@@ -21,4 +27,6 @@
   "AnimPackage/ImportSources[G:0]/Clips[G:0]/TrimStartFrame"  ;s32       -1                                 
   "AnimPackage/ImportSources[G:0]/Clips[G:0]/TrimEndFrame"    ;s32       -1                                 
   "AnimPackage/ImportSources[G:0]/Clips[G:0]/RootMotion"      ;enum      "None"                             
-  "AnimPackage/SkeletonRef"                                   ;full_guid #ED3E316F29144BE9 #F5D3BE1ED860ABF7
+  "AnimPackage/ImportSources[G:0]/Clips[G:0]/Layers[]"        ;s64       0                                  
+  "AnimPackage/Kimodo/Retarget"                               ;full_guid #0 #322457A2B8F24F7B               
+  "AnimPackage/Kimodo/Folder"                                 ;wstring   "Assets\\Kimodo"                   

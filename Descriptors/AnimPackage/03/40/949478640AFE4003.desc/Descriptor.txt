@@ -7,11 +7,15 @@
 // New Types
 < s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
 
-[ xProperties : 12 ]
+[ xProperties : 18 ]
 { Name:s                                                      Value:?                                                }
 //----------------------------------------------------------  ------------------------------------------------------
+  "AnimPackage/SkeletonRef"                                   ;full_guid #D4721069138B4003 #F5D3BE1ED860ABF7        
   "AnimPackage/ImportSources[]"                               ;s64       1                                          
+  "AnimPackage/ImportSources[G:0]/Type"                       ;enum      "Same skeleton: animation asset"           
   "AnimPackage/ImportSources[G:0]/Path"                       ;wstring   "Assets\\WalkingSkin\\Walking.fbx"         
+  "AnimPackage/ImportSources[G:0]/Package"                    ;full_guid #0 #E69E8A8439A9BB1B                       
+  "AnimPackage/ImportSources[G:0]/Retarget"                   ;full_guid #0 #322457A2B8F24F7B                       
   "AnimPackage/ImportSources[G:0]/Clips[]"                    ;s64       1                                          
   "AnimPackage/ImportSources[G:0]/Clips[G:0]/OriginalName"    ;string    "Armature|Armature|Armature|Armature|Scene"
   "AnimPackage/ImportSources[G:0]/Clips[G:0]/Name"            ;string    "Walking"                                  
@@ -21,4 +25,6 @@
   "AnimPackage/ImportSources[G:0]/Clips[G:0]/TrimStartFrame"  ;s32       -1                                         
   "AnimPackage/ImportSources[G:0]/Clips[G:0]/TrimEndFrame"    ;s32       -1                                         
   "AnimPackage/ImportSources[G:0]/Clips[G:0]/RootMotion"      ;enum      "XYZ"                                      
-  "AnimPackage/SkeletonRef"                                   ;full_guid #D4721069138B4003 #F5D3BE1ED860ABF7        
+  "AnimPackage/ImportSources[G:0]/Clips[G:0]/Layers[]"        ;s64       0                                          
+  "AnimPackage/Kimodo/Retarget"                               ;full_guid #0 #322457A2B8F24F7B                       
+  "AnimPackage/Kimodo/Folder"                                 ;wstring   "Assets\\Kimodo"                           

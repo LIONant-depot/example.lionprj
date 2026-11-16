@@ -25,25 +25,25 @@
   "Animation/Playing"  ;bool      1                   
 
 [ xProperties : 14 ]
-{ Name:s                         Value:?           }
-//-----------------------------  -----------------
-  "Transform/Position/X"         ;f32  1.47899997 
-  "Transform/Position/Y"         ;f32  0.248506129
-  "Transform/Position/Z"         ;f32  6.53999996 
-  "Transform/Rotation/X"         ;f32  0          
-  "Transform/Rotation/Y"         ;f32  0.499999911
-  "Transform/Rotation/Z"         ;f32  0          
-  "Transform/Rotation/W"         ;f32  0.866025448
-  "Transform/RotationDegrees/X"  ;f32  0          
-  "Transform/RotationDegrees/Y"  ;f32  59.9999847 
-  "Transform/RotationDegrees/Z"  ;f32  0          
-  "Transform/Scale/X"            ;f32  1          
-  "Transform/Scale/Y"            ;f32  1          
-  "Transform/Scale/Z"            ;f32  1          
-  "Transform/EditorLockScale"    ;bool 0          
+{ Name:s                         Value:?            }
+//-----------------------------  ------------------
+  "Transform/Position/X"         ;f32  -0.832636833
+  "Transform/Position/Y"         ;f32  0.192696348 
+  "Transform/Position/Z"         ;f32  9.02177525  
+  "Transform/Rotation/X"         ;f32  0           
+  "Transform/Rotation/Y"         ;f32  -0.942546129
+  "Transform/Rotation/Z"         ;f32  0           
+  "Transform/Rotation/W"         ;f32  0.334076256 
+  "Transform/RotationDegrees/X"  ;f32  0           
+  "Transform/RotationDegrees/Y"  ;f32  -140.967255 
+  "Transform/RotationDegrees/Z"  ;f32  0           
+  "Transform/Scale/X"            ;f32  1           
+  "Transform/Scale/Y"            ;f32  1           
+  "Transform/Scale/Z"            ;f32  1           
+  "Transform/EditorLockScale"    ;bool 0           
 
 [ xProperties : 2 ]
 { Name:s                            Value:?                                       }
 //--------------------------------  ---------------------------------------------
-  "SkinnedMesh/Geom"                ;full_guid #6FFA88D8322B4001 #615D479BCA3267B
+  "SkinnedMesh/Geom"                ;full_guid #657128D8BE2E7123 #615D479BCA3267B
   "SkinnedMesh/Override Materials"  ;bool      0                                 

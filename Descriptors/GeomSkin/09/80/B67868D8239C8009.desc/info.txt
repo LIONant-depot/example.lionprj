@@ -10,7 +10,7 @@
 [ xProperties : 5 ]
 { Name:s                        Value:?                                       }
 //----------------------------  ---------------------------------------------
-  "Info/Name"                   ;string    "New GeomSkin"                    
+  "Info/Name"                   ;string    "lady"                            
   "Info/Comment"                ;string    ""                                
   "Info/Details/GUID"           ;full_guid #B67868D8239C8009 #615D479BCA3267B
   "Info/Details/RscLinks[]"     ;s64       1                                 
