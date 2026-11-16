@@ -2,10 +2,10 @@
 // New Types
 < s32:d u32:g s16:C u16:H s8:c u8:h f32:f f64:F string:s wstring:S u64:G s64:D bool:c full_guid:GG enum:s >
 
-[ xProperties : 85 ]
+[ xProperties : 91 ]
 { Name:s                                           Value:?                     }
 //-----------------------------------------------  ---------------------------
-  "SystemOrderConfig/UpdateOrder[]"                ;s64    14                 
+  "SystemOrderConfig/UpdateOrder[]"                ;s64    15                 
   "SystemOrderConfig/UpdateOrder[G:0]/Guid"        ;u64    #FE5EC75487196B0E  
   "SystemOrderConfig/UpdateOrder[G:0]/Name"        ;string "Tick Logger A"    
   "SystemOrderConfig/UpdateOrder[G:0]/Enabled"     ;bool   1                  
@@ -48,45 +48,51 @@
   "SystemOrderConfig/UpdateOrder[G:6]/ParentGuid"  ;u64    #0                 
   "SystemOrderConfig/UpdateOrder[G:6]/Connector"   ;string ""                 
   "SystemOrderConfig/UpdateOrder[G:6]/Placed"      ;bool   1                  
-  "SystemOrderConfig/UpdateOrder[G:7]/Guid"        ;u64    #A820399FCB93F8A5  
-  "SystemOrderConfig/UpdateOrder[G:7]/Name"        ;string "Render"           
+  "SystemOrderConfig/UpdateOrder[G:7]/Guid"        ;u64    #DCA80D72083B1E97  
+  "SystemOrderConfig/UpdateOrder[G:7]/Name"        ;string "Ragdoll"          
   "SystemOrderConfig/UpdateOrder[G:7]/Enabled"     ;bool   1                  
   "SystemOrderConfig/UpdateOrder[G:7]/ParentGuid"  ;u64    #0                 
   "SystemOrderConfig/UpdateOrder[G:7]/Connector"   ;string ""                 
   "SystemOrderConfig/UpdateOrder[G:7]/Placed"      ;bool   1                  
-  "SystemOrderConfig/UpdateOrder[G:8]/Guid"        ;u64    #1478AC256429DE97  
-  "SystemOrderConfig/UpdateOrder[G:8]/Name"        ;string "Soccer Shadows"   
+  "SystemOrderConfig/UpdateOrder[G:8]/Guid"        ;u64    #A820399FCB93F8A5  
+  "SystemOrderConfig/UpdateOrder[G:8]/Name"        ;string "Render"           
   "SystemOrderConfig/UpdateOrder[G:8]/Enabled"     ;bool   1                  
   "SystemOrderConfig/UpdateOrder[G:8]/ParentGuid"  ;u64    #0                 
   "SystemOrderConfig/UpdateOrder[G:8]/Connector"   ;string ""                 
   "SystemOrderConfig/UpdateOrder[G:8]/Placed"      ;bool   1                  
-  "SystemOrderConfig/UpdateOrder[G:9]/Guid"        ;u64    #B10A9A569ADE4BFF  
-  "SystemOrderConfig/UpdateOrder[G:9]/Name"        ;string "Soccer Scoreboard"
+  "SystemOrderConfig/UpdateOrder[G:9]/Guid"        ;u64    #1478AC256429DE97  
+  "SystemOrderConfig/UpdateOrder[G:9]/Name"        ;string "Soccer Shadows"   
   "SystemOrderConfig/UpdateOrder[G:9]/Enabled"     ;bool   1                  
   "SystemOrderConfig/UpdateOrder[G:9]/ParentGuid"  ;u64    #0                 
   "SystemOrderConfig/UpdateOrder[G:9]/Connector"   ;string ""                 
   "SystemOrderConfig/UpdateOrder[G:9]/Placed"      ;bool   1                  
-  "SystemOrderConfig/UpdateOrder[G:10]/Guid"       ;u64    #5254FF4D7D9A03A   
-  "SystemOrderConfig/UpdateOrder[G:10]/Name"       ;string "Soccer Ball"      
+  "SystemOrderConfig/UpdateOrder[G:10]/Guid"       ;u64    #B10A9A569ADE4BFF  
+  "SystemOrderConfig/UpdateOrder[G:10]/Name"       ;string "Soccer Scoreboard"
   "SystemOrderConfig/UpdateOrder[G:10]/Enabled"    ;bool   1                  
   "SystemOrderConfig/UpdateOrder[G:10]/ParentGuid"  ;u64    #0                 
   "SystemOrderConfig/UpdateOrder[G:10]/Connector"   ;string ""                 
   "SystemOrderConfig/UpdateOrder[G:10]/Placed"      ;bool   1                  
-  "SystemOrderConfig/UpdateOrder[G:11]/Guid"        ;u64    #9488823BFBB0FFAB  
-  "SystemOrderConfig/UpdateOrder[G:11]/Name"        ;string "Bistro Day Cycle" 
+  "SystemOrderConfig/UpdateOrder[G:11]/Guid"        ;u64    #5254FF4D7D9A03A   
+  "SystemOrderConfig/UpdateOrder[G:11]/Name"        ;string "Soccer Ball"      
   "SystemOrderConfig/UpdateOrder[G:11]/Enabled"     ;bool   1                  
   "SystemOrderConfig/UpdateOrder[G:11]/ParentGuid"  ;u64    #0                 
   "SystemOrderConfig/UpdateOrder[G:11]/Connector"   ;string ""                 
-  "SystemOrderConfig/UpdateOrder[G:11]/Placed"      ;bool   0                  
-  "SystemOrderConfig/UpdateOrder[G:12]/Guid"        ;u64    #A67FA213A8680A81  
-  "SystemOrderConfig/UpdateOrder[G:12]/Name"        ;string "Bistro Circlers"  
+  "SystemOrderConfig/UpdateOrder[G:11]/Placed"      ;bool   1                  
+  "SystemOrderConfig/UpdateOrder[G:12]/Guid"        ;u64    #9488823BFBB0FFAB  
+  "SystemOrderConfig/UpdateOrder[G:12]/Name"        ;string "Bistro Day Cycle" 
   "SystemOrderConfig/UpdateOrder[G:12]/Enabled"     ;bool   1                  
   "SystemOrderConfig/UpdateOrder[G:12]/ParentGuid"  ;u64    #0                 
   "SystemOrderConfig/UpdateOrder[G:12]/Connector"   ;string ""                 
   "SystemOrderConfig/UpdateOrder[G:12]/Placed"      ;bool   0                  
-  "SystemOrderConfig/UpdateOrder[G:13]/Guid"        ;u64    #AE838FD44A00D5D7  
-  "SystemOrderConfig/UpdateOrder[G:13]/Name"        ;string "Bistro Walkers"   
+  "SystemOrderConfig/UpdateOrder[G:13]/Guid"        ;u64    #A67FA213A8680A81  
+  "SystemOrderConfig/UpdateOrder[G:13]/Name"        ;string "Bistro Circlers"  
   "SystemOrderConfig/UpdateOrder[G:13]/Enabled"     ;bool   1                  
   "SystemOrderConfig/UpdateOrder[G:13]/ParentGuid"  ;u64    #0                 
   "SystemOrderConfig/UpdateOrder[G:13]/Connector"   ;string ""                 
   "SystemOrderConfig/UpdateOrder[G:13]/Placed"      ;bool   0                  
+  "SystemOrderConfig/UpdateOrder[G:14]/Guid"        ;u64    #AE838FD44A00D5D7  
+  "SystemOrderConfig/UpdateOrder[G:14]/Name"        ;string "Bistro Walkers"   
+  "SystemOrderConfig/UpdateOrder[G:14]/Enabled"     ;bool   1                  
+  "SystemOrderConfig/UpdateOrder[G:14]/ParentGuid"  ;u64    #0                 
+  "SystemOrderConfig/UpdateOrder[G:14]/Connector"   ;string ""                 
+  "SystemOrderConfig/UpdateOrder[G:14]/Placed"      ;bool   0                  
