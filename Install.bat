@@ -26,7 +26,7 @@ if errorlevel 1 (
 )
 
 rem ---------- LIST OF PLUGINS ---------------
-set "PLUGINS=xvirtual_folders.plugin xmaterial.plugin xtexture.plugin xmaterial_instance.plugin xgeom.plugin xgeom_static.plugin xskeleton.plugin xanim_package.plugin xretarget.plugin xfont.plugin xgeom_skin.plugin"
+set "PLUGINS=xvirtual_folders.plugin xmaterial.plugin xtexture.plugin xmaterial_instance.plugin xgeom.plugin xgeom_static.plugin xskeleton.plugin xanim_package.plugin xretarget.plugin xfont.plugin xgeom_skin.plugin xragdoll.plugin"
 
 rem ---------- DEPOTS ---------------
 for %%P in (%PLUGINS%) do (
@@ -81,7 +81,7 @@ for %%P in (%PLUGINS%) do (
             echo Failed to change to %%P\build directory.
             goto :ERROR
         )
-        call CreateAndBuildProject.bat "return"
+        call .\CreateAndBuildProject.bat "return"
         if errorlevel 1 (
             echo Failed to execute CreateAndBuildProject.bat for %%P.
             cd /d "%ORIGINAL_DIR%\Cache\Plugins"
